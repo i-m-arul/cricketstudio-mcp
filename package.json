@@ -1,0 +1,54 @@
+{
+  "name": "@cricketstudio/mcp",
+  "version": "0.1.0",
+  "description": "Citation infrastructure for cricket — MCP server exposing IPL 2026 atomic claims with provenance, sample-size floors, and stable canonical URLs.",
+  "type": "module",
+  "bin": {
+    "cricketstudio-mcp": "src/server.ts"
+  },
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cricket",
+    "ipl",
+    "sports-data",
+    "citation",
+    "claim-review",
+    "anthropic",
+    "claude"
+  ],
+  "author": "Arul Anand",
+  "license": "MIT",
+  "homepage": "https://players.cricketstudio.ai/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i-m-arul/cricketstudio-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/i-m-arul/cricketstudio-mcp/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "tsx": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "src/",
+    "data/snapshot/",
+    "README.md",
+    "LICENSE"
+  ]
+}

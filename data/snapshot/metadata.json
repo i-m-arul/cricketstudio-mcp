@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-05-15T18:20:30.293Z",
+  "bundler": "cricketstudio (build pipeline)",
+  "counts": {
+    "players": 200,
+    "teams": 10,
+    "venues": 13,
+    "trends": 37,
+    "h2hPairs": 500
+  },
+  "notes": [
+    "This snapshot is a pre-computed projection of CricketStudio's data spine.",
+    "Algorithm code (lib/setu/*, lib/agents/*) stays in the private monorepo.",
+    "Live match state (docs/match/*) is NOT bundled — fetch the canonical URL or use the hosted HTTP transport (Phase B)."
+  ]
+}

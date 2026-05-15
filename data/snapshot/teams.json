@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "mi",
+    "name": "Mumbai Indians",
+    "code": "MI",
+    "wikidataQid": "Q1956472"
+  },
+  {
+    "slug": "csk",
+    "name": "Chennai Super Kings",
+    "code": "CSK",
+    "wikidataQid": "Q1067017"
+  },
+  {
+    "slug": "rcb",
+    "name": "Royal Challengers Bengaluru",
+    "code": "RCB",
+    "wikidataQid": "Q609691"
+  },
+  {
+    "slug": "srh",
+    "name": "Sunrisers Hyderabad",
+    "code": "SRH",
+    "wikidataQid": "Q15229212"
+  },
+  {
+    "slug": "kkr",
+    "name": "Kolkata Knight Riders",
+    "code": "KKR",
+    "wikidataQid": "Q1067122"
+  },
+  {
+    "slug": "dc",
+    "name": "Delhi Capitals",
+    "code": "DC",
+    "wikidataQid": "Q5253988"
+  },
+  {
+    "slug": "pbks",
+    "name": "Punjab Kings",
+    "code": "PBKS",
+    "wikidataQid": "Q1432854"
+  },
+  {
+    "slug": "rr",
+    "name": "Rajasthan Royals",
+    "code": "RR",
+    "wikidataQid": "Q1067023"
+  },
+  {
+    "slug": "lsg",
+    "name": "Lucknow Super Giants",
+    "code": "LSG",
+    "wikidataQid": "Q111711676"
+  },
+  {
+    "slug": "gt",
+    "name": "Gujarat Titans",
+    "code": "GT",
+    "wikidataQid": "Q110906636"
+  }
+]

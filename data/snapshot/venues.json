@@ -1,0 +1,144 @@
+[
+  {
+    "slug": "narendra-modi-stadium",
+    "name": "Narendra Modi Stadium",
+    "city": "Ahmedabad",
+    "matchCount": 7,
+    "geo": {
+      "latitude": 23.0917,
+      "longitude": 72.5972,
+      "wikidataQid": "Q379935"
+    }
+  },
+  {
+    "slug": "wankhede-stadium",
+    "name": "Wankhede Stadium",
+    "city": "Mumbai",
+    "matchCount": 6,
+    "geo": {
+      "latitude": 18.9388,
+      "longitude": 72.8259,
+      "wikidataQid": "Q1067595"
+    }
+  },
+  {
+    "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
+    "name": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+    "city": "Lucknow",
+    "matchCount": 6,
+    "geo": {
+      "latitude": 26.8467,
+      "longitude": 80.9462,
+      "wikidataQid": "Q26257057"
+    }
+  },
+  {
+    "slug": "arun-jaitley-stadium",
+    "name": "Arun Jaitley Stadium",
+    "city": "Delhi",
+    "matchCount": 6,
+    "geo": {
+      "latitude": 28.6379,
+      "longitude": 77.2425,
+      "wikidataQid": "Q582518"
+    }
+  },
+  {
+    "slug": "rajiv-gandhi-international-stadium",
+    "name": "Rajiv Gandhi International Stadium",
+    "city": "Hyderabad",
+    "matchCount": 6,
+    "geo": {
+      "latitude": 17.4068,
+      "longitude": 78.55,
+      "wikidataQid": "Q1419486"
+    }
+  },
+  {
+    "slug": "m-chinnaswamy-stadium",
+    "name": "M.Chinnaswamy Stadium",
+    "city": "Bengaluru",
+    "matchCount": 5,
+    "geo": {
+      "latitude": 12.9789,
+      "longitude": 77.5993,
+      "wikidataQid": "Q1135028"
+    }
+  },
+  {
+    "slug": "ma-chidambaram-stadium",
+    "name": "MA Chidambaram Stadium",
+    "city": "Chennai",
+    "matchCount": 5,
+    "geo": {
+      "latitude": 13.0628,
+      "longitude": 80.2792,
+      "wikidataQid": "Q582488"
+    }
+  },
+  {
+    "slug": "maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
+    "name": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+    "city": "Chandigarh",
+    "matchCount": 4,
+    "geo": {
+      "latitude": 30.776,
+      "longitude": 76.7012
+    }
+  },
+  {
+    "slug": "barsapara-cricket-stadium",
+    "name": "Barsapara Cricket Stadium",
+    "city": "Guwahati",
+    "matchCount": 3,
+    "geo": {
+      "latitude": 26.1305,
+      "longitude": 91.7966,
+      "wikidataQid": "Q24938094"
+    }
+  },
+  {
+    "slug": "eden-gardens",
+    "name": "Eden Gardens",
+    "city": "Kolkata",
+    "matchCount": 3,
+    "geo": {
+      "latitude": 22.5645,
+      "longitude": 88.3433,
+      "wikidataQid": "Q582510"
+    }
+  },
+  {
+    "slug": "sawai-mansingh-stadium",
+    "name": "Sawai Mansingh Stadium",
+    "city": "Jaipur",
+    "matchCount": 3,
+    "geo": {
+      "latitude": 26.8867,
+      "longitude": 75.8067,
+      "wikidataQid": "Q1437432"
+    }
+  },
+  {
+    "slug": "shaheed-veer-narayan-singh-international-stadium",
+    "name": "Shaheed Veer Narayan Singh International Stadium",
+    "city": "Raipur",
+    "matchCount": 2,
+    "geo": {
+      "latitude": 21.2514,
+      "longitude": 81.6296,
+      "wikidataQid": "Q7461193"
+    }
+  },
+  {
+    "slug": "himachal-pradesh-cricket-association-stadium",
+    "name": "Himachal Pradesh Cricket Association Stadium",
+    "city": "Dharamsala",
+    "matchCount": 2,
+    "geo": {
+      "latitude": 32.2393,
+      "longitude": 76.3186,
+      "wikidataQid": "Q5762830"
+    }
+  }
+]
