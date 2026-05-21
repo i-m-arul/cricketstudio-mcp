@@ -1,0 +1,1114 @@
+{
+  "csk-vs-mi": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "matches": 2,
+    "aWon": 2,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-02",
+        "venue": "MA Chidambaram Stadium",
+        "result": "CSK won"
+      },
+      {
+        "date": "2026-04-23",
+        "venue": "Wankhede Stadium",
+        "result": "CSK won"
+      }
+    ]
+  },
+  "mi-vs-rcb": {
+    "a": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 2,
+    "aWon": 0,
+    "bWon": 2,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-10",
+        "venue": "Shaheed Veer Narayan Singh International Stadium",
+        "result": "RCB won"
+      },
+      {
+        "date": "2026-04-12",
+        "venue": "Wankhede Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "mi-vs-srh": {
+    "a": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-29",
+        "venue": "Wankhede Stadium",
+        "result": "SRH won"
+      }
+    ]
+  },
+  "kkr-vs-mi": {
+    "a": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "b": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-20",
+        "venue": "Eden Gardens",
+        "result": "KKR won"
+      },
+      {
+        "date": "2026-03-29",
+        "venue": "Wankhede Stadium",
+        "result": "MI won"
+      }
+    ]
+  },
+  "dc-vs-mi": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-04",
+        "venue": "Arun Jaitley Stadium",
+        "result": "DC won"
+      }
+    ]
+  },
+  "mi-vs-pbks": {
+    "a": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "b": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-14",
+        "venue": "Himachal Pradesh Cricket Association Stadium",
+        "result": "MI won"
+      },
+      {
+        "date": "2026-04-16",
+        "venue": "Wankhede Stadium",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "mi-vs-rr": {
+    "a": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-07",
+        "venue": "Barsapara Cricket Stadium",
+        "result": "RR won"
+      }
+    ]
+  },
+  "lsg-vs-mi": {
+    "a": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "b": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-04",
+        "venue": "Wankhede Stadium",
+        "result": "MI won"
+      }
+    ]
+  },
+  "gt-vs-mi": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "mi",
+      "name": "Mumbai Indians",
+      "code": "MI"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-20",
+        "venue": "Narendra Modi Stadium",
+        "result": "MI won"
+      }
+    ]
+  },
+  "csk-vs-rcb": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-05",
+        "venue": "M.Chinnaswamy Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "csk-vs-srh": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 2,
+    "aWon": 0,
+    "bWon": 2,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-18",
+        "venue": "MA Chidambaram Stadium",
+        "result": "SRH won"
+      },
+      {
+        "date": "2026-04-18",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "SRH won"
+      }
+    ]
+  },
+  "csk-vs-kkr": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-14",
+        "venue": "MA Chidambaram Stadium",
+        "result": "CSK won"
+      }
+    ]
+  },
+  "csk-vs-dc": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "matches": 2,
+    "aWon": 2,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-05",
+        "venue": "Arun Jaitley Stadium",
+        "result": "CSK won"
+      },
+      {
+        "date": "2026-04-11",
+        "venue": "MA Chidambaram Stadium",
+        "result": "CSK won"
+      }
+    ]
+  },
+  "csk-vs-pbks": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-03",
+        "venue": "MA Chidambaram Stadium",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "csk-vs-rr": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-03-30",
+        "venue": "Barsapara Cricket Stadium",
+        "result": "RR won"
+      }
+    ]
+  },
+  "csk-vs-lsg": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-15",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "LSG won"
+      },
+      {
+        "date": "2026-05-10",
+        "venue": "MA Chidambaram Stadium",
+        "result": "CSK won"
+      }
+    ]
+  },
+  "csk-vs-gt": {
+    "a": {
+      "slug": "csk",
+      "name": "Chennai Super Kings",
+      "code": "CSK"
+    },
+    "b": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-26",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      }
+    ]
+  },
+  "rcb-vs-srh": {
+    "a": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-03-28",
+        "venue": "M.Chinnaswamy Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "kkr-vs-rcb": {
+    "a": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-13",
+        "venue": "Shaheed Veer Narayan Singh International Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "dc-vs-rcb": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-27",
+        "venue": "Arun Jaitley Stadium",
+        "result": "RCB won"
+      },
+      {
+        "date": "2026-04-18",
+        "venue": "M.Chinnaswamy Stadium",
+        "result": "DC won"
+      }
+    ]
+  },
+  "pbks-vs-rcb": {
+    "a": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-17",
+        "venue": "Himachal Pradesh Cricket Association Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "rcb-vs-rr": {
+    "a": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-10",
+        "venue": "Barsapara Cricket Stadium",
+        "result": "RR won"
+      }
+    ]
+  },
+  "lsg-vs-rcb": {
+    "a": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-07",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "LSG won"
+      },
+      {
+        "date": "2026-04-15",
+        "venue": "M.Chinnaswamy Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "gt-vs-rcb": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "rcb",
+      "name": "Royal Challengers Bengaluru",
+      "code": "RCB"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-30",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      },
+      {
+        "date": "2026-04-24",
+        "venue": "M.Chinnaswamy Stadium",
+        "result": "RCB won"
+      }
+    ]
+  },
+  "kkr-vs-srh": {
+    "a": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-03",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "KKR won"
+      },
+      {
+        "date": "2026-04-02",
+        "venue": "Eden Gardens",
+        "result": "SRH won"
+      }
+    ]
+  },
+  "dc-vs-srh": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-21",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "SRH won"
+      }
+    ]
+  },
+  "pbks-vs-srh": {
+    "a": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-06",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "SRH won"
+      },
+      {
+        "date": "2026-04-11",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "rr-vs-srh": {
+    "a": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 2,
+    "aWon": 0,
+    "bWon": 2,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-25",
+        "venue": "Sawai Mansingh Stadium",
+        "result": "SRH won"
+      },
+      {
+        "date": "2026-04-13",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "SRH won"
+      }
+    ]
+  },
+  "lsg-vs-srh": {
+    "a": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-05",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "LSG won"
+      }
+    ]
+  },
+  "gt-vs-srh": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "srh",
+      "name": "Sunrisers Hyderabad",
+      "code": "SRH"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-12",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      }
+    ]
+  },
+  "dc-vs-kkr": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-08",
+        "venue": "Arun Jaitley Stadium",
+        "result": "KKR won"
+      }
+    ]
+  },
+  "kkr-vs-rr": {
+    "a": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-19",
+        "venue": "Eden Gardens",
+        "result": "KKR won"
+      }
+    ]
+  },
+  "kkr-vs-lsg": {
+    "a": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "b": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-26",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "KKR won"
+      },
+      {
+        "date": "2026-04-09",
+        "venue": "Eden Gardens",
+        "result": "LSG won"
+      }
+    ]
+  },
+  "gt-vs-kkr": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "kkr",
+      "name": "Kolkata Knight Riders",
+      "code": "KKR"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-16",
+        "venue": "Eden Gardens",
+        "result": "KKR won"
+      },
+      {
+        "date": "2026-04-17",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      }
+    ]
+  },
+  "dc-vs-pbks": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-11",
+        "venue": "Himachal Pradesh Cricket Association Stadium",
+        "result": "DC won"
+      },
+      {
+        "date": "2026-04-25",
+        "venue": "Arun Jaitley Stadium",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "dc-vs-rr": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 2,
+    "aWon": 2,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-17",
+        "venue": "Arun Jaitley Stadium",
+        "result": "DC won"
+      },
+      {
+        "date": "2026-05-01",
+        "venue": "Sawai Mansingh Stadium",
+        "result": "DC won"
+      }
+    ]
+  },
+  "dc-vs-lsg": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-01",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "DC won"
+      }
+    ]
+  },
+  "dc-vs-gt": {
+    "a": {
+      "slug": "dc",
+      "name": "Delhi Capitals",
+      "code": "DC"
+    },
+    "b": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-08",
+        "venue": "Arun Jaitley Stadium",
+        "result": "GT won"
+      }
+    ]
+  },
+  "pbks-vs-rr": {
+    "a": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-28",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "RR won"
+      }
+    ]
+  },
+  "lsg-vs-pbks": {
+    "a": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "b": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "matches": 1,
+    "aWon": 0,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-19",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "gt-vs-pbks": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "pbks",
+      "name": "Punjab Kings",
+      "code": "PBKS"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-03",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      },
+      {
+        "date": "2026-03-31",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "PBKS won"
+      }
+    ]
+  },
+  "lsg-vs-rr": {
+    "a": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 2,
+    "aWon": 0,
+    "bWon": 2,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-19",
+        "venue": "Sawai Mansingh Stadium",
+        "result": "RR won"
+      },
+      {
+        "date": "2026-04-22",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "RR won"
+      }
+    ]
+  },
+  "gt-vs-rr": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "rr",
+      "name": "Rajasthan Royals",
+      "code": "RR"
+    },
+    "matches": 2,
+    "aWon": 1,
+    "bWon": 1,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-05-09",
+        "venue": "Sawai Mansingh Stadium",
+        "result": "GT won"
+      },
+      {
+        "date": "2026-04-04",
+        "venue": "Narendra Modi Stadium",
+        "result": "RR won"
+      }
+    ]
+  },
+  "gt-vs-lsg": {
+    "a": {
+      "slug": "gt",
+      "name": "Gujarat Titans",
+      "code": "GT"
+    },
+    "b": {
+      "slug": "lsg",
+      "name": "Lucknow Super Giants",
+      "code": "LSG"
+    },
+    "matches": 1,
+    "aWon": 1,
+    "bWon": 0,
+    "noResult": 0,
+    "recent": [
+      {
+        "date": "2026-04-12",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "GT won"
+      }
+    ]
+  }
+}

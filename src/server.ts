@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * CricketStudio MCP server (public · v0.1.0)
+ * CricketStudio MCP server (public · v0.2.0)
  *
  * Citation infrastructure for cricket. Exposes IPL 2026 atomic claims with
  * provenance, sample-size floors, and stable canonical URLs to any
@@ -90,11 +90,26 @@ type Venue = { slug: string; name: string; geo?: { lat: number; lng: number; wik
 type Team = { slug: string; name: string; code: string; wikidataQid?: string };
 type H2HSummary = {
   slug: string;
-  batter: { slug: string; name: string };
-  bowler: { slug: string; name: string };
+  batterSlug: string;
+  batterName: string;
+  bowlerSlug: string;
+  bowlerName: string;
   deliveries?: number;
   runs?: number;
+  strikeRate?: number;
+  fours?: number;
+  sixes?: number;
+  dotBalls?: number;
   dismissals?: number;
+};
+type TeamH2HRecord = {
+  a: { slug: string; name: string; code: string };
+  b: { slug: string; name: string; code: string };
+  matches: number;
+  aWon: number;
+  bWon: number;
+  noResult: number;
+  recent: Array<{ date: string; venue: string; result: string }>;
 };
 
 let _players: Record<string, PlayerRecord> | null = null;
@@ -102,6 +117,7 @@ let _trends: Trend[] | null = null;
 let _venues: Venue[] | null = null;
 let _teams: Team[] | null = null;
 let _h2h: H2HSummary[] | null = null;
+let _teamH2h: Record<string, TeamH2HRecord> | null = null;
 let _metadata: SnapshotMetadata | null = null;
 let _seasonStats: Record<string, unknown> | null = null;
 
@@ -124,6 +140,10 @@ function teams() {
 function h2hSummaries() {
   if (!_h2h) _h2h = readJson<H2HSummary[]>('h2h.json');
   return _h2h;
+}
+function teamH2h() {
+  if (!_teamH2h) _teamH2h = readJson<Record<string, TeamH2HRecord>>('team-h2h.json');
+  return _teamH2h;
 }
 function metadata() {
   if (!_metadata) _metadata = readJson<SnapshotMetadata>('metadata.json');
@@ -285,6 +305,20 @@ const TOOLS = [
     },
   },
   {
+    name: 'get_team_h2h',
+    description:
+      'Team-vs-team head-to-head record across captured IPL 2026 fixtures: matches played, wins each way, no-results, and the most recent meetings (date · venue · winner). Pass two team slugs in any order (mi, csk, rcb, srh, kkr, dc, pbks, rr, lsg, gt). Returns an atomic lead claim + canonical URL /teams/{a}/vs/{b}.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        teamSlugA: { type: 'string' },
+        teamSlugB: { type: 'string' },
+      },
+      required: ['teamSlugA', 'teamSlugB'],
+      additionalProperties: false,
+    },
+  },
+  {
     name: 'get_season_stats',
     description:
       'IPL 2026 leaderboard from the SETU canonical aggregate. sortBy: runs · wickets · strike_rate · economy · ducks · single_digit_outs · catches · run_outs. Optional teamCode filter; sample-size floors apply.',
@@ -316,6 +350,7 @@ const validators = {
   get_trend: z.object({ trendId: z.string() }).strict(),
   list_trends: z.object({ kind: z.string().optional(), limit: z.number().optional() }).strict(),
   get_player_h2h: z.object({ batterSlug: z.string(), bowlerSlug: z.string() }).strict(),
+  get_team_h2h: z.object({ teamSlugA: z.string(), teamSlugB: z.string() }).strict(),
   get_season_stats: z.object({ sortBy: z.enum(['runs', 'wickets', 'strike_rate', 'economy', 'ducks', 'single_digit_outs', 'catches', 'run_outs']), teamCode: z.string().optional(), limit: z.number().optional() }).strict(),
 } as const;
 
@@ -329,6 +364,7 @@ function handleDatasetSummary() {
     surfaces: {
       players: `${SITE}/players/{slug}`,
       teams: `${SITE}/teams/{slug}`,
+      teamH2h: `${SITE}/teams/{a}/vs/{b}`,
       venues: `${SITE}/venues/{slug}`,
       matches: `${SITE}/matches/{fixtureId}`,
       trends: `${SITE}/trends/{trendId}`,
@@ -470,15 +506,64 @@ function handleListTrends(args: { kind?: string; limit?: number }) {
 function handlePlayerH2H(args: { batterSlug: string; bowlerSlug: string }) {
   const slug = `${args.batterSlug}-vs-${args.bowlerSlug}`;
   const h = h2hSummaries().find((x) => x.slug === slug);
-  if (!h) return notFound(`No H2H pair "${slug}" (≥5 deliveries floor — pair may not have met enough times).`);
+  if (!h) return notFound(`No H2H pair "${slug}" (≥5 deliveries floor — pair may not have met enough times).`, `${SITE}/h2h/${slug}`);
+  const claim = `${h.batterName} has scored ${h.runs} off ${h.deliveries} balls against ${h.bowlerName}${(h.dismissals ?? 0) > 0 ? `, dismissed ${h.dismissals} time${h.dismissals === 1 ? '' : 's'}` : ' (not dismissed)'} in IPL 2026.`;
   return ok({
-    batter: h.batter,
-    bowler: h.bowler,
+    claim,
+    batter: { slug: h.batterSlug, name: h.batterName },
+    bowler: { slug: h.bowlerSlug, name: h.bowlerName },
     deliveries: h.deliveries,
     runs: h.runs,
+    strikeRate: h.strikeRate,
+    fours: h.fours,
+    sixes: h.sixes,
+    dotBalls: h.dotBalls,
     dismissals: h.dismissals,
+    window: 'IPL 2026 to date',
+    sampleSize: `${h.deliveries} deliveries`,
     sampleSizeFloor: '≥5 deliveries faced',
+    source: 'CricketStudio ball-by-ball aggregation',
   }, `${SITE}/h2h/${slug}`);
+}
+
+function handleTeamH2H(args: { teamSlugA: string; teamSlugB: string }) {
+  const a = args.teamSlugA.toLowerCase().trim();
+  const b = args.teamSlugB.toLowerCase().trim();
+  if (a === b) return notFound('Team H2H needs two different team slugs.');
+  const sorted = [a, b].sort();
+  const key = `${sorted[0]}-vs-${sorted[1]}`;
+  const rec = teamH2h()[key];
+  if (!rec) {
+    return notFound(
+      `No captured IPL 2026 meetings between "${a}" and "${b}" (or unknown slug). Valid: ${teams().map((t) => t.slug).join(', ')}.`,
+      `${SITE}/teams/${a}/vs/${b}`,
+    );
+  }
+  // Present from the perspective the caller asked (teamSlugA first).
+  const callerIsA = rec.a.slug === a;
+  const first = callerIsA ? rec.a : rec.b;
+  const second = callerIsA ? rec.b : rec.a;
+  const firstWon = callerIsA ? rec.aWon : rec.bWon;
+  const secondWon = callerIsA ? rec.bWon : rec.aWon;
+
+  let claim: string;
+  if (firstWon > secondWon) claim = `${first.code} lead ${second.code} ${firstWon}–${secondWon} across ${rec.matches} captured IPL 2026 meeting${rec.matches === 1 ? '' : 's'}.`;
+  else if (secondWon > firstWon) claim = `${second.code} lead ${first.code} ${secondWon}–${firstWon} across ${rec.matches} captured IPL 2026 meeting${rec.matches === 1 ? '' : 's'}.`;
+  else claim = `${first.code} and ${second.code} are level ${firstWon}–${secondWon} across ${rec.matches} captured IPL 2026 meeting${rec.matches === 1 ? '' : 's'}.`;
+
+  return ok({
+    claim,
+    teamA: first,
+    teamB: second,
+    matches: rec.matches,
+    [`${first.code}_won`]: firstWon,
+    [`${second.code}_won`]: secondWon,
+    noResult: rec.noResult,
+    recent: rec.recent,
+    window: 'IPL 2026 to date',
+    sampleSize: `${rec.matches} completed fixture${rec.matches === 1 ? '' : 's'}`,
+    source: 'CricketStudio ball-by-ball aggregation',
+  }, `${SITE}/teams/${first.slug}/vs/${second.slug}`);
 }
 
 function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: number }) {
@@ -546,7 +631,7 @@ function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: nu
 // ─── Server wiring ───────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '0.1.0' },
+  { name: 'cricketstudio', version: '0.2.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -576,6 +661,7 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'get_trend': return handleTrend(args);
       case 'list_trends': return handleListTrends(args);
       case 'get_player_h2h': return handlePlayerH2H(args);
+      case 'get_team_h2h': return handleTeamH2H(args);
       case 'get_season_stats': return handleSeasonStats(args);
       default: return ok({ error: 'unknown_tool', tool: name });
     }

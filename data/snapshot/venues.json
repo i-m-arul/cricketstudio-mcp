@@ -1,5 +1,16 @@
 [
   {
+    "slug": "arun-jaitley-stadium",
+    "name": "Arun Jaitley Stadium",
+    "city": "Delhi",
+    "matchCount": 7,
+    "geo": {
+      "latitude": 28.6379,
+      "longitude": 77.2425,
+      "wikidataQid": "Q582518"
+    }
+  },
+  {
     "slug": "narendra-modi-stadium",
     "name": "Narendra Modi Stadium",
     "city": "Ahmedabad",
@@ -33,14 +44,14 @@
     }
   },
   {
-    "slug": "arun-jaitley-stadium",
-    "name": "Arun Jaitley Stadium",
-    "city": "Delhi",
+    "slug": "ma-chidambaram-stadium",
+    "name": "MA Chidambaram Stadium",
+    "city": "Chennai",
     "matchCount": 6,
     "geo": {
-      "latitude": 28.6379,
-      "longitude": 77.2425,
-      "wikidataQid": "Q582518"
+      "latitude": 13.0628,
+      "longitude": 80.2792,
+      "wikidataQid": "Q582488"
     }
   },
   {
@@ -66,14 +77,14 @@
     }
   },
   {
-    "slug": "ma-chidambaram-stadium",
-    "name": "MA Chidambaram Stadium",
-    "city": "Chennai",
+    "slug": "eden-gardens",
+    "name": "Eden Gardens",
+    "city": "Kolkata",
     "matchCount": 5,
     "geo": {
-      "latitude": 13.0628,
-      "longitude": 80.2792,
-      "wikidataQid": "Q582488"
+      "latitude": 22.5645,
+      "longitude": 88.3433,
+      "wikidataQid": "Q582510"
     }
   },
   {
@@ -84,6 +95,17 @@
     "geo": {
       "latitude": 30.776,
       "longitude": 76.7012
+    }
+  },
+  {
+    "slug": "sawai-mansingh-stadium",
+    "name": "Sawai Mansingh Stadium",
+    "city": "Jaipur",
+    "matchCount": 4,
+    "geo": {
+      "latitude": 26.8867,
+      "longitude": 75.8067,
+      "wikidataQid": "Q1437432"
     }
   },
   {
@@ -98,25 +120,14 @@
     }
   },
   {
-    "slug": "eden-gardens",
-    "name": "Eden Gardens",
-    "city": "Kolkata",
+    "slug": "himachal-pradesh-cricket-association-stadium",
+    "name": "Himachal Pradesh Cricket Association Stadium",
+    "city": "Dharamsala",
     "matchCount": 3,
     "geo": {
-      "latitude": 22.5645,
-      "longitude": 88.3433,
-      "wikidataQid": "Q582510"
-    }
-  },
-  {
-    "slug": "sawai-mansingh-stadium",
-    "name": "Sawai Mansingh Stadium",
-    "city": "Jaipur",
-    "matchCount": 3,
-    "geo": {
-      "latitude": 26.8867,
-      "longitude": 75.8067,
-      "wikidataQid": "Q1437432"
+      "latitude": 32.2393,
+      "longitude": 76.3186,
+      "wikidataQid": "Q5762830"
     }
   },
   {
@@ -128,17 +139,6 @@
       "latitude": 21.2514,
       "longitude": 81.6296,
       "wikidataQid": "Q7461193"
-    }
-  },
-  {
-    "slug": "himachal-pradesh-cricket-association-stadium",
-    "name": "Himachal Pradesh Cricket Association Stadium",
-    "city": "Dharamsala",
-    "matchCount": 2,
-    "geo": {
-      "latitude": 32.2393,
-      "longitude": 76.3186,
-      "wikidataQid": "Q5762830"
     }
   }
 ]

@@ -1,11 +1,11 @@
 # CricketStudio MCP server
 
-> Citation infrastructure for cricket. **12 tools** exposing IPL 2026 atomic
+> Citation infrastructure for cricket. **13 tools** exposing IPL 2026 atomic
 > claims with provenance, sample-size floors, and stable canonical URLs to
 > any MCP-compatible client (Claude Desktop, Cursor, ChatGPT Connectors, …).
 >
 > **Reference page:** https://players.cricketstudio.ai/mcp
-> **Status:** v0.1.0 · stdio MCP, snapshot-bundled · MIT (code) · CC BY 4.0 (data)
+> **Status:** v0.2.0 · stdio MCP, snapshot-bundled · MIT (code) · CC BY 4.0 (data)
 >
 > Every entity in this bundle is keyed by a public canonical slug
 > (`jasprit-bumrah`, `mi`, `wankhede-stadium`). Upstream-provider numeric
@@ -32,11 +32,11 @@ freshness and link back to the underlying page.
 
 Restart Claude Desktop. `cricketstudio` appears in the MCP servers list.
 
-## Tools (v0.1.0)
+## Tools (v0.2.0)
 
-All 12 work fully against the bundled snapshot. Each tool returns a
+All 13 work fully against the bundled snapshot. Each tool returns a
 `canonicalUrl` + `dataAsOf`. See https://players.cricketstudio.ai/mcp
-for the doctrine §10 canonical-12 reference.
+for the doctrine §10 reference.
 
 | Tool | Maps to URL |
 |---|---|
@@ -46,6 +46,7 @@ for the doctrine §10 canonical-12 reference.
 | `get_player_pillar` | `/players/{slug}` (filtered) |
 | `list_atomic_claims` | various |
 | `get_team_profile` | `/teams/{slug}` |
+| `get_team_h2h` | `/teams/{a}/vs/{b}` |
 | `get_venue_hub` | `/venues/{slug}` |
 | `get_standings` | `/standings` |
 | `get_trend` | `/trends/{id}` |
@@ -53,14 +54,18 @@ for the doctrine §10 canonical-12 reference.
 | `get_player_h2h` | `/h2h/{batter-vs-bowler}` |
 | `get_season_stats` | `/season/ipl-2026/{aspect}` |
 
+**New in v0.2.0:** `get_team_h2h` — team-vs-team head-to-head
+(matches, wins each way, recent meetings) keyed by public team slugs,
+no upstream IDs. The latent `get_player_h2h` shape bug (returned
+`batter: undefined`) is fixed and now covered by the smoke test.
+
 Tools that need live ball-by-ball state or fixture lookup
 (`list_fixtures`, `get_match_state`, `get_match_recap`,
 `get_partnerships`, `get_dismissal_analysis`, `get_fielding_stats`,
-`get_team_h2h`, `compare_players`) ship in Phase B at
-`mcp.cricketstudio.ai`. The reason they're not here: the bundle is
-keyed entirely by public slugs — no upstream-provider numeric IDs
-ride along — and fixture lookup requires a fixture-key scheme that's
-part of the Phase B HTTP transport.
+`compare_players`) ship in Phase B at `mcp.cricketstudio.ai`. The
+reason they're not here: fixture/match lookup requires a fixture-key
+scheme (and live state) that's part of the Phase B HTTP transport —
+the snapshot is keyed entirely by public slugs.
 
 ## Architecture (why snapshot)
 
@@ -114,25 +119,26 @@ npm run typecheck       # tsc --noEmit
 npm start               # tsx src/server.ts (stdio)
 ```
 
-Smoke-test (no MCP client needed):
+Smoke-test (no MCP client needed) — spawns the server over stdio,
+drives it with JSON-RPC, and asserts every advertised tool returns a
+non-error payload with `dataAsOf`:
 
 ```bash
-printf '%s\n' \
-  '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"smoke","version":"0"}}}' \
-  '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
-  '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' \
-  '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"get_dataset_summary","arguments":{}}}' \
-  | npx tsx src/server.ts
+npm run smoke
 ```
 
-Expect `serverInfo.name = "cricketstudio"`, a `tools` array of 12, and
-the dataset summary in id=3.
+Expect `SMOKE TEST PASSED — 13 tools advertised, 13 calls green.` CI
+(`.github/workflows/ci.yml`) runs `typecheck` + `smoke` on every push
+and weekly on a cron.
 
 ## Roadmap
 
-- **v0.1.x** — stdio MCP with bundled snapshot (you are here)
-- **v0.2** — daily snapshot push from the private monorepo via GitHub
-  Action; weekly `npm run smoke` in CI
+- **v0.1.x** — stdio MCP with bundled snapshot
+- **v0.2** — `get_team_h2h` added; `get_player_h2h` shape bug fixed;
+  `npm run smoke` assertion harness + CI (typecheck + smoke on push,
+  weekly cron) (you are here)
+- **v0.3** — daily snapshot push from the private monorepo via GitHub
+  Action; historical IPL + MLC season leaderboards
 - **Phase B** — HTTP + SSE transport at `mcp.cricketstudio.ai` with the
   full 20-tool catalog including live ball-by-ball; API-key tier mapping;
   Stripe metering
