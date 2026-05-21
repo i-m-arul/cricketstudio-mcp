@@ -59,6 +59,7 @@ type PlayerRecord = {
   team: string;
   role: string;
   sameAs?: Record<string, string>;
+  headlineClaimId?: string | null;
   claims: Array<{
     id: string;
     metric: string;
@@ -67,6 +68,7 @@ type PlayerRecord = {
     comparator?: string;
     sampleSize?: string;
     computedAt?: string;
+    stale?: boolean;
     headline?: string;
     context?: string;
     pillar?: 'P1' | 'P2' | 'P3' | 'P4' | 'P5';
@@ -609,12 +611,16 @@ function handleSearchPlayers(args: { query: string; limit?: number }) {
 function handlePlayerProfile(args: { playerSlug: string }) {
   const p = players()[args.playerSlug];
   if (!p) return notFound(`No player with slug "${args.playerSlug}". Try search_players first.`);
+  // Claims are already ordered headline-first in the snapshot; surface the
+  // headline explicitly so an LLM leads with the most distinctive claim.
+  const headline = p.claims.find((c) => c.id === p.headlineClaimId) ?? p.claims[0] ?? null;
   return ok({
     slug: p.slug,
     fullName: p.fullName,
     team: p.team,
     role: p.role,
     sameAs: p.sameAs || {},
+    headlineClaim: headline,
     claims: p.claims,
     claimCount: p.claims.length,
   }, `${SITE}/players/${p.slug}`);
@@ -1070,7 +1076,7 @@ function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
 // ─── Server wiring ───────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '0.3.0' },
+  { name: 'cricketstudio', version: '0.3.1' },
   { capabilities: { tools: {} } },
 );
 

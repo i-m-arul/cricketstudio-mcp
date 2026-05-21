@@ -1,6 +1,6 @@
 {
   "name": "@cricketstudio/mcp",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Citation infrastructure for cricket — MCP server exposing IPL 2026 atomic claims with provenance, sample-size floors, and stable canonical URLs.",
   "type": "module",
   "bin": {

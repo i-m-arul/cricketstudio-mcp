@@ -1,19 +1,12 @@
 {
-  "generatedAt": "2026-05-21T01:49:21.416Z",
+  "generatedAt": "2026-05-21T04:49:49.005Z",
   "bundler": "cricketstudio (build pipeline)",
   "counts": {
     "players": 256,
     "teams": 10,
     "venues": 13,
     "trends": 41,
-    "h2hPairs": 500,
-    "teamH2hPairs": 44,
-    "mlc": {
-      "players": 166,
-      "teams": 6,
-      "matches": 75,
-      "leaderboards": 14
-    }
+    "h2hPairs": 500
   },
   "notes": [
     "This snapshot is a pre-computed projection of CricketStudio's data spine.",
