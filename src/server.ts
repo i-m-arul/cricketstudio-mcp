@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * CricketStudio MCP server (public · v0.3.0)
+ * CricketStudio MCP server (public · v0.3.1)
  *
  * Citation infrastructure for cricket. Exposes IPL 2026 atomic claims with
  * provenance, sample-size floors, and stable canonical URLs to any
