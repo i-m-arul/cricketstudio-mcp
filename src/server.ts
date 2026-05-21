@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * CricketStudio MCP server (public · v0.2.0)
+ * CricketStudio MCP server (public · v0.3.0)
  *
  * Citation infrastructure for cricket. Exposes IPL 2026 atomic claims with
  * provenance, sample-size floors, and stable canonical URLs to any
@@ -112,6 +112,54 @@ type TeamH2HRecord = {
   recent: Array<{ date: string; venue: string; result: string }>;
 };
 
+// ─── MLC (Major League Cricket) snapshot types ───────────────────────
+type MlcPlayer = {
+  slug: string;
+  fullName: string;
+  teamSlugs: string[];
+  batting: Record<string, unknown>;
+  bowling: Record<string, unknown>;
+  bySeason: Record<string, unknown>;
+  identity: Record<string, unknown> | null;
+};
+type MlcTeam = { slug: string; name: string; seasons: string[]; firstSeason: string; lastSeason: string; matchCount: number };
+type MlcClaim = { kind: string; kindLabel?: string; atomic: string; headline?: string; subheadline?: string; subject?: unknown; coSubject?: unknown; rows?: unknown; sampleSize?: number | string; sampleUnit?: string };
+type MlcMatch = {
+  matchId: string;
+  season: string;
+  startDate: string;
+  matchType?: string;
+  teams: { home: { slug: string; name: string }; away: { slug: string; name: string } };
+  venue: { name: string };
+  toss?: unknown;
+  result: { outcome: string; winnerSlug?: string; winMargin?: number | string; winType?: string };
+  officials?: unknown;
+  playerOfMatch?: unknown[];
+  innings: Array<{ inningsNumber: number; battingTeamSlug: string; totalRuns: number; totalWickets: number; oversBowled: number }>;
+  attribution: { matchUrl: string };
+  claims: MlcClaim[];
+};
+type MlcLeague = {
+  displayName?: string;
+  seasons: string[];
+  teams: unknown[];
+  venues: unknown[];
+  playerCount: number;
+  totalMatches: number;
+  seasonBreakdown?: unknown;
+  crossTeamMoves?: unknown;
+  ballsCaptured?: number;
+  leaderboardAspects: Array<{ slug: string; title: string }>;
+};
+type MlcLeaderboard = {
+  slug: string;
+  title: string;
+  description?: string;
+  metricLabel?: string;
+  floorNote?: string | null;
+  rows: Array<{ rank: number; slug: string; fullName: string; teamSlugs: string[]; metricValue: number; formatted: string; secondary?: string | null; sampleSize?: string }>;
+};
+
 let _players: Record<string, PlayerRecord> | null = null;
 let _trends: Trend[] | null = null;
 let _venues: Venue[] | null = null;
@@ -120,6 +168,11 @@ let _h2h: H2HSummary[] | null = null;
 let _teamH2h: Record<string, TeamH2HRecord> | null = null;
 let _metadata: SnapshotMetadata | null = null;
 let _seasonStats: Record<string, unknown> | null = null;
+let _mlcPlayers: Record<string, MlcPlayer> | null = null;
+let _mlcTeams: MlcTeam[] | null = null;
+let _mlcMatches: Record<string, MlcMatch> | null = null;
+let _mlcLeague: MlcLeague | null = null;
+let _mlcLeaderboards: Record<string, MlcLeaderboard> | null = null;
 
 function players() {
   if (!_players) _players = readJson<Record<string, PlayerRecord>>('players.json');
@@ -153,6 +206,34 @@ function seasonStats() {
   if (!_seasonStats) _seasonStats = readJson<Record<string, unknown>>('season-stats.json');
   return _seasonStats;
 }
+function mlcPlayers() {
+  if (!_mlcPlayers) _mlcPlayers = readJson<Record<string, MlcPlayer>>('mlc-players.json');
+  return _mlcPlayers;
+}
+function mlcTeams() {
+  if (!_mlcTeams) _mlcTeams = readJson<MlcTeam[]>('mlc-teams.json');
+  return _mlcTeams;
+}
+function mlcMatches() {
+  if (!_mlcMatches) _mlcMatches = readJson<Record<string, MlcMatch>>('mlc-matches.json');
+  return _mlcMatches;
+}
+function mlcLeague() {
+  if (!_mlcLeague) _mlcLeague = readJson<MlcLeague>('mlc-league.json');
+  return _mlcLeague;
+}
+function mlcLeaderboards() {
+  if (!_mlcLeaderboards) _mlcLeaderboards = readJson<Record<string, MlcLeaderboard>>('mlc-leaderboards.json');
+  return _mlcLeaderboards;
+}
+
+// ─── MLC canonical URLs ──────────────────────────────────────────────
+const MLC_HUB = `${SITE}/leagues/mlc`;
+const mlcPlayerUrl = (slug: string) => `${MLC_HUB}/players/${slug}`;
+const mlcTeamUrl = (slug: string) => `${MLC_HUB}/teams/${slug}`;
+const mlcMatchUrl = (id: string) => `${MLC_HUB}/matches/${id}`;
+const mlcMatchClaimUrl = (id: string, kind: string) => `${MLC_HUB}/matches/${id}/c/${kind}`;
+const mlcLeaderboardUrl = (aspect: string) => `${MLC_HUB}/leaderboards/${aspect}`;
 
 // `dataAsOf` for every response — snapshot's mtime is the wall-clock
 // timestamp at which the private monorepo committed it. LLMs cite this
@@ -336,6 +417,112 @@ const TOOLS = [
       additionalProperties: false,
     },
   },
+  {
+    name: 'compare_players',
+    description:
+      'Side-by-side comparison of 2–8 IPL 2026 players: team, role, batting/bowling style, claim count per pillar (P1–P5), and headline claim each. Returns a canonical /compare/players?slugs=… URL that renders the same table. Use search_players first to resolve slugs.',
+    inputSchema: {
+      type: 'object',
+      properties: { playerSlugs: { type: 'array', items: { type: 'string' } } },
+      required: ['playerSlugs'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_fielding_stats',
+    description:
+      'IPL 2026 fielding — catches, run-out assists, total dismissals — for one player (pass playerSlug) or as a leaderboard (omit playerSlug). Aggregated from the SETU canonical snapshot.',
+    inputSchema: {
+      type: 'object',
+      properties: { playerSlug: { type: 'string' }, limit: { type: 'number' } },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_mlc_dataset_summary',
+    description:
+      'FIRST call for Major League Cricket (MLC) coverage. Returns seasons, match/team/venue/player counts, surface URLs, the 14 leaderboard aspects, and Cricsheet (CC BY 3.0) attribution. MLC is a separate league at /leagues/mlc — distinct from IPL.',
+    inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+  },
+  {
+    name: 'search_mlc_players',
+    description:
+      'Find MLC player slugs by substring match against full name or slug. Cricsheet uses initials format ("F du Plessis" → f-du-plessis). Use before get_mlc_player_profile.',
+    inputSchema: {
+      type: 'object',
+      properties: { query: { type: 'string' }, limit: { type: 'number' } },
+      required: ['query'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_mlc_player_profile',
+    description:
+      'An MLC player\'s career profile: batting + bowling aggregates, per-season breakdown, and identity bridge (Wikidata / Wikipedia / ESPNcricinfo / socials). Kebab-case slug e.g. "f-du-plessis".',
+    inputSchema: {
+      type: 'object',
+      properties: { playerSlug: { type: 'string' } },
+      required: ['playerSlug'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_mlc_team_profile',
+    description:
+      'One of 6 MLC franchises: los-angeles-knight-riders, mi-new-york, san-francisco-unicorns, seattle-orcas, texas-super-kings, washington-freedom. Returns seasons, match count + hub URL.',
+    inputSchema: {
+      type: 'object',
+      properties: { teamSlug: { type: 'string' } },
+      required: ['teamSlug'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_mlc_match',
+    description:
+      'Full detail for one MLC match: teams, venue, toss, result, innings summary, officials, player of the match, plus the atomic claim cards emitted from it. matchId is a Cricsheet id (e.g. "1381361"). Use list_mlc_matches to discover ids.',
+    inputSchema: {
+      type: 'object',
+      properties: { matchId: { type: 'string' } },
+      required: ['matchId'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_mlc_match_claim',
+    description:
+      'One atomic claim card from an MLC match. Kinds: top-batter, top-bowler, biggest-partnership, pp-control, death-domination. Permanent citable URL at /leagues/mlc/matches/{id}/c/{kind}. Sample-size floors enforced — kinds below floor are not emitted.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        matchId: { type: 'string' },
+        kind: { type: 'string', enum: ['top-batter', 'top-bowler', 'biggest-partnership', 'pp-control', 'death-domination'] },
+      },
+      required: ['matchId', 'kind'],
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'list_mlc_matches',
+    description:
+      'List MLC matches, optionally filtered by season (2023/2024/2025) or team slug. Returns id + date + teams + venue + result + canonicalUrl per row. Use to discover matchIds.',
+    inputSchema: {
+      type: 'object',
+      properties: { season: { type: 'string' }, teamSlug: { type: 'string' }, limit: { type: 'number' } },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'list_mlc_leaderboards',
+    description:
+      'Top-N rows of one MLC leaderboard aspect. 14 aspects: orange-cap, purple-cap, strike-rate, economy-leaders, most-sixes, most-fours, top-knocks, best-bowling, most-ducks, single-digit-outs, powerplay-strike-rate, powerplay-economy, death-overs-strike-rate, death-overs-economy. Call get_mlc_dataset_summary for the list. Sample-size floors enforced.',
+    inputSchema: {
+      type: 'object',
+      properties: { aspect: { type: 'string' }, limit: { type: 'number' } },
+      required: ['aspect'],
+      additionalProperties: false,
+    },
+  },
 ];
 
 const validators = {
@@ -352,6 +539,16 @@ const validators = {
   get_player_h2h: z.object({ batterSlug: z.string(), bowlerSlug: z.string() }).strict(),
   get_team_h2h: z.object({ teamSlugA: z.string(), teamSlugB: z.string() }).strict(),
   get_season_stats: z.object({ sortBy: z.enum(['runs', 'wickets', 'strike_rate', 'economy', 'ducks', 'single_digit_outs', 'catches', 'run_outs']), teamCode: z.string().optional(), limit: z.number().optional() }).strict(),
+  compare_players: z.object({ playerSlugs: z.array(z.string()).min(2).max(8) }).strict(),
+  get_fielding_stats: z.object({ playerSlug: z.string().optional(), limit: z.number().optional() }).strict(),
+  get_mlc_dataset_summary: z.object({}).strict(),
+  search_mlc_players: z.object({ query: z.string(), limit: z.number().optional() }).strict(),
+  get_mlc_player_profile: z.object({ playerSlug: z.string() }).strict(),
+  get_mlc_team_profile: z.object({ teamSlug: z.string() }).strict(),
+  get_mlc_match: z.object({ matchId: z.string() }).strict(),
+  get_mlc_match_claim: z.object({ matchId: z.string(), kind: z.enum(['top-batter', 'top-bowler', 'biggest-partnership', 'pp-control', 'death-domination']) }).strict(),
+  list_mlc_matches: z.object({ season: z.string().optional(), teamSlug: z.string().optional(), limit: z.number().optional() }).strict(),
+  list_mlc_leaderboards: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
 } as const;
 
 // ─── Tool handlers ───────────────────────────────────────────────────
@@ -372,6 +569,10 @@ function handleDatasetSummary() {
       standings: `${SITE}/standings`,
       sitemap: `${SITE}/sitemap.xml`,
       llmsTxt: `${SITE}/llms.txt`,
+      mlc: `${SITE}/leagues/mlc`,
+    },
+    otherLeagues: {
+      mlc: 'Major League Cricket (2023–2025, Cricsheet CC BY 3.0) is covered by a parallel tool set: get_mlc_dataset_summary, search_mlc_players, get_mlc_player_profile, get_mlc_team_profile, get_mlc_match, get_mlc_match_claim, list_mlc_matches, list_mlc_leaderboards. Call get_mlc_dataset_summary to start.',
     },
     fiveNonNegotiables: [
       'Sample-size floors enforced (≥30 batting balls, ≥15 bowling deliveries, ≥3 venue fixtures, ≥5 H2H deliveries)',
@@ -628,10 +829,248 @@ function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: nu
   }, `${SITE}/season/ipl-2026/${args.sortBy.replace(/_/g, '-')}`);
 }
 
+function handleComparePlayers(args: { playerSlugs: string[] }) {
+  const rows = args.playerSlugs.map((slug) => {
+    const p = players()[slug];
+    if (!p) return { slug, error: 'No player found with this slug' };
+    const byPillar = (pl: string) => p.claims.filter((c) => c.pillar === pl).length;
+    return {
+      slug: p.slug,
+      fullName: p.fullName,
+      team: p.team,
+      role: p.role,
+      claimCount: p.claims.length,
+      pillars: { P1: byPillar('P1'), P2: byPillar('P2'), P3: byPillar('P3'), P4: byPillar('P4'), P5: byPillar('P5') },
+      headlineClaim: p.claims[0]?.headline ?? null,
+      canonicalUrl: `${SITE}/players/${p.slug}`,
+    };
+  });
+  const valid = rows.filter((r) => !('error' in r)).map((r) => (r as { slug: string }).slug);
+  return ok({
+    players: rows,
+    note: 'For deeper per-pair analysis, follow up with get_player_h2h or get_player_pillar.',
+  }, valid.length >= 2 ? `${SITE}/compare/players?slugs=${valid.join(',')}` : undefined);
+}
+
+function handleFieldingStats(args: { playerSlug?: string; limit?: number }) {
+  const stats = seasonStats() as { bySlug: Record<string, any> };
+  const all = Object.values(stats.bySlug || {}).filter((p) => p && p.fielding);
+  if (args.playerSlug) {
+    const p = (stats.bySlug || {})[args.playerSlug];
+    if (!p) return notFound(`No player with slug "${args.playerSlug}".`, `${SITE}/players/${args.playerSlug}`);
+    const f = p.fielding || {};
+    return ok({
+      player: { slug: p.slug, fullName: p.fullName, teamCode: p.teamCode },
+      catches: f.catches ?? 0,
+      runOutAssists: f.runOutAssists ?? 0,
+      totalDismissals: f.totalDismissals ?? 0,
+      window: 'IPL 2026 to date',
+      source: 'CricketStudio ball-by-ball aggregation',
+    }, `${SITE}/players/${p.slug}`);
+  }
+  const limit = Math.max(1, Math.min(100, args.limit ?? 15));
+  const ranked = all
+    .sort((a, b) => Number(b.fielding.totalDismissals || 0) - Number(a.fielding.totalDismissals || 0))
+    .slice(0, limit)
+    .map((p, i) => ({
+      rank: i + 1,
+      slug: p.slug,
+      fullName: p.fullName,
+      teamCode: p.teamCode,
+      catches: p.fielding.catches ?? 0,
+      runOutAssists: p.fielding.runOutAssists ?? 0,
+      totalDismissals: p.fielding.totalDismissals ?? 0,
+      canonicalUrl: `${SITE}/players/${p.slug}`,
+    }));
+  return ok({ count: ranked.length, window: 'IPL 2026 to date', rows: ranked }, `${SITE}/season/ipl-2026/catches`);
+}
+
+// ─── MLC tool handlers ───────────────────────────────────────────────
+
+function handleMlcDatasetSummary() {
+  const lg = mlcLeague();
+  return ok({
+    league: 'Major League Cricket',
+    overview: 'CricketStudio MLC coverage — atomic claims for every captured MLC match, sourced from Cricsheet under CC BY 3.0. Player profiles cross-link to Wikidata / Wikipedia / ESPNcricinfo. Standings, leaderboards, records, and per-match atomic claim cards live under /leagues/mlc/*.',
+    coverage: {
+      seasons: lg.seasons,
+      totalMatches: lg.totalMatches,
+      teams: Array.isArray(lg.teams) ? lg.teams.length : undefined,
+      venues: Array.isArray(lg.venues) ? lg.venues.length : undefined,
+      players: lg.playerCount,
+      ballsCaptured: lg.ballsCaptured,
+      crossTeamMovers: lg.crossTeamMoves,
+    },
+    seasonBreakdown: lg.seasonBreakdown,
+    surfaces: {
+      hub: MLC_HUB,
+      standings: `${MLC_HUB}/standings`,
+      matches: `${MLC_HUB}/matches`,
+      players: `${MLC_HUB}/players`,
+      leaderboards: `${MLC_HUB}/leaderboards`,
+      records: `${MLC_HUB}/records`,
+    },
+    leaderboardAspects: lg.leaderboardAspects.map((a) => ({ slug: a.slug, title: a.title, url: mlcLeaderboardUrl(a.slug) })),
+    provenance: { source: 'Cricsheet (https://cricsheet.org)', license: 'CC BY 3.0', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/' },
+  }, MLC_HUB);
+}
+
+function handleSearchMlcPlayers(args: { query: string; limit?: number }) {
+  const q = args.query.toLowerCase().trim();
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const results = Object.values(mlcPlayers())
+    .filter((p) => p.slug.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+    .slice(0, limit)
+    .map((p) => ({
+      slug: p.slug,
+      fullName: p.fullName,
+      teamSlugs: p.teamSlugs,
+      matches: (p.batting as any)?.matches ?? 0,
+      runs: (p.batting as any)?.runs ?? 0,
+      wickets: (p.bowling as any)?.wickets ?? 0,
+      canonicalUrl: mlcPlayerUrl(p.slug),
+    }));
+  return ok({ query: args.query, count: results.length, players: results });
+}
+
+function handleMlcPlayerProfile(args: { playerSlug: string }) {
+  const p = mlcPlayers()[args.playerSlug];
+  if (!p) return notFound(`No MLC player with slug "${args.playerSlug}". Use search_mlc_players to discover slugs.`, mlcPlayerUrl(args.playerSlug));
+  return ok({
+    slug: p.slug,
+    fullName: p.fullName,
+    teamSlugs: p.teamSlugs,
+    batting: p.batting,
+    bowling: p.bowling,
+    bySeason: p.bySeason,
+    identity: p.identity,
+    provenance: { source: 'Cricsheet', license: 'CC BY 3.0' },
+  }, mlcPlayerUrl(p.slug));
+}
+
+function handleMlcTeamProfile(args: { teamSlug: string }) {
+  const t = mlcTeams().find((x) => x.slug === args.teamSlug.toLowerCase());
+  if (!t) return notFound(`No MLC team "${args.teamSlug}". Valid: ${mlcTeams().map((x) => x.slug).join(', ')}.`, mlcTeamUrl(args.teamSlug));
+  return ok({
+    slug: t.slug,
+    name: t.name,
+    seasons: t.seasons,
+    firstSeason: t.firstSeason,
+    lastSeason: t.lastSeason,
+    matchCount: t.matchCount,
+    provenance: { source: 'Cricsheet', license: 'CC BY 3.0' },
+  }, mlcTeamUrl(t.slug));
+}
+
+function describeMlcResult(m: MlcMatch): string {
+  const r = m.result;
+  if (r.outcome === 'won') {
+    const winnerName = r.winnerSlug === m.teams.home.slug ? m.teams.home.name : m.teams.away.name;
+    return `${winnerName} won by ${r.winMargin} ${r.winType}`;
+  }
+  if (r.outcome === 'tie') return 'tie';
+  if (r.outcome === 'no-result') return 'no result';
+  return 'draw';
+}
+
+function handleMlcMatch(args: { matchId: string }) {
+  const m = mlcMatches()[args.matchId];
+  if (!m) return notFound(`No MLC match "${args.matchId}". Use list_mlc_matches to discover ids.`, mlcMatchUrl(args.matchId));
+  return ok({
+    matchId: m.matchId,
+    season: m.season,
+    startDate: m.startDate,
+    matchType: m.matchType,
+    teams: m.teams,
+    venue: m.venue,
+    toss: m.toss ?? null,
+    result: m.result,
+    resultText: describeMlcResult(m),
+    officials: m.officials ?? null,
+    playerOfMatch: m.playerOfMatch ?? [],
+    innings: m.innings,
+    availableClaimKinds: m.claims.map((c) => ({
+      kind: c.kind,
+      headline: c.headline,
+      atomic: c.atomic,
+      canonicalUrl: mlcMatchClaimUrl(m.matchId, c.kind),
+    })),
+    provenance: { source: 'Cricsheet', license: 'CC BY 3.0', matchUrl: m.attribution.matchUrl },
+  }, mlcMatchUrl(m.matchId));
+}
+
+function handleMlcMatchClaim(args: { matchId: string; kind: string }) {
+  const m = mlcMatches()[args.matchId];
+  if (!m) return notFound(`No MLC match "${args.matchId}".`, mlcMatchUrl(args.matchId));
+  const claim = m.claims.find((c) => c.kind === args.kind);
+  if (!claim) {
+    return notFound(
+      `Match "${args.matchId}" did not emit a "${args.kind}" claim — sample-size floor not met. Call get_mlc_match to see available kinds.`,
+      mlcMatchClaimUrl(args.matchId, args.kind),
+    );
+  }
+  return ok({
+    matchId: m.matchId,
+    kind: claim.kind,
+    kindLabel: claim.kindLabel,
+    atomic: claim.atomic,
+    headline: claim.headline,
+    subheadline: claim.subheadline,
+    subject: claim.subject ?? null,
+    coSubject: claim.coSubject ?? null,
+    rows: claim.rows ?? null,
+    sampleSize: claim.sampleSize,
+    sampleUnit: claim.sampleUnit,
+    fixtureUrl: mlcMatchUrl(m.matchId),
+    provenance: { source: 'Cricsheet ball-by-ball record', license: 'CC BY 3.0', matchUrl: m.attribution.matchUrl, computedFrom: 'Deterministic walk of balls[] — no LLM involvement in numeric values' },
+  }, mlcMatchClaimUrl(m.matchId, claim.kind));
+}
+
+function handleListMlcMatches(args: { season?: string; teamSlug?: string; limit?: number }) {
+  const limit = Math.max(1, Math.min(200, args.limit ?? 30));
+  const all = Object.values(mlcMatches());
+  const rows = all
+    .filter((m) => (args.season ? m.season === args.season : true))
+    .filter((m) => (args.teamSlug ? m.teams.home.slug === args.teamSlug || m.teams.away.slug === args.teamSlug : true))
+    .sort((a, b) => b.startDate.localeCompare(a.startDate))
+    .slice(0, limit)
+    .map((m) => ({
+      matchId: m.matchId,
+      season: m.season,
+      startDate: m.startDate,
+      teams: { home: m.teams.home.name, away: m.teams.away.name },
+      venue: m.venue.name,
+      result: describeMlcResult(m),
+      canonicalUrl: mlcMatchUrl(m.matchId),
+    }));
+  return ok({ count: rows.length, totalAvailable: all.length, filters: { season: args.season, teamSlug: args.teamSlug }, matches: rows }, `${MLC_HUB}/matches`);
+}
+
+function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
+  const lb = mlcLeaderboards()[args.aspect];
+  if (!lb) {
+    return notFound(
+      `No MLC leaderboard aspect "${args.aspect}". Valid: ${Object.keys(mlcLeaderboards()).join(', ')}.`,
+      `${MLC_HUB}/leaderboards`,
+    );
+  }
+  const limit = Math.max(1, Math.min(100, args.limit ?? 20));
+  return ok({
+    aspect: lb.slug,
+    title: lb.title,
+    description: lb.description,
+    metricLabel: lb.metricLabel,
+    floorNote: lb.floorNote ?? null,
+    count: Math.min(limit, lb.rows.length),
+    rows: lb.rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })),
+    provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' },
+  }, mlcLeaderboardUrl(lb.slug));
+}
+
 // ─── Server wiring ───────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '0.2.0' },
+  { name: 'cricketstudio', version: '0.3.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -663,6 +1102,16 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'get_player_h2h': return handlePlayerH2H(args);
       case 'get_team_h2h': return handleTeamH2H(args);
       case 'get_season_stats': return handleSeasonStats(args);
+      case 'compare_players': return handleComparePlayers(args);
+      case 'get_fielding_stats': return handleFieldingStats(args);
+      case 'get_mlc_dataset_summary': return handleMlcDatasetSummary();
+      case 'search_mlc_players': return handleSearchMlcPlayers(args);
+      case 'get_mlc_player_profile': return handleMlcPlayerProfile(args);
+      case 'get_mlc_team_profile': return handleMlcTeamProfile(args);
+      case 'get_mlc_match': return handleMlcMatch(args);
+      case 'get_mlc_match_claim': return handleMlcMatchClaim(args);
+      case 'list_mlc_matches': return handleListMlcMatches(args);
+      case 'list_mlc_leaderboards': return handleListMlcLeaderboards(args);
       default: return ok({ error: 'unknown_tool', tool: name });
     }
   } catch (err) {

@@ -1,0 +1,123 @@
+{
+  "v": 1,
+  "code": "mlc",
+  "displayName": "Major League Cricket",
+  "format": "T20",
+  "seasons": [
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "teams": [
+    "los-angeles-knight-riders",
+    "mi-new-york",
+    "san-francisco-unicorns",
+    "seattle-orcas",
+    "texas-super-kings",
+    "washington-freedom"
+  ],
+  "venues": [
+    "central-broward-park",
+    "church-street-park-morrisville",
+    "grand-prairie-stadium",
+    "knight-riders-cricket-field-fairplex",
+    "oakland-coliseum"
+  ],
+  "playerCount": 167,
+  "totalMatches": 75,
+  "seasonBreakdown": [
+    {
+      "season": "2023",
+      "matches": 19,
+      "teams": 6,
+      "venues": 2,
+      "playersUsed": 83
+    },
+    {
+      "season": "2024",
+      "matches": 23,
+      "teams": 6,
+      "venues": 2,
+      "playersUsed": 103
+    },
+    {
+      "season": "2025",
+      "matches": 33,
+      "teams": 6,
+      "venues": 3,
+      "playersUsed": 110
+    },
+    {
+      "season": "2026",
+      "matches": 0,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 115,
+      "status": "pre-season",
+      "startDate": "2026-06-18",
+      "endDate": "2026-07-18"
+    }
+  ],
+  "crossTeamMoves": 22,
+  "generatedAt": "2026-05-17T23:12:00.376Z",
+  "ballsCaptured": 17413,
+  "leaderboardAspects": [
+    {
+      "slug": "orange-cap",
+      "title": "Orange cap — most runs"
+    },
+    {
+      "slug": "purple-cap",
+      "title": "Purple cap — most wickets"
+    },
+    {
+      "slug": "strike-rate",
+      "title": "Highest batting strike rates"
+    },
+    {
+      "slug": "economy-leaders",
+      "title": "Best bowling economy rates"
+    },
+    {
+      "slug": "most-sixes",
+      "title": "Most sixes"
+    },
+    {
+      "slug": "most-fours",
+      "title": "Most fours"
+    },
+    {
+      "slug": "top-knocks",
+      "title": "Highest individual scores"
+    },
+    {
+      "slug": "best-bowling",
+      "title": "Best bowling — wicket leaders"
+    },
+    {
+      "slug": "most-ducks",
+      "title": "Most ducks"
+    },
+    {
+      "slug": "single-digit-outs",
+      "title": "Most single-digit outs"
+    },
+    {
+      "slug": "powerplay-strike-rate",
+      "title": "Highest powerplay strike rates"
+    },
+    {
+      "slug": "death-overs-economy",
+      "title": "Best death-overs economy"
+    },
+    {
+      "slug": "death-overs-strike-rate",
+      "title": "Highest death-overs strike rates"
+    },
+    {
+      "slug": "powerplay-economy",
+      "title": "Best powerplay economy"
+    }
+  ]
+}

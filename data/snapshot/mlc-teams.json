@@ -1,0 +1,92 @@
+[
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "los-angeles-knight-riders",
+    "name": "Los Angeles Knight Riders",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 21,
+    "generatedAt": "2026-05-17T23:12:00.371Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "mi-new-york",
+    "name": "MI New York",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 28,
+    "generatedAt": "2026-05-17T23:12:00.372Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "san-francisco-unicorns",
+    "name": "San Francisco Unicorns",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 25,
+    "generatedAt": "2026-05-17T23:12:00.372Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "seattle-orcas",
+    "name": "Seattle Orcas",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 24,
+    "generatedAt": "2026-05-17T23:12:00.373Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "texas-super-kings",
+    "name": "Texas Super Kings",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 26,
+    "generatedAt": "2026-05-17T23:12:00.371Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "mlc",
+    "slug": "washington-freedom",
+    "name": "Washington Freedom",
+    "seasons": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "firstSeason": "2023",
+    "lastSeason": "2025",
+    "matchCount": 26,
+    "generatedAt": "2026-05-17T23:12:00.373Z"
+  }
+]

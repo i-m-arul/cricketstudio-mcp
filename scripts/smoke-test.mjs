@@ -38,6 +38,17 @@ const CALLS = [
   ['get_player_h2h', { batterSlug: 'cameron-green', bowlerSlug: 'rashid-khan' }],
   ['get_team_h2h', { teamSlugA: 'mi', teamSlugB: 'csk' }],
   ['get_season_stats', { sortBy: 'runs', limit: 3 }],
+  ['compare_players', { playerSlugs: ['virat-kohli', 'jasprit-bumrah'] }],
+  ['get_fielding_stats', { limit: 3 }],
+  // MLC
+  ['get_mlc_dataset_summary', {}],
+  ['search_mlc_players', { query: 'du plessis', limit: 3 }],
+  ['get_mlc_player_profile', { playerSlug: 'f-du-plessis' }],
+  ['get_mlc_team_profile', { teamSlug: 'texas-super-kings' }],
+  ['list_mlc_matches', { limit: 5 }],
+  ['get_mlc_match', { matchId: '1381361' }],
+  ['get_mlc_match_claim', { matchId: '1381361', kind: 'top-batter' }],
+  ['list_mlc_leaderboards', { aspect: 'orange-cap', limit: 5 }],
 ];
 
 function send(child, obj) {
