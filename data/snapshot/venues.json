@@ -1,5 +1,38 @@
 [
   {
+    "slug": "narendra-modi-stadium",
+    "name": "Narendra Modi Stadium",
+    "city": "Ahmedabad",
+    "matchCount": 8,
+    "geo": {
+      "latitude": 23.0917,
+      "longitude": 72.5972,
+      "wikidataQid": "Q379935"
+    }
+  },
+  {
+    "slug": "wankhede-stadium",
+    "name": "Wankhede Stadium",
+    "city": "Mumbai",
+    "matchCount": 7,
+    "geo": {
+      "latitude": 18.9388,
+      "longitude": 72.8259,
+      "wikidataQid": "Q1067595"
+    }
+  },
+  {
+    "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
+    "name": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+    "city": "Lucknow",
+    "matchCount": 7,
+    "geo": {
+      "latitude": 26.8467,
+      "longitude": 80.9462,
+      "wikidataQid": "Q26257057"
+    }
+  },
+  {
     "slug": "arun-jaitley-stadium",
     "name": "Arun Jaitley Stadium",
     "city": "Delhi",
@@ -11,36 +44,25 @@
     }
   },
   {
-    "slug": "narendra-modi-stadium",
-    "name": "Narendra Modi Stadium",
-    "city": "Ahmedabad",
+    "slug": "rajiv-gandhi-international-stadium",
+    "name": "Rajiv Gandhi International Stadium",
+    "city": "Hyderabad",
     "matchCount": 7,
     "geo": {
-      "latitude": 23.0917,
-      "longitude": 72.5972,
-      "wikidataQid": "Q379935"
+      "latitude": 17.4068,
+      "longitude": 78.55,
+      "wikidataQid": "Q1419486"
     }
   },
   {
-    "slug": "wankhede-stadium",
-    "name": "Wankhede Stadium",
-    "city": "Mumbai",
+    "slug": "eden-gardens",
+    "name": "Eden Gardens",
+    "city": "Kolkata",
     "matchCount": 6,
     "geo": {
-      "latitude": 18.9388,
-      "longitude": 72.8259,
-      "wikidataQid": "Q1067595"
-    }
-  },
-  {
-    "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
-    "name": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "city": "Lucknow",
-    "matchCount": 6,
-    "geo": {
-      "latitude": 26.8467,
-      "longitude": 80.9462,
-      "wikidataQid": "Q26257057"
+      "latitude": 22.5645,
+      "longitude": 88.3433,
+      "wikidataQid": "Q582510"
     }
   },
   {
@@ -55,17 +77,6 @@
     }
   },
   {
-    "slug": "rajiv-gandhi-international-stadium",
-    "name": "Rajiv Gandhi International Stadium",
-    "city": "Hyderabad",
-    "matchCount": 6,
-    "geo": {
-      "latitude": 17.4068,
-      "longitude": 78.55,
-      "wikidataQid": "Q1419486"
-    }
-  },
-  {
     "slug": "m-chinnaswamy-stadium",
     "name": "M.Chinnaswamy Stadium",
     "city": "Bengaluru",
@@ -74,17 +85,6 @@
       "latitude": 12.9789,
       "longitude": 77.5993,
       "wikidataQid": "Q1135028"
-    }
-  },
-  {
-    "slug": "eden-gardens",
-    "name": "Eden Gardens",
-    "city": "Kolkata",
-    "matchCount": 5,
-    "geo": {
-      "latitude": 22.5645,
-      "longitude": 88.3433,
-      "wikidataQid": "Q582510"
     }
   },
   {

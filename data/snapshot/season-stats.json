@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-05-20T19:16:28.553Z",
+  "computedAt": "2026-05-24T18:41:25.641Z",
   "bySlug": {
     "travis-head": {
       "slug": "travis-head",
@@ -7,27 +7,27 @@
       "teamCode": "SRH",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 216,
-        "runs": 367,
-        "fours": 39,
+        "matches": 14,
+        "innings": 14,
+        "balls": 232,
+        "runs": 393,
+        "fours": 44,
         "sixes": 22,
-        "outs": 13,
-        "sr": 169.91,
-        "avg": 28.23,
+        "outs": 14,
+        "sr": 169.4,
+        "avg": 28.07,
         "ducks": 1,
         "singleDigitOuts": 3,
         "notOuts": 0
       },
       "bowling": {
-        "matches": 0,
-        "balls": 0,
-        "runs": 0,
-        "wickets": 0,
-        "dots": 0,
-        "econ": null,
-        "sr": null
+        "matches": 1,
+        "balls": 6,
+        "runs": 7,
+        "wickets": 1,
+        "dots": 1,
+        "econ": 7,
+        "sr": 6
       },
       "fielding": {
         "catches": 0,
@@ -89,18 +89,18 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 5,
-        "balls": 114,
-        "runs": 186,
-        "wickets": 10,
-        "dots": 34,
-        "econ": 9.79,
-        "sr": 11.4
+        "matches": 6,
+        "balls": 132,
+        "runs": 212,
+        "wickets": 13,
+        "dots": 41,
+        "econ": 9.64,
+        "sr": 10.2
       },
       "fielding": {
-        "catches": 3,
+        "catches": 5,
         "runOutAssists": 0,
-        "totalDismissals": 3
+        "totalDismissals": 5
       }
     },
     "virat-kohli": {
@@ -109,15 +109,15 @@
       "teamCode": "RCB",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 328,
-        "runs": 543,
-        "fours": 57,
+        "matches": 14,
+        "innings": 14,
+        "balls": 339,
+        "runs": 558,
+        "fours": 59,
         "sixes": 21,
-        "outs": 10,
-        "sr": 165.55,
-        "avg": 54.3,
+        "outs": 11,
+        "sr": 164.6,
+        "avg": 50.73,
         "ducks": 2,
         "singleDigitOuts": 0,
         "notOuts": 3
@@ -143,15 +143,15 @@
       "teamCode": "DC",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 309,
-        "runs": 534,
-        "fours": 51,
-        "sixes": 27,
-        "outs": 13,
-        "sr": 172.82,
-        "avg": 41.08,
+        "matches": 14,
+        "innings": 14,
+        "balls": 339,
+        "runs": 594,
+        "fours": 56,
+        "sixes": 31,
+        "outs": 14,
+        "sr": 175.22,
+        "avg": 42.43,
         "ducks": 1,
         "singleDigitOuts": 3,
         "notOuts": 1
@@ -177,15 +177,15 @@
       "teamCode": "KKR",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 204,
-        "runs": 266,
-        "fours": 20,
-        "sixes": 14,
-        "outs": 11,
-        "sr": 130.39,
-        "avg": 24.18,
+        "matches": 13,
+        "innings": 13,
+        "balls": 243,
+        "runs": 329,
+        "fours": 24,
+        "sixes": 18,
+        "outs": 12,
+        "sr": 135.39,
+        "avg": 27.42,
         "ducks": 2,
         "singleDigitOuts": 0,
         "notOuts": 1
@@ -200,9 +200,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 7,
+        "catches": 8,
         "runOutAssists": 0,
-        "totalDismissals": 7
+        "totalDismissals": 8
       }
     },
     "rishabh-pant": {
@@ -211,15 +211,15 @@
       "teamCode": "LSG",
       "role": "wk-batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 205,
-        "runs": 287,
-        "fours": 27,
+        "matches": 13,
+        "innings": 13,
+        "balls": 227,
+        "runs": 313,
+        "fours": 30,
         "sixes": 11,
-        "outs": 8,
-        "sr": 140,
-        "avg": 35.88,
+        "outs": 9,
+        "sr": 137.89,
+        "avg": 34.78,
         "ducks": 1,
         "singleDigitOuts": 1,
         "notOuts": 4
@@ -245,27 +245,27 @@
       "teamCode": "RR",
       "role": "all-rounder",
       "batting": {
-        "matches": 8,
-        "innings": 8,
-        "balls": 142,
-        "runs": 190,
-        "fours": 15,
+        "matches": 9,
+        "innings": 9,
+        "balls": 152,
+        "runs": 209,
+        "fours": 18,
         "sixes": 4,
         "outs": 4,
-        "sr": 133.8,
-        "avg": 47.5,
+        "sr": 137.5,
+        "avg": 52.25,
         "ducks": 0,
         "singleDigitOuts": 1,
-        "notOuts": 4
+        "notOuts": 5
       },
       "bowling": {
-        "matches": 9,
-        "balls": 156,
-        "runs": 202,
+        "matches": 10,
+        "balls": 168,
+        "runs": 226,
         "wickets": 8,
-        "dots": 38,
-        "econ": 7.77,
-        "sr": 19.5
+        "dots": 40,
+        "econ": 8.07,
+        "sr": 21
       },
       "fielding": {
         "catches": 2,
@@ -293,13 +293,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 10,
-        "balls": 198,
-        "runs": 349,
-        "wickets": 7,
-        "dots": 45,
-        "econ": 10.58,
-        "sr": 28.3
+        "matches": 11,
+        "balls": 223,
+        "runs": 378,
+        "wickets": 10,
+        "dots": 51,
+        "econ": 10.17,
+        "sr": 22.3
       },
       "fielding": {
         "catches": 2,
@@ -327,13 +327,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 12,
-        "balls": 282,
-        "runs": 395,
-        "wickets": 10,
-        "dots": 112,
-        "econ": 8.4,
-        "sr": 28.2
+        "matches": 13,
+        "balls": 306,
+        "runs": 438,
+        "wickets": 12,
+        "dots": 120,
+        "econ": 8.59,
+        "sr": 25.5
       },
       "fielding": {
         "catches": 3,
@@ -361,13 +361,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 13,
-        "balls": 288,
-        "runs": 400,
-        "wickets": 15,
-        "dots": 123,
-        "econ": 8.33,
-        "sr": 19.2
+        "matches": 14,
+        "balls": 306,
+        "runs": 426,
+        "wickets": 18,
+        "dots": 130,
+        "econ": 8.35,
+        "sr": 17
       },
       "fielding": {
         "catches": 4,
@@ -381,32 +381,32 @@
       "teamCode": "MI",
       "role": "bowler",
       "batting": {
-        "matches": 2,
-        "innings": 2,
-        "balls": 19,
-        "runs": 14,
-        "fours": 1,
+        "matches": 3,
+        "innings": 3,
+        "balls": 30,
+        "runs": 24,
+        "fours": 2,
         "sixes": 0,
         "outs": 2,
-        "sr": 73.68,
-        "avg": 7,
+        "sr": 80,
+        "avg": 12,
         "ducks": 0,
         "singleDigitOuts": 2,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
-        "matches": 6,
-        "balls": 108,
-        "runs": 213,
-        "wickets": 10,
-        "dots": 19,
-        "econ": 11.83,
-        "sr": 10.8
+        "matches": 7,
+        "balls": 132,
+        "runs": 248,
+        "wickets": 12,
+        "dots": 24,
+        "econ": 11.27,
+        "sr": 11
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "runOutAssists": 0,
-        "totalDismissals": 0
+        "totalDismissals": 1
       }
     },
     "heinrich-klaasen": {
@@ -415,15 +415,15 @@
       "teamCode": "SRH",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 356,
-        "runs": 555,
-        "fours": 44,
-        "sixes": 25,
-        "outs": 11,
-        "sr": 155.9,
-        "avg": 50.45,
+        "matches": 14,
+        "innings": 14,
+        "balls": 380,
+        "runs": 606,
+        "fours": 46,
+        "sixes": 30,
+        "outs": 12,
+        "sr": 159.47,
+        "avg": 50.5,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 2
@@ -497,13 +497,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 10,
-        "balls": 227,
-        "runs": 307,
-        "wickets": 11,
-        "dots": 76,
-        "econ": 8.11,
-        "sr": 20.6
+        "matches": 11,
+        "balls": 249,
+        "runs": 334,
+        "wickets": 14,
+        "dots": 83,
+        "econ": 8.05,
+        "sr": 17.8
       },
       "fielding": {
         "catches": 0,
@@ -531,18 +531,18 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 13,
-        "balls": 301,
-        "runs": 451,
-        "wickets": 21,
-        "dots": 116,
-        "econ": 8.99,
-        "sr": 14.3
+        "matches": 14,
+        "balls": 323,
+        "runs": 482,
+        "wickets": 24,
+        "dots": 123,
+        "econ": 8.95,
+        "sr": 13.5
       },
       "fielding": {
-        "catches": 3,
+        "catches": 4,
         "runOutAssists": 0,
-        "totalDismissals": 3
+        "totalDismissals": 4
       }
     },
     "quinton-de-kock": {
@@ -585,15 +585,15 @@
       "teamCode": "DC",
       "role": "batter",
       "batting": {
-        "matches": 9,
-        "innings": 9,
-        "balls": 119,
-        "runs": 185,
+        "matches": 10,
+        "innings": 10,
+        "balls": 138,
+        "runs": 213,
         "fours": 15,
-        "sixes": 11,
-        "outs": 6,
-        "sr": 155.46,
-        "avg": 30.83,
+        "sixes": 14,
+        "outs": 7,
+        "sr": 154.35,
+        "avg": 30.43,
         "ducks": 1,
         "singleDigitOuts": 1,
         "notOuts": 3
@@ -608,9 +608,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 4,
+        "catches": 6,
         "runOutAssists": 0,
-        "totalDismissals": 4
+        "totalDismissals": 6
       }
     },
     "jason-holder": {
@@ -633,18 +633,18 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 7,
-        "balls": 158,
-        "runs": 176,
+        "matches": 8,
+        "balls": 170,
+        "runs": 203,
         "wickets": 13,
-        "dots": 55,
-        "econ": 6.68,
-        "sr": 12.2
+        "dots": 57,
+        "econ": 7.16,
+        "sr": 13.1
       },
       "fielding": {
-        "catches": 6,
+        "catches": 8,
         "runOutAssists": 0,
-        "totalDismissals": 6
+        "totalDismissals": 8
       }
     },
     "shimron-hetmyer": {
@@ -687,18 +687,18 @@
       "teamCode": "KKR",
       "role": "batter",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 119,
-        "runs": 161,
-        "fours": 13,
-        "sixes": 9,
+        "matches": 7,
+        "innings": 7,
+        "balls": 140,
+        "runs": 190,
+        "fours": 16,
+        "sixes": 10,
         "outs": 4,
-        "sr": 135.29,
-        "avg": 40.25,
+        "sr": 135.71,
+        "avg": 47.5,
         "ducks": 0,
         "singleDigitOuts": 1,
-        "notOuts": 2
+        "notOuts": 3
       },
       "bowling": {
         "matches": 0,
@@ -710,9 +710,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 5,
+        "catches": 6,
         "runOutAssists": 0,
-        "totalDismissals": 5
+        "totalDismissals": 6
       }
     },
     "sherfane-rutherford": {
@@ -755,18 +755,18 @@
       "teamCode": "GT",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 275,
-        "runs": 412,
-        "fours": 41,
-        "sixes": 20,
+        "matches": 14,
+        "innings": 14,
+        "balls": 302,
+        "runs": 469,
+        "fours": 46,
+        "sixes": 24,
         "outs": 12,
-        "sr": 149.82,
-        "avg": 34.33,
+        "sr": 155.3,
+        "avg": 39.08,
         "ducks": 0,
         "singleDigitOuts": 2,
-        "notOuts": 1
+        "notOuts": 2
       },
       "bowling": {
         "matches": 0,
@@ -778,9 +778,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 23,
+        "catches": 25,
         "runOutAssists": 0,
-        "totalDismissals": 23
+        "totalDismissals": 25
       }
     },
     "dushmantha-chameera": {
@@ -823,27 +823,27 @@
       "teamCode": "RR",
       "role": "all-rounder",
       "batting": {
-        "matches": 2,
-        "innings": 2,
-        "balls": 19,
-        "runs": 26,
+        "matches": 3,
+        "innings": 3,
+        "balls": 34,
+        "runs": 55,
         "fours": 2,
-        "sixes": 1,
+        "sixes": 4,
         "outs": 2,
-        "sr": 136.84,
-        "avg": 13,
+        "sr": 161.76,
+        "avg": 27.5,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
-        "matches": 2,
-        "balls": 24,
-        "runs": 38,
+        "matches": 3,
+        "balls": 36,
+        "runs": 58,
         "wickets": 1,
-        "dots": 4,
-        "econ": 9.5,
-        "sr": 24
+        "dots": 7,
+        "econ": 9.67,
+        "sr": 36
       },
       "fielding": {
         "catches": 1,
@@ -871,13 +871,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 6,
-        "balls": 145,
-        "runs": 187,
+        "matches": 7,
+        "balls": 170,
+        "runs": 234,
         "wickets": 8,
-        "dots": 54,
-        "econ": 7.74,
-        "sr": 18.1
+        "dots": 59,
+        "econ": 8.26,
+        "sr": 21.3
       },
       "fielding": {
         "catches": 2,
@@ -905,13 +905,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 10,
-        "balls": 237,
-        "runs": 355,
+        "matches": 11,
+        "balls": 261,
+        "runs": 406,
         "wickets": 12,
-        "dots": 89,
-        "econ": 8.99,
-        "sr": 19.8
+        "dots": 94,
+        "econ": 9.33,
+        "sr": 21.8
       },
       "fielding": {
         "catches": 5,
@@ -1211,13 +1211,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 11,
-        "balls": 222,
-        "runs": 347,
-        "wickets": 11,
-        "dots": 40,
-        "econ": 9.38,
-        "sr": 20.2
+        "matches": 12,
+        "balls": 246,
+        "runs": 372,
+        "wickets": 13,
+        "dots": 45,
+        "econ": 9.07,
+        "sr": 18.9
       },
       "fielding": {
         "catches": 3,
@@ -1231,15 +1231,15 @@
       "teamCode": "KKR",
       "role": "batter",
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "balls": 33,
-        "runs": 45,
-        "fours": 6,
-        "sixes": 0,
-        "outs": 1,
-        "sr": 136.36,
-        "avg": 45,
+        "matches": 2,
+        "innings": 2,
+        "balls": 49,
+        "runs": 70,
+        "fours": 8,
+        "sixes": 2,
+        "outs": 2,
+        "sr": 142.86,
+        "avg": 35,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 0
@@ -1265,16 +1265,16 @@
       "teamCode": "MI",
       "role": "batter",
       "batting": {
-        "matches": 8,
-        "innings": 8,
-        "balls": 175,
+        "matches": 9,
+        "innings": 9,
+        "balls": 179,
         "runs": 284,
         "fours": 21,
         "sixes": 21,
-        "outs": 7,
-        "sr": 162.29,
-        "avg": 40.57,
-        "ducks": 0,
+        "outs": 8,
+        "sr": 158.66,
+        "avg": 35.5,
+        "ducks": 1,
         "singleDigitOuts": 1,
         "notOuts": 1
       },
@@ -1299,27 +1299,27 @@
       "teamCode": "MI",
       "role": "bowler",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 14,
-        "runs": 17,
+        "matches": 4,
+        "innings": 4,
+        "balls": 19,
+        "runs": 25,
         "fours": 3,
-        "sixes": 0,
-        "outs": 1,
-        "sr": 121.43,
-        "avg": 17,
+        "sixes": 1,
+        "outs": 2,
+        "sr": 131.58,
+        "avg": 12.5,
         "ducks": 0,
-        "singleDigitOuts": 0,
+        "singleDigitOuts": 1,
         "notOuts": 2
       },
       "bowling": {
-        "matches": 7,
-        "balls": 129,
-        "runs": 213,
-        "wickets": 6,
-        "dots": 42,
-        "econ": 9.91,
-        "sr": 21.5
+        "matches": 8,
+        "balls": 153,
+        "runs": 256,
+        "wickets": 8,
+        "dots": 50,
+        "econ": 10.04,
+        "sr": 19.1
       },
       "fielding": {
         "catches": 1,
@@ -1347,13 +1347,13 @@
         "notOuts": 4
       },
       "bowling": {
-        "matches": 13,
-        "balls": 306,
-        "runs": 379,
+        "matches": 14,
+        "balls": 331,
+        "runs": 429,
         "wickets": 25,
-        "dots": 98,
-        "econ": 7.43,
-        "sr": 12.2
+        "dots": 103,
+        "econ": 7.78,
+        "sr": 13.2
       },
       "fielding": {
         "catches": 1,
@@ -1367,15 +1367,15 @@
       "teamCode": "MI",
       "role": "all-rounder",
       "batting": {
-        "matches": 9,
-        "innings": 9,
-        "balls": 134,
-        "runs": 172,
-        "fours": 18,
-        "sixes": 5,
-        "outs": 8,
-        "sr": 128.36,
-        "avg": 21.5,
+        "matches": 10,
+        "innings": 10,
+        "balls": 149,
+        "runs": 206,
+        "fours": 21,
+        "sixes": 7,
+        "outs": 9,
+        "sr": 138.26,
+        "avg": 22.89,
         "ducks": 0,
         "singleDigitOuts": 2,
         "notOuts": 1
@@ -1449,13 +1449,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 13,
-        "balls": 275,
-        "runs": 385,
-        "wickets": 16,
-        "dots": 81,
+        "matches": 14,
+        "balls": 287,
+        "runs": 402,
+        "wickets": 19,
+        "dots": 84,
         "econ": 8.4,
-        "sr": 17.2
+        "sr": 15.1
       },
       "fielding": {
         "catches": 4,
@@ -1517,13 +1517,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 2,
-        "balls": 48,
-        "runs": 72,
-        "wickets": 2,
-        "dots": 14,
-        "econ": 9,
-        "sr": 24
+        "matches": 3,
+        "balls": 66,
+        "runs": 100,
+        "wickets": 3,
+        "dots": 20,
+        "econ": 9.09,
+        "sr": 22
       },
       "fielding": {
         "catches": 0,
@@ -1537,15 +1537,15 @@
       "teamCode": "CSK",
       "role": "all-rounder",
       "batting": {
-        "matches": 2,
-        "innings": 2,
-        "balls": 36,
-        "runs": 34,
-        "fours": 3,
-        "sixes": 0,
-        "outs": 2,
-        "sr": 94.44,
-        "avg": 17,
+        "matches": 3,
+        "innings": 3,
+        "balls": 50,
+        "runs": 58,
+        "fours": 6,
+        "sixes": 1,
+        "outs": 3,
+        "sr": 116,
+        "avg": 19.33,
         "ducks": 0,
         "singleDigitOuts": 1,
         "notOuts": 0
@@ -1560,9 +1560,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 1,
+        "catches": 2,
         "runOutAssists": 0,
-        "totalDismissals": 1
+        "totalDismissals": 2
       }
     },
     "jofra-archer": {
@@ -1571,27 +1571,27 @@
       "teamCode": "RR",
       "role": "bowler",
       "batting": {
-        "matches": 7,
-        "innings": 7,
-        "balls": 23,
-        "runs": 21,
+        "matches": 8,
+        "innings": 8,
+        "balls": 37,
+        "runs": 49,
         "fours": 2,
-        "sixes": 0,
-        "outs": 3,
-        "sr": 91.3,
-        "avg": 7,
+        "sixes": 3,
+        "outs": 4,
+        "sr": 132.43,
+        "avg": 12.25,
         "ducks": 0,
         "singleDigitOuts": 3,
         "notOuts": 4
       },
       "bowling": {
-        "matches": 13,
-        "balls": 288,
-        "runs": 411,
-        "wickets": 22,
-        "dots": 110,
-        "econ": 8.56,
-        "sr": 13.1
+        "matches": 14,
+        "balls": 312,
+        "runs": 428,
+        "wickets": 25,
+        "dots": 120,
+        "econ": 8.23,
+        "sr": 12.5
       },
       "fielding": {
         "catches": 6,
@@ -1605,18 +1605,18 @@
       "teamCode": "RCB",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 130,
-        "runs": 263,
-        "fours": 18,
-        "sixes": 21,
+        "matches": 13,
+        "innings": 13,
+        "balls": 137,
+        "runs": 278,
+        "fours": 19,
+        "sixes": 22,
         "outs": 7,
-        "sr": 202.31,
-        "avg": 37.57,
+        "sr": 202.92,
+        "avg": 39.71,
         "ducks": 1,
         "singleDigitOuts": 2,
-        "notOuts": 5
+        "notOuts": 6
       },
       "bowling": {
         "matches": 1,
@@ -1639,15 +1639,15 @@
       "teamCode": "LSG",
       "role": "wk-batter",
       "batting": {
-        "matches": 4,
-        "innings": 4,
-        "balls": 98,
-        "runs": 190,
-        "fours": 22,
-        "sixes": 10,
-        "outs": 4,
-        "sr": 193.88,
-        "avg": 47.5,
+        "matches": 5,
+        "innings": 5,
+        "balls": 142,
+        "runs": 262,
+        "fours": 31,
+        "sixes": 12,
+        "outs": 5,
+        "sr": 184.51,
+        "avg": 52.4,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 0
@@ -1673,27 +1673,27 @@
       "teamCode": "KKR",
       "role": "all-rounder",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 216,
-        "runs": 317,
+        "matches": 13,
+        "innings": 13,
+        "balls": 219,
+        "runs": 319,
         "fours": 21,
         "sixes": 17,
-        "outs": 7,
-        "sr": 146.76,
-        "avg": 45.29,
+        "outs": 8,
+        "sr": 145.66,
+        "avg": 39.88,
         "ducks": 1,
-        "singleDigitOuts": 1,
+        "singleDigitOuts": 2,
         "notOuts": 5
       },
       "bowling": {
-        "matches": 9,
-        "balls": 121,
-        "runs": 205,
+        "matches": 10,
+        "balls": 133,
+        "runs": 226,
         "wickets": 7,
-        "dots": 37,
-        "econ": 10.17,
-        "sr": 17.3
+        "dots": 40,
+        "econ": 10.2,
+        "sr": 19
       },
       "fielding": {
         "catches": 8,
@@ -1775,15 +1775,15 @@
       "teamCode": "MI",
       "role": "wk-batter",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 233,
-        "runs": 436,
-        "fours": 30,
-        "sixes": 37,
-        "outs": 10,
-        "sr": 187.12,
-        "avg": 43.6,
+        "matches": 12,
+        "innings": 12,
+        "balls": 240,
+        "runs": 448,
+        "fours": 31,
+        "sixes": 38,
+        "outs": 11,
+        "sr": 186.67,
+        "avg": 40.73,
         "ducks": 0,
         "singleDigitOuts": 5,
         "notOuts": 1
@@ -1809,17 +1809,17 @@
       "teamCode": "LSG",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 177,
-        "runs": 234,
+        "matches": 14,
+        "innings": 14,
+        "balls": 184,
+        "runs": 236,
         "fours": 11,
         "sixes": 19,
-        "outs": 14,
-        "sr": 132.2,
-        "avg": 16.71,
+        "outs": 15,
+        "sr": 128.26,
+        "avg": 15.73,
         "ducks": 0,
-        "singleDigitOuts": 6,
+        "singleDigitOuts": 7,
         "notOuts": 0
       },
       "bowling": {
@@ -1857,13 +1857,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 12,
-        "balls": 285,
-        "runs": 302,
-        "wickets": 16,
-        "dots": 115,
-        "econ": 6.36,
-        "sr": 17.8
+        "matches": 13,
+        "balls": 309,
+        "runs": 340,
+        "wickets": 17,
+        "dots": 122,
+        "econ": 6.6,
+        "sr": 18.2
       },
       "fielding": {
         "catches": 3,
@@ -1911,32 +1911,32 @@
       "teamCode": "DC",
       "role": "all-rounder",
       "batting": {
-        "matches": 10,
-        "innings": 10,
-        "balls": 110,
-        "runs": 138,
-        "fours": 12,
-        "sixes": 4,
-        "outs": 9,
-        "sr": 125.45,
-        "avg": 15.33,
+        "matches": 11,
+        "innings": 11,
+        "balls": 135,
+        "runs": 177,
+        "fours": 15,
+        "sixes": 6,
+        "outs": 10,
+        "sr": 131.11,
+        "avg": 17.7,
         "ducks": 2,
         "singleDigitOuts": 4,
         "notOuts": 2
       },
       "bowling": {
-        "matches": 12,
-        "balls": 240,
-        "runs": 314,
-        "wickets": 10,
-        "dots": 64,
-        "econ": 7.85,
+        "matches": 13,
+        "balls": 264,
+        "runs": 352,
+        "wickets": 11,
+        "dots": 71,
+        "econ": 8,
         "sr": 24
       },
       "fielding": {
-        "catches": 5,
+        "catches": 7,
         "runOutAssists": 0,
-        "totalDismissals": 5
+        "totalDismissals": 7
       }
     },
     "spencer-johnson": {
@@ -1945,27 +1945,27 @@
       "teamCode": "CSK",
       "role": "bowler",
       "batting": {
-        "matches": 0,
-        "innings": 0,
-        "balls": 0,
+        "matches": 1,
+        "innings": 1,
+        "balls": 1,
         "runs": 0,
         "fours": 0,
         "sixes": 0,
-        "outs": 0,
-        "sr": null,
-        "avg": null,
-        "ducks": 0,
+        "outs": 1,
+        "sr": 0,
+        "avg": 0,
+        "ducks": 1,
         "singleDigitOuts": 0,
         "notOuts": 0
       },
       "bowling": {
-        "matches": 2,
-        "balls": 42,
-        "runs": 63,
-        "wickets": 1,
-        "dots": 19,
-        "econ": 9,
-        "sr": 42
+        "matches": 3,
+        "balls": 66,
+        "runs": 104,
+        "wickets": 2,
+        "dots": 26,
+        "econ": 9.45,
+        "sr": 33
       },
       "fielding": {
         "catches": 1,
@@ -2047,17 +2047,17 @@
       "teamCode": "GT",
       "role": "all-rounder",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 193,
-        "runs": 292,
+        "matches": 13,
+        "innings": 13,
+        "balls": 196,
+        "runs": 299,
         "fours": 31,
-        "sixes": 10,
-        "outs": 7,
-        "sr": 151.3,
-        "avg": 41.71,
+        "sixes": 11,
+        "outs": 8,
+        "sr": 152.55,
+        "avg": 37.38,
         "ducks": 0,
-        "singleDigitOuts": 1,
+        "singleDigitOuts": 2,
         "notOuts": 5
       },
       "bowling": {
@@ -2115,27 +2115,27 @@
       "teamCode": "RCB",
       "role": "all-rounder",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 95,
-        "runs": 142,
-        "fours": 10,
+        "matches": 7,
+        "innings": 7,
+        "balls": 127,
+        "runs": 185,
+        "fours": 15,
         "sixes": 9,
         "outs": 4,
-        "sr": 149.47,
-        "avg": 35.5,
+        "sr": 145.67,
+        "avg": 46.25,
         "ducks": 0,
         "singleDigitOuts": 2,
-        "notOuts": 2
+        "notOuts": 3
       },
       "bowling": {
-        "matches": 12,
-        "balls": 246,
-        "runs": 354,
-        "wickets": 10,
-        "dots": 54,
-        "econ": 8.63,
-        "sr": 24.6
+        "matches": 13,
+        "balls": 258,
+        "runs": 377,
+        "wickets": 11,
+        "dots": 58,
+        "econ": 8.77,
+        "sr": 23.5
       },
       "fielding": {
         "catches": 2,
@@ -2163,12 +2163,12 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 4,
-        "balls": 58,
-        "runs": 109,
+        "matches": 5,
+        "balls": 82,
+        "runs": 146,
         "wickets": 0,
-        "dots": 13,
-        "econ": 11.28,
+        "dots": 16,
+        "econ": 10.68,
         "sr": null
       },
       "fielding": {
@@ -2251,18 +2251,18 @@
       "teamCode": "PBKS",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 243,
-        "runs": 400,
-        "fours": 28,
-        "sixes": 25,
+        "matches": 13,
+        "innings": 13,
+        "balls": 294,
+        "runs": 501,
+        "fours": 39,
+        "sixes": 30,
         "outs": 9,
-        "sr": 164.61,
-        "avg": 44.44,
+        "sr": 170.41,
+        "avg": 55.67,
         "ducks": 0,
         "singleDigitOuts": 4,
-        "notOuts": 3
+        "notOuts": 4
       },
       "bowling": {
         "matches": 0,
@@ -2274,9 +2274,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 7,
+        "catches": 8,
         "runOutAssists": 0,
-        "totalDismissals": 7
+        "totalDismissals": 8
       }
     },
     "nitish-rana": {
@@ -2319,15 +2319,15 @@
       "teamCode": "MI",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 141,
-        "runs": 210,
-        "fours": 25,
-        "sixes": 6,
-        "outs": 12,
-        "sr": 148.94,
-        "avg": 17.5,
+        "matches": 13,
+        "innings": 13,
+        "balls": 183,
+        "runs": 270,
+        "fours": 28,
+        "sixes": 10,
+        "outs": 13,
+        "sr": 147.54,
+        "avg": 20.77,
         "ducks": 2,
         "singleDigitOuts": 2,
         "notOuts": 0
@@ -2353,16 +2353,16 @@
       "teamCode": "CSK",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 284,
+        "matches": 14,
+        "innings": 14,
+        "balls": 285,
         "runs": 473,
         "fours": 52,
         "sixes": 24,
-        "outs": 10,
-        "sr": 166.55,
-        "avg": 47.3,
-        "ducks": 0,
+        "outs": 11,
+        "sr": 165.96,
+        "avg": 43,
+        "ducks": 1,
         "singleDigitOuts": 4,
         "notOuts": 3
       },
@@ -2421,16 +2421,16 @@
       "teamCode": "GT",
       "role": "all-rounder",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 73,
+        "matches": 12,
+        "innings": 12,
+        "balls": 74,
         "runs": 97,
         "fours": 9,
         "sixes": 3,
-        "outs": 4,
-        "sr": 132.88,
-        "avg": 24.25,
-        "ducks": 0,
+        "outs": 5,
+        "sr": 131.08,
+        "avg": 19.4,
+        "ducks": 1,
         "singleDigitOuts": 3,
         "notOuts": 7
       },
@@ -2523,15 +2523,15 @@
       "teamCode": "SRH",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 273,
-        "runs": 490,
-        "fours": 49,
-        "sixes": 26,
-        "outs": 12,
-        "sr": 179.49,
-        "avg": 40.83,
+        "matches": 14,
+        "innings": 14,
+        "balls": 319,
+        "runs": 569,
+        "fours": 57,
+        "sixes": 29,
+        "outs": 13,
+        "sr": 178.37,
+        "avg": 43.77,
         "ducks": 2,
         "singleDigitOuts": 1,
         "notOuts": 1
@@ -2673,13 +2673,13 @@
         "notOuts": 3
       },
       "bowling": {
-        "matches": 3,
-        "balls": 42,
-        "runs": 58,
-        "wickets": 3,
-        "dots": 9,
-        "econ": 8.29,
-        "sr": 14
+        "matches": 4,
+        "balls": 60,
+        "runs": 86,
+        "wickets": 4,
+        "dots": 13,
+        "econ": 8.6,
+        "sr": 15
       },
       "fielding": {
         "catches": 1,
@@ -2693,16 +2693,16 @@
       "teamCode": "KKR",
       "role": "batter",
       "batting": {
-        "matches": 10,
-        "innings": 10,
-        "balls": 198,
+        "matches": 11,
+        "innings": 11,
+        "balls": 199,
         "runs": 301,
         "fours": 28,
         "sixes": 11,
-        "outs": 6,
-        "sr": 152.02,
-        "avg": 50.17,
-        "ducks": 0,
+        "outs": 7,
+        "sr": 151.26,
+        "avg": 43,
+        "ducks": 1,
         "singleDigitOuts": 3,
         "notOuts": 5
       },
@@ -2716,9 +2716,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 11,
+        "catches": 12,
         "runOutAssists": 0,
-        "totalDismissals": 11
+        "totalDismissals": 12
       }
     },
     "thangarasu-natarajan": {
@@ -2795,15 +2795,15 @@
       "teamCode": "SRH",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 251,
-        "runs": 507,
-        "fours": 46,
-        "sixes": 38,
-        "outs": 13,
-        "sr": 201.99,
-        "avg": 39,
+        "matches": 14,
+        "innings": 14,
+        "balls": 274,
+        "runs": 565,
+        "fours": 50,
+        "sixes": 43,
+        "outs": 14,
+        "sr": 206.2,
+        "avg": 40.36,
         "ducks": 2,
         "singleDigitOuts": 2,
         "notOuts": 0
@@ -2818,9 +2818,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 5,
+        "catches": 7,
         "runOutAssists": 0,
-        "totalDismissals": 5
+        "totalDismissals": 7
       }
     },
     "mayank-markande": {
@@ -2863,27 +2863,27 @@
       "teamCode": "KKR",
       "role": "bowler",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 31,
-        "runs": 43,
-        "fours": 2,
+        "matches": 7,
+        "innings": 7,
+        "balls": 40,
+        "runs": 54,
+        "fours": 3,
         "sixes": 2,
-        "outs": 3,
-        "sr": 138.71,
-        "avg": 14.33,
+        "outs": 5,
+        "sr": 135,
+        "avg": 10.8,
         "ducks": 2,
         "singleDigitOuts": 1,
         "notOuts": 3
       },
       "bowling": {
-        "matches": 11,
-        "balls": 153,
-        "runs": 221,
-        "wickets": 8,
-        "dots": 43,
-        "econ": 8.67,
-        "sr": 19.1
+        "matches": 12,
+        "balls": 165,
+        "runs": 242,
+        "wickets": 9,
+        "dots": 45,
+        "econ": 8.8,
+        "sr": 18.3
       },
       "fielding": {
         "catches": 10,
@@ -2911,13 +2911,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 6,
-        "balls": 144,
-        "runs": 177,
+        "matches": 7,
+        "balls": 168,
+        "runs": 225,
         "wickets": 11,
-        "dots": 55,
-        "econ": 7.38,
-        "sr": 13.1
+        "dots": 58,
+        "econ": 8.04,
+        "sr": 15.3
       },
       "fielding": {
         "catches": 2,
@@ -2931,15 +2931,15 @@
       "teamCode": "GT",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 345,
-        "runs": 553,
-        "fours": 50,
-        "sixes": 27,
-        "outs": 12,
-        "sr": 160.29,
-        "avg": 46.08,
+        "matches": 13,
+        "innings": 13,
+        "balls": 382,
+        "runs": 617,
+        "fours": 57,
+        "sixes": 30,
+        "outs": 13,
+        "sr": 161.52,
+        "avg": 47.46,
         "ducks": 0,
         "singleDigitOuts": 2,
         "notOuts": 0
@@ -2954,9 +2954,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 9,
+        "catches": 11,
         "runOutAssists": 1,
-        "totalDismissals": 10
+        "totalDismissals": 12
       }
     },
     "prasidh-krishna": {
@@ -2979,18 +2979,18 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 8,
-        "balls": 174,
-        "runs": 286,
+        "matches": 9,
+        "balls": 180,
+        "runs": 299,
         "wickets": 16,
-        "dots": 47,
-        "econ": 9.86,
-        "sr": 10.9
+        "dots": 48,
+        "econ": 9.97,
+        "sr": 11.3
       },
       "fielding": {
-        "catches": 1,
+        "catches": 3,
         "runOutAssists": 1,
-        "totalDismissals": 2
+        "totalDismissals": 4
       }
     },
     "philip-salt": {
@@ -3067,27 +3067,27 @@
       "teamCode": "MI",
       "role": "batter",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 58,
-        "runs": 106,
-        "fours": 9,
-        "sixes": 7,
-        "outs": 4,
-        "sr": 182.76,
-        "avg": 26.5,
+        "matches": 7,
+        "innings": 7,
+        "balls": 75,
+        "runs": 140,
+        "fours": 12,
+        "sixes": 9,
+        "outs": 5,
+        "sr": 186.67,
+        "avg": 28,
         "ducks": 0,
         "singleDigitOuts": 1,
         "notOuts": 2
       },
       "bowling": {
-        "matches": 5,
-        "balls": 41,
-        "runs": 79,
-        "wickets": 1,
-        "dots": 12,
-        "econ": 11.56,
-        "sr": 41
+        "matches": 6,
+        "balls": 53,
+        "runs": 89,
+        "wickets": 2,
+        "dots": 18,
+        "econ": 10.08,
+        "sr": 26.5
       },
       "fielding": {
         "catches": 2,
@@ -3135,32 +3135,32 @@
       "teamCode": "MI",
       "role": "all-rounder",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 27,
-        "runs": 48,
+        "matches": 4,
+        "innings": 4,
+        "balls": 31,
+        "runs": 50,
         "fours": 5,
         "sixes": 2,
-        "outs": 0,
-        "sr": 177.78,
-        "avg": null,
+        "outs": 1,
+        "sr": 161.29,
+        "avg": 50,
         "ducks": 0,
-        "singleDigitOuts": 0,
+        "singleDigitOuts": 1,
         "notOuts": 3
       },
       "bowling": {
-        "matches": 5,
-        "balls": 97,
-        "runs": 154,
-        "wickets": 11,
-        "dots": 29,
-        "econ": 9.53,
-        "sr": 8.8
+        "matches": 6,
+        "balls": 121,
+        "runs": 191,
+        "wickets": 13,
+        "dots": 33,
+        "econ": 9.47,
+        "sr": 9.3
       },
       "fielding": {
-        "catches": 2,
-        "runOutAssists": 0,
-        "totalDismissals": 2
+        "catches": 4,
+        "runOutAssists": 1,
+        "totalDismissals": 5
       }
     },
     "nandre-burger": {
@@ -3169,32 +3169,32 @@
       "teamCode": "RR",
       "role": "bowler",
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "balls": 5,
-        "runs": 3,
+        "matches": 2,
+        "innings": 2,
+        "balls": 8,
+        "runs": 13,
         "fours": 0,
-        "sixes": 0,
+        "sixes": 1,
         "outs": 0,
-        "sr": 60,
+        "sr": 162.5,
         "avg": null,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 1
+        "notOuts": 2
       },
       "bowling": {
-        "matches": 10,
-        "balls": 195,
-        "runs": 318,
-        "wickets": 9,
-        "dots": 76,
-        "econ": 9.78,
-        "sr": 21.7
+        "matches": 11,
+        "balls": 219,
+        "runs": 359,
+        "wickets": 11,
+        "dots": 82,
+        "econ": 9.84,
+        "sr": 19.9
       },
       "fielding": {
-        "catches": 1,
+        "catches": 3,
         "runOutAssists": 0,
-        "totalDismissals": 1
+        "totalDismissals": 3
       }
     },
     "kyle-jamieson": {
@@ -3271,15 +3271,15 @@
       "teamCode": "CSK",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 266,
-        "runs": 319,
-        "fours": 27,
-        "sixes": 10,
-        "outs": 11,
-        "sr": 119.92,
-        "avg": 29,
+        "matches": 14,
+        "innings": 14,
+        "balls": 273,
+        "runs": 335,
+        "fours": 28,
+        "sixes": 12,
+        "outs": 12,
+        "sr": 122.71,
+        "avg": 27.92,
         "ducks": 0,
         "singleDigitOuts": 4,
         "notOuts": 2
@@ -3294,9 +3294,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 6,
+        "catches": 7,
         "runOutAssists": 1,
-        "totalDismissals": 7
+        "totalDismissals": 8
       }
     },
     "harpreet-brar": {
@@ -3339,27 +3339,27 @@
       "teamCode": "KKR",
       "role": "bowler",
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "balls": 1,
-        "runs": 0,
-        "fours": 0,
+        "matches": 2,
+        "innings": 2,
+        "balls": 6,
+        "runs": 5,
+        "fours": 1,
         "sixes": 0,
-        "outs": 1,
-        "sr": 0,
-        "avg": 0,
+        "outs": 2,
+        "sr": 83.33,
+        "avg": 2.5,
         "ducks": 1,
-        "singleDigitOuts": 0,
+        "singleDigitOuts": 1,
         "notOuts": 0
       },
       "bowling": {
-        "matches": 10,
-        "balls": 222,
-        "runs": 318,
-        "wickets": 11,
-        "dots": 62,
-        "econ": 8.59,
-        "sr": 20.2
+        "matches": 11,
+        "balls": 246,
+        "runs": 351,
+        "wickets": 12,
+        "dots": 69,
+        "econ": 8.56,
+        "sr": 20.5
       },
       "fielding": {
         "catches": 2,
@@ -3387,13 +3387,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 12,
-        "balls": 291,
-        "runs": 450,
+        "matches": 13,
+        "balls": 309,
+        "runs": 498,
         "wickets": 14,
-        "dots": 88,
-        "econ": 9.28,
-        "sr": 20.8
+        "dots": 93,
+        "econ": 9.67,
+        "sr": 22.1
       },
       "fielding": {
         "catches": 4,
@@ -3421,13 +3421,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 9,
-        "balls": 191,
-        "runs": 290,
-        "wickets": 12,
-        "dots": 48,
-        "econ": 9.11,
-        "sr": 15.9
+        "matches": 10,
+        "balls": 215,
+        "runs": 339,
+        "wickets": 14,
+        "dots": 52,
+        "econ": 9.46,
+        "sr": 15.4
       },
       "fielding": {
         "catches": 1,
@@ -3441,15 +3441,15 @@
       "teamCode": "RR",
       "role": "all-rounder",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 169,
-        "runs": 259,
-        "fours": 19,
-        "sixes": 17,
-        "outs": 10,
-        "sr": 153.25,
-        "avg": 25.9,
+        "matches": 12,
+        "innings": 12,
+        "balls": 177,
+        "runs": 273,
+        "fours": 21,
+        "sixes": 18,
+        "outs": 11,
+        "sr": 154.24,
+        "avg": 24.82,
         "ducks": 0,
         "singleDigitOuts": 4,
         "notOuts": 1
@@ -3509,15 +3509,15 @@
       "teamCode": "RCB",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 239,
-        "runs": 414,
-        "fours": 42,
-        "sixes": 23,
-        "outs": 11,
-        "sr": 173.22,
-        "avg": 37.64,
+        "matches": 13,
+        "innings": 13,
+        "balls": 253,
+        "runs": 435,
+        "fours": 44,
+        "sixes": 24,
+        "outs": 12,
+        "sr": 171.94,
+        "avg": 36.25,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 1
@@ -3532,9 +3532,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 12,
+        "catches": 13,
         "runOutAssists": 0,
-        "totalDismissals": 12
+        "totalDismissals": 13
       }
     },
     "shivam-dube": {
@@ -3543,32 +3543,32 @@
       "teamCode": "CSK",
       "role": "all-rounder",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 153,
-        "runs": 223,
-        "fours": 20,
-        "sixes": 11,
-        "outs": 6,
-        "sr": 145.75,
-        "avg": 37.17,
+        "matches": 12,
+        "innings": 12,
+        "balls": 170,
+        "runs": 270,
+        "fours": 24,
+        "sixes": 15,
+        "outs": 7,
+        "sr": 158.82,
+        "avg": 38.57,
         "ducks": 0,
         "singleDigitOuts": 2,
         "notOuts": 5
       },
       "bowling": {
-        "matches": 3,
-        "balls": 24,
-        "runs": 47,
+        "matches": 4,
+        "balls": 30,
+        "runs": 62,
         "wickets": 1,
-        "dots": 4,
-        "econ": 11.75,
-        "sr": 24
+        "dots": 5,
+        "econ": 12.4,
+        "sr": 30
       },
       "fielding": {
-        "catches": 3,
+        "catches": 4,
         "runOutAssists": 0,
-        "totalDismissals": 3
+        "totalDismissals": 4
       }
     },
     "romario-shepherd": {
@@ -3591,13 +3591,13 @@
         "notOuts": 3
       },
       "bowling": {
-        "matches": 11,
-        "balls": 126,
-        "runs": 240,
+        "matches": 12,
+        "balls": 144,
+        "runs": 275,
         "wickets": 7,
-        "dots": 26,
-        "econ": 11.43,
-        "sr": 18
+        "dots": 28,
+        "econ": 11.46,
+        "sr": 20.6
       },
       "fielding": {
         "catches": 2,
@@ -3645,15 +3645,15 @@
       "teamCode": "RR",
       "role": "wk-batter",
       "batting": {
-        "matches": 10,
-        "innings": 10,
-        "balls": 142,
-        "runs": 249,
+        "matches": 11,
+        "innings": 11,
+        "balls": 157,
+        "runs": 267,
         "fours": 22,
-        "sixes": 17,
-        "outs": 7,
-        "sr": 175.35,
-        "avg": 35.57,
+        "sixes": 19,
+        "outs": 8,
+        "sr": 170.06,
+        "avg": 33.38,
         "ducks": 1,
         "singleDigitOuts": 3,
         "notOuts": 3
@@ -3668,9 +3668,9 @@
         "sr": 18
       },
       "fielding": {
-        "catches": 10,
+        "catches": 11,
         "runOutAssists": 0,
-        "totalDismissals": 10
+        "totalDismissals": 11
       }
     },
     "marco-jansen": {
@@ -3693,18 +3693,18 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 11,
-        "balls": 260,
-        "runs": 437,
-        "wickets": 7,
-        "dots": 68,
-        "econ": 10.08,
-        "sr": 37.1
+        "matches": 12,
+        "balls": 284,
+        "runs": 469,
+        "wickets": 9,
+        "dots": 77,
+        "econ": 9.91,
+        "sr": 31.6
       },
       "fielding": {
-        "catches": 6,
+        "catches": 7,
         "runOutAssists": 0,
-        "totalDismissals": 6
+        "totalDismissals": 7
       }
     },
     "prabhsimran-singh": {
@@ -3713,15 +3713,15 @@
       "teamCode": "PBKS",
       "role": "wk-batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 261,
-        "runs": 431,
-        "fours": 47,
-        "sixes": 20,
-        "outs": 11,
-        "sr": 165.13,
-        "avg": 39.18,
+        "matches": 13,
+        "innings": 13,
+        "balls": 300,
+        "runs": 500,
+        "fours": 54,
+        "sixes": 22,
+        "outs": 12,
+        "sr": 166.67,
+        "avg": 41.67,
         "ducks": 1,
         "singleDigitOuts": 2,
         "notOuts": 1
@@ -3736,9 +3736,43 @@
         "sr": null
       },
       "fielding": {
-        "catches": 4,
+        "catches": 6,
         "runOutAssists": 1,
-        "totalDismissals": 5
+        "totalDismissals": 7
+      }
+    },
+    "arjun-tendulkar": {
+      "slug": "arjun-tendulkar",
+      "fullName": "Arjun Tendulkar",
+      "teamCode": "LSG",
+      "role": "bowler",
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "balls": 5,
+        "runs": 5,
+        "fours": 0,
+        "sixes": 0,
+        "outs": 0,
+        "sr": 100,
+        "avg": null,
+        "ducks": 0,
+        "singleDigitOuts": 0,
+        "notOuts": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "balls": 24,
+        "runs": 36,
+        "wickets": 1,
+        "dots": 5,
+        "econ": 9,
+        "sr": 24
+      },
+      "fielding": {
+        "catches": 1,
+        "runOutAssists": 0,
+        "totalDismissals": 1
       }
     },
     "suryansh-shedge": {
@@ -3747,18 +3781,18 @@
       "teamCode": "PBKS",
       "role": "batter",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 83,
-        "runs": 149,
-        "fours": 8,
+        "matches": 7,
+        "innings": 7,
+        "balls": 90,
+        "runs": 158,
+        "fours": 9,
         "sixes": 12,
         "outs": 4,
-        "sr": 179.52,
-        "avg": 37.25,
+        "sr": 175.56,
+        "avg": 39.5,
         "ducks": 0,
         "singleDigitOuts": 1,
-        "notOuts": 2
+        "notOuts": 3
       },
       "bowling": {
         "matches": 0,
@@ -3815,15 +3849,15 @@
       "teamCode": "RR",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 232,
-        "runs": 370,
-        "fours": 47,
-        "sixes": 15,
-        "outs": 11,
-        "sr": 159.48,
-        "avg": 33.64,
+        "matches": 14,
+        "innings": 14,
+        "balls": 249,
+        "runs": 397,
+        "fours": 48,
+        "sixes": 18,
+        "outs": 12,
+        "sr": 159.44,
+        "avg": 33.08,
         "ducks": 0,
         "singleDigitOuts": 3,
         "notOuts": 2
@@ -4019,17 +4053,17 @@
       "teamCode": "MI",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 240,
-        "runs": 358,
+        "matches": 14,
+        "innings": 14,
+        "balls": 247,
+        "runs": 361,
         "fours": 30,
         "sixes": 17,
-        "outs": 11,
-        "sr": 149.17,
-        "avg": 32.55,
+        "outs": 12,
+        "sr": 146.15,
+        "avg": 30.08,
         "ducks": 1,
-        "singleDigitOuts": 4,
+        "singleDigitOuts": 5,
         "notOuts": 2
       },
       "bowling": {
@@ -4042,9 +4076,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 10,
+        "catches": 12,
         "runOutAssists": 0,
-        "totalDismissals": 10
+        "totalDismissals": 12
       }
     },
     "nehal-wadhera": {
@@ -4087,15 +4121,15 @@
       "teamCode": "RR",
       "role": "wk-batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 280,
-        "runs": 420,
-        "fours": 38,
-        "sixes": 19,
-        "outs": 12,
-        "sr": 150,
-        "avg": 35,
+        "matches": 14,
+        "innings": 14,
+        "balls": 306,
+        "runs": 458,
+        "fours": 41,
+        "sixes": 21,
+        "outs": 14,
+        "sr": 149.67,
+        "avg": 32.71,
         "ducks": 2,
         "singleDigitOuts": 2,
         "notOuts": 1
@@ -4110,9 +4144,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 17,
+        "catches": 19,
         "runOutAssists": 2,
-        "totalDismissals": 19
+        "totalDismissals": 21
       }
     },
     "akash-maharaj-singh": {
@@ -4223,27 +4257,27 @@
       "teamCode": "CSK",
       "role": "bowler",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 18,
-        "runs": 10,
+        "matches": 4,
+        "innings": 4,
+        "balls": 23,
+        "runs": 11,
         "fours": 0,
         "sixes": 1,
-        "outs": 2,
-        "sr": 55.56,
-        "avg": 5,
+        "outs": 3,
+        "sr": 47.83,
+        "avg": 3.67,
         "ducks": 0,
-        "singleDigitOuts": 2,
+        "singleDigitOuts": 3,
         "notOuts": 1
       },
       "bowling": {
-        "matches": 13,
-        "balls": 291,
-        "runs": 379,
+        "matches": 14,
+        "balls": 310,
+        "runs": 420,
         "wickets": 14,
-        "dots": 78,
-        "econ": 7.81,
-        "sr": 20.8
+        "dots": 82,
+        "econ": 8.13,
+        "sr": 22.1
       },
       "fielding": {
         "catches": 4,
@@ -4359,27 +4393,27 @@
       "teamCode": "KKR",
       "role": "bowler",
       "batting": {
-        "matches": 2,
-        "innings": 2,
-        "balls": 9,
+        "matches": 3,
+        "innings": 3,
+        "balls": 10,
         "runs": 11,
         "fours": 1,
         "sixes": 1,
-        "outs": 2,
-        "sr": 122.22,
-        "avg": 5.5,
-        "ducks": 0,
+        "outs": 3,
+        "sr": 110,
+        "avg": 3.67,
+        "ducks": 1,
         "singleDigitOuts": 2,
         "notOuts": 0
       },
       "bowling": {
-        "matches": 12,
-        "balls": 282,
-        "runs": 432,
+        "matches": 13,
+        "balls": 306,
+        "runs": 486,
         "wickets": 19,
-        "dots": 89,
-        "econ": 9.19,
-        "sr": 14.8
+        "dots": 94,
+        "econ": 9.53,
+        "sr": 16.1
       },
       "fielding": {
         "catches": 4,
@@ -4427,18 +4461,18 @@
       "teamCode": "LSG",
       "role": "all-rounder",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 68,
-        "runs": 79,
-        "fours": 7,
-        "sixes": 2,
+        "matches": 7,
+        "innings": 7,
+        "balls": 88,
+        "runs": 116,
+        "fours": 10,
+        "sixes": 5,
         "outs": 6,
-        "sr": 116.18,
-        "avg": 13.17,
+        "sr": 131.82,
+        "avg": 19.33,
         "ducks": 1,
         "singleDigitOuts": 2,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
         "matches": 1,
@@ -4461,15 +4495,15 @@
       "teamCode": "PBKS",
       "role": "all-rounder",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 289,
-        "runs": 469,
-        "fours": 38,
+        "matches": 13,
+        "innings": 13,
+        "balls": 299,
+        "runs": 487,
+        "fours": 42,
         "sixes": 32,
-        "outs": 10,
-        "sr": 162.28,
-        "avg": 46.9,
+        "outs": 11,
+        "sr": 162.88,
+        "avg": 44.27,
         "ducks": 1,
         "singleDigitOuts": 0,
         "notOuts": 2
@@ -4529,15 +4563,15 @@
       "teamCode": "KKR",
       "role": "batter",
       "batting": {
-        "matches": 9,
-        "innings": 9,
-        "balls": 143,
-        "runs": 323,
-        "fours": 29,
-        "sixes": 27,
-        "outs": 9,
-        "sr": 225.87,
-        "avg": 35.89,
+        "matches": 10,
+        "innings": 10,
+        "balls": 156,
+        "runs": 343,
+        "fours": 32,
+        "sixes": 28,
+        "outs": 10,
+        "sr": 219.87,
+        "avg": 34.3,
         "ducks": 0,
         "singleDigitOuts": 3,
         "notOuts": 0
@@ -4552,9 +4586,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "runOutAssists": 0,
-        "totalDismissals": 0
+        "totalDismissals": 1
       }
     },
     "nitish-kumar-reddy": {
@@ -4563,27 +4597,27 @@
       "teamCode": "SRH",
       "role": "all-rounder",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 144,
-        "runs": 235,
-        "fours": 15,
-        "sixes": 16,
+        "matches": 12,
+        "innings": 12,
+        "balls": 156,
+        "runs": 264,
+        "fours": 16,
+        "sixes": 19,
         "outs": 9,
-        "sr": 163.19,
-        "avg": 26.11,
+        "sr": 169.23,
+        "avg": 29.33,
         "ducks": 0,
         "singleDigitOuts": 2,
-        "notOuts": 2
+        "notOuts": 3
       },
       "bowling": {
-        "matches": 12,
-        "balls": 168,
-        "runs": 291,
+        "matches": 13,
+        "balls": 174,
+        "runs": 300,
         "wickets": 7,
-        "dots": 42,
-        "econ": 10.39,
-        "sr": 24
+        "dots": 43,
+        "econ": 10.34,
+        "sr": 24.9
       },
       "fielding": {
         "catches": 9,
@@ -4611,13 +4645,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 4,
-        "balls": 72,
-        "runs": 105,
+        "matches": 5,
+        "balls": 90,
+        "runs": 130,
         "wickets": 1,
-        "dots": 17,
-        "econ": 8.75,
-        "sr": 72
+        "dots": 22,
+        "econ": 8.67,
+        "sr": 90
       },
       "fielding": {
         "catches": 1,
@@ -4645,13 +4679,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 13,
-        "balls": 296,
-        "runs": 415,
+        "matches": 14,
+        "balls": 314,
+        "runs": 446,
         "wickets": 20,
-        "dots": 97,
-        "econ": 8.41,
-        "sr": 14.8
+        "dots": 101,
+        "econ": 8.52,
+        "sr": 15.7
       },
       "fielding": {
         "catches": 4,
@@ -4665,15 +4699,15 @@
       "teamCode": "DC",
       "role": "wk-batter",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 70,
-        "runs": 86,
-        "fours": 11,
+        "matches": 4,
+        "innings": 4,
+        "balls": 88,
+        "runs": 108,
+        "fours": 15,
         "sixes": 1,
-        "outs": 3,
-        "sr": 122.86,
-        "avg": 28.67,
+        "outs": 4,
+        "sr": 122.73,
+        "avg": 27,
         "ducks": 0,
         "singleDigitOuts": 1,
         "notOuts": 0
@@ -4801,18 +4835,18 @@
       "teamCode": "DC",
       "role": "wk-batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 215,
+        "matches": 13,
+        "innings": 13,
+        "balls": 216,
         "runs": 275,
         "fours": 18,
         "sixes": 9,
         "outs": 6,
-        "sr": 127.91,
+        "sr": 127.31,
         "avg": 45.83,
         "ducks": 0,
         "singleDigitOuts": 3,
-        "notOuts": 6
+        "notOuts": 7
       },
       "bowling": {
         "matches": 0,
@@ -4824,9 +4858,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 6,
+        "catches": 7,
         "runOutAssists": 0,
-        "totalDismissals": 6
+        "totalDismissals": 7
       }
     },
     "rajat-patidar": {
@@ -4835,15 +4869,15 @@
       "teamCode": "RCB",
       "role": "batter",
       "batting": {
-        "matches": 11,
-        "innings": 11,
-        "balls": 175,
-        "runs": 337,
-        "fours": 18,
-        "sixes": 31,
-        "outs": 10,
-        "sr": 192.57,
-        "avg": 33.7,
+        "matches": 12,
+        "innings": 12,
+        "balls": 213,
+        "runs": 394,
+        "fours": 24,
+        "sixes": 32,
+        "outs": 11,
+        "sr": 184.98,
+        "avg": 35.82,
         "ducks": 0,
         "singleDigitOuts": 3,
         "notOuts": 1
@@ -4869,15 +4903,15 @@
       "teamCode": "RCB",
       "role": "all-rounder",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 70,
-        "runs": 114,
-        "fours": 10,
-        "sixes": 6,
-        "outs": 1,
-        "sr": 162.86,
-        "avg": 114,
+        "matches": 4,
+        "innings": 4,
+        "balls": 89,
+        "runs": 158,
+        "fours": 14,
+        "sixes": 10,
+        "outs": 2,
+        "sr": 177.53,
+        "avg": 79,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 2
@@ -4892,9 +4926,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "runOutAssists": 0,
-        "totalDismissals": 0
+        "totalDismissals": 1
       }
     },
     "jacob-bethell": {
@@ -4937,15 +4971,15 @@
       "teamCode": "GT",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 349,
-        "runs": 556,
-        "fours": 55,
-        "sixes": 25,
-        "outs": 12,
-        "sr": 159.31,
-        "avg": 46.33,
+        "matches": 14,
+        "innings": 14,
+        "balls": 402,
+        "runs": 643,
+        "fours": 62,
+        "sixes": 29,
+        "outs": 13,
+        "sr": 159.95,
+        "avg": 49.46,
         "ducks": 1,
         "singleDigitOuts": 1,
         "notOuts": 1
@@ -4985,13 +5019,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 7,
-        "balls": 127,
-        "runs": 194,
+        "matches": 8,
+        "balls": 151,
+        "runs": 221,
         "wickets": 4,
-        "dots": 35,
-        "econ": 9.17,
-        "sr": 31.8
+        "dots": 42,
+        "econ": 8.78,
+        "sr": 37.8
       },
       "fielding": {
         "catches": 5,
@@ -5005,27 +5039,27 @@
       "teamCode": "CSK",
       "role": "bowler",
       "batting": {
-        "matches": 0,
-        "innings": 0,
-        "balls": 0,
-        "runs": 0,
+        "matches": 1,
+        "innings": 1,
+        "balls": 2,
+        "runs": 2,
         "fours": 0,
         "sixes": 0,
         "outs": 0,
-        "sr": null,
+        "sr": 100,
         "avg": null,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
-        "matches": 7,
-        "balls": 144,
-        "runs": 203,
-        "wickets": 8,
-        "dots": 55,
-        "econ": 8.46,
-        "sr": 18
+        "matches": 8,
+        "balls": 168,
+        "runs": 239,
+        "wickets": 9,
+        "dots": 63,
+        "econ": 8.54,
+        "sr": 18.7
       },
       "fielding": {
         "catches": 4,
@@ -5039,17 +5073,17 @@
       "teamCode": "RR",
       "role": "batter",
       "batting": {
-        "matches": 5,
-        "innings": 5,
-        "balls": 52,
-        "runs": 76,
+        "matches": 6,
+        "innings": 6,
+        "balls": 58,
+        "runs": 81,
         "fours": 8,
         "sixes": 3,
-        "outs": 3,
-        "sr": 146.15,
-        "avg": 25.33,
+        "outs": 4,
+        "sr": 139.66,
+        "avg": 20.25,
         "ducks": 0,
-        "singleDigitOuts": 2,
+        "singleDigitOuts": 3,
         "notOuts": 2
       },
       "bowling": {
@@ -5141,16 +5175,16 @@
       "teamCode": "CSK",
       "role": "wk-batter",
       "batting": {
-        "matches": 6,
-        "innings": 6,
-        "balls": 62,
+        "matches": 7,
+        "innings": 7,
+        "balls": 64,
         "runs": 129,
         "fours": 6,
         "sixes": 14,
-        "outs": 6,
-        "sr": 208.06,
-        "avg": 21.5,
-        "ducks": 0,
+        "outs": 7,
+        "sr": 201.56,
+        "avg": 18.43,
+        "ducks": 1,
         "singleDigitOuts": 2,
         "notOuts": 0
       },
@@ -5164,9 +5198,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 5,
+        "catches": 6,
         "runOutAssists": 0,
-        "totalDismissals": 5
+        "totalDismissals": 6
       }
     },
     "nishant-sindhu": {
@@ -5277,17 +5311,17 @@
       "teamCode": "CSK",
       "role": "batter",
       "batting": {
-        "matches": 7,
-        "innings": 7,
-        "balls": 109,
-        "runs": 145,
+        "matches": 8,
+        "innings": 8,
+        "balls": 119,
+        "runs": 153,
         "fours": 8,
         "sixes": 10,
-        "outs": 7,
-        "sr": 133.03,
-        "avg": 20.71,
+        "outs": 8,
+        "sr": 128.57,
+        "avg": 19.13,
         "ducks": 1,
-        "singleDigitOuts": 1,
+        "singleDigitOuts": 2,
         "notOuts": 0
       },
       "bowling": {
@@ -5359,13 +5393,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 4,
-        "balls": 68,
-        "runs": 111,
-        "wickets": 6,
-        "dots": 25,
-        "econ": 9.79,
-        "sr": 11.3
+        "matches": 5,
+        "balls": 80,
+        "runs": 133,
+        "wickets": 7,
+        "dots": 28,
+        "econ": 9.98,
+        "sr": 11.4
       },
       "fielding": {
         "catches": 1,
@@ -5379,27 +5413,27 @@
       "teamCode": "KKR",
       "role": "bowler",
       "batting": {
-        "matches": 0,
-        "innings": 0,
-        "balls": 0,
-        "runs": 0,
-        "fours": 0,
+        "matches": 1,
+        "innings": 1,
+        "balls": 2,
+        "runs": 4,
+        "fours": 1,
         "sixes": 0,
         "outs": 0,
-        "sr": null,
+        "sr": 200,
         "avg": null,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
-        "matches": 3,
-        "balls": 53,
-        "runs": 68,
-        "wickets": 3,
-        "dots": 25,
-        "econ": 7.7,
-        "sr": 17.7
+        "matches": 4,
+        "balls": 77,
+        "runs": 92,
+        "wickets": 5,
+        "dots": 36,
+        "econ": 7.17,
+        "sr": 15.4
       },
       "fielding": {
         "catches": 0,
@@ -5413,15 +5447,15 @@
       "teamCode": "LSG",
       "role": "batter",
       "batting": {
-        "matches": 9,
-        "innings": 9,
-        "balls": 123,
-        "runs": 172,
-        "fours": 18,
-        "sixes": 6,
-        "outs": 9,
-        "sr": 139.84,
-        "avg": 19.11,
+        "matches": 10,
+        "innings": 10,
+        "balls": 141,
+        "runs": 215,
+        "fours": 23,
+        "sixes": 9,
+        "outs": 10,
+        "sr": 152.48,
+        "avg": 21.5,
         "ducks": 3,
         "singleDigitOuts": 1,
         "notOuts": 0
@@ -5515,27 +5549,27 @@
       "teamCode": "MI",
       "role": "bowler",
       "batting": {
-        "matches": 0,
-        "innings": 0,
-        "balls": 0,
-        "runs": 0,
+        "matches": 1,
+        "innings": 1,
+        "balls": 3,
+        "runs": 2,
         "fours": 0,
         "sixes": 0,
         "outs": 0,
-        "sr": null,
+        "sr": 66.67,
         "avg": null,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 0
+        "notOuts": 1
       },
       "bowling": {
-        "matches": 10,
-        "balls": 215,
-        "runs": 340,
-        "wickets": 14,
-        "dots": 53,
-        "econ": 9.49,
-        "sr": 15.4
+        "matches": 11,
+        "balls": 233,
+        "runs": 382,
+        "wickets": 15,
+        "dots": 56,
+        "econ": 9.84,
+        "sr": 15.5
       },
       "fielding": {
         "catches": 1,
@@ -5563,13 +5597,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 11,
-        "balls": 227,
-        "runs": 333,
-        "wickets": 8,
-        "dots": 59,
-        "econ": 8.8,
-        "sr": 28.4
+        "matches": 12,
+        "balls": 245,
+        "runs": 368,
+        "wickets": 9,
+        "dots": 64,
+        "econ": 9.01,
+        "sr": 27.2
       },
       "fielding": {
         "catches": 0,
@@ -5597,13 +5631,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 8,
-        "balls": 168,
-        "runs": 297,
+        "matches": 9,
+        "balls": 186,
+        "runs": 322,
         "wickets": 10,
-        "dots": 36,
-        "econ": 10.61,
-        "sr": 16.8
+        "dots": 41,
+        "econ": 10.39,
+        "sr": 18.6
       },
       "fielding": {
         "catches": 2,
@@ -5631,13 +5665,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 13,
-        "balls": 278,
-        "runs": 410,
-        "wickets": 18,
-        "dots": 80,
-        "econ": 8.85,
-        "sr": 15.4
+        "matches": 14,
+        "balls": 302,
+        "runs": 443,
+        "wickets": 20,
+        "dots": 88,
+        "econ": 8.8,
+        "sr": 15.1
       },
       "fielding": {
         "catches": 6,
@@ -5651,16 +5685,16 @@
       "teamCode": "LSG",
       "role": "all-rounder",
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "balls": 24,
+        "matches": 2,
+        "innings": 2,
+        "balls": 25,
         "runs": 17,
         "fours": 1,
         "sixes": 0,
-        "outs": 1,
-        "sr": 70.83,
-        "avg": 17,
-        "ducks": 0,
+        "outs": 2,
+        "sr": 68,
+        "avg": 8.5,
+        "ducks": 1,
         "singleDigitOuts": 0,
         "notOuts": 0
       },
@@ -5708,9 +5742,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 3,
+        "catches": 4,
         "runOutAssists": 0,
-        "totalDismissals": 3
+        "totalDismissals": 4
       }
     },
     "sakib-hussain": {
@@ -5733,13 +5767,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 9,
-        "balls": 204,
-        "runs": 284,
-        "wickets": 14,
-        "dots": 57,
-        "econ": 8.35,
-        "sr": 14.6
+        "matches": 10,
+        "balls": 228,
+        "runs": 315,
+        "wickets": 15,
+        "dots": 65,
+        "econ": 8.29,
+        "sr": 15.2
       },
       "fielding": {
         "catches": 1,
@@ -5753,17 +5787,17 @@
       "teamCode": "MI",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 211,
-        "runs": 312,
-        "fours": 30,
+        "matches": 14,
+        "innings": 14,
+        "balls": 216,
+        "runs": 318,
+        "fours": 31,
         "sixes": 13,
-        "outs": 11,
-        "sr": 147.87,
-        "avg": 28.36,
+        "outs": 12,
+        "sr": 147.22,
+        "avg": 26.5,
         "ducks": 2,
-        "singleDigitOuts": 2,
+        "singleDigitOuts": 3,
         "notOuts": 2
       },
       "bowling": {
@@ -5776,9 +5810,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 7,
+        "catches": 9,
         "runOutAssists": 0,
-        "totalDismissals": 7
+        "totalDismissals": 9
       }
     },
     "anshul-kamboj": {
@@ -5787,26 +5821,26 @@
       "teamCode": "CSK",
       "role": "all-rounder",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 28,
-        "runs": 39,
-        "fours": 2,
-        "sixes": 2,
-        "outs": 0,
-        "sr": 139.29,
-        "avg": null,
+        "matches": 4,
+        "innings": 4,
+        "balls": 36,
+        "runs": 58,
+        "fours": 3,
+        "sixes": 4,
+        "outs": 1,
+        "sr": 161.11,
+        "avg": 58,
         "ducks": 0,
         "singleDigitOuts": 0,
         "notOuts": 3
       },
       "bowling": {
-        "matches": 13,
-        "balls": 278,
-        "runs": 458,
-        "wickets": 22,
-        "dots": 90,
-        "econ": 9.88,
+        "matches": 14,
+        "balls": 302,
+        "runs": 513,
+        "wickets": 24,
+        "dots": 93,
+        "econ": 10.19,
         "sr": 12.6
       },
       "fielding": {
@@ -5821,18 +5855,18 @@
       "teamCode": "DC",
       "role": "batter",
       "batting": {
-        "matches": 7,
-        "innings": 7,
-        "balls": 83,
-        "runs": 156,
-        "fours": 13,
-        "sixes": 11,
+        "matches": 8,
+        "innings": 8,
+        "balls": 93,
+        "runs": 174,
+        "fours": 15,
+        "sixes": 12,
         "outs": 5,
-        "sr": 187.95,
-        "avg": 31.2,
+        "sr": 187.1,
+        "avg": 34.8,
         "ducks": 0,
         "singleDigitOuts": 0,
-        "notOuts": 2
+        "notOuts": 3
       },
       "bowling": {
         "matches": 0,
@@ -5889,15 +5923,15 @@
       "teamCode": "DC",
       "role": "bowler",
       "batting": {
-        "matches": 3,
-        "innings": 3,
-        "balls": 16,
-        "runs": 22,
-        "fours": 2,
-        "sixes": 1,
-        "outs": 3,
-        "sr": 137.5,
-        "avg": 7.33,
+        "matches": 4,
+        "innings": 4,
+        "balls": 33,
+        "runs": 46,
+        "fours": 5,
+        "sixes": 2,
+        "outs": 4,
+        "sr": 139.39,
+        "avg": 11.5,
         "ducks": 1,
         "singleDigitOuts": 1,
         "notOuts": 0
@@ -6039,13 +6073,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 9,
-        "balls": 216,
-        "runs": 352,
+        "matches": 10,
+        "balls": 234,
+        "runs": 391,
         "wickets": 5,
-        "dots": 50,
-        "econ": 9.78,
-        "sr": 43.2
+        "dots": 51,
+        "econ": 10.03,
+        "sr": 46.8
       },
       "fielding": {
         "catches": 4,
@@ -6059,16 +6093,16 @@
       "teamCode": "PBKS",
       "role": "batter",
       "batting": {
-        "matches": 12,
-        "innings": 12,
-        "balls": 170,
+        "matches": 13,
+        "innings": 13,
+        "balls": 171,
         "runs": 364,
         "fours": 27,
         "sixes": 32,
-        "outs": 12,
-        "sr": 214.12,
-        "avg": 30.33,
-        "ducks": 1,
+        "outs": 13,
+        "sr": 212.87,
+        "avg": 28,
+        "ducks": 2,
         "singleDigitOuts": 3,
         "notOuts": 0
       },
@@ -6093,17 +6127,17 @@
       "teamCode": "RR",
       "role": "batter",
       "batting": {
-        "matches": 13,
-        "innings": 13,
-        "balls": 245,
-        "runs": 579,
+        "matches": 14,
+        "innings": 14,
+        "balls": 251,
+        "runs": 583,
         "fours": 50,
         "sixes": 53,
-        "outs": 13,
-        "sr": 236.33,
-        "avg": 44.54,
+        "outs": 14,
+        "sr": 232.27,
+        "avg": 41.64,
         "ducks": 1,
-        "singleDigitOuts": 2,
+        "singleDigitOuts": 3,
         "notOuts": 0
       },
       "bowling": {
@@ -6116,9 +6150,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "runOutAssists": 0,
-        "totalDismissals": 0
+        "totalDismissals": 1
       }
     },
     "abhinandan-singh": {
@@ -6209,13 +6243,13 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 2,
-        "balls": 48,
-        "runs": 61,
+        "matches": 3,
+        "balls": 60,
+        "runs": 78,
         "wickets": 4,
-        "dots": 13,
-        "econ": 7.63,
-        "sr": 12
+        "dots": 16,
+        "econ": 7.8,
+        "sr": 15
       },
       "fielding": {
         "catches": 2,
@@ -6297,17 +6331,17 @@
       "teamCode": "KKR",
       "role": "wk-batter",
       "batting": {
-        "matches": 1,
-        "innings": 1,
-        "balls": 12,
-        "runs": 11,
+        "matches": 2,
+        "innings": 2,
+        "balls": 15,
+        "runs": 12,
         "fours": 2,
         "sixes": 0,
-        "outs": 1,
-        "sr": 91.67,
-        "avg": 11,
+        "outs": 2,
+        "sr": 80,
+        "avg": 6,
         "ducks": 0,
-        "singleDigitOuts": 0,
+        "singleDigitOuts": 1,
         "notOuts": 0
       },
       "bowling": {
@@ -6320,9 +6354,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 0,
+        "catches": 1,
         "runOutAssists": 0,
-        "totalDismissals": 0
+        "totalDismissals": 1
       }
     },
     "yash-raj-punja": {
@@ -6345,13 +6379,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 5,
-        "balls": 120,
-        "runs": 164,
-        "wickets": 6,
-        "dots": 28,
-        "econ": 8.2,
-        "sr": 20
+        "matches": 6,
+        "balls": 144,
+        "runs": 207,
+        "wickets": 8,
+        "dots": 33,
+        "econ": 8.63,
+        "sr": 18
       },
       "fielding": {
         "catches": 0,
@@ -6501,15 +6535,15 @@
       "teamCode": "CSK",
       "role": "wk-batter",
       "batting": {
-        "matches": 10,
-        "innings": 10,
-        "balls": 201,
-        "runs": 276,
-        "fours": 21,
+        "matches": 11,
+        "innings": 11,
+        "balls": 216,
+        "runs": 295,
+        "fours": 24,
         "sixes": 16,
-        "outs": 8,
-        "sr": 137.31,
-        "avg": 34.5,
+        "outs": 9,
+        "sr": 136.57,
+        "avg": 32.78,
         "ducks": 0,
         "singleDigitOuts": 2,
         "notOuts": 2
@@ -6549,12 +6583,12 @@
         "notOuts": 1
       },
       "bowling": {
-        "matches": 4,
-        "balls": 66,
-        "runs": 110,
+        "matches": 5,
+        "balls": 78,
+        "runs": 133,
         "wickets": 0,
-        "dots": 20,
-        "econ": 10,
+        "dots": 26,
+        "econ": 10.23,
         "sr": null
       },
       "fielding": {
@@ -6569,17 +6603,17 @@
       "teamCode": "LSG",
       "role": "batter",
       "batting": {
-        "matches": 9,
-        "innings": 9,
-        "balls": 117,
-        "runs": 169,
+        "matches": 10,
+        "innings": 10,
+        "balls": 120,
+        "runs": 170,
         "fours": 11,
         "sixes": 12,
-        "outs": 5,
-        "sr": 144.44,
-        "avg": 33.8,
+        "outs": 6,
+        "sr": 141.67,
+        "avg": 28.33,
         "ducks": 0,
-        "singleDigitOuts": 2,
+        "singleDigitOuts": 3,
         "notOuts": 4
       },
       "bowling": {
@@ -6651,13 +6685,13 @@
         "notOuts": 2
       },
       "bowling": {
-        "matches": 10,
-        "balls": 210,
-        "runs": 328,
-        "wickets": 11,
-        "dots": 56,
-        "econ": 9.37,
-        "sr": 19.1
+        "matches": 11,
+        "balls": 234,
+        "runs": 354,
+        "wickets": 13,
+        "dots": 63,
+        "econ": 9.08,
+        "sr": 18
       },
       "fielding": {
         "catches": 1,
@@ -6685,13 +6719,13 @@
         "notOuts": 0
       },
       "bowling": {
-        "matches": 11,
-        "balls": 210,
-        "runs": 319,
+        "matches": 12,
+        "balls": 222,
+        "runs": 350,
         "wickets": 10,
-        "dots": 47,
-        "econ": 9.11,
-        "sr": 21
+        "dots": 50,
+        "econ": 9.46,
+        "sr": 22.2
       },
       "fielding": {
         "catches": 0,
@@ -6728,9 +6762,9 @@
         "sr": null
       },
       "fielding": {
-        "catches": 1,
+        "catches": 3,
         "runOutAssists": 0,
-        "totalDismissals": 1
+        "totalDismissals": 3
       }
     },
     "krish-bhagat": {

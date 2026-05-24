@@ -168,11 +168,16 @@
       "name": "Rajasthan Royals",
       "code": "RR"
     },
-    "matches": 1,
+    "matches": 2,
     "aWon": 0,
-    "bWon": 1,
+    "bWon": 2,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-24",
+        "venue": "Wankhede Stadium",
+        "result": "RR won"
+      },
       {
         "date": "2026-04-07",
         "venue": "Barsapara Cricket Stadium",
@@ -413,11 +418,16 @@
       "name": "Gujarat Titans",
       "code": "GT"
     },
-    "matches": 1,
+    "matches": 2,
     "aWon": 0,
-    "bWon": 1,
+    "bWon": 2,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-21",
+        "venue": "Narendra Modi Stadium",
+        "result": "GT won"
+      },
       {
         "date": "2026-04-26",
         "venue": "Narendra Modi Stadium",
@@ -436,11 +446,16 @@
       "name": "Sunrisers Hyderabad",
       "code": "SRH"
     },
-    "matches": 1,
+    "matches": 2,
     "aWon": 1,
-    "bWon": 0,
+    "bWon": 1,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-22",
+        "venue": "Rajiv Gandhi International Stadium",
+        "result": "SRH won"
+      },
       {
         "date": "2026-03-28",
         "venue": "M.Chinnaswamy Stadium",
@@ -765,11 +780,16 @@
       "name": "Kolkata Knight Riders",
       "code": "KKR"
     },
-    "matches": 1,
-    "aWon": 0,
+    "matches": 2,
+    "aWon": 1,
     "bWon": 1,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-24",
+        "venue": "Eden Gardens",
+        "result": "DC won"
+      },
       {
         "date": "2026-05-08",
         "venue": "Arun Jaitley Stadium",
@@ -992,11 +1012,16 @@
       "name": "Punjab Kings",
       "code": "PBKS"
     },
-    "matches": 1,
+    "matches": 2,
     "aWon": 0,
-    "bWon": 1,
+    "bWon": 2,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-23",
+        "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+        "result": "PBKS won"
+      },
       {
         "date": "2026-04-19",
         "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
