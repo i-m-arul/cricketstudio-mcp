@@ -1,0 +1,4769 @@
+{
+  "computedAt": "2026-05-18T05:35:57.618Z",
+  "league": "mlc",
+  "cohort": {
+    "matches": 75,
+    "players": 166,
+    "balls": 17413,
+    "seasonsCovered": [
+      "2023",
+      "2024",
+      "2025"
+    ]
+  },
+  "seasonsCovered": [
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "leagueMeta": {
+    "displayName": "Major League Cricket",
+    "format": "T20"
+  },
+  "bySlug": {
+    "a-desai": {
+      "fullName": "A Desai",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 5,
+        "balls": 5,
+        "sr": 100,
+        "avg": null,
+        "highScore": 5,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 5,
+        "econ": 10.55,
+        "avg": 23.2
+      }
+    },
+    "a-nortje": {
+      "fullName": "A Nortje",
+      "teamSlugs": [
+        "mi-new-york",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 18,
+        "balls": 15,
+        "sr": 120,
+        "avg": 18,
+        "highScore": 14,
+        "fours": 2,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 3,
+        "econ": 8,
+        "avg": 74.67
+      }
+    },
+    "a-zampa": {
+      "fullName": "A Zampa",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 22,
+        "balls": 23,
+        "sr": 95.7,
+        "avg": 11,
+        "highScore": 12,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 9,
+        "econ": 8.26,
+        "avg": 17.44
+      }
+    },
+    "aa-paradkar": {
+      "fullName": "AA Paradkar",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 10.67,
+        "avg": 32
+      }
+    },
+    "aaron-jones": {
+      "fullName": "Aaron Jones",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 12,
+        "innings": 12,
+        "runs": 216,
+        "balls": 185,
+        "sr": 116.8,
+        "avg": 18,
+        "highScore": 73,
+        "fours": 20,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "abrar-ahmed": {
+      "fullName": "Abrar Ahmed",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 6,
+        "balls": 7,
+        "sr": 85.7,
+        "avg": 6,
+        "highScore": 6,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 1,
+        "econ": 8.43,
+        "avg": 59
+      }
+    },
+    "ad-chopra": {
+      "fullName": "AD Chopra",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 13,
+        "balls": 15,
+        "sr": 86.7,
+        "avg": 6.5,
+        "highScore": 8,
+        "fours": 3,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ad-hales": {
+      "fullName": "AD Hales",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 116,
+        "balls": 88,
+        "sr": 131.8,
+        "avg": 16.57,
+        "highScore": 58,
+        "fours": 13,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ad-russell": {
+      "fullName": "AD Russell",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 461,
+        "balls": 297,
+        "sr": 155.2,
+        "avg": 35.46,
+        "highScore": 70,
+        "fours": 41,
+        "sixes": 31
+      },
+      "bowling": {
+        "matches": 19,
+        "wickets": 14,
+        "econ": 10.01,
+        "avg": 41
+      }
+    },
+    "ads-fletcher": {
+      "fullName": "ADS Fletcher",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 289,
+        "balls": 178,
+        "sr": 162.4,
+        "avg": 41.29,
+        "highScore": 118,
+        "fours": 25,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "af-milne": {
+      "fullName": "AF Milne",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 14,
+        "econ": 7.1,
+        "avg": 10.57
+      }
+    },
+    "ags-gous": {
+      "fullName": "AGS Gous",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 24,
+        "innings": 24,
+        "runs": 511,
+        "balls": 389,
+        "sr": 131.4,
+        "avg": 28.39,
+        "highScore": 80,
+        "fours": 60,
+        "sixes": 16
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "aj-finch": {
+      "fullName": "AJ Finch",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 68,
+        "balls": 77,
+        "sr": 88.3,
+        "avg": 17,
+        "highScore": 19,
+        "fours": 6,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "aj-hosein": {
+      "fullName": "AJ Hosein",
+      "teamSlugs": [
+        "texas-super-kings",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 119,
+        "balls": 81,
+        "sr": 146.9,
+        "avg": 29.75,
+        "highScore": 55,
+        "fours": 9,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 15,
+        "wickets": 19,
+        "econ": 6.93,
+        "avg": 16.05
+      }
+    },
+    "aj-pienaar": {
+      "fullName": "AJ Pienaar",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 253,
+        "balls": 195,
+        "sr": 129.7,
+        "avg": 50.6,
+        "highScore": 33,
+        "fours": 17,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 22,
+        "avg": null
+      }
+    },
+    "aj-tye": {
+      "fullName": "AJ Tye",
+      "teamSlugs": [
+        "seattle-orcas",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 6,
+        "balls": 8,
+        "sr": 75,
+        "avg": 6,
+        "highScore": 4,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 16,
+        "econ": 9.43,
+        "avg": 17.69
+      }
+    },
+    "ali-khan": {
+      "fullName": "Ali Khan",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 33,
+        "balls": 38,
+        "sr": 86.8,
+        "avg": 8.25,
+        "highScore": 16,
+        "fours": 2,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 15,
+        "econ": 10.2,
+        "avg": 39.33
+      }
+    },
+    "ali-sheikh": {
+      "fullName": "Ali Sheikh",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 15,
+        "balls": 9,
+        "sr": 166.7,
+        "avg": 15,
+        "highScore": 15,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "am-hardie": {
+      "fullName": "AM Hardie",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 147,
+        "balls": 109,
+        "sr": 134.9,
+        "avg": 24.5,
+        "highScore": 40,
+        "fours": 12,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 4,
+        "econ": 11.76,
+        "avg": 25
+      }
+    },
+    "bc-fortuin": {
+      "fullName": "BC Fortuin",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 4,
+        "balls": 11,
+        "sr": 36.4,
+        "avg": 4,
+        "highScore": 4,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 6.75,
+        "avg": null
+      }
+    },
+    "bg-lister": {
+      "fullName": "BG Lister",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 2,
+        "balls": 6,
+        "sr": 33.3,
+        "avg": 2,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 10.76,
+        "avg": null
+      }
+    },
+    "bkel-milantha": {
+      "fullName": "BKEL Milantha",
+      "teamSlugs": [
+        "texas-super-kings",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 65,
+        "balls": 64,
+        "sr": 101.6,
+        "avg": 32.5,
+        "highScore": 33,
+        "fours": 4,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "bl-couch": {
+      "fullName": "BL Couch",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 36,
+        "balls": 39,
+        "sr": 92.3,
+        "avg": 12,
+        "highScore": 19,
+        "fours": 3,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 13,
+        "wickets": 8,
+        "econ": 8.98,
+        "avg": 47.5
+      }
+    },
+    "bv-sears": {
+      "fullName": "BV Sears",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 15,
+        "balls": 10,
+        "sr": 150,
+        "avg": null,
+        "highScore": 15,
+        "fours": 0,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 12.25,
+        "avg": null
+      }
+    },
+    "c-chetty": {
+      "fullName": "C Chetty",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 76,
+        "balls": 75,
+        "sr": 101.3,
+        "avg": 15.2,
+        "highScore": 24,
+        "fours": 10,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "c-connolly": {
+      "fullName": "C Connolly",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 56,
+        "balls": 54,
+        "sr": 103.7,
+        "avg": 18.67,
+        "highScore": 23,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "c-le-roux": {
+      "fullName": "C le Roux",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 21,
+        "balls": 23,
+        "sr": 91.3,
+        "avg": 10.5,
+        "highScore": 20,
+        "fours": 1,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 10,
+        "econ": 8.8,
+        "avg": 40.2
+      }
+    },
+    "ca-dry": {
+      "fullName": "CA Dry",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 33,
+        "balls": 34,
+        "sr": 97.1,
+        "avg": 6.6,
+        "highScore": 13,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 13,
+        "wickets": 9,
+        "econ": 9.8,
+        "avg": 38.11
+      }
+    },
+    "cah-stevenson": {
+      "fullName": "CAH Stevenson",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 17,
+        "balls": 11,
+        "sr": 154.5,
+        "avg": 17,
+        "highScore": 17,
+        "fours": 1,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 14,
+        "avg": null
+      }
+    },
+    "chaitanya-bishnoi": {
+      "fullName": "Chaitanya Bishnoi",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 52,
+        "balls": 41,
+        "sr": 126.8,
+        "avg": 13,
+        "highScore": 35,
+        "fours": 3,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 1,
+        "econ": 8.33,
+        "avg": 25
+      }
+    },
+    "cj-anderson": {
+      "fullName": "CJ Anderson",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 16,
+        "innings": 16,
+        "runs": 313,
+        "balls": 237,
+        "sr": 132.1,
+        "avg": 28.45,
+        "highScore": 91,
+        "fours": 19,
+        "sixes": 17
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 6,
+        "econ": 9.92,
+        "avg": 21.5
+      }
+    },
+    "cj-gannon": {
+      "fullName": "CJ Gannon",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 45,
+        "balls": 44,
+        "sr": 102.3,
+        "avg": 7.5,
+        "highScore": 9,
+        "fours": 2,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 20,
+        "wickets": 26,
+        "econ": 8.98,
+        "avg": 23.77
+      }
+    },
+    "cp-savage": {
+      "fullName": "CP Savage",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 261,
+        "balls": 170,
+        "sr": 153.5,
+        "avg": 32.63,
+        "highScore": 53,
+        "fours": 20,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 4,
+        "econ": 8.4,
+        "avg": 42
+      }
+    },
+    "d-brevis": {
+      "fullName": "D Brevis",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 250,
+        "balls": 188,
+        "sr": 133,
+        "avg": 31.25,
+        "highScore": 57,
+        "fours": 21,
+        "sixes": 12
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "d-ferreira": {
+      "fullName": "D Ferreira",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 248,
+        "balls": 116,
+        "sr": 213.8,
+        "avg": 41.33,
+        "highScore": 53,
+        "fours": 15,
+        "sixes": 19
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 1,
+        "econ": 10.91,
+        "avg": 120
+      }
+    },
+    "d-potgieter": {
+      "fullName": "D Potgieter",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 2,
+        "balls": 6,
+        "sr": 33.3,
+        "avg": 2,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 2,
+        "econ": 12.75,
+        "avg": 25.5
+      }
+    },
+    "d-pretorius": {
+      "fullName": "D Pretorius",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 23,
+        "balls": 10,
+        "sr": 230,
+        "avg": 11.5,
+        "highScore": 21,
+        "fours": 3,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 11.25,
+        "avg": null
+      }
+    },
+    "d-wiese": {
+      "fullName": "D Wiese",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 41,
+        "balls": 28,
+        "sr": 146.4,
+        "avg": 20.5,
+        "highScore": 19,
+        "fours": 3,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 4,
+        "econ": 10.6,
+        "avg": 53
+      }
+    },
+    "da-miller": {
+      "fullName": "DA Miller",
+      "teamSlugs": [
+        "los-angeles-knight-riders",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 13,
+        "innings": 13,
+        "runs": 224,
+        "balls": 179,
+        "sr": 125.1,
+        "avg": 18.67,
+        "highScore": 61,
+        "fours": 13,
+        "sixes": 10
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "da-warner": {
+      "fullName": "DA Warner",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 114,
+        "balls": 90,
+        "sr": 126.7,
+        "avg": 19,
+        "highScore": 38,
+        "fours": 15,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "dc-drakes": {
+      "fullName": "DC Drakes",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 10.75,
+        "avg": 43
+      }
+    },
+    "dj-bravo": {
+      "fullName": "DJ Bravo",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 149,
+        "balls": 97,
+        "sr": 153.6,
+        "avg": 49.67,
+        "highScore": 76,
+        "fours": 12,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 8,
+        "econ": 8.3,
+        "avg": 24.38
+      }
+    },
+    "dj-mitchell": {
+      "fullName": "DJ Mitchell",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 85,
+        "balls": 79,
+        "sr": 107.6,
+        "avg": 21.25,
+        "highScore": 36,
+        "fours": 7,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 2,
+        "econ": 11.21,
+        "avg": 57
+      }
+    },
+    "dl-piedt": {
+      "fullName": "DL Piedt",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 15,
+        "balls": 14,
+        "sr": 107.1,
+        "avg": 15,
+        "highScore": 12,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 4,
+        "econ": 6.69,
+        "avg": 21.75
+      }
+    },
+    "dp-conway": {
+      "fullName": "DP Conway",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 649,
+        "balls": 485,
+        "sr": 133.8,
+        "avg": 38.18,
+        "highScore": 74,
+        "fours": 56,
+        "sixes": 19
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "dr-sams": {
+      "fullName": "DR Sams",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 103,
+        "balls": 77,
+        "sr": 133.8,
+        "avg": 25.75,
+        "highScore": 42,
+        "fours": 5,
+        "sixes": 7
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 5,
+        "econ": 7.29,
+        "avg": 24.8
+      }
+    },
+    "dya-davis": {
+      "fullName": "DYA Davis",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 15,
+        "balls": 17,
+        "sr": 88.2,
+        "avg": null,
+        "highScore": 13,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ehsan-adil": {
+      "fullName": "Ehsan Adil",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 2,
+        "balls": 4,
+        "sr": 50,
+        "avg": 2,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 11,
+        "econ": 9.17,
+        "avg": 44.18
+      }
+    },
+    "f-du-plessis": {
+      "fullName": "F du Plessis",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 25,
+        "innings": 25,
+        "runs": 934,
+        "balls": 571,
+        "sr": 163.6,
+        "avg": 38.92,
+        "highScore": 103,
+        "fours": 86,
+        "sixes": 50
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "fa-allen": {
+      "fullName": "FA Allen",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 11,
+        "balls": 11,
+        "sr": 100,
+        "avg": 11,
+        "highScore": 11,
+        "fours": 0,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 10,
+        "avg": 20
+      }
+    },
+    "fh-allen": {
+      "fullName": "FH Allen",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 23,
+        "innings": 23,
+        "runs": 714,
+        "balls": 354,
+        "sr": 201.7,
+        "avg": 31.04,
+        "highScore": 151,
+        "fours": 56,
+        "sixes": 59
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "g-coetzee": {
+      "fullName": "G Coetzee",
+      "teamSlugs": [
+        "seattle-orcas",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 33,
+        "balls": 43,
+        "sr": 76.7,
+        "avg": 4.71,
+        "highScore": 8,
+        "fours": 1,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 14,
+        "econ": 8.81,
+        "avg": 23.5
+      }
+    },
+    "g-singh": {
+      "fullName": "G Singh",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 3,
+        "balls": 3,
+        "sr": 100,
+        "avg": 3,
+        "highScore": 3,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "gd-phillips": {
+      "fullName": "GD Phillips",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 308,
+        "balls": 229,
+        "sr": 134.5,
+        "avg": 34.22,
+        "highScore": 58,
+        "fours": 15,
+        "sixes": 19
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 2,
+        "econ": 11.2,
+        "avg": 28
+      }
+    },
+    "gf-linde": {
+      "fullName": "GF Linde",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 19,
+        "balls": 18,
+        "sr": 105.6,
+        "avg": 9.5,
+        "highScore": 13,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 2,
+        "econ": 7.36,
+        "avg": 40.5
+      }
+    },
+    "gj-maxwell": {
+      "fullName": "GJ Maxwell",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 15,
+        "innings": 15,
+        "runs": 405,
+        "balls": 233,
+        "sr": 173.8,
+        "avg": 33.75,
+        "highScore": 106,
+        "fours": 17,
+        "sixes": 37
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 20,
+        "econ": 7.45,
+        "avg": 17.7
+      }
+    },
+    "gsnfg-jayasuriya": {
+      "fullName": "GSNFG Jayasuriya",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 257,
+        "balls": 239,
+        "sr": 107.5,
+        "avg": 32.13,
+        "highScore": 60,
+        "fours": 29,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "h-klaasen": {
+      "fullName": "H Klaasen",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 22,
+        "innings": 22,
+        "runs": 474,
+        "balls": 305,
+        "sr": 155.4,
+        "avg": 24.95,
+        "highScore": 110,
+        "fours": 32,
+        "sixes": 28
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "h-richards": {
+      "fullName": "H Richards",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 56,
+        "balls": 54,
+        "sr": 103.7,
+        "avg": 11.2,
+        "highScore": 24,
+        "fours": 2,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 15,
+        "avg": null
+      }
+    },
+    "hammad-azam": {
+      "fullName": "Hammad Azam",
+      "teamSlugs": [
+        "mi-new-york",
+        "san-francisco-unicorns",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 102,
+        "balls": 112,
+        "sr": 91.1,
+        "avg": 17,
+        "highScore": 38,
+        "fours": 7,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 15,
+        "avg": null
+      }
+    },
+    "haris-rauf": {
+      "fullName": "Haris Rauf",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 11,
+        "innings": 11,
+        "runs": 74,
+        "balls": 69,
+        "sr": 107.2,
+        "avg": 14.8,
+        "highScore": 16,
+        "fours": 7,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 22,
+        "wickets": 28,
+        "econ": 8.92,
+        "avg": 25.64
+      }
+    },
+    "harmeet-singh": {
+      "fullName": "Harmeet Singh",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 12,
+        "innings": 12,
+        "runs": 69,
+        "balls": 74,
+        "sr": 93.2,
+        "avg": 6.9,
+        "highScore": 20,
+        "fours": 4,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 21,
+        "wickets": 24,
+        "econ": 7.24,
+        "avg": 21.83
+      }
+    },
+    "hassan-khan": {
+      "fullName": "Hassan Khan",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 429,
+        "balls": 262,
+        "sr": 163.7,
+        "avg": 33,
+        "highScore": 57,
+        "fours": 31,
+        "sixes": 30
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 22,
+        "econ": 8.58,
+        "avg": 21.45
+      }
+    },
+    "ig-holland": {
+      "fullName": "IG Holland",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 6,
+        "balls": 4,
+        "sr": 150,
+        "avg": 6,
+        "highScore": 6,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 13,
+        "econ": 7.94,
+        "avg": 19.54
+      }
+    },
+    "imad-wasim": {
+      "fullName": "Imad Wasim",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 93,
+        "balls": 87,
+        "sr": 106.9,
+        "avg": 18.6,
+        "highScore": 43,
+        "fours": 8,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 14,
+        "econ": 6.41,
+        "avg": 18.86
+      }
+    },
+    "j-brown": {
+      "fullName": "J Brown",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 5,
+        "balls": 5,
+        "sr": 100,
+        "avg": 2.5,
+        "highScore": 5,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "j-drysdale": {
+      "fullName": "J Drysdale",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 6,
+        "balls": 10,
+        "sr": 60,
+        "avg": 6,
+        "highScore": 5,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 3,
+        "econ": 9.96,
+        "avg": 53.67
+      }
+    },
+    "j-edwards": {
+      "fullName": "J Edwards",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 152,
+        "balls": 115,
+        "sr": 132.2,
+        "avg": 21.71,
+        "highScore": 42,
+        "fours": 8,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 14,
+        "econ": 9.27,
+        "avg": 24.29
+      }
+    },
+    "j-fraser-mcgurk": {
+      "fullName": "J Fraser-McGurk",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 18,
+        "innings": 18,
+        "runs": 356,
+        "balls": 225,
+        "sr": 158.2,
+        "avg": 19.78,
+        "highScore": 88,
+        "fours": 24,
+        "sixes": 24
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "j-little": {
+      "fullName": "J Little",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 4,
+        "balls": 6,
+        "sr": 66.7,
+        "avg": null,
+        "highScore": 4,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 8.5,
+        "avg": null
+      }
+    },
+    "j-theron": {
+      "fullName": "J Theron",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 2,
+        "balls": 2,
+        "sr": 100,
+        "avg": 2,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 7,
+        "wickets": 5,
+        "econ": 7.11,
+        "avg": 25.6
+      }
+    },
+    "j-tromp": {
+      "fullName": "J Tromp",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 94,
+        "balls": 79,
+        "sr": 119,
+        "avg": 18.8,
+        "highScore": 56,
+        "fours": 9,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "jasdeep-singh": {
+      "fullName": "Jasdeep Singh",
+      "teamSlugs": [
+        "mi-new-york",
+        "seattle-orcas",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 32,
+        "balls": 51,
+        "sr": 62.7,
+        "avg": 8,
+        "highScore": 12,
+        "fours": 3,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 11,
+        "econ": 9.51,
+        "avg": 32.27
+      }
+    },
+    "jg-dill": {
+      "fullName": "JG Dill",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 3,
+        "balls": 3,
+        "sr": 100,
+        "avg": 3,
+        "highScore": 3,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 5,
+        "econ": 8.83,
+        "avg": 21.2
+      }
+    },
+    "jj-roy": {
+      "fullName": "JJ Roy",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 217,
+        "balls": 174,
+        "sr": 124.7,
+        "avg": 24.11,
+        "highScore": 69,
+        "fours": 22,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "jn-hamilton": {
+      "fullName": "JN Hamilton",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 37,
+        "balls": 30,
+        "sr": 123.3,
+        "avg": 37,
+        "highScore": 31,
+        "fours": 3,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "jo-holder": {
+      "fullName": "JO Holder",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 66,
+        "balls": 46,
+        "sr": 143.5,
+        "avg": 33,
+        "highScore": 26,
+        "fours": 2,
+        "sixes": 5
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 9,
+        "econ": 9.13,
+        "avg": 31.44
+      }
+    },
+    "jp-inglis": {
+      "fullName": "JP Inglis",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 157,
+        "balls": 104,
+        "sr": 151,
+        "avg": 19.63,
+        "highScore": 45,
+        "fours": 9,
+        "sixes": 10
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "js-malhotra": {
+      "fullName": "JS Malhotra",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 48,
+        "balls": 43,
+        "sr": 111.6,
+        "avg": 9.6,
+        "highScore": 22,
+        "fours": 3,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "k-gore": {
+      "fullName": "K Gore",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 6,
+        "balls": 6,
+        "sr": 100,
+        "avg": 6,
+        "highScore": 6,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 3,
+        "econ": 7.86,
+        "avg": 18.33
+      }
+    },
+    "k-rabada": {
+      "fullName": "K Rabada",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 2,
+        "balls": 8,
+        "sr": 25,
+        "avg": 1,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 6,
+        "econ": 7.53,
+        "avg": 18.83
+      }
+    },
+    "ka-pollard": {
+      "fullName": "KA Pollard",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 24,
+        "innings": 24,
+        "runs": 488,
+        "balls": 309,
+        "sr": 157.9,
+        "avg": 28.71,
+        "highScore": 70,
+        "fours": 29,
+        "sixes": 36
+      },
+      "bowling": {
+        "matches": 22,
+        "wickets": 16,
+        "econ": 8.64,
+        "avg": 24.75
+      }
+    },
+    "kma-paul": {
+      "fullName": "KMA Paul",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 29,
+        "balls": 24,
+        "sr": 120.8,
+        "avg": 14.5,
+        "highScore": 25,
+        "fours": 3,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 3,
+        "econ": 7.6,
+        "avg": 25.33
+      }
+    },
+    "kr-mayers": {
+      "fullName": "KR Mayers",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 214,
+        "balls": 160,
+        "sr": 133.8,
+        "avg": 23.78,
+        "highScore": 88,
+        "fours": 14,
+        "sixes": 17
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 3,
+        "econ": 10.35,
+        "avg": 79.33
+      }
+    },
+    "ks-gattepalli": {
+      "fullName": "KS Gattepalli",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 3,
+        "econ": 7.75,
+        "avg": 10.33
+      }
+    },
+    "kunwarjeet-singh": {
+      "fullName": "Kunwarjeet Singh",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 55,
+        "balls": 43,
+        "sr": 127.9,
+        "avg": 55,
+        "highScore": 33,
+        "fours": 7,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "l-ngidi": {
+      "fullName": "L Ngidi",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 1,
+        "econ": 10.84,
+        "avg": 56
+      }
+    },
+    "le-plunkett": {
+      "fullName": "LE Plunkett",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 19,
+        "balls": 24,
+        "sr": 79.2,
+        "avg": 4.75,
+        "highScore": 7,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 15,
+        "wickets": 15,
+        "econ": 8.86,
+        "avg": 24.8
+      }
+    },
+    "lh-ferguson": {
+      "fullName": "LH Ferguson",
+      "teamSlugs": [
+        "los-angeles-knight-riders",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 1,
+        "balls": 5,
+        "sr": 20,
+        "avg": 0.5,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 16,
+        "econ": 6.65,
+        "avg": 17.19
+      }
+    },
+    "m-jansen": {
+      "fullName": "M Jansen",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 67,
+        "balls": 45,
+        "sr": 148.9,
+        "avg": 33.5,
+        "highScore": 28,
+        "fours": 4,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 18,
+        "econ": 8.07,
+        "avg": 24.06
+      }
+    },
+    "ma-aponso": {
+      "fullName": "MA Aponso",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 1,
+        "econ": 9,
+        "avg": 45
+      }
+    },
+    "mc-henriques": {
+      "fullName": "MC Henriques",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 125,
+        "balls": 115,
+        "sr": 108.7,
+        "avg": 25,
+        "highScore": 32,
+        "fours": 8,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 5,
+        "econ": 7.48,
+        "avg": 17.2
+      }
+    },
+    "md-patel": {
+      "fullName": "MD Patel",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 26,
+        "innings": 26,
+        "runs": 674,
+        "balls": 523,
+        "sr": 128.9,
+        "avg": 25.92,
+        "highScore": 93,
+        "fours": 66,
+        "sixes": 24
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "md-shanaka": {
+      "fullName": "MD Shanaka",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 27,
+        "balls": 24,
+        "sr": 112.5,
+        "avg": 13.5,
+        "highScore": 10,
+        "fours": 1,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 12.25,
+        "avg": null
+      }
+    },
+    "mg-bracewell": {
+      "fullName": "MG Bracewell",
+      "teamSlugs": [
+        "mi-new-york",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 241,
+        "balls": 188,
+        "sr": 128.2,
+        "avg": 21.91,
+        "highScore": 50,
+        "fours": 18,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 5,
+        "econ": 9.48,
+        "avg": 58.8
+      }
+    },
+    "milind-kumar": {
+      "fullName": "Milind Kumar",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 219,
+        "balls": 200,
+        "sr": 109.5,
+        "avg": 16.85,
+        "highScore": 52,
+        "fours": 13,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 12,
+        "avg": null
+      }
+    },
+    "mj-guptill": {
+      "fullName": "MJ Guptill",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 0,
+        "balls": 6,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "mj-henry": {
+      "fullName": "MJ Henry",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 16.4,
+        "avg": null
+      }
+    },
+    "mj-owen": {
+      "fullName": "MJ Owen",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 11,
+        "innings": 11,
+        "runs": 313,
+        "balls": 158,
+        "sr": 198.1,
+        "avg": 28.45,
+        "highScore": 89,
+        "fours": 28,
+        "sixes": 22
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 14,
+        "econ": 9.27,
+        "avg": 19.86
+      }
+    },
+    "mj-santner": {
+      "fullName": "MJ Santner",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 111,
+        "balls": 88,
+        "sr": 126.1,
+        "avg": 13.88,
+        "highScore": 27,
+        "fours": 3,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 6,
+        "econ": 7.96,
+        "avg": 34.5
+      }
+    },
+    "mohammad-mohsin": {
+      "fullName": "Mohammad Mohsin",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 39,
+        "balls": 32,
+        "sr": 121.9,
+        "avg": 9.75,
+        "highScore": 11,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 16,
+        "wickets": 17,
+        "econ": 8.03,
+        "avg": 24.94
+      }
+    },
+    "mp-stoinis": {
+      "fullName": "MP Stoinis",
+      "teamSlugs": [
+        "san-francisco-unicorns",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 20,
+        "innings": 20,
+        "runs": 266,
+        "balls": 230,
+        "sr": 115.7,
+        "avg": 14.78,
+        "highScore": 37,
+        "fours": 20,
+        "sixes": 13
+      },
+      "bowling": {
+        "matches": 19,
+        "wickets": 19,
+        "econ": 9.45,
+        "avg": 33.16
+      }
+    },
+    "mr-adair": {
+      "fullName": "MR Adair",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 1,
+        "balls": 6,
+        "sr": 16.7,
+        "avg": 1,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 1,
+        "econ": 10.14,
+        "avg": 71
+      }
+    },
+    "ms-chapman": {
+      "fullName": "MS Chapman",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 89,
+        "balls": 71,
+        "sr": 125.4,
+        "avg": 44.5,
+        "highScore": 45,
+        "fours": 5,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ms-wade": {
+      "fullName": "MS Wade",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 168,
+        "balls": 102,
+        "sr": 164.7,
+        "avg": 33.6,
+        "highScore": 78,
+        "fours": 17,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "mukhtar-ahmed": {
+      "fullName": "Mukhtar Ahmed",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 15,
+        "innings": 15,
+        "runs": 182,
+        "balls": 143,
+        "sr": 127.3,
+        "avg": 20.22,
+        "highScore": 36,
+        "fours": 17,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "mw-forde": {
+      "fullName": "MW Forde",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 11.5,
+        "avg": null
+      }
+    },
+    "mw-short": {
+      "fullName": "MW Short",
+      "teamSlugs": [
+        "san-francisco-unicorns",
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 682,
+        "balls": 431,
+        "sr": 158.2,
+        "avg": 35.89,
+        "highScore": 91,
+        "fours": 56,
+        "sixes": 40
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 10,
+        "econ": 7.16,
+        "avg": 23.5
+      }
+    },
+    "mw-tromp": {
+      "fullName": "MW Tromp",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 76,
+        "balls": 57,
+        "sr": 133.3,
+        "avg": 19,
+        "highScore": 41,
+        "fours": 7,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 19,
+        "avg": null
+      }
+    },
+    "n-burger": {
+      "fullName": "N Burger",
+      "teamSlugs": [
+        "seattle-orcas",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 10,
+        "balls": 18,
+        "sr": 55.6,
+        "avg": 5,
+        "highScore": 4,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 12,
+        "econ": 8.89,
+        "avg": 30.25
+      }
+    },
+    "n-pooran": {
+      "fullName": "N Pooran",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 28,
+        "innings": 28,
+        "runs": 928,
+        "balls": 640,
+        "sr": 145,
+        "avg": 42.18,
+        "highScore": 137,
+        "fours": 64,
+        "sixes": 56
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "nauman-anwar": {
+      "fullName": "Nauman Anwar",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 203,
+        "balls": 179,
+        "sr": 113.4,
+        "avg": 20.3,
+        "highScore": 51,
+        "fours": 22,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "naveen-ul-haq": {
+      "fullName": "Naveen-ul-Haq",
+      "teamSlugs": [
+        "mi-new-york",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 8,
+        "balls": 10,
+        "sr": 80,
+        "avg": null,
+        "highScore": 6,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 9,
+        "econ": 9.83,
+        "avg": 34.22
+      }
+    },
+    "noor-ahmad": {
+      "fullName": "Noor Ahmad",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 13,
+        "balls": 9,
+        "sr": 144.4,
+        "avg": 6.5,
+        "highScore": 6,
+        "fours": 0,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 15,
+        "wickets": 24,
+        "econ": 7.91,
+        "avg": 19.13
+      }
+    },
+    "np-kenjige": {
+      "fullName": "NP Kenjige",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 23,
+        "balls": 24,
+        "sr": 95.8,
+        "avg": 11.5,
+        "highScore": 9,
+        "fours": 3,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 18,
+        "wickets": 19,
+        "econ": 7.39,
+        "avg": 22.16
+      }
+    },
+    "nr-kumar": {
+      "fullName": "NR Kumar",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 13,
+        "innings": 13,
+        "runs": 144,
+        "balls": 140,
+        "sr": 102.9,
+        "avg": 11.08,
+        "highScore": 31,
+        "fours": 7,
+        "sixes": 7
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 12,
+        "avg": null
+      }
+    },
+    "oc-mccoy": {
+      "fullName": "OC McCoy",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 4,
+        "balls": 7,
+        "sr": 57.1,
+        "avg": 4,
+        "highScore": 3,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 3,
+        "econ": 10.07,
+        "avg": 50.33
+      }
+    },
+    "oeg-baartman": {
+      "fullName": "OEG Baartman",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 4,
+        "econ": 7.63,
+        "avg": 15.25
+      }
+    },
+    "pj-cummins": {
+      "fullName": "PJ Cummins",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 33,
+        "balls": 30,
+        "sr": 110,
+        "avg": 11,
+        "highScore": 13,
+        "fours": 1,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 4,
+        "econ": 9.17,
+        "avg": 52.75
+      }
+    },
+    "q-de-kock": {
+      "fullName": "Q de Kock",
+      "teamSlugs": [
+        "mi-new-york",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 26,
+        "innings": 26,
+        "runs": 807,
+        "balls": 569,
+        "sr": 141.8,
+        "avg": 33.63,
+        "highScore": 88,
+        "fours": 75,
+        "sixes": 39
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "r-clinton": {
+      "fullName": "R Clinton",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 49,
+        "balls": 52,
+        "sr": 94.2,
+        "avg": 9.8,
+        "highScore": 28,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "r-powell": {
+      "fullName": "R Powell",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 81,
+        "balls": 57,
+        "sr": 142.1,
+        "avg": 16.2,
+        "highScore": 43,
+        "fours": 4,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "r-ravindra": {
+      "fullName": "R Ravindra",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 18,
+        "innings": 18,
+        "runs": 362,
+        "balls": 224,
+        "sr": 161.6,
+        "avg": 20.11,
+        "highScore": 70,
+        "fours": 35,
+        "sixes": 19
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 16,
+        "econ": 7.21,
+        "avg": 12.69
+      }
+    },
+    "r-shepherd": {
+      "fullName": "R Shepherd",
+      "teamSlugs": [
+        "mi-new-york",
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 124,
+        "balls": 86,
+        "sr": 144.2,
+        "avg": 17.71,
+        "highScore": 56,
+        "fours": 7,
+        "sixes": 10
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 11,
+        "econ": 7.94,
+        "avg": 23.45
+      }
+    },
+    "r-ugarkar": {
+      "fullName": "R Ugarkar",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 0,
+        "balls": 2,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 11,
+        "econ": 8.49,
+        "avg": 24.45
+      }
+    },
+    "rashid-khan": {
+      "fullName": "Rashid Khan",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 179,
+        "balls": 107,
+        "sr": 167.3,
+        "avg": 29.83,
+        "highScore": 55,
+        "fours": 14,
+        "sixes": 13
+      },
+      "bowling": {
+        "matches": 13,
+        "wickets": 18,
+        "econ": 6.48,
+        "avg": 18
+      }
+    },
+    "rd-rickelton": {
+      "fullName": "RD Rickelton",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 225,
+        "balls": 152,
+        "sr": 148,
+        "avg": 45,
+        "highScore": 103,
+        "fours": 19,
+        "sixes": 12
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "rr-rossouw": {
+      "fullName": "RR Rossouw",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 133,
+        "balls": 87,
+        "sr": 152.9,
+        "avg": 33.25,
+        "highScore": 78,
+        "fours": 4,
+        "sixes": 11
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "s-ladda": {
+      "fullName": "S Ladda",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 14.33,
+        "avg": 43
+      }
+    },
+    "s-van-staden": {
+      "fullName": "S van Staden",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 6,
+        "balls": 12,
+        "sr": 50,
+        "avg": 6,
+        "highScore": 6,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "saif-badar": {
+      "fullName": "Saif Badar",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 12,
+        "innings": 12,
+        "runs": 244,
+        "balls": 195,
+        "sr": 125.1,
+        "avg": 24.4,
+        "highScore": 54,
+        "fours": 17,
+        "sixes": 13
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 10.25,
+        "avg": null
+      }
+    },
+    "sc-van-schalkwyk": {
+      "fullName": "SC van Schalkwyk",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 85,
+        "balls": 73,
+        "sr": 116.4,
+        "avg": 21.25,
+        "highScore": 27,
+        "fours": 8,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 16,
+        "econ": 10.18,
+        "avg": 25.25
+      }
+    },
+    "se-rutherford": {
+      "fullName": "SE Rutherford",
+      "teamSlugs": [
+        "los-angeles-knight-riders",
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 13,
+        "innings": 13,
+        "runs": 264,
+        "balls": 186,
+        "sr": 141.9,
+        "avg": 22,
+        "highScore": 86,
+        "fours": 21,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sh-johnson": {
+      "fullName": "SH Johnson",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 31,
+        "balls": 19,
+        "sr": 163.2,
+        "avg": 15.5,
+        "highScore": 16,
+        "fours": 4,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 11,
+        "econ": 8,
+        "avg": 25.45
+      }
+    },
+    "shadab-khan": {
+      "fullName": "Shadab Khan",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 127,
+        "balls": 89,
+        "sr": 142.7,
+        "avg": 25.4,
+        "highScore": 61,
+        "fours": 6,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 5,
+        "econ": 9.18,
+        "avg": 31.2
+      }
+    },
+    "shakib-al-hasan": {
+      "fullName": "Shakib Al Hasan",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 60,
+        "balls": 48,
+        "sr": 125,
+        "avg": 15,
+        "highScore": 35,
+        "fours": 10,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 1,
+        "econ": 11.1,
+        "avg": 111
+      }
+    },
+    "sharad-lumba": {
+      "fullName": "Sharad Lumba",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 1,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "shayan-jahangir": {
+      "fullName": "Shayan Jahangir",
+      "teamSlugs": [
+        "mi-new-york",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 404,
+        "balls": 326,
+        "sr": 123.9,
+        "avg": 21.26,
+        "highScore": 43,
+        "fours": 37,
+        "sixes": 18
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "shubham-ranjane": {
+      "fullName": "Shubham Ranjane",
+      "teamSlugs": [
+        "seattle-orcas",
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 419,
+        "balls": 298,
+        "sr": 140.6,
+        "avg": 41.9,
+        "highScore": 70,
+        "fours": 31,
+        "sixes": 19
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 11.5,
+        "avg": null
+      }
+    },
+    "sikandar-raza": {
+      "fullName": "Sikandar Raza",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 8,
+        "innings": 8,
+        "runs": 111,
+        "balls": 96,
+        "sr": 115.6,
+        "avg": 15.86,
+        "highScore": 30,
+        "fours": 13,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 7,
+        "wickets": 5,
+        "econ": 10.21,
+        "avg": 38.8
+      }
+    },
+    "sk-patel": {
+      "fullName": "SK Patel",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 100,
+        "balls": 96,
+        "sr": 104.2,
+        "avg": 16.67,
+        "highScore": 38,
+        "fours": 12,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sn-netravalkar": {
+      "fullName": "SN Netravalkar",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 10,
+        "balls": 8,
+        "sr": 125,
+        "avg": 10,
+        "highScore": 9,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 24,
+        "wickets": 34,
+        "econ": 8.03,
+        "avg": 20.71
+      }
+    },
+    "so-hetmyer": {
+      "fullName": "SO Hetmyer",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 399,
+        "balls": 207,
+        "sr": 192.8,
+        "avg": 66.5,
+        "highScore": 97,
+        "fours": 23,
+        "sixes": 30
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sp-krishnamurthi": {
+      "fullName": "SP Krishnamurthi",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 422,
+        "balls": 285,
+        "sr": 148.1,
+        "avg": 26.38,
+        "highScore": 92,
+        "fours": 27,
+        "sixes": 28
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sp-narine": {
+      "fullName": "SP Narine",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 107,
+        "balls": 84,
+        "sr": 127.4,
+        "avg": 8.23,
+        "highScore": 28,
+        "fours": 6,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 12,
+        "econ": 6.56,
+        "avg": 37.17
+      }
+    },
+    "spd-smith": {
+      "fullName": "SPD Smith",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 336,
+        "balls": 223,
+        "sr": 150.7,
+        "avg": 56,
+        "highScore": 88,
+        "fours": 23,
+        "sixes": 21
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sr-mukkamalla": {
+      "fullName": "SR Mukkamalla",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 180,
+        "balls": 141,
+        "sr": 127.7,
+        "avg": 18,
+        "highScore": 38,
+        "fours": 18,
+        "sixes": 7
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sr-taylor": {
+      "fullName": "SR Taylor",
+      "teamSlugs": [
+        "mi-new-york",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 69,
+        "balls": 92,
+        "sr": 75,
+        "avg": 7.67,
+        "highScore": 18,
+        "fours": 5,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 1,
+        "econ": 7.44,
+        "avg": 119
+      }
+    },
+    "sujit-nayak": {
+      "fullName": "Sujit Nayak",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 26,
+        "balls": 37,
+        "sr": 70.3,
+        "avg": 8.67,
+        "highScore": 15,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sunny-patel": {
+      "fullName": "Sunny Patel",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 39,
+        "balls": 31,
+        "sr": 125.8,
+        "avg": 19.5,
+        "highScore": 20,
+        "fours": 4,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 5,
+        "econ": 9.58,
+        "avg": 46
+      }
+    },
+    "sv-wiig": {
+      "fullName": "SV Wiig",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 2,
+        "econ": 8.33,
+        "avg": 12.5
+      }
+    },
+    "t-luus": {
+      "fullName": "T Luus",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 11,
+        "balls": 11,
+        "sr": 100,
+        "avg": 5.5,
+        "highScore": 8,
+        "fours": 0,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 6,
+        "econ": 9.19,
+        "avg": 24.5
+      }
+    },
+    "t-sangha": {
+      "fullName": "T Sangha",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 2,
+        "balls": 3,
+        "sr": 66.7,
+        "avg": 2,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 9,
+        "econ": 9.09,
+        "avg": 22.22
+      }
+    },
+    "ta-boult": {
+      "fullName": "TA Boult",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 13,
+        "innings": 13,
+        "runs": 99,
+        "balls": 67,
+        "sr": 147.8,
+        "avg": 16.5,
+        "highScore": 22,
+        "fours": 4,
+        "sixes": 7
+      },
+      "bowling": {
+        "matches": 27,
+        "wickets": 46,
+        "econ": 8.14,
+        "avg": 18.54
+      }
+    },
+    "tajinder-singh": {
+      "fullName": "Tajinder Singh",
+      "teamSlugs": [
+        "mi-new-york",
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 184,
+        "balls": 128,
+        "sr": 143.8,
+        "avg": 15.33,
+        "highScore": 95,
+        "fours": 18,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 0,
+        "econ": 7,
+        "avg": null
+      }
+    },
+    "th-david": {
+      "fullName": "TH David",
+      "teamSlugs": [
+        "mi-new-york"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 236,
+        "balls": 161,
+        "sr": 146.6,
+        "avg": 33.71,
+        "highScore": 53,
+        "fours": 14,
+        "sixes": 16
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 2,
+        "econ": 11,
+        "avg": 11
+      }
+    },
+    "tl-seifert": {
+      "fullName": "TL Seifert",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 114,
+        "balls": 106,
+        "sr": 107.5,
+        "avg": 22.8,
+        "highScore": 33,
+        "fours": 11,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "tm-head": {
+      "fullName": "TM Head",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 336,
+        "balls": 193,
+        "sr": 174.1,
+        "avg": 48,
+        "highScore": 77,
+        "fours": 40,
+        "sixes": 18
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ubt-chand": {
+      "fullName": "UBT Chand",
+      "teamSlugs": [
+        "los-angeles-knight-riders"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 528,
+        "balls": 444,
+        "sr": 118.9,
+        "avg": 29.33,
+        "highScore": 86,
+        "fours": 48,
+        "sixes": 18
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "waqar-salamkheil": {
+      "fullName": "Waqar Salamkheil",
+      "teamSlugs": [
+        "los-angeles-knight-riders",
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 0,
+        "balls": 8,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 6,
+        "econ": 8.8,
+        "avg": 25.67
+      }
+    },
+    "wd-parnell": {
+      "fullName": "WD Parnell",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 2,
+        "balls": 1,
+        "sr": 200,
+        "avg": 2,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 9,
+        "econ": 8.65,
+        "avg": 19.22
+      }
+    },
+    "xc-bartlett": {
+      "fullName": "XC Bartlett",
+      "teamSlugs": [
+        "san-francisco-unicorns"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 134,
+        "balls": 75,
+        "sr": 178.7,
+        "avg": 26.8,
+        "highScore": 59,
+        "fours": 8,
+        "sixes": 11
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 18,
+        "econ": 8.86,
+        "avg": 19.78
+      }
+    },
+    "yasir-mohammad": {
+      "fullName": "Yasir Mohammad",
+      "teamSlugs": [
+        "washington-freedom"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 20,
+        "avg": null
+      }
+    },
+    "zaman-khan": {
+      "fullName": "Zaman Khan",
+      "teamSlugs": [
+        "seattle-orcas"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 9,
+        "balls": 7,
+        "sr": 128.6,
+        "avg": null,
+        "highScore": 7,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 4,
+        "econ": 7.23,
+        "avg": 26.5
+      }
+    },
+    "zia-shahzad": {
+      "fullName": "Zia Shahzad",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 2,
+        "balls": 3,
+        "sr": 66.7,
+        "avg": 2,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 5,
+        "avg": null
+      }
+    },
+    "zia-ul-haq": {
+      "fullName": "Zia-ul-Haq",
+      "teamSlugs": [
+        "texas-super-kings"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 1,
+        "balls": 2,
+        "sr": 50,
+        "avg": 1,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 14,
+        "econ": 8.35,
+        "avg": 32.79
+      }
+    }
+  },
+  "matches": [
+    {
+      "id": "1381361",
+      "season": "2023",
+      "date": "2023-07-13",
+      "teams": [
+        "Texas Super Kings",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381362",
+      "season": "2023",
+      "date": "2023-07-14",
+      "teams": [
+        "San Francisco Unicorns",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381363",
+      "season": "2023",
+      "date": "2023-07-14",
+      "teams": [
+        "Washington Freedom",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381364",
+      "season": "2023",
+      "date": "2023-07-15",
+      "teams": [
+        "Seattle Orcas",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381365",
+      "season": "2023",
+      "date": "2023-07-16",
+      "teams": [
+        "Washington Freedom",
+        "Texas Super Kings"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381366",
+      "season": "2023",
+      "date": "2023-07-16",
+      "teams": [
+        "MI New York",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381367",
+      "season": "2023",
+      "date": "2023-07-17",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381368",
+      "season": "2023",
+      "date": "2023-07-18",
+      "teams": [
+        "San Francisco Unicorns",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381369",
+      "season": "2023",
+      "date": "2023-07-20",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Washington Freedom"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381370",
+      "season": "2023",
+      "date": "2023-07-21",
+      "teams": [
+        "Texas Super Kings",
+        "Seattle Orcas"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381371",
+      "season": "2023",
+      "date": "2023-07-22",
+      "teams": [
+        "Washington Freedom",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381372",
+      "season": "2023",
+      "date": "2023-07-23",
+      "teams": [
+        "Seattle Orcas",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381373",
+      "season": "2023",
+      "date": "2023-07-23",
+      "teams": [
+        "Washington Freedom",
+        "MI New York"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381374",
+      "season": "2023",
+      "date": "2023-07-24",
+      "teams": [
+        "San Francisco Unicorns",
+        "Texas Super Kings"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381375",
+      "season": "2023",
+      "date": "2023-07-25",
+      "teams": [
+        "MI New York",
+        "Seattle Orcas"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381376",
+      "season": "2023",
+      "date": "2023-07-27",
+      "teams": [
+        "MI New York",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381377",
+      "season": "2023",
+      "date": "2023-07-27",
+      "teams": [
+        "Texas Super Kings",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381378",
+      "season": "2023",
+      "date": "2023-07-28",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1381379",
+      "season": "2023",
+      "date": "2023-07-30",
+      "teams": [
+        "Seattle Orcas",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432726",
+      "season": "2024",
+      "date": "2024-07-05",
+      "teams": [
+        "Seattle Orcas",
+        "MI New York"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432727",
+      "season": "2024",
+      "date": "2024-07-05",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Texas Super Kings"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432728",
+      "season": "2024",
+      "date": "2024-07-06",
+      "teams": [
+        "MI New York",
+        "Washington Freedom"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432729",
+      "season": "2024",
+      "date": "2024-07-07",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432730",
+      "season": "2024",
+      "date": "2024-07-08",
+      "teams": [
+        "Texas Super Kings",
+        "Washington Freedom"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432731",
+      "season": "2024",
+      "date": "2024-07-09",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432732",
+      "season": "2024",
+      "date": "2024-07-10",
+      "teams": [
+        "San Francisco Unicorns",
+        "Texas Super Kings"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432733",
+      "season": "2024",
+      "date": "2024-07-11",
+      "teams": [
+        "Seattle Orcas",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432736",
+      "season": "2024",
+      "date": "2024-07-14",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Washington Freedom"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432737",
+      "season": "2024",
+      "date": "2024-07-14",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432738",
+      "season": "2024",
+      "date": "2024-07-15",
+      "teams": [
+        "San Francisco Unicorns",
+        "Seattle Orcas"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432739",
+      "season": "2024",
+      "date": "2024-07-16",
+      "teams": [
+        "Washington Freedom",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432740",
+      "season": "2024",
+      "date": "2024-07-17",
+      "teams": [
+        "Seattle Orcas",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Church Street Park, Morrisville",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432741",
+      "season": "2024",
+      "date": "2024-07-18",
+      "teams": [
+        "San Francisco Unicorns",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432742",
+      "season": "2024",
+      "date": "2024-07-19",
+      "teams": [
+        "Washington Freedom",
+        "Texas Super Kings"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432743",
+      "season": "2024",
+      "date": "2024-07-20",
+      "teams": [
+        "Seattle Orcas",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432744",
+      "season": "2024",
+      "date": "2024-07-21",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432745",
+      "season": "2024",
+      "date": "2024-07-22",
+      "teams": [
+        "Washington Freedom",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432746",
+      "season": "2024",
+      "date": "2024-07-23",
+      "teams": [
+        "Texas Super Kings",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432747",
+      "season": "2024",
+      "date": "2024-07-24",
+      "teams": [
+        "MI New York",
+        "Texas Super Kings"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432748",
+      "season": "2024",
+      "date": "2024-07-25",
+      "teams": [
+        "San Francisco Unicorns",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432749",
+      "season": "2024",
+      "date": "2024-07-26",
+      "teams": [
+        "San Francisco Unicorns",
+        "Texas Super Kings"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1432750",
+      "season": "2024",
+      "date": "2024-07-28",
+      "teams": [
+        "Washington Freedom",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481992",
+      "season": "2025",
+      "date": "2025-06-12",
+      "teams": [
+        "San Francisco Unicorns",
+        "Washington Freedom"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481993",
+      "season": "2025",
+      "date": "2025-06-13",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481994",
+      "season": "2025",
+      "date": "2025-06-14",
+      "teams": [
+        "San Francisco Unicorns",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481995",
+      "season": "2025",
+      "date": "2025-06-14",
+      "teams": [
+        "Seattle Orcas",
+        "Washington Freedom"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481996",
+      "season": "2025",
+      "date": "2025-06-15",
+      "teams": [
+        "Texas Super Kings",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481997",
+      "season": "2025",
+      "date": "2025-06-15",
+      "teams": [
+        "MI New York",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481998",
+      "season": "2025",
+      "date": "2025-06-16",
+      "teams": [
+        "Texas Super Kings",
+        "Seattle Orcas"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1481999",
+      "season": "2025",
+      "date": "2025-06-17",
+      "teams": [
+        "Washington Freedom",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482000",
+      "season": "2025",
+      "date": "2025-06-18",
+      "teams": [
+        "Seattle Orcas",
+        "MI New York"
+      ],
+      "venue": "Oakland Coliseum,Oakland",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482001",
+      "season": "2025",
+      "date": "2025-06-20",
+      "teams": [
+        "Texas Super Kings",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482002",
+      "season": "2025",
+      "date": "2025-06-21",
+      "teams": [
+        "MI New York",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482003",
+      "season": "2025",
+      "date": "2025-06-22",
+      "teams": [
+        "Seattle Orcas",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482004",
+      "season": "2025",
+      "date": "2025-06-22",
+      "teams": [
+        "Texas Super Kings",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482005",
+      "season": "2025",
+      "date": "2025-06-23",
+      "teams": [
+        "San Francisco Unicorns",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482006",
+      "season": "2025",
+      "date": "2025-06-24",
+      "teams": [
+        "Texas Super Kings",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482007",
+      "season": "2025",
+      "date": "2025-06-25",
+      "teams": [
+        "San Francisco Unicorns",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482008",
+      "season": "2025",
+      "date": "2025-06-26",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482009",
+      "season": "2025",
+      "date": "2025-06-27",
+      "teams": [
+        "MI New York",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482010",
+      "season": "2025",
+      "date": "2025-06-28",
+      "teams": [
+        "Washington Freedom",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482011",
+      "season": "2025",
+      "date": "2025-06-28",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "Seattle Orcas"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482012",
+      "season": "2025",
+      "date": "2025-06-29",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482013",
+      "season": "2025",
+      "date": "2025-07-01",
+      "teams": [
+        "San Francisco Unicorns",
+        "Seattle Orcas"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482014",
+      "season": "2025",
+      "date": "2025-07-02",
+      "teams": [
+        "Texas Super Kings",
+        "Washington Freedom"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482015",
+      "season": "2025",
+      "date": "2025-07-03",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "MI New York"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482016",
+      "season": "2025",
+      "date": "2025-07-04",
+      "teams": [
+        "San Francisco Unicorns",
+        "Texas Super Kings"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482017",
+      "season": "2025",
+      "date": "2025-07-04",
+      "teams": [
+        "Seattle Orcas",
+        "Washington Freedom"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482018",
+      "season": "2025",
+      "date": "2025-07-05",
+      "teams": [
+        "MI New York",
+        "Los Angeles Knight Riders"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482019",
+      "season": "2025",
+      "date": "2025-07-05",
+      "teams": [
+        "Texas Super Kings",
+        "Seattle Orcas"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482020",
+      "season": "2025",
+      "date": "2025-07-06",
+      "teams": [
+        "MI New York",
+        "Washington Freedom"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482021",
+      "season": "2025",
+      "date": "2025-07-06",
+      "teams": [
+        "Los Angeles Knight Riders",
+        "San Francisco Unicorns"
+      ],
+      "venue": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482023",
+      "season": "2025",
+      "date": "2025-07-09",
+      "teams": [
+        "San Francisco Unicorns",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482024",
+      "season": "2025",
+      "date": "2025-07-11",
+      "teams": [
+        "Texas Super Kings",
+        "MI New York"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1482025",
+      "season": "2025",
+      "date": "2025-07-13",
+      "teams": [
+        "MI New York",
+        "Washington Freedom"
+      ],
+      "venue": "Grand Prairie Stadium, Dallas",
+      "winner": null,
+      "result": null
+    }
+  ]
+}

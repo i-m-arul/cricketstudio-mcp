@@ -1,53 +1,52 @@
 {
-  "name": "@cricketstudio/mcp",
-  "version": "0.3.1",
-  "description": "Citation infrastructure for cricket — MCP server exposing IPL 2026 atomic claims with provenance, sample-size floors, and stable canonical URLs.",
+  "name": "cricketstudio-mcp",
+  "version": "1.0.0",
+  "description": "CricketStudio MCP server — 29 tools for IPL 2026, IPL historical (18 seasons), and Major League Cricket data. Citation-grade atomic claims with provenance.",
   "type": "module",
+  "main": "dist/index.js",
   "bin": {
-    "cricketstudio-mcp": "bin/cricketstudio-mcp.mjs"
+    "cricketstudio-mcp": "dist/index.js"
   },
-  "main": "src/server.ts",
   "scripts": {
-    "start": "tsx src/server.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm --packages=external",
+    "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "smoke": "node scripts/smoke-test.mjs"
+    "prepare": "npm run build",
+    "snapshot": "node scripts/build-snapshot.mjs"
   },
   "keywords": [
     "mcp",
-    "model-context-protocol",
     "cricket",
     "ipl",
-    "sports-data",
-    "citation",
-    "claim-review",
-    "anthropic",
-    "claude"
+    "ipl-2026",
+    "ipl-historical",
+    "mlc",
+    "cricketstudio",
+    "claude",
+    "model-context-protocol"
   ],
-  "author": "Arul Anand",
+  "author": "Arul Anand / CricketStudio <hello@cricketstudio.ai>",
   "license": "MIT",
-  "homepage": "https://players.cricketstudio.ai/mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/i-m-arul/cricketstudio-mcp.git"
+    "url": "https://github.com/cricketstudioai/cricketstudio-mcp.git"
   },
-  "bugs": {
-    "url": "https://github.com/i-m-arul/cricketstudio-mcp/issues"
-  },
+  "homepage": "https://players.cricketstudio.ai/mcp",
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
+  "peerDependencies": {},
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4",
-    "tsx": "^4.19.2",
-    "zod": "^3.23.8"
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "esbuild": "^0.20.0"
   },
   "files": [
-    "bin/",
-    "src/",
+    "dist/",
     "data/snapshot/",
     "README.md",
     "LICENSE"

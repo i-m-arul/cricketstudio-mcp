@@ -1,0 +1,25 @@
+{
+  "builtAt": "2026-06-01T16:24:15.129Z",
+  "version": "2.2",
+  "mode": "live",
+  "corpus": {
+    "matches": 1317,
+    "deliveries": 312309,
+    "players": 256
+  },
+  "counts": {
+    "players": 256,
+    "standings": 0,
+    "h2hPairs": 500,
+    "trends": 41,
+    "matches": 73,
+    "mlc": {
+      "players": 166,
+      "matches": 75
+    },
+    "iplHistorical": {
+      "players": 767,
+      "seasons": 18
+    }
+  }
+}
