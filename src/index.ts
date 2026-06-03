@@ -25,6 +25,7 @@ import { fileURLToPath } from 'node:url';
 import { z } from 'zod';
 import { runStartup } from './telemetry.js';
 import * as snap from './snapshot.js';
+import { getAspectMeta } from './tools/ipl-leaderboard.js';
 
 // ─── Paths ────────────────────────────────────────────────────────────
 
@@ -63,7 +64,18 @@ type RawStandingsRow = { teamId: number; teamName: string; teamCode: string; pla
 type SeasonStatPlayer = { fullName: string; teamCode?: string; role?: string; batting?: { matches?: number; runs?: number; sr?: number | null; avg?: number | null; fifties?: number; hundreds?: number }; bowling?: { matches?: number; wickets?: number; econ?: number | null }; fielding?: Record<string, unknown> };
 type H2HSummary = { slug: string; batterSlug: string; batterName: string; bowlerSlug: string; bowlerName: string; deliveries?: number; runs?: number; strikeRate?: number; fours?: number; sixes?: number; dotBalls?: number; dismissals?: number };
 type TeamH2HRecord = { a: { slug: string; name: string; code: string }; b: { slug: string; name: string; code: string }; matches: number; aWon: number; bWon: number; noResult: number; recent: Array<{ date: string; venue: string; result: string }> };
-type IplHistoricalRecord = { leaderboards?: Record<string, unknown[]>; seasons?: unknown[]; records?: unknown };
+/**
+ * ipl-historical.json shape (verified against the bundled snapshot):
+ *   { computedAt, league, cohort, seasonsCovered, bySlug, bySeason }
+ * bySlug is keyed by player slug; each value carries career batting + bowling
+ * aggregates plus a bySeason breakdown. There is NO pre-baked `leaderboards`
+ * key — leaderboards are computed from bySlug at request time (see
+ * handleIplLeaderboard).
+ */
+type IplHistBatting = { matches?: number; innings?: number; runs?: number; balls?: number; sr?: number; avg?: number; fours?: number; sixes?: number; highScore?: number; fifties?: number; hundreds?: number };
+type IplHistBowling = { matches?: number; balls?: number; runs?: number; wickets?: number; econ?: number; avg?: number };
+type IplHistPlayer = { fullName: string; teamSlugs?: string[]; batting?: IplHistBatting; bowling?: IplHistBowling; bySeason?: Record<string, unknown> };
+type IplHistoricalRecord = { computedAt?: string; league?: string; cohort?: { matches?: number; players?: number; balls?: number; seasonsCovered?: string[] }; seasonsCovered?: string[]; bySlug?: Record<string, IplHistPlayer>; bySeason?: Record<string, unknown> };
 
 let _players: Record<string, PlayerRecord> | null = null;
 let _teams: Team[] | null = null;
@@ -428,14 +440,16 @@ function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: nu
   };
   const spec = specMap[args.sortBy];
   if (!spec) return notFound(`Unknown sortBy "${args.sortBy}".`);
-  const all = Object.values(stats.bySlug ?? {});
+  // season-stats bySlug is keyed BY SLUG with no `slug` field inside the value —
+  // derive the slug from the entry key so canonicalUrls aren't /players/undefined.
+  const all = Object.entries(stats.bySlug ?? {});
   const tc = args.teamCode ? args.teamCode.toUpperCase() : null;
   const rows = all
-    .filter((p) => p && p[spec.block])
-    .filter((p) => tc ? (p.teamCode || '').toUpperCase() === tc : true)
-    .filter((p) => p[spec.block][spec.field] !== undefined && p[spec.block][spec.field] !== null)
-    .filter((p) => spec.floorBalls ? Number(p[spec.block].balls || 0) >= spec.floorBalls : true)
-    .map((p) => ({ slug: p.slug, fullName: p.fullName, teamCode: p.teamCode, role: p.role, matches: p[spec.block].matches, balls: p[spec.block].balls, [spec.field]: p[spec.block][spec.field], canonicalUrl: `${SITE}/players/${p.slug}` }))
+    .filter(([, p]) => p && p[spec.block])
+    .filter(([, p]) => tc ? (p.teamCode || '').toUpperCase() === tc : true)
+    .filter(([, p]) => p[spec.block][spec.field] !== undefined && p[spec.block][spec.field] !== null)
+    .filter(([, p]) => spec.floorBalls ? Number(p[spec.block].balls || 0) >= spec.floorBalls : true)
+    .map(([slug, p]) => ({ slug, fullName: p.fullName, teamCode: p.teamCode, role: p.role, matches: p[spec.block].matches, balls: p[spec.block].balls, [spec.field]: p[spec.block][spec.field], canonicalUrl: `${SITE}/players/${slug}` }))
     .sort((a: any, b: any) => spec.descending ? Number(b[spec.field]) - Number(a[spec.field]) : Number(a[spec.field]) - Number(b[spec.field]))
     .slice(0, limit);
   return ok({ sortBy: args.sortBy, sampleSizeFloor: spec.floorDesc, teamCode: args.teamCode, count: rows.length, rows }, `${SITE}/season/ipl-2026/${args.sortBy.replace(/_/g, '-')}`);
@@ -514,7 +528,15 @@ function handleListTrends(args: { kind?: string; limit?: number }) {
 function handlePlayerH2H(args: { batterSlug: string; bowlerSlug: string }) {
   const slug = `${args.batterSlug}-vs-${args.bowlerSlug}`;
   const h = h2hSummaries().find((x) => x.slug === slug);
-  if (!h) return notFound(`No H2H pair "${slug}" (≥5 deliveries floor — pair may not have met enough times).`, `${SITE}/h2h/${slug}`);
+  if (!h) {
+    return ok({
+      error: 'not_found',
+      message: `No H2H record for "${slug}" in the bundled snapshot. This means one of: (a) the pair is below the ≥5-deliveries sample floor in IPL 2026, or (b) the pair is outside the bundled top-2000 matchups (the snapshot carries the highest-frequency pairs). The full head-to-head, if it exists, is rendered at the canonical URL.`,
+      pair: { batterSlug: args.batterSlug, bowlerSlug: args.bowlerSlug },
+      sampleSizeFloor: '≥5 deliveries faced',
+      hint: 'Use search_players to confirm both slugs, then retry. Canonical URL resolves the pair if it cleared the floor.',
+    }, `${SITE}/h2h/${slug}`);
+  }
   const runs = h.runs ?? 0;
   const deliveries = h.deliveries ?? 0;
   const dismissals = h.dismissals ?? 0;
@@ -649,17 +671,14 @@ function handleTeamH2H(args: { teamSlugA: string; teamSlugB: string }) {
 function handleGetPartnerships(args: { playerSlug: string }) {
   const p = players()[args.playerSlug];
   if (!p) return notFound(`No player with slug "${args.playerSlug}".`, `${SITE}/players/${args.playerSlug}`);
-  // Partnership data is not bundled in the snapshot; surface the player's
-  // batting claims (P3/P4) that may reference partnerships, and redirect
-  // to the canonical URL for the full partnership breakdown.
-  const partnershipClaims = p.claims.filter((c) => (c.headline ?? '').toLowerCase().includes('partner') || (c.metric ?? '').toLowerCase().includes('partner'));
+  // Partnership-dependency data (per-partner strike rate, most-frequent partners,
+  // most productive wicket-stand) is NOT included in the bundled snapshot — it is
+  // computed in the full dataset and rendered at the canonical URL. Be honest about
+  // this known limitation rather than returning a misleading empty array.
   return ok({
     player: { slug: p.slug, fullName: p.fullName, team: p.team },
-    snapshotNote: partnershipClaims.length > 0
-      ? `${partnershipClaims.length} partnership-related claim${partnershipClaims.length === 1 ? '' : 's'} found in snapshot.`
-      : 'Full partnership dependency stats (top stand partners, average partnership runs, most productive wicket-stand) are available at the canonical URL.',
-    partnershipClaims,
-    fullBreakdownAt: `${SITE}/players/${p.slug}`,
+    available: false,
+    note: 'Partnership-dependency analysis (per-partner strike rate, most-frequent partners, most productive wicket-stand) is computed in the full dataset and rendered at the canonical URL; it is not included in the bundled snapshot.',
     source: 'CricketStudio ball-by-ball aggregation',
   }, `${SITE}/players/${p.slug}`);
 }
@@ -676,41 +695,71 @@ function handleComparePlayers(args: { playerSlugs: string[] }) {
 }
 
 function handleDismissalAnalysis(args: { playerSlug: string }) {
-  const p = players()[args.playerSlug];
-  if (!p) return notFound(`No player with slug "${args.playerSlug}".`, `${SITE}/players/${args.playerSlug}`);
-  // Dismissal analysis data (pace vs spin, phase breakdowns) is computed
-  // in the private monorepo and surfaced on the canonical player page.
-  // Surface any dismissal-related claims from the snapshot.
-  const dismissalClaims = p.claims.filter((c) =>
-    (c.headline ?? '').toLowerCase().includes('dismiss') ||
-    (c.metric ?? '').toLowerCase().includes('dismiss') ||
-    (c.context ?? '').toLowerCase().includes('dismiss'),
-  );
+  const url = `${SITE}/players/${args.playerSlug}`;
+  // Dismissal modes are aggregated into the SETU season-stats snapshot:
+  // bySlug[slug].batting.dismissals = { bowled, caught, lbw, runOut, hitWicket, other }.
+  // (season-stats bySlug carries no `slug` field — look up directly by key.)
+  const stats = seasonStats() as { bySlug?: Record<string, any> };
+  const p = (stats.bySlug ?? {})[args.playerSlug];
+  if (!p) {
+    return ok({
+      error: 'not_found',
+      message: `No IPL 2026 batting record for slug "${args.playerSlug}" in the season-stats snapshot. Use search_players to find a valid slug, or see the canonical page.`,
+      player: { slug: args.playerSlug },
+    }, url);
+  }
+  const d = p.batting?.dismissals as Record<string, number> | undefined;
+  if (!d || typeof d !== 'object') {
+    return ok({
+      player: { slug: args.playerSlug, fullName: p.fullName, team: p.teamCode ?? null },
+      note: `${p.fullName} has no recorded dismissals in IPL 2026 (not out in every captured innings, or no innings batted). The per-mode breakdown is rendered at the canonical URL when available.`,
+      available: false,
+      window: 'IPL 2026',
+      source: 'CricketStudio ball-by-ball aggregation',
+    }, url);
+  }
+  const modes = ['bowled', 'caught', 'lbw', 'runOut', 'hitWicket', 'other'] as const;
+  const totalDismissals = modes.reduce((sum, k) => sum + Number(d[k] ?? 0), 0);
+  let mostCommonMode: string | null = null;
+  let mostCommonCount = -1;
+  for (const k of modes) {
+    const v = Number(d[k] ?? 0);
+    if (v > mostCommonCount) { mostCommonCount = v; mostCommonMode = k; }
+  }
   return ok({
-    player: { slug: p.slug, fullName: p.fullName, team: p.team, role: p.role },
-    snapshotNote: dismissalClaims.length > 0
-      ? `${dismissalClaims.length} dismissal-related claim${dismissalClaims.length === 1 ? '' : 's'} found in snapshot.`
-      : 'Full dismissal pattern analysis (pace vs spin, powerplay vs death, dismissal modes) is available at the canonical URL.',
-    dismissalClaims,
-    fullBreakdownAt: `${SITE}/players/${p.slug}`,
+    player: { slug: args.playerSlug, fullName: p.fullName, team: p.teamCode ?? null },
+    dismissals: {
+      bowled: Number(d.bowled ?? 0),
+      caught: Number(d.caught ?? 0),
+      lbw: Number(d.lbw ?? 0),
+      runOut: Number(d.runOut ?? 0),
+      hitWicket: Number(d.hitWicket ?? 0),
+      other: Number(d.other ?? 0),
+    },
+    totalDismissals,
+    mostCommonMode: totalDismissals > 0 ? mostCommonMode : null,
+    window: 'IPL 2026',
+    sampleSize: `${totalDismissals} dismissal${totalDismissals === 1 ? '' : 's'}`,
     source: 'CricketStudio ball-by-ball aggregation',
-  }, `${SITE}/players/${p.slug}`);
+  }, url);
 }
 
 function handleFieldingStats(args: { playerSlug?: string; limit?: number }) {
   const stats = seasonStats() as { bySlug?: Record<string, any> };
-  const all = Object.values(stats.bySlug ?? {}).filter((p) => p && p.fielding);
+  // season-stats bySlug is keyed BY SLUG with no `slug` field inside the value —
+  // carry the entry key through so canonicalUrls aren't /players/undefined.
+  const all = Object.entries(stats.bySlug ?? {}).filter(([, p]) => p && p.fielding);
   if (args.playerSlug) {
     const p = (stats.bySlug ?? {})[args.playerSlug];
     if (!p) return notFound(`No player with slug "${args.playerSlug}".`, `${SITE}/players/${args.playerSlug}`);
     const f = p.fielding || {};
-    return ok({ player: { slug: p.slug, fullName: p.fullName, teamCode: p.teamCode }, catches: f.catches ?? 0, runOutAssists: f.runOutAssists ?? 0, totalDismissals: f.totalDismissals ?? 0, window: 'IPL 2026 to date', source: 'CricketStudio ball-by-ball aggregation' }, `${SITE}/players/${p.slug}`);
+    return ok({ player: { slug: args.playerSlug, fullName: p.fullName, teamCode: p.teamCode }, catches: f.catches ?? 0, runOutAssists: f.runOutAssists ?? 0, totalDismissals: f.totalDismissals ?? 0, window: 'IPL 2026 to date', source: 'CricketStudio ball-by-ball aggregation' }, `${SITE}/players/${args.playerSlug}`);
   }
   const limit = Math.max(1, Math.min(100, args.limit ?? 15));
   const ranked = all
-    .sort((a, b) => Number(b.fielding.totalDismissals || 0) - Number(a.fielding.totalDismissals || 0))
+    .sort(([, a], [, b]) => Number(b.fielding.totalDismissals || 0) - Number(a.fielding.totalDismissals || 0))
     .slice(0, limit)
-    .map((p, i) => ({ rank: i + 1, slug: p.slug, fullName: p.fullName, teamCode: p.teamCode, catches: p.fielding.catches ?? 0, runOutAssists: p.fielding.runOutAssists ?? 0, totalDismissals: p.fielding.totalDismissals ?? 0, canonicalUrl: `${SITE}/players/${p.slug}` }));
+    .map(([slug, p], i) => ({ rank: i + 1, slug, fullName: p.fullName, teamCode: p.teamCode, catches: p.fielding.catches ?? 0, runOutAssists: p.fielding.runOutAssists ?? 0, totalDismissals: p.fielding.totalDismissals ?? 0, canonicalUrl: `${SITE}/players/${slug}` }));
   return ok({ count: ranked.length, window: 'IPL 2026 to date', rows: ranked }, `${SITE}/season/ipl-2026/catches`);
 }
 
@@ -817,44 +866,135 @@ function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
 
 // ─── IPL Historical handler ───────────────────────────────────────────
 
+/**
+ * Aspect → metric spec for the IPL historical leaderboard.
+ *
+ * The ipl-historical.json snapshot has NO pre-baked `leaderboards` key — it
+ * carries `bySlug` (per-player career batting + bowling aggregates). We compute
+ * each leaderboard from `bySlug` at request time. Career-grain blocks only carry
+ * the simple aggregate fields (batting: runs/balls/sr/avg/fours/sixes/highScore/
+ * fifties/hundreds; bowling: matches/wickets/econ/avg), so only aspects derivable
+ * from those fields are supported here. Phase-split aspects (powerplay/middle/death)
+ * are NOT derivable at career grain and return an honest pointer.
+ *
+ * floor: a predicate over the player's batting/bowling block — when it returns
+ * false the player is excluded (below sample floor).
+ */
+type IplLbBlock = 'batting' | 'bowling';
+interface IplLbSpec {
+  block: IplLbBlock;
+  field: string;
+  ascending: boolean;
+  floor?: (b: IplHistBatting & IplHistBowling) => boolean;
+  floorNote?: string;
+}
+
+const IPL_LB_SPECS: Record<string, IplLbSpec> = {
+  // ── Batting aggregates ──────────────────────────────────────────────
+  'orange-cap':      { block: 'batting', field: 'runs',     ascending: false },
+  'most-runs':       { block: 'batting', field: 'runs',     ascending: false },
+  'most-sixes':      { block: 'batting', field: 'sixes',    ascending: false },
+  'most-fours':      { block: 'batting', field: 'fours',    ascending: false },
+  'most-fifties':    { block: 'batting', field: 'fifties',  ascending: false },
+  'most-hundreds':   { block: 'batting', field: 'hundreds', ascending: false },
+  'highest-score':   { block: 'batting', field: 'highScore', ascending: false },
+  'top-score':       { block: 'batting', field: 'highScore', ascending: false },
+  'strike-rate':     { block: 'batting', field: 'sr',  ascending: false, floor: (b) => Number(b.balls ?? 0) >= 30,    floorNote: '≥30 balls faced' },
+  'batting-average': { block: 'batting', field: 'avg', ascending: false, floor: (b) => Number(b.innings ?? 0) >= 10, floorNote: '≥10 innings' },
+  // ── Bowling aggregates ──────────────────────────────────────────────
+  'purple-cap':       { block: 'bowling', field: 'wickets', ascending: false },
+  'most-wickets':     { block: 'bowling', field: 'wickets', ascending: false },
+  // career bowling block has no `balls` field, so the economy/avg floors use
+  // the available proxies (matches / wickets) — disclosed in floorNote.
+  'economy-leaders':  { block: 'bowling', field: 'econ', ascending: true, floor: (b) => Number(b.matches ?? 0) >= 10, floorNote: '≥10 matches bowled (career bowling block carries no ball count)' },
+  'economy':          { block: 'bowling', field: 'econ', ascending: true, floor: (b) => Number(b.matches ?? 0) >= 10, floorNote: '≥10 matches bowled (career bowling block carries no ball count)' },
+  'best-economy':     { block: 'bowling', field: 'econ', ascending: true, floor: (b) => Number(b.matches ?? 0) >= 10, floorNote: '≥10 matches bowled (career bowling block carries no ball count)' },
+  'bowling-average':  { block: 'bowling', field: 'avg',  ascending: true, floor: (b) => Number(b.wickets ?? 0) >= 10, floorNote: '≥10 wickets' },
+};
+
 function handleIplLeaderboard(args: { aspect: string; season?: string; limit?: number }) {
   const limit = Math.max(1, Math.min(100, args.limit ?? 20));
+  const canonical = args.season ? `${SITE}/season/${args.season}/${args.aspect}` : `${IPL_HUB}/leaderboards/${args.aspect}`;
+  const validAspects = Object.keys(IPL_LB_SPECS);
+
   const hist = iplHistorical();
-  if (!hist) {
+  if (!hist || !hist.bySlug) {
     return ok({
       note: 'IPL historical snapshot not bundled in this release. Full leaderboards are available at the canonical URL.',
       aspect: args.aspect,
       season: args.season ?? 'all-time',
-      canonicalSurface: args.season ? `${IPL_HUB}/leaderboards/${args.aspect}?season=${args.season}` : `${IPL_HUB}/leaderboards/${args.aspect}`,
-    }, args.season ? `${SITE}/season/${args.season}` : `${IPL_HUB}/leaderboards/${args.aspect}`);
+      canonicalSurface: canonical,
+    }, canonical);
   }
 
-  // The ipl-historical.json snapshot stores leaderboards keyed by aspect,
-  // optionally nested by season. Try season-scoped key first, then fall back
-  // to the global aspect.
-  const leaderboards = hist.leaderboards ?? {};
-  const seasonKey = args.season ? `${args.aspect}--${args.season}` : null;
-  const rows: unknown[] = (seasonKey && (leaderboards as any)[seasonKey])
-    ? (leaderboards as any)[seasonKey]
-    : ((leaderboards as any)[args.aspect] ?? []);
-
-  if (!Array.isArray(rows) || rows.length === 0) {
+  const spec = IPL_LB_SPECS[args.aspect];
+  if (!spec) {
+    const meta = getAspectMeta(args.aspect);
     return ok({
-      note: `No data for aspect "${args.aspect}"${args.season ? ` in season "${args.season}"` : ''}. Check the canonical URL for the full leaderboard.`,
+      error: 'unknown_aspect',
+      message: meta
+        ? `Aspect "${args.aspect}" is catalogued but not derivable from the bundled career snapshot (it needs phase-split / ball-level data not present in ipl-historical.json bySlug). Computable aspects: ${validAspects.join(', ')}. The full leaderboard is rendered at the canonical URL.`
+        : `Unknown IPL leaderboard aspect "${args.aspect}". Valid aspects: ${validAspects.join(', ')}.`,
       aspect: args.aspect,
-      season: args.season ?? 'all-time',
-      availableAspects: Object.keys(leaderboards),
+      validAspects,
     }, `${IPL_HUB}/leaderboards/${args.aspect}`);
+  }
+
+  // Season-scoped requests: the per-season grain lives under bySlug[*].bySeason,
+  // but we only compute all-time leaderboards from the career blocks here. Point
+  // season requests at the canonical per-season surface.
+  if (args.season) {
+    return ok({
+      note: `Per-season IPL leaderboards (season "${args.season}") are rendered at the canonical URL. The MCP computes the all-time (2007/08–2025) leaderboard — call without the season arg for that.`,
+      aspect: args.aspect,
+      season: args.season,
+      canonicalSurface: `${SITE}/season/${args.season}/${args.aspect}`,
+    }, `${SITE}/season/${args.season}/${args.aspect}`);
+  }
+
+  const meta = getAspectMeta(args.aspect);
+  const rows = Object.entries(hist.bySlug)
+    .map(([slug, p]) => {
+      const block = (spec.block === 'batting' ? p.batting : p.bowling) as (IplHistBatting & IplHistBowling) | undefined;
+      if (!block) return null;
+      const value = (block as Record<string, unknown>)[spec.field];
+      if (value === undefined || value === null || typeof value !== 'number' || !Number.isFinite(value)) return null;
+      if (spec.floor && !spec.floor(block)) return null;
+      return { slug, fullName: p.fullName, teamSlugs: p.teamSlugs ?? [], value, block };
+    })
+    .filter((r): r is NonNullable<typeof r> => r !== null)
+    .sort((a, b) => spec.ascending ? a.value - b.value : b.value - a.value)
+    .slice(0, limit)
+    .map((r, i) => ({
+      rank: i + 1,
+      slug: r.slug,
+      fullName: r.fullName,
+      teamSlugs: r.teamSlugs,
+      value: r.value,
+      matches: r.block.matches ?? null,
+      ...(spec.block === 'batting' ? { innings: r.block.innings ?? null } : { wickets: r.block.wickets ?? null }),
+      canonicalUrl: `${SITE}/players/${r.slug}`,
+    }));
+
+  if (rows.length === 0) {
+    return ok({
+      note: `No players cleared the sample floor for aspect "${args.aspect}". Check the canonical URL.`,
+      aspect: args.aspect,
+      season: 'all-time',
+      validAspects,
+    }, canonical);
   }
 
   return ok({
     aspect: args.aspect,
-    season: args.season ?? 'all-time',
-    sampleSizeNote: 'Sample-size floors enforced (≥30 batting balls for SR, ≥15 bowling deliveries for economy, ≥3 matches for most aggregate aspects).',
-    count: Math.min(limit, rows.length),
-    rows: rows.slice(0, limit),
-    provenance: { source: 'Cricsheet IPL corpus (CC BY 3.0)', seasons: '2007/08–2025', matches: 1169 },
-  }, args.season ? `${SITE}/season/${args.season}/${args.aspect}` : `${IPL_HUB}/leaderboards/${args.aspect}`);
+    title: meta?.title ?? args.aspect,
+    season: 'all-time (2007/08–2025)',
+    metric: spec.field,
+    sampleFloorNote: spec.floorNote ?? 'No sample floor for this aspect.',
+    count: rows.length,
+    rows,
+    provenance: { source: 'Cricsheet CC BY 3.0, CricketStudio aggregation', seasons: '2007/08–2025', matches: 1169, computedFrom: 'ipl-historical.json bySlug career aggregates (deterministic — no LLM)' },
+  }, canonical);
 }
 
 // ─── Server wiring ────────────────────────────────────────────────────

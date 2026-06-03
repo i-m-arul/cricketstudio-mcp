@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-06-03T02:17:31.935Z",
+  "builtAt": "2026-06-03T03:28:24.565Z",
   "version": "2.2",
   "mode": "local",
   "corpus": {
@@ -10,7 +10,7 @@
   "counts": {
     "players": 256,
     "standings": 10,
-    "h2hPairs": 500,
+    "h2hPairs": 1487,
     "trends": 41,
     "matches": 73,
     "mlc": {
