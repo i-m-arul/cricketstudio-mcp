@@ -53,8 +53,14 @@ type MlcLeague = { displayName?: string; seasons: string[]; teams: unknown[]; ve
 type MlcLeaderboard = { slug: string; title: string; description?: string; metricLabel?: string; floorNote?: string | null; rows: Array<{ rank: number; slug: string; fullName: string; teamSlugs: string[]; metricValue: number; formatted: string; secondary?: string | null; sampleSize?: string }> };
 type PlayerRecord = { slug: string; fullName: string; team: string; role: string; sameAs?: Record<string, string>; headlineClaimId?: string | null; claims: Array<{ id: string; metric: string; value: string; period: string; comparator?: string; sampleSize?: string; computedAt?: string; stale?: boolean; headline?: string; context?: string; pillar?: 'P1' | 'P2' | 'P3' | 'P4' | 'P5'; provenance?: 'live' | 'sample' | 'derived' }> };
 type SnapshotMetadata = { generatedAt: string; counts: { players: number; teams: number; venues: number; trends: number; h2hPairs: number; teamH2hPairs?: number; mlc?: { players: number; teams: number; matches: number; leaderboards: number } } };
-type Venue = { slug: string; name: string; geo?: { lat: number; lng: number; wikidataQid?: string } };
+type Venue = { slug: string; name: string; city?: string; matchCount?: number; geo?: { lat?: number; lng?: number; latitude?: number; longitude?: number; wikidataQid?: string } };
 type Team = { slug: string; name: string; code: string; wikidataQid?: string };
+/** Full match record as stored in matches.json (more fields than snap.MatchSummary exposes). */
+type RawMatch = { id: string; home: string; homeName?: string; away: string; awayName?: string; date: string; startingAt?: string; status: string; result?: string; homeScore?: string; awayScore?: string; venue?: string; winnerId?: number; tossWinnerId?: number; elected?: string };
+/** Standings row as stored in standings.json (superset of snap.StandingsRow). */
+type RawStandingsRow = { teamId: number; teamName: string; teamCode: string; played: number; won: number; lost: number; noResult?: number; points: number; nrr: number };
+/** SETU season-stats player aggregate (bySlug entries are keyed by slug; the slug is NOT a field). */
+type SeasonStatPlayer = { fullName: string; teamCode?: string; role?: string; batting?: { matches?: number; runs?: number; sr?: number | null; avg?: number | null; fifties?: number; hundreds?: number }; bowling?: { matches?: number; wickets?: number; econ?: number | null }; fielding?: Record<string, unknown> };
 type H2HSummary = { slug: string; batterSlug: string; batterName: string; bowlerSlug: string; bowlerName: string; deliveries?: number; runs?: number; strikeRate?: number; fours?: number; sixes?: number; dotBalls?: number; dismissals?: number };
 type TeamH2HRecord = { a: { slug: string; name: string; code: string }; b: { slug: string; name: string; code: string }; matches: number; aWon: number; bWon: number; noResult: number; recent: Array<{ date: string; venue: string; result: string }> };
 type IplHistoricalRecord = { leaderboards?: Record<string, unknown[]>; seasons?: unknown[]; records?: unknown };
@@ -73,6 +79,9 @@ let _mlcMatches: Record<string, MlcMatch> | null = null;
 let _mlcLeague: MlcLeague | null = null;
 let _mlcLeaderboards: Record<string, MlcLeaderboard> | null = null;
 let _iplHistorical: IplHistoricalRecord | null | undefined = undefined;
+let _rawMatches: RawMatch[] | null = null;
+let _rawStandings: RawStandingsRow[] | null = null;
+let _teamIdToCode: Map<number, string> | null = null;
 
 function players() { if (!_players) _players = readSnapshotJson<Record<string, PlayerRecord>>('players.json') ?? {}; return _players; }
 function teams() { if (!_teams) _teams = readSnapshotJson<Team[]>('teams.json') ?? []; return _teams; }
@@ -91,6 +100,16 @@ function iplHistorical(): IplHistoricalRecord | null {
   if (_iplHistorical !== undefined) return _iplHistorical;
   _iplHistorical = readSnapshotJson<IplHistoricalRecord>('ipl-historical.json');
   return _iplHistorical;
+}
+/** Full match records (venue, scores, toss, winner) — snap.MatchSummary drops these fields. */
+function rawMatches() { if (!_rawMatches) _rawMatches = readSnapshotJson<RawMatch[]>('matches.json') ?? []; return _rawMatches; }
+function rawMatch(id: string): RawMatch | undefined { return rawMatches().find((m) => m.id === id); }
+function rawStandings() { if (!_rawStandings) _rawStandings = readSnapshotJson<RawStandingsRow[]>('standings.json') ?? []; return _rawStandings; }
+/** Resolve a Sportmonks teamId (used by toss/winner ids in matches.json) to its team code. */
+function teamIdToCode(id: number | undefined): string | null {
+  if (id === undefined || id === null) return null;
+  if (!_teamIdToCode) _teamIdToCode = new Map(rawStandings().map((r) => [r.teamId, r.teamCode]));
+  return _teamIdToCode.get(id) ?? null;
 }
 
 // ─── URL helpers ──────────────────────────────────────────────────────
@@ -423,15 +442,45 @@ function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: nu
 }
 
 function handleMatchState(args: { matchId: string }) {
-  const m = snap.getMatch(args.matchId);
+  const m = rawMatch(args.matchId);
   if (!m) return notFound(`No match "${args.matchId}" in snapshot. Use list_fixtures to discover valid ids.`, `${SITE}/matches/${args.matchId}`);
-  return ok({ fixtureId: m.id, home: m.home, away: m.away, date: m.date, status: m.status, result: m.result ?? null, homeScore: m.homeScore ?? null, awayScore: m.awayScore ?? null, note: 'Full live scoreboard is at the canonical URL.' }, `${SITE}/matches/${m.id}`);
+  // Toss: resolve the toss-winner teamId to a code; fall back to elected-only when unresolvable.
+  const tossCode = teamIdToCode(m.tossWinnerId);
+  const toss: Record<string, unknown> = tossCode
+    ? { wonByCode: tossCode, elected: m.elected ?? null }
+    : { tossElected: m.elected ?? null };
+  return ok({
+    fixtureId: m.id,
+    home: m.home,
+    homeName: m.homeName ?? null,
+    away: m.away,
+    awayName: m.awayName ?? null,
+    date: m.date,
+    venue: m.venue ?? null,
+    status: m.status,
+    result: m.result ?? null,
+    homeScore: m.homeScore ?? null,
+    awayScore: m.awayScore ?? null,
+    toss,
+  }, `${SITE}/matches/${m.id}`);
 }
 
 function handleMatchRecap(args: { matchId: string }) {
-  const m = snap.getMatch(args.matchId);
+  const m = rawMatch(args.matchId);
   if (!m) return notFound(`No match "${args.matchId}" in snapshot. Use list_fixtures to discover valid ids.`, `${SITE}/matches/${args.matchId}`);
-  return ok({ fixtureId: m.id, home: m.home, away: m.away, date: m.date, status: m.status, result: m.result ?? null, homeScore: m.homeScore ?? null, awayScore: m.awayScore ?? null, note: 'Full 6-card recap pack (MOTM, top batter, top bowler, milestones, fun facts, match trend) is at the canonical URL.' }, `${SITE}/matches/${m.id}`);
+  const recap = `${m.result ?? 'Result pending'}. ${m.home} ${m.homeScore ?? '—'} vs ${m.away} ${m.awayScore ?? '—'} at ${m.venue ?? 'venue TBC'}.`;
+  return ok({
+    fixtureId: m.id,
+    recap,
+    home: m.home,
+    away: m.away,
+    date: m.date,
+    venue: m.venue ?? null,
+    result: m.result ?? null,
+    homeScore: m.homeScore ?? null,
+    awayScore: m.awayScore ?? null,
+    note: 'Full 6-card recap pack (MOTM, top batter/bowler, milestones) at the canonical URL.',
+  }, `${SITE}/matches/${m.id}`);
 }
 
 function handleListFixtures(args: { status?: string; team?: string; limit?: number }) {
@@ -477,13 +526,88 @@ function handleTeamProfile(args: { teamSlug: string }) {
   const slug = args.teamSlug.toLowerCase();
   const t = teams().find((x) => x.slug === slug || x.code.toLowerCase() === slug);
   if (!t) return notFound(`No team "${args.teamSlug}". Valid slugs: ${teams().map((x) => x.slug).join(', ')}`);
-  return ok({ slug: t.slug, name: t.name, code: t.code, wikidataQid: t.wikidataQid, note: 'Full team profile (record, splits, phase strengths) is server-rendered at the canonical URL.', refreshFrequency: 'per-match (sub-4-hour SLA)' }, `${SITE}/teams/${t.slug}`);
+  const code = t.code.toLowerCase();
+
+  // Standings record (array is pre-sorted by position).
+  const standings = snap.getStandings();
+  const idx = standings.findIndex((r) => (r.teamCode || '').toLowerCase() === code);
+  const sr = idx >= 0 ? standings[idx] : null;
+  const record = sr
+    ? { position: idx + 1, played: sr.played, won: sr.won, lost: sr.lost, points: sr.points, nrr: typeof sr.nrr === 'number' ? Math.round(sr.nrr * 1000) / 1000 : sr.nrr }
+    : null;
+
+  // Roster from SETU season-stats.
+  const stats = snap.getSeasonStats() as { bySlug?: Record<string, SeasonStatPlayer> } | null;
+  const bySlug = stats?.bySlug ?? {};
+  const squad = Object.entries(bySlug).filter(([, p]) => (p.teamCode || '').toLowerCase() === code);
+
+  const topBatters = squad
+    .map(([s, p]) => ({ slug: s, name: p.fullName, runs: p.batting?.runs ?? 0, sr: p.batting?.sr ?? null, fifties: p.batting?.fifties ?? 0, hundreds: p.batting?.hundreds ?? 0 }))
+    .filter((r) => r.runs > 0)
+    .sort((a, b) => b.runs - a.runs)
+    .slice(0, 3);
+
+  const topBowlers = squad
+    .map(([s, p]) => ({ slug: s, name: p.fullName, wickets: p.bowling?.wickets ?? 0, econ: p.bowling?.econ ?? null }))
+    .filter((r) => r.wickets > 0)
+    .sort((a, b) => b.wickets - a.wickets)
+    .slice(0, 3);
+
+  return ok({
+    slug: t.slug,
+    name: t.name,
+    code: t.code,
+    wikidataQid: t.wikidataQid,
+    season: 'IPL 2026',
+    seasonStatus: 'complete',
+    record,
+    squadSize: squad.length,
+    topBatters,
+    topBowlers,
+    note: 'IPL 2026 season-complete team summary. Full per-phase splits + opponent breakdowns at the canonical URL.',
+  }, `${SITE}/teams/${t.slug}`);
 }
 
 function handleVenueHub(args: { venueSlug: string }) {
   const v = venues().find((x) => x.slug === args.venueSlug);
   if (!v) return notFound(`No venue "${args.venueSlug}". Use list_fixtures to find valid venue slugs.`);
-  return ok({ slug: v.slug, name: v.name, geo: v.geo, note: 'Full venue hub (par score, toss split, phase patterns, recent matches) is server-rendered at the canonical URL. Sample-size floor: ≥3 fixtures.' }, `${SITE}/venues/${v.slug}`);
+
+  const normalize = (s: string | undefined) => (s || '').toLowerCase().replace(/[. ]/g, '').replace(/stadium/g, '');
+  const target = normalize(v.name);
+  const here = rawMatches().filter((m) => normalize(m.venue) === target);
+
+  // Chase win rate: the toss winner who ELECTED bowling bats second (chases).
+  // chaseWin = the match winner is the chasing side.
+  let chaseEligible = 0;
+  let chaseWins = 0;
+  for (const m of here) {
+    if (!m.tossWinnerId || !m.winnerId || !m.elected) continue;
+    const chasingTeamId = m.elected === 'bowling' ? m.tossWinnerId : null;
+    // If toss winner elected batting, the chasing side is the other team — but we
+    // can't always resolve "the other team" by id, so only count the unambiguous
+    // bowling-elected case (toss winner is the chaser).
+    if (chasingTeamId === null) continue;
+    chaseEligible += 1;
+    if (m.winnerId === chasingTeamId) chaseWins += 1;
+  }
+
+  const recentResults = here
+    .slice()
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+    .slice(0, 3)
+    .map((m) => ({ date: m.date, teams: `${m.home} vs ${m.away}`, result: m.result ?? null }));
+
+  return ok({
+    slug: v.slug,
+    name: v.name,
+    city: v.city ?? null,
+    geo: v.geo,
+    matchCount: v.matchCount ?? here.length,
+    fixturesCaptured: here.length,
+    ...(chaseEligible >= 3 ? { chaseWinRate: Math.round((chaseWins / chaseEligible) * 100) / 100, chaseSample: `${chaseEligible} fixtures where toss-winner bowled first` } : {}),
+    recentResults,
+    note: 'Per-phase par scores + toss-decision splits at the canonical URL. Sample floor: ≥3 fixtures.',
+  }, `${SITE}/venues/${v.slug}`);
 }
 
 function handleListAtomicClaims(args: { player?: string; team?: string; pillar?: string; limit?: number }) {
@@ -620,7 +744,33 @@ function handleMlcPlayerProfile(args: { playerSlug: string }) {
 function handleMlcTeamProfile(args: { teamSlug: string }) {
   const t = mlcTeams().find((x) => x.slug === args.teamSlug.toLowerCase());
   if (!t) return notFound(`No MLC team "${args.teamSlug}". Valid: ${mlcTeams().map((x) => x.slug).join(', ')}.`, mlcTeamUrl(args.teamSlug));
-  return ok({ slug: t.slug, name: t.name, seasons: t.seasons, firstSeason: t.firstSeason, lastSeason: t.lastSeason, matchCount: t.matchCount, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, mlcTeamUrl(t.slug));
+
+  const squad = Object.values(mlcPlayers()).filter((p) => (p.teamSlugs || []).includes(t.slug));
+
+  const topBatters = squad
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, runs: (p.batting as { runs?: number } | undefined)?.runs ?? 0 }))
+    .filter((r) => r.runs > 0)
+    .sort((a, b) => b.runs - a.runs)
+    .slice(0, 3);
+
+  const topBowlers = squad
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, wickets: (p.bowling as { wickets?: number } | undefined)?.wickets ?? 0 }))
+    .filter((r) => r.wickets > 0)
+    .sort((a, b) => b.wickets - a.wickets)
+    .slice(0, 3);
+
+  return ok({
+    slug: t.slug,
+    name: t.name,
+    seasons: t.seasons,
+    firstSeason: t.firstSeason,
+    lastSeason: t.lastSeason,
+    matchCount: t.matchCount,
+    squadSize: squad.length,
+    topBatters,
+    topBowlers,
+    provenance: { source: 'Cricsheet', license: 'CC BY 3.0' },
+  }, mlcTeamUrl(t.slug));
 }
 
 function handleMlcMatch(args: { matchId: string }) {
@@ -652,7 +802,14 @@ function handleListMlcMatches(args: { season?: string; teamSlug?: string; limit?
 function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
   const lbs = mlcLeaderboards();
   const lb = lbs[args.aspect];
-  if (!lb) return notFound(`No MLC leaderboard aspect "${args.aspect}". Valid: ${Object.keys(lbs).join(', ')}.`, `${MLC_HUB}/leaderboards`);
+  if (!lb) {
+    // List the actual aspect slugs from the bundled snapshot so the caller can retry.
+    const validAspects = Object.keys(lbs);
+    const aspectList = validAspects.length > 0
+      ? validAspects.join(', ')
+      : 'orange-cap, purple-cap, strike-rate, economy-leaders, most-sixes, most-fours, top-knocks, best-bowling, most-ducks, single-digit-outs, powerplay-strike-rate, death-overs-economy, death-overs-strike-rate, powerplay-economy';
+    return notFound(`No MLC leaderboard aspect "${args.aspect}". Valid aspects: ${aspectList}.`, `${MLC_HUB}/leaderboards`);
+  }
   const limit = Math.max(1, Math.min(100, args.limit ?? 20));
   const rows = Array.isArray(lb.rows) ? lb.rows : [];
   return ok({ aspect: lb.slug, title: lb.title, description: lb.description, metricLabel: lb.metricLabel, floorNote: lb.floorNote ?? null, count: Math.min(limit, rows.length), rows: rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })), provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' } }, mlcLeaderboardUrl(lb.slug));
