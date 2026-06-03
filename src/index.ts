@@ -445,8 +445,11 @@ function handlePlayerH2H(args: { batterSlug: string; bowlerSlug: string }) {
   const slug = `${args.batterSlug}-vs-${args.bowlerSlug}`;
   const h = h2hSummaries().find((x) => x.slug === slug);
   if (!h) return notFound(`No H2H pair "${slug}" (≥5 deliveries floor — pair may not have met enough times).`, `${SITE}/h2h/${slug}`);
-  const claim = `${h.batterName} scored ${h.runs} off ${h.deliveries ?? 0} balls against ${h.bowlerName}${(h.dismissals ?? 0) > 0 ? `, dismissed ${h.dismissals} time${h.dismissals === 1 ? '' : 's'}` : ' (not dismissed)'} in IPL 2026.`;
-  return ok({ claim, batter: { slug: h.batterSlug, name: h.batterName }, bowler: { slug: h.bowlerSlug, name: h.bowlerName }, deliveries: h.deliveries, runs: h.runs, strikeRate: h.strikeRate, fours: h.fours, sixes: h.sixes, dotBalls: h.dotBalls, dismissals: h.dismissals, window: 'IPL 2026 to date', sampleSize: `${h.deliveries ?? 0} deliveries`, sampleSizeFloor: '≥5 deliveries faced', source: 'CricketStudio ball-by-ball aggregation' }, `${SITE}/h2h/${slug}`);
+  const runs = h.runs ?? 0;
+  const deliveries = h.deliveries ?? 0;
+  const dismissals = h.dismissals ?? 0;
+  const claim = `${h.batterName} scored ${runs} off ${deliveries} balls against ${h.bowlerName}${dismissals > 0 ? `, dismissed ${dismissals} time${dismissals === 1 ? '' : 's'}` : ' (not dismissed)'} in IPL 2026.`;
+  return ok({ claim, batter: { slug: h.batterSlug, name: h.batterName }, bowler: { slug: h.bowlerSlug, name: h.bowlerName }, deliveries, runs, strikeRate: h.strikeRate ?? null, fours: h.fours ?? null, sixes: h.sixes ?? null, dotBalls: h.dotBalls ?? null, dismissals, window: 'IPL 2026 to date', sampleSize: `${deliveries} deliveries`, sampleSizeFloor: '≥5 deliveries faced', source: 'CricketStudio ball-by-ball aggregation' }, `${SITE}/h2h/${slug}`);
 }
 
 function handleTeamProfile(args: { teamSlug: string }) {
@@ -630,7 +633,8 @@ function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
   const lb = lbs[args.aspect];
   if (!lb) return notFound(`No MLC leaderboard aspect "${args.aspect}". Valid: ${Object.keys(lbs).join(', ')}.`, `${MLC_HUB}/leaderboards`);
   const limit = Math.max(1, Math.min(100, args.limit ?? 20));
-  return ok({ aspect: lb.slug, title: lb.title, description: lb.description, metricLabel: lb.metricLabel, floorNote: lb.floorNote ?? null, count: Math.min(limit, lb.rows.length), rows: lb.rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })), provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' } }, mlcLeaderboardUrl(lb.slug));
+  const rows = Array.isArray(lb.rows) ? lb.rows : [];
+  return ok({ aspect: lb.slug, title: lb.title, description: lb.description, metricLabel: lb.metricLabel, floorNote: lb.floorNote ?? null, count: Math.min(limit, rows.length), rows: rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })), provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' } }, mlcLeaderboardUrl(lb.slug));
 }
 
 // ─── IPL Historical handler ───────────────────────────────────────────

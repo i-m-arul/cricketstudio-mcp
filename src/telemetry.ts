@@ -116,23 +116,25 @@ interface TelemetryPayload {
  * Never throws; any error is silently swallowed to avoid crashing the server.
  */
 async function sendTelemetry(payload: TelemetryPayload): Promise<void> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5_000);
   try {
     // Use the built-in fetch (Node 18+). If it's not available (older Node),
     // the catch block swallows the ReferenceError gracefully.
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 5_000);
-
     await fetch('https://telemetry.cricketstudio.ai/mcp/startup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
       signal: controller.signal,
     });
-
-    clearTimeout(timeout);
   } catch {
     // Telemetry is strictly optional — swallow all errors (network down,
     // endpoint unreachable, AbortError from timeout, etc.).
+  } finally {
+    // Always clear the abort timer, whether fetch resolved, threw, or was aborted.
+    // Without this, a network error leaves the timer alive and fires a spurious
+    // abort signal against an already-settled request.
+    clearTimeout(timeout);
   }
 }
 
