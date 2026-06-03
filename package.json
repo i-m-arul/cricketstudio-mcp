@@ -1,6 +1,6 @@
 {
   "name": "cricketstudio-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CricketStudio MCP server — 29 tools for IPL 2026, IPL historical (18 seasons), and Major League Cricket data. Citation-grade atomic claims with provenance.",
   "type": "module",
   "main": "dist/index.js",
@@ -32,7 +32,7 @@
     "url": "git+https://github.com/cricketstudioai/cricketstudio-mcp.git"
   },
   "homepage": "https://players.cricketstudio.ai/mcp",
-  "mcpName": "io.github.cricketstudioai/cricketstudio-mcp",
+  "mcpName": "io.github.i-m-arul/cricketstudio-mcp",
   "engines": {
     "node": ">=18"
   },

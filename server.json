@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.cricketstudioai/cricketstudio-mcp",
+  "name": "io.github.i-m-arul/cricketstudio-mcp",
   "title": "CricketStudio MCP",
-  "description": "29 MCP tools for IPL 2026 (complete, RCB champions), IPL historical (18 seasons 2007/08-2025, 1169 matches), and Major League Cricket (2023-2026). Citation-grade cricket data: atomic claims with provenance, sample-size floors, and stable canonical URLs. Fully bundled — no API key, no network calls at query time.",
-  "version": "1.0.0",
+  "description": "29 MCP tools for IPL 2026, IPL historical (18 seasons), and Major League Cricket. No API key.",
+  "version": "1.0.1",
   "repository": {
-    "url": "https://github.com/cricketstudioai/cricketstudio-mcp",
+    "url": "https://github.com/i-m-arul/cricketstudio-mcp",
     "source": "github"
   },
   "websiteUrl": "https://players.cricketstudio.ai/developers",
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "cricketstudio-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
