@@ -10,7 +10,7 @@
 
 ## What is this?
 
-CricketStudio MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI client — Claude Desktop, Cursor, ChatGPT Connectors, and others — structured, citable access to cricket data. Every response carries a `canonicalUrl` back to `players.cricketstudio.ai`, an explicit date window, a sample-size count, and a provenance trail to the underlying ball-by-ball corpus. The data is fully bundled in `data/snapshot/` — no API keys, no network calls, no rate limits.
+CricketStudio MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI client — Claude Desktop, Cursor, ChatGPT Connectors, and others — structured, citable access to cricket data. Every response carries a `canonicalUrl` back to `players.cricketstudio.ai`, an explicit date window, a sample-size count, and a provenance trail to the underlying ball-by-ball corpus. The data is fully bundled in `data/snapshot/` — tool answers are computed locally with no data-fetch calls, no API keys, and no rate limits. (The package sends one anonymous startup ping for usage counts; disable it with `CRICKETSTUDIO_NO_TELEMETRY=1`.)
 
 The corpus covers **IPL 2026** (complete season, RCB champions), **18 seasons of IPL history** (2007/08–2025, Cricsheet), and **Major League Cricket 2023–2026** (Cricsheet). Batting claims require a minimum of 30 balls faced; bowling claims require 15 deliveries. Claims that do not clear those floors are not surfaced.
 
@@ -115,7 +115,7 @@ Once connected in Claude Desktop, you can ask questions like:
 
 | Source | Coverage | License |
 |---|---|---|
-| Sportmonks | IPL 2026 ball-by-ball (live season) | Licensed feed |
+| Sportmonks | IPL 2026 ball-by-ball (complete season — RCB champions) | Licensed feed |
 | Cricsheet | IPL historical, 18 seasons, 1,169 matches (2007/08–2025) | CC BY 3.0 |
 | Cricsheet | MLC 2023–2026, 138 matches | CC BY 3.0 |
 

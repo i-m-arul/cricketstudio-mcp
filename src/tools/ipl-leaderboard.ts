@@ -497,7 +497,7 @@ export function formatLeaderboardResponse(
 
   // Window
   if (meta.liveSeasonOnly) {
-    lines.push('Window: IPL 2026 (live season)');
+    lines.push('Window: IPL 2026 (complete season — 74 matches)');
   } else if (season) {
     lines.push(`Window: IPL ${season}`);
   } else {

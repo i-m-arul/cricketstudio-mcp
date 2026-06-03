@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-06-01T16:24:15.129Z",
+  "builtAt": "2026-06-03T02:17:31.935Z",
   "version": "2.2",
-  "mode": "live",
+  "mode": "local",
   "corpus": {
     "matches": 1317,
     "deliveries": 312309,
@@ -9,7 +9,7 @@
   },
   "counts": {
     "players": 256,
-    "standings": 0,
+    "standings": 10,
     "h2hPairs": 500,
     "trends": 41,
     "matches": 73,

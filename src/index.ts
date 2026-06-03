@@ -306,7 +306,7 @@ const validators = {
 function handleDatasetSummary() {
   const md = metadata();
   return ok({
-    overview: 'CricketStudio publishes citation-grade cricket data — atomic claims with provenance, sample-size floors, and stable canonical URLs. Covers IPL 2026 (live season), IPL historical (18 seasons, 2007/08–2025), and Major League Cricket (2023–2026). Free to read. Free to cite.',
+    overview: 'CricketStudio publishes citation-grade cricket data — atomic claims with provenance, sample-size floors, and stable canonical URLs. Covers IPL 2026 (complete — RCB champions, 74 matches), IPL historical (18 seasons, 2007/08–2025), and Major League Cricket (2023–2026). Free to read. Free to cite.',
     coverage: {
       ipl2026: { season: 'IPL 2026', ...md.counts },
       iplHistorical: { seasons: 18, description: '2007/08–2025, Cricsheet corpus, 1,169 matches' },
@@ -370,7 +370,28 @@ function handlePlayerPillar(args: { playerSlug: string; pillar: string }) {
 }
 
 function handleStandings() {
-  return ok({ note: 'RCB are IPL 2026 champions. Live standings table is server-rendered at the canonical URL. Cite directly — refreshes within the 4-hour SLA.', refreshFrequency: 'per-match (sub-4-hour SLA)' }, `${SITE}/standings`);
+  const rows = snap.getStandings();
+  if (rows.length === 0) {
+    return ok({ note: 'Standings not bundled in this snapshot. See the canonical URL for the live points table.' }, `${SITE}/standings`);
+  }
+  // Bundled final league table (round-robin only; playoff knockouts excluded).
+  const table = rows.map((r, i) => ({
+    position: i + 1,
+    teamCode: r.teamCode,
+    played: r.played,
+    won: r.won,
+    lost: r.lost,
+    points: r.points,
+    nrr: typeof r.nrr === 'number' ? Math.round(r.nrr * 1000) / 1000 : r.nrr,
+  }));
+  return ok({
+    season: 'IPL 2026',
+    status: 'complete',
+    champion: 'Royal Challengers Bengaluru (RCB)',
+    note: 'IPL 2026 final league points table (round-robin stage — playoff knockouts excluded). RCB won the title. Top 4 qualified for the playoffs.',
+    table,
+    provenance: { source: 'CricketStudio ball-by-ball aggregation', window: 'IPL 2026 league stage' },
+  }, `${SITE}/standings`);
 }
 
 function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: number }) {
