@@ -3,7 +3,7 @@
   "name": "io.github.i-m-arul/cricketstudio-mcp",
   "title": "CricketStudio MCP",
   "description": "29 MCP tools for IPL 2026, IPL historical (18 seasons), and Major League Cricket. No API key.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/i-m-arul/cricketstudio-mcp",
     "source": "github"
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "cricketstudio-mcp",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
