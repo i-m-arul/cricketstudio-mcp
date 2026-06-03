@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.cricketstudioai/cricketstudio-mcp",
+  "title": "CricketStudio MCP",
+  "description": "29 MCP tools for IPL 2026 (complete, RCB champions), IPL historical (18 seasons 2007/08-2025, 1169 matches), and Major League Cricket (2023-2026). Citation-grade cricket data: atomic claims with provenance, sample-size floors, and stable canonical URLs. Fully bundled — no API key, no network calls at query time.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/cricketstudioai/cricketstudio-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://players.cricketstudio.ai/developers",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "cricketstudio-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CRICKETSTUDIO_DEV_ID",
+          "description": "Optional developer ID for usage tracking and early hosted-API access. Register free at players.cricketstudio.ai/developers.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "CRICKETSTUDIO_NO_TELEMETRY",
+          "description": "Set to '1' to disable anonymous startup telemetry.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "categories": ["sports", "data", "cricket"],
+      "tools": 29,
+      "leagues": ["IPL 2026", "IPL historical (18 seasons)", "Major League Cricket"],
+      "sampleFloors": ">=30 balls batting, >=15 balls bowling"
+    }
+  }
+}
