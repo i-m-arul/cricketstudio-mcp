@@ -11,8 +11,7 @@
     "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm --packages=external",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "prepare": "npm run build",
-    "snapshot": "node scripts/build-snapshot.mjs"
+    "prepare": "npm run build"
   },
   "keywords": [
     "mcp",
