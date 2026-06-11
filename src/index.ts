@@ -61,7 +61,7 @@ type Team = { slug: string; name: string; code: string; wikidataQid?: string };
 type RawMatch = { id: string; home: string; homeName?: string; away: string; awayName?: string; date: string; startingAt?: string; status: string; result?: string; homeScore?: string; awayScore?: string; venue?: string; winnerId?: number; tossWinnerId?: number; elected?: string };
 /** Standings row as stored in standings.json (superset of snap.StandingsRow). */
 type RawStandingsRow = { teamId: number; teamName: string; teamCode: string; played: number; won: number; lost: number; noResult?: number; points: number; nrr: number };
-/** SETU season-stats player aggregate (bySlug entries are keyed by slug; the slug is NOT a field). */
+/** season-stats aggregate player aggregate (bySlug entries are keyed by slug; the slug is NOT a field). */
 type SeasonStatPlayer = { fullName: string; teamCode?: string; role?: string; batting?: { matches?: number; runs?: number; sr?: number | null; avg?: number | null; fifties?: number; hundreds?: number }; bowling?: { matches?: number; wickets?: number; econ?: number | null }; fielding?: Record<string, unknown> };
 type H2HSummary = { slug: string; batterSlug: string; batterName: string; bowlerSlug: string; bowlerName: string; deliveries?: number; runs?: number; strikeRate?: number; fours?: number; sixes?: number; dotBalls?: number; dismissals?: number };
 type TeamH2HRecord = { a: { slug: string; name: string; code: string }; b: { slug: string; name: string; code: string }; matches: number; aWon: number; bWon: number; noResult: number; recent: Array<{ date: string; venue: string; result: string }> };
@@ -118,7 +118,7 @@ function iplHistorical(): IplHistoricalRecord | null {
 function rawMatches() { if (!_rawMatches) _rawMatches = readSnapshotJson<RawMatch[]>('matches.json') ?? []; return _rawMatches; }
 function rawMatch(id: string): RawMatch | undefined { return rawMatches().find((m) => m.id === id); }
 function rawStandings() { if (!_rawStandings) _rawStandings = readSnapshotJson<RawStandingsRow[]>('standings.json') ?? []; return _rawStandings; }
-/** Resolve a Sportmonks teamId (used by toss/winner ids in matches.json) to its team code. */
+/** Resolve an upstream teamId (used by toss/winner ids in matches.json) to its team code. */
 function teamIdToCode(id: number | undefined): string | null {
   if (id === undefined || id === null) return null;
   if (!_teamIdToCode) _teamIdToCode = new Map(rawStandings().map((r) => [r.teamId, r.teamCode]));
@@ -177,7 +177,7 @@ const TOOLS = [
   },
   {
     name: 'get_season_stats',
-    description: 'IPL 2026 season leaderboard from SETU canonical aggregate. sortBy: runs, wickets, strike_rate, economy, ducks, single_digit_outs, catches, run_outs. Optional teamCode filter. Sample-size floors apply (≥30 balls faced for SR, ≥15 balls bowled for economy).',
+    description: 'IPL 2026 season leaderboard from CricketStudio canonical aggregate. sortBy: runs, wickets, strike_rate, economy, ducks, single_digit_outs, catches, run_outs. Optional teamCode filter. Sample-size floors apply (≥30 balls faced for SR, ≥15 balls bowled for economy).',
     inputSchema: { type: 'object', properties: { sortBy: { type: 'string', enum: ['runs', 'wickets', 'strike_rate', 'economy', 'ducks', 'single_digit_outs', 'catches', 'run_outs'] }, teamCode: { type: 'string', description: 'Optional 2–4 letter team code e.g. MI, RCB' }, limit: { type: 'number', description: 'Max rows (default 15, max 100)' } }, required: ['sortBy'], additionalProperties: false },
   },
   {
@@ -247,7 +247,7 @@ const TOOLS = [
   },
   {
     name: 'get_fielding_stats',
-    description: 'IPL 2026 fielding: catches, run-out assists, total dismissals. Pass playerSlug for a single player, omit for the full leaderboard. Aggregated from the SETU canonical snapshot.',
+    description: 'IPL 2026 fielding: catches, run-out assists, total dismissals. Pass playerSlug for a single player, omit for the full leaderboard. Aggregated from the CricketStudio canonical snapshot.',
     inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: 'Omit for leaderboard' }, limit: { type: 'number', description: 'Leaderboard rows (default 15)' } }, additionalProperties: false },
   },
   // ── GROUP 2: MLC ────────────────────────────────────────────────────
@@ -582,7 +582,7 @@ function handleTeamProfile(args: { teamSlug: string }) {
     ? { position: idx + 1, played: sr.played, won: sr.won, lost: sr.lost, points: sr.points, nrr: typeof sr.nrr === 'number' ? Math.round(sr.nrr * 1000) / 1000 : sr.nrr }
     : null;
 
-  // Roster from SETU season-stats.
+  // Roster from season-stats aggregate.
   const stats = snap.getSeasonStats() as { bySlug?: Record<string, SeasonStatPlayer> } | null;
   const bySlug = stats?.bySlug ?? {};
   const squad = Object.entries(bySlug).filter(([, p]) => (p.teamCode || '').toLowerCase() === code);
@@ -720,7 +720,7 @@ function handleComparePlayers(args: { playerSlugs: string[] }) {
 
 function handleDismissalAnalysis(args: { playerSlug: string }) {
   const url = `${SITE}/players/${args.playerSlug}`;
-  // Dismissal modes are aggregated into the SETU season-stats snapshot:
+  // Dismissal modes are aggregated into the season-stats aggregate snapshot:
   // bySlug[slug].batting.dismissals = { bowled, caught, lbw, runOut, hitWicket, other }.
   // (season-stats bySlug carries no `slug` field — look up directly by key.)
   const stats = seasonStats() as { bySlug?: Record<string, any> };
@@ -885,7 +885,7 @@ function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
   }
   const limit = Math.max(1, Math.min(100, args.limit ?? 20));
   const rows = Array.isArray(lb.rows) ? lb.rows : [];
-  return ok({ aspect: lb.slug, title: lb.title, description: lb.description, metricLabel: lb.metricLabel, floorNote: lb.floorNote ?? null, count: Math.min(limit, rows.length), rows: rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })), provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' } }, mlcLeaderboardUrl(lb.slug));
+  return ok({ aspect: lb.slug, title: lb.title, description: lb.description, metricLabel: lb.metricLabel, floorNote: lb.floorNote ?? null, count: Math.min(limit, rows.length), rows: rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })), provenance: { source: 'Cricsheet aggregate snapshot', license: 'CC BY 3.0' } }, mlcLeaderboardUrl(lb.slug));
 }
 
 // ─── IPL Historical handler ───────────────────────────────────────────
