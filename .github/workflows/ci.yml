@@ -20,5 +20,7 @@ jobs:
       - run: npm ci
       - name: Type-check
         run: npm run typecheck
+      - name: Snapshot content gate (moat)
+        run: npm run validate
       - name: Smoke test (stdio JSON-RPC, all tools)
         run: npm run smoke

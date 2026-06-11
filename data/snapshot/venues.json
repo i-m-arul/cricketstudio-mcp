@@ -3,7 +3,7 @@
     "slug": "narendra-modi-stadium",
     "name": "Narendra Modi Stadium",
     "city": "Ahmedabad",
-    "matchCount": 8,
+    "matchCount": 9,
     "geo": {
       "latitude": 23.0917,
       "longitude": 72.5972,
@@ -55,6 +55,16 @@
     }
   },
   {
+    "slug": "maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
+    "name": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+    "city": "Chandigarh",
+    "matchCount": 6,
+    "geo": {
+      "latitude": 30.776,
+      "longitude": 76.7012
+    }
+  },
+  {
     "slug": "eden-gardens",
     "name": "Eden Gardens",
     "city": "Kolkata",
@@ -88,16 +98,6 @@
     }
   },
   {
-    "slug": "maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
-    "name": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "city": "Chandigarh",
-    "matchCount": 4,
-    "geo": {
-      "latitude": 30.776,
-      "longitude": 76.7012
-    }
-  },
-  {
     "slug": "sawai-mansingh-stadium",
     "name": "Sawai Mansingh Stadium",
     "city": "Jaipur",
@@ -109,6 +109,17 @@
     }
   },
   {
+    "slug": "himachal-pradesh-cricket-association-stadium",
+    "name": "Himachal Pradesh Cricket Association Stadium",
+    "city": "Dharamsala",
+    "matchCount": 4,
+    "geo": {
+      "latitude": 32.2393,
+      "longitude": 76.3186,
+      "wikidataQid": "Q5762830"
+    }
+  },
+  {
     "slug": "barsapara-cricket-stadium",
     "name": "Barsapara Cricket Stadium",
     "city": "Guwahati",
@@ -117,17 +128,6 @@
       "latitude": 26.1305,
       "longitude": 91.7966,
       "wikidataQid": "Q24938094"
-    }
-  },
-  {
-    "slug": "himachal-pradesh-cricket-association-stadium",
-    "name": "Himachal Pradesh Cricket Association Stadium",
-    "city": "Dharamsala",
-    "matchCount": 3,
-    "geo": {
-      "latitude": 32.2393,
-      "longitude": 76.3186,
-      "wikidataQid": "Q5762830"
     }
   },
   {

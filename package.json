@@ -12,7 +12,8 @@
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
     "prepare": "npm run build",
-    "smoke": "node scripts/smoke-test.mjs"
+    "smoke": "node scripts/smoke-test.mjs",
+    "validate": "node scripts/validate-snapshot.mjs"
   },
   "keywords": [
     "mcp",

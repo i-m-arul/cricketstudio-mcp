@@ -599,11 +599,21 @@
       "name": "Royal Challengers Bengaluru",
       "code": "RCB"
     },
-    "matches": 2,
+    "matches": 4,
     "aWon": 1,
-    "bWon": 1,
+    "bWon": 3,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-31",
+        "venue": "Narendra Modi Stadium",
+        "result": "RCB won"
+      },
+      {
+        "date": "2026-05-26",
+        "venue": "Himachal Pradesh Cricket Association Stadium",
+        "result": "RCB won"
+      },
       {
         "date": "2026-04-30",
         "venue": "Narendra Modi Stadium",
@@ -706,11 +716,16 @@
       "name": "Sunrisers Hyderabad",
       "code": "SRH"
     },
-    "matches": 2,
-    "aWon": 0,
+    "matches": 3,
+    "aWon": 1,
     "bWon": 2,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-27",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "RR won"
+      },
       {
         "date": "2026-04-25",
         "venue": "Sawai Mansingh Stadium",
@@ -1096,11 +1111,16 @@
       "name": "Rajasthan Royals",
       "code": "RR"
     },
-    "matches": 2,
-    "aWon": 1,
+    "matches": 3,
+    "aWon": 2,
     "bWon": 1,
     "noResult": 0,
     "recent": [
+      {
+        "date": "2026-05-29",
+        "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
+        "result": "GT won"
+      },
       {
         "date": "2026-05-09",
         "venue": "Sawai Mansingh Stadium",
