@@ -118,6 +118,54 @@
     {
       "slug": "powerplay-economy",
       "title": "Best powerplay economy"
+    },
+    {
+      "slug": "batting-average",
+      "title": "Best batting averages"
+    },
+    {
+      "slug": "bowling-average",
+      "title": "Best bowling averages"
+    },
+    {
+      "slug": "bowling-strike-rate",
+      "title": "Best bowling strike rates"
+    },
+    {
+      "slug": "most-runs-conceded",
+      "title": "Most runs conceded"
+    },
+    {
+      "slug": "pp-runs",
+      "title": "Most powerplay runs scored"
+    },
+    {
+      "slug": "death-runs",
+      "title": "Most death-overs runs scored"
+    },
+    {
+      "slug": "pp-wickets",
+      "title": "Most powerplay wickets taken"
+    },
+    {
+      "slug": "death-wickets",
+      "title": "Most death-overs wickets taken"
+    },
+    {
+      "slug": "most-sixes-pp",
+      "title": "Most powerplay sixes"
+    },
+    {
+      "slug": "most-sixes-death",
+      "title": "Most death-overs sixes"
+    },
+    {
+      "slug": "most-fours-pp",
+      "title": "Most powerplay fours"
+    },
+    {
+      "slug": "most-fours-death",
+      "title": "Most death-overs fours"
     }
   ]
 }

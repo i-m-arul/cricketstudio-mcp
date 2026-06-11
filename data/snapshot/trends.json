@@ -26,21 +26,21 @@
     "id": "cond-explosive-death-chase",
     "kind": "conditional",
     "tease": "\"They finished strong, that's a defendable total.\" Or is it.",
-    "bigStat": "57% still chased",
-    "hook": "When the team batting first finishes with a **>180 SR death** phase, the chasing team still wins 57% of the time.",
-    "detail": "17 of 30 captured fixtures. The narrative says \"they posted a defendable score.\" The data says modern T20 chases over par regardless of how the first innings finished.",
+    "bigStat": "56% still chased",
+    "hook": "When the team batting first finishes with a **>180 SR death** phase, the chasing team still wins 56% of the time.",
+    "detail": "18 of 32 captured fixtures. The narrative says \"they posted a defendable score.\" The data says modern T20 chases over par regardless of how the first innings finished.",
     "numbers": [
       {
         "label": "Fixtures with >180 SR death phase (1st inn)",
-        "value": 30
+        "value": 32
       },
       {
         "label": "Won by chasing team",
-        "value": 17
+        "value": 18
       },
       {
         "label": "Chase win-rate",
-        "value": "57%"
+        "value": "56%"
       }
     ],
     "tag": "Conditional · pattern"
@@ -49,13 +49,13 @@
     "id": "momentum-decelerate",
     "kind": "momentum",
     "tease": "First-innings total isn't the strongest defeat signal this IPL. Something quieter is.",
-    "bigStat": "60% defence rate",
-    "hook": "Teams whose 1st-innings death SR fell **>20 points below** their powerplay SR have won only 60% of those matches this season.",
-    "detail": "12 of 20 captured fixtures. Loss of momentum in overs 16-20 — even from a hot powerplay start — is a stronger signal of defeat than first-innings total.",
+    "bigStat": "57% defence rate",
+    "hook": "Teams whose 1st-innings death SR fell **>20 points below** their powerplay SR have won only 57% of those matches this season.",
+    "detail": "12 of 21 captured fixtures. Loss of momentum in overs 16-20 — even from a hot powerplay start — is a stronger signal of defeat than first-innings total.",
     "numbers": [
       {
         "label": "Fixtures where 1st-inn decelerated (death SR > 20 below PP)",
-        "value": 20
+        "value": 21
       },
       {
         "label": "Defended successfully",
@@ -63,7 +63,7 @@
       },
       {
         "label": "Defence win-rate",
-        "value": "60%"
+        "value": "57%"
       }
     ],
     "tag": "Momentum · pattern"
@@ -152,26 +152,26 @@
   {
     "id": "venue-sig-maharaja-yadavindra-singh-international-cricket-stadium",
     "kind": "venue-signature",
-    "tease": "Not every pitch rewards a chase. The IPL 2026 data has venues that flatly defend.",
-    "bigStat": "1-of-4 chases",
-    "hook": "Maharaja Yadavindra Singh International Cricket Stadium: 1-of-4 chases successful, **33%** average powerplay-boundary rate.",
-    "detail": "4 captured fixtures. The PP boundary rate is the pitch's signature — 33% means true batting deck. Chase rate 25% confirms the read.",
+    "tease": "A two-paced venue. The 1st-innings powerplay tells you which way the night will lean.",
+    "bigStat": "3-of-6 chases",
+    "hook": "Maharaja Yadavindra Singh International Cricket Stadium: 3-of-6 chases successful, **34%** average powerplay-boundary rate.",
+    "detail": "6 captured fixtures. The PP boundary rate is the pitch's signature — 34% means true batting deck. Chase rate 50% confirms the read.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 4
+        "value": 6
       },
       {
         "label": "Chases successful",
-        "value": 1
+        "value": 3
       },
       {
         "label": "Chase win-rate",
-        "value": "25%"
+        "value": "50%"
       },
       {
         "label": "Avg powerplay-boundary rate",
-        "value": "33%"
+        "value": "34%"
       }
     ],
     "tag": "Venue signature"
@@ -288,13 +288,13 @@
     "id": "venue-sig-narendra-modi-stadium",
     "kind": "venue-signature",
     "tease": "Not every pitch rewards a chase. The IPL 2026 data has venues that flatly defend.",
-    "bigStat": "2-of-8 chases",
-    "hook": "Narendra Modi Stadium: 2-of-8 chases successful, **20%** average powerplay-boundary rate.",
-    "detail": "8 captured fixtures. The PP boundary rate is the pitch's signature — 20% means true batting deck. Chase rate 25% confirms the read.",
+    "bigStat": "2-of-9 chases",
+    "hook": "Narendra Modi Stadium: 2-of-9 chases successful, **21%** average powerplay-boundary rate.",
+    "detail": "9 captured fixtures. The PP boundary rate is the pitch's signature — 21% means true batting deck. Chase rate 22% confirms the read.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 8
+        "value": 9
       },
       {
         "label": "Chases successful",
@@ -302,11 +302,11 @@
       },
       {
         "label": "Chase win-rate",
-        "value": "25%"
+        "value": "22%"
       },
       {
         "label": "Avg powerplay-boundary rate",
-        "value": "20%"
+        "value": "21%"
       }
     ],
     "tag": "Venue signature"
@@ -369,13 +369,13 @@
     "id": "venue-sig-himachal-pradesh-cricket-association-stadium",
     "kind": "venue-signature",
     "tease": "Some venues belong to the chasing team. The captain's call at the toss is half the match.",
-    "bigStat": "3-of-3 chases",
-    "hook": "Himachal Pradesh Cricket Association Stadium: 3-of-3 chases successful, **26%** average powerplay-boundary rate.",
-    "detail": "3 captured fixtures. The PP boundary rate is the pitch's signature — 26% means true batting deck. Chase rate 100% confirms the read.",
+    "bigStat": "3-of-4 chases",
+    "hook": "Himachal Pradesh Cricket Association Stadium: 3-of-4 chases successful, **29%** average powerplay-boundary rate.",
+    "detail": "4 captured fixtures. The PP boundary rate is the pitch's signature — 29% means true batting deck. Chase rate 75% confirms the read.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 3
+        "value": 4
       },
       {
         "label": "Chases successful",
@@ -383,11 +383,11 @@
       },
       {
         "label": "Chase win-rate",
-        "value": "100%"
+        "value": "75%"
       },
       {
         "label": "Avg powerplay-boundary rate",
-        "value": "26%"
+        "value": "29%"
       }
     ],
     "tag": "Venue signature"
@@ -477,17 +477,17 @@
     "id": "venue-par-maharaja-yadavindra-singh-international-cricket-stadium",
     "kind": "venue-signature",
     "tease": "Par changes by ground. The headline 'good' total at one venue is below par at another.",
-    "bigStat": "Par 214",
-    "hook": "Maharaja Yadavindra Singh International Cricket Stadium: 1st-innings par **214** across 4 captured fixtures (high 254, low 162).",
-    "detail": "Par defines the chase math. 214 is the average 1st-innings total at Maharaja Yadavindra Singh International Cricket Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
+    "bigStat": "Par 219",
+    "hook": "Maharaja Yadavindra Singh International Cricket Stadium: 1st-innings par **219** across 6 captured fixtures (high 254, low 162).",
+    "detail": "Par defines the chase math. 219 is the average 1st-innings total at Maharaja Yadavindra Singh International Cricket Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 4
+        "value": 6
       },
       {
         "label": "Par 1st-innings total",
-        "value": 214
+        "value": 219
       },
       {
         "label": "Highest 1st-innings total",
@@ -612,17 +612,17 @@
     "id": "venue-par-narendra-modi-stadium",
     "kind": "venue-signature",
     "tease": "Par changes by ground. The headline 'good' total at one venue is below par at another.",
-    "bigStat": "Par 183",
-    "hook": "Narendra Modi Stadium: 1st-innings par **183** across 8 captured fixtures (high 229, low 155).",
-    "detail": "Par defines the chase math. 183 is the average 1st-innings total at Narendra Modi Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
+    "bigStat": "Par 180",
+    "hook": "Narendra Modi Stadium: 1st-innings par **180** across 9 captured fixtures (high 229, low 155).",
+    "detail": "Par defines the chase math. 180 is the average 1st-innings total at Narendra Modi Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 8
+        "value": 9
       },
       {
         "label": "Par 1st-innings total",
-        "value": 183
+        "value": 180
       },
       {
         "label": "Highest 1st-innings total",
@@ -693,21 +693,21 @@
     "id": "venue-par-himachal-pradesh-cricket-association-stadium",
     "kind": "venue-signature",
     "tease": "Par changes by ground. The headline 'good' total at one venue is below par at another.",
-    "bigStat": "Par 211",
-    "hook": "Himachal Pradesh Cricket Association Stadium: 1st-innings par **211** across 3 captured fixtures (high 222, low 200).",
-    "detail": "Par defines the chase math. 211 is the average 1st-innings total at Himachal Pradesh Cricket Association Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
+    "bigStat": "Par 222",
+    "hook": "Himachal Pradesh Cricket Association Stadium: 1st-innings par **222** across 4 captured fixtures (high 254, low 200).",
+    "detail": "Par defines the chase math. 222 is the average 1st-innings total at Himachal Pradesh Cricket Association Stadium. Sub-par defends only with bowling collapse; over-par flips chase win-rate.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 3
+        "value": 4
       },
       {
         "label": "Par 1st-innings total",
-        "value": 211
+        "value": 222
       },
       {
         "label": "Highest 1st-innings total",
-        "value": 222
+        "value": 254
       },
       {
         "label": "Lowest 1st-innings total",
@@ -782,29 +782,29 @@
     "id": "venue-toss-maharaja-yadavindra-singh-international-cricket-stadium",
     "kind": "toss-decision",
     "tease": "Toss decisions at one ground are rituals. The captain who picked second usually wins here.",
-    "bigStat": "100% chose to bowl",
-    "hook": "Maharaja Yadavindra Singh International Cricket Stadium captains: **100%** elect to bowl; bowl-electors win **75%** of those.",
-    "detail": "0 of 4 elected to bat first (winning 0); 4 elected to bowl (winning 3). The toss-elect → win pattern at Maharaja Yadavindra Singh International Cricket Stadium is a real signal.",
+    "bigStat": "83% chose to bowl",
+    "hook": "Maharaja Yadavindra Singh International Cricket Stadium captains: **83%** elect to bowl; bowl-electors win **60%** of those.",
+    "detail": "1 of 6 elected to bat first (winning 0); 5 elected to bowl (winning 3). The toss-elect → win pattern at Maharaja Yadavindra Singh International Cricket Stadium is a real signal.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 4
+        "value": 6
       },
       {
         "label": "Elected to bat",
-        "value": "0/4"
+        "value": "1/6"
       },
       {
         "label": "Bat-elect wins",
-        "value": "0/0"
+        "value": "0/1"
       },
       {
         "label": "Elected to bowl",
-        "value": "4/4"
+        "value": "5/6"
       },
       {
         "label": "Bowl-elect wins",
-        "value": "3/4"
+        "value": "3/5"
       }
     ],
     "tag": "Venue toss bias"
@@ -937,17 +937,17 @@
     "id": "venue-toss-narendra-modi-stadium",
     "kind": "toss-decision",
     "tease": "Toss decisions at one ground are rituals. The captain who picked second usually wins here.",
-    "bigStat": "75% chose to bowl",
-    "hook": "Narendra Modi Stadium captains: **75%** elect to bowl; bowl-electors win **50%** of those.",
-    "detail": "2 of 8 elected to bat first (winning 1); 6 elected to bowl (winning 3). The toss-elect → win pattern at Narendra Modi Stadium is a real signal.",
+    "bigStat": "78% chose to bowl",
+    "hook": "Narendra Modi Stadium captains: **78%** elect to bowl; bowl-electors win **57%** of those.",
+    "detail": "2 of 9 elected to bat first (winning 1); 7 elected to bowl (winning 4). The toss-elect → win pattern at Narendra Modi Stadium is a real signal.",
     "numbers": [
       {
         "label": "Fixtures captured at venue",
-        "value": 8
+        "value": 9
       },
       {
         "label": "Elected to bat",
-        "value": "2/8"
+        "value": "2/9"
       },
       {
         "label": "Bat-elect wins",
@@ -955,11 +955,11 @@
       },
       {
         "label": "Elected to bowl",
-        "value": "6/8"
+        "value": "7/9"
       },
       {
         "label": "Bowl-elect wins",
-        "value": "3/6"
+        "value": "4/7"
       }
     ],
     "tag": "Venue toss bias"
@@ -1027,32 +1027,63 @@
     "tag": "Venue toss bias"
   },
   {
+    "id": "venue-toss-himachal-pradesh-cricket-association-stadium",
+    "kind": "toss-decision",
+    "tease": "Toss decisions at one ground are rituals. The captain who picked second usually wins here.",
+    "bigStat": "100% chose to bowl",
+    "hook": "Himachal Pradesh Cricket Association Stadium captains: **100%** elect to bowl; bowl-electors win **50%** of those.",
+    "detail": "0 of 4 elected to bat first (winning 0); 4 elected to bowl (winning 2). The toss-elect → win pattern at Himachal Pradesh Cricket Association Stadium is a real signal.",
+    "numbers": [
+      {
+        "label": "Fixtures captured at venue",
+        "value": 4
+      },
+      {
+        "label": "Elected to bat",
+        "value": "0/4"
+      },
+      {
+        "label": "Bat-elect wins",
+        "value": "0/0"
+      },
+      {
+        "label": "Elected to bowl",
+        "value": "4/4"
+      },
+      {
+        "label": "Bowl-elect wins",
+        "value": "2/4"
+      }
+    ],
+    "tag": "Venue toss bias"
+  },
+  {
     "id": "toss-elect-split",
     "kind": "toss-decision",
     "tease": "The toss decision matters more than commentary admits this IPL.",
-    "bigStat": "BAT 18% · BOWL 59%",
-    "hook": "Captains who won the toss and ELECTED TO BAT: 18% win rate. Captains who chose to BOWL: **59%**.",
-    "detail": "11 'we'll bat' decisions + 58 'we'll bowl' decisions across the captured season. The dew-and-grip math is well-known. The magnitude this season — 41-point edge — isn't.",
+    "bigStat": "BAT 17% · BOWL 57%",
+    "hook": "Captains who won the toss and ELECTED TO BAT: 17% win rate. Captains who chose to BOWL: **57%**.",
+    "detail": "12 'we'll bat' decisions + 61 'we'll bowl' decisions across the captured season. The dew-and-grip math is well-known. The magnitude this season — 40-point edge — isn't.",
     "numbers": [
       {
         "label": "Captains who elected to BAT",
-        "value": 11
+        "value": 12
       },
       {
         "label": "… of those, won the match",
-        "value": "18%"
+        "value": "17%"
       },
       {
         "label": "Captains who elected to BOWL",
-        "value": 58
+        "value": 61
       },
       {
         "label": "… of those, won the match",
-        "value": "59%"
+        "value": "57%"
       },
       {
         "label": "Edge to bowl-first",
-        "value": "41 pts"
+        "value": "40 pts"
       }
     ],
     "tag": "Toss × decision"
@@ -1061,21 +1092,21 @@
     "id": "toss-overall",
     "kind": "toss-decision",
     "tease": "The toss is supposed to be a coin flip. This IPL is testing that.",
-    "bigStat": "52 / 48",
-    "hook": "Toss winners are converting **52%** of matches into wins this IPL 2026.",
-    "detail": "Across 69 captured fixtures: toss won → match won in 36 of them. The toss is supposed to be 50/50; this season it's a 52/48 signal.",
+    "bigStat": "51 / 49",
+    "hook": "Toss winners are converting **51%** of matches into wins this IPL 2026.",
+    "detail": "Across 73 captured fixtures: toss won → match won in 37 of them. The toss is supposed to be 50/50; this season it's a 51/49 signal.",
     "numbers": [
       {
         "label": "Captured fixtures",
-        "value": 69
+        "value": 73
       },
       {
         "label": "Toss winner also won match",
-        "value": 36
+        "value": 37
       },
       {
         "label": "Toss-to-win conversion",
-        "value": "52%"
+        "value": "51%"
       }
     ],
     "tag": "Toss × decision"
@@ -1084,21 +1115,21 @@
     "id": "anomaly-big-chases-pattern",
     "kind": "anomaly",
     "tease": "The 200-target stopped meaning what it used to. There's a tell.",
-    "bigStat": "12 chases · PP SR 188",
-    "hook": "12 fixtures this season chased **200+** successfully. All had powerplay SR ≈ **188**.",
-    "detail": "Targets cleared: 210, 204, 209, 222, 265, 229, 228, 249, 226, 216, 205, 200. Average chase powerplay SR across these: 188. The ceiling for a \"set total\" has moved by 30-40 runs this IPL — and the powerplay tells you if it'll be cleared.",
+    "bigStat": "13 chases · PP SR 187",
+    "hook": "13 fixtures this season chased **200+** successfully. All had powerplay SR ≈ **187**.",
+    "detail": "Targets cleared: 210, 204, 209, 222, 265, 229, 228, 249, 226, 216, 205, 200, 219. Average chase powerplay SR across these: 187. The ceiling for a \"set total\" has moved by 30-40 runs this IPL — and the powerplay tells you if it'll be cleared.",
     "numbers": [
       {
         "label": "200+ chases successful",
-        "value": 12
+        "value": 13
       },
       {
         "label": "Targets cleared",
-        "value": "210, 204, 209, 222, 265, 229, 228, 249, 226, 216, 205, 200"
+        "value": "210, 204, 209, 222, 265, 229, 228, 249, 226, 216, 205, 200, 219"
       },
       {
         "label": "Avg chase powerplay SR",
-        "value": 188
+        "value": 187
       }
     ],
     "tag": "Anomaly cluster"
@@ -1107,21 +1138,21 @@
     "id": "anomaly-defended-sub160",
     "kind": "anomaly",
     "tease": "Live commentary calls these \"shocks.\" The data calls them a pattern.",
-    "bigStat": "8 sub-160 defended",
-    "hook": "8 sub-160 totals successfully defended this season — and the chasing team lost their powerplay every time.",
-    "detail": "Defended totals: 127, 150, 146, 155, 158, 155, 159, 147. Average chase powerplay wickets in those games: 2.5. Live commentary calls these \"shocks.\" Powerplay wickets ÷ defendable score = the actual signal.",
+    "bigStat": "9 sub-160 defended",
+    "hook": "9 sub-160 totals successfully defended this season — and the chasing team lost their powerplay every time.",
+    "detail": "Defended totals: 127, 150, 146, 155, 158, 155, 159, 147, 155. Average chase powerplay wickets in those games: 2.4. Live commentary calls these \"shocks.\" Powerplay wickets ÷ defendable score = the actual signal.",
     "numbers": [
       {
         "label": "Sub-160 totals defended",
-        "value": 8
+        "value": 9
       },
       {
         "label": "Defended totals",
-        "value": "127, 150, 146, 155, 158, 155, 159, 147"
+        "value": "127, 150, 146, 155, 158, 155, 159, 147, 155"
       },
       {
         "label": "Avg chase powerplay wickets lost",
-        "value": 2.5
+        "value": 2.4
       }
     ],
     "tag": "Anomaly cluster"
