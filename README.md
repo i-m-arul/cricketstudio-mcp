@@ -1,10 +1,10 @@
 # cricketstudio-mcp
 
-[![npm version](https://img.shields.io/npm/v/@cricketstudio/mcp)](https://www.npmjs.com/package/@cricketstudio/mcp)
+[![npm version](https://img.shields.io/npm/v/cricketstudio-mcp)](https://www.npmjs.com/package/cricketstudio-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Citation infrastructure for cricket — 29 MCP tools, zero network calls, 1,307 matches, 309,992 deliveries.**
+**Citation infrastructure for cricket — 32 MCP tools (incl. a knowledge-graph layer), zero network calls, 1,317 matches, 312,309 deliveries.**
 
 ---
 
@@ -129,7 +129,7 @@ Once connected in Claude Desktop, you can ask questions like:
 | Cricsheet | IPL historical, 18 seasons, 1,169 matches (2007/08–2025) | CC BY 3.0 |
 | Cricsheet | MLC 2023–2026, 138 matches | CC BY 3.0 |
 
-**Total corpus:** 1,307 matches · 309,992 ball-by-ball deliveries.
+**Total corpus:** 1,317 matches · 312,309 ball-by-ball deliveries.
 
 **Sample-size floors (publicly disclosed):**
 - Batting claims: ≥30 balls faced
