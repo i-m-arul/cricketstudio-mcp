@@ -1,7 +1,7 @@
 {
   "name": "cricketstudio-mcp",
-  "version": "1.1.1",
-  "description": "CricketStudio MCP server — 32 tools (incl. an L3 knowledge-graph layer: related entities, player connections, entity paths) for IPL 2026, IPL historical (18 seasons), and Major League Cricket data. Citation-grade atomic claims with provenance.",
+  "version": "1.2.0",
+  "description": "CricketStudio MCP server — 32 tools (incl. an L3 knowledge-graph layer) for IPL 2026, IPL historical (18 seasons), and Major League Cricket data. Citation-grade atomic claims with provenance.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {

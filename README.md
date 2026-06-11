@@ -125,7 +125,7 @@ Once connected in Claude Desktop, you can ask questions like:
 
 | Source | Coverage | License |
 |---|---|---|
-| Sportmonks | IPL 2026 ball-by-ball (complete season — RCB champions) | Licensed feed |
+| Licensed feed | IPL 2026 ball-by-ball (complete season — RCB champions) | Proprietary |
 | Cricsheet | IPL historical, 18 seasons, 1,169 matches (2007/08–2025) | CC BY 3.0 |
 | Cricsheet | MLC 2023–2026, 138 matches | CC BY 3.0 |
 
@@ -139,31 +139,15 @@ Once connected in Claude Desktop, you can ask questions like:
 
 Claims that do not reach these floors are excluded — they are not suppressed with a placeholder, they are simply absent. This is the moat.
 
-**Update cadence:** the private monorepo runs `build-mcp-snapshot.mjs` on a cron and pushes updated snapshots here. Typical lag during IPL match windows is under 30 minutes. Every tool response includes `dataAsOf` so an LLM citing the answer can disclose freshness explicitly.
+**Update cadence:** the bundled snapshot is refreshed after each CricketStudio data update. Every tool response includes `dataAsOf` so an LLM citing the answer can disclose freshness explicitly.
 
 **Data licence:** the bundled data is released under CC BY 4.0. Every tool response includes a `canonicalUrl` back to `players.cricketstudio.ai` so attribution flows automatically when an LLM cites an answer.
 
 ---
 
-## Architecture
+## About this package
 
-The CricketStudio publisher at `players.cricketstudio.ai` is the single source of truth. Its build pipeline aggregates ball-by-ball data through the SETU canonical aggregator into `data/_season-stats.json`, then projects into every leaderboard surface (six parity contracts enforce that "Top 5 batters" and "Top run-scorers" can never drift).
-
-This public repo bundles the pre-computed projection of that data. Every number accessible here is also readable on the rendered HTML at `players.cricketstudio.ai`. No new information is exposed — only a different access path.
-
-```
-private monorepo                                     this repo (public)
-─────────────────                                    ──────────────────
- build-mcp-snapshot.mjs ──▶  data/snapshot/*.json ──▶ src/server.ts
-   ↑                                                       ↓
-   ↑                                                  MCP client
-   ↑                                                  (Claude, Cursor, …)
- ball-by-ball  →  SETU aggregator (private)
-                  agent layer (private)
-                  L2 conditional engine (private)
-```
-
-The aggregator algorithm stays in the private monorepo. The snapshot is what ships here.
+This package bundles a pre-computed projection of CricketStudio's public data. Every number here is also readable on the rendered pages at `players.cricketstudio.ai` — no new information is exposed, only a different (offline, zero-network) access path.
 
 ---
 

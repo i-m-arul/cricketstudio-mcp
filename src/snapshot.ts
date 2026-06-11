@@ -431,7 +431,7 @@ export function getMatch(id: string): MatchSummary | null {
 }
 
 /**
- * SETU canonical season-stats aggregates (IPL 2026).
+ * CricketStudio canonical season-stats aggregates (IPL 2026).
  * Shape: `{ computedAt: string; bySlug: Record<string, ...> }`.
  * Returns `null` when the file is missing or empty.
  */

@@ -12,7 +12,7 @@
  *
  *   - 200 player profiles (full pillar claims, keyed by public slug)
  *   - 10 teams, 13 venues, 37 cross-fixture trends, 500 H2H pairs
- *   - SETU canonical season-stats aggregates (keyed by public slug,
+ *   - CricketStudio canonical season-stats aggregates (keyed by public slug,
  *     no upstream numeric IDs)
  *
  * What's deliberately NOT bundled here:
@@ -22,7 +22,7 @@
  *   - Fixture schedule, fixture lookup, match-state tools — those
  *     carry upstream numeric IDs we don't expose; they ship in Phase B
  *     keyed by a public canonical (`{date}-{home}-vs-{away}`)
- *   - Any ID from upstream data providers (Sportmonks, CricketMind,
+ *   - Any ID from upstream data providers (upstream providers,
  *     ESPNcricinfo bare IDs) — public slugs are the only canonical
  *     identifier used in this bundle
  *
@@ -404,7 +404,7 @@ const TOOLS = [
   {
     name: 'get_season_stats',
     description:
-      'IPL 2026 leaderboard from the SETU canonical aggregate. sortBy: runs · wickets · strike_rate · economy · ducks · single_digit_outs · catches · run_outs. Optional teamCode filter; sample-size floors apply.',
+      'IPL 2026 leaderboard from the CricketStudio canonical aggregate. sortBy: runs · wickets · strike_rate · economy · ducks · single_digit_outs · catches · run_outs. Optional teamCode filter; sample-size floors apply.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -433,7 +433,7 @@ const TOOLS = [
   {
     name: 'get_fielding_stats',
     description:
-      'IPL 2026 fielding — catches, run-out assists, total dismissals — for one player (pass playerSlug) or as a leaderboard (omit playerSlug). Aggregated from the SETU canonical snapshot.',
+      'IPL 2026 fielding — catches, run-out assists, total dismissals — for one player (pass playerSlug) or as a leaderboard (omit playerSlug). Aggregated from the CricketStudio canonical snapshot.',
     inputSchema: {
       type: 'object',
       properties: { playerSlug: { type: 'string' }, limit: { type: 'number' } },
@@ -774,7 +774,7 @@ function handleTeamH2H(args: { teamSlugA: string; teamSlugB: string }) {
 }
 
 function handleSeasonStats(args: { sortBy: string; teamCode?: string; limit?: number }) {
-  // Snapshot's season-stats.json carries the SETU canonical aggregate
+  // Snapshot's season-stats.json carries the CricketStudio canonical aggregate
   // (shape: `bySlug` keyed map — the keys are public player slugs, the
   // raw byPlayerId/numeric keying from the private aggregator never
   // ships here). We project — sort by the requested metric — but never
@@ -1069,7 +1069,7 @@ function handleListMlcLeaderboards(args: { aspect: string; limit?: number }) {
     floorNote: lb.floorNote ?? null,
     count: Math.min(limit, lb.rows.length),
     rows: lb.rows.slice(0, limit).map((r) => ({ ...r, canonicalUrl: mlcPlayerUrl(r.slug) })),
-    provenance: { source: 'Cricsheet SETU snapshot', license: 'CC BY 3.0' },
+    provenance: { source: 'Cricsheet aggregate snapshot', license: 'CC BY 3.0' },
   }, mlcLeaderboardUrl(lb.slug));
 }
 
