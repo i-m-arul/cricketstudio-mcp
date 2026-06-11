@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 /**
- * index.ts — CricketStudio MCP server entry point (v1.0.0)
+ * index.ts — CricketStudio MCP server entry point (v1.1.0)
  *
- * 29 tools covering:
+ * 32 tools covering:
  *   - IPL 2026 core (player profiles, standings, season stats, trends, H2H, venues, teams)
  *   - IPL historical (18 seasons, Cricsheet corpus) via get_ipl_leaderboard
  *   - Major League Cricket (2023–2026, Cricsheet CC BY 3.0)
+ *   - Knowledge graph (L3) — related entities, player connections, entity paths
  *
  * All data is read from the bundled snapshot at data/snapshot/ via ./snapshot.js.
  * Numbers never pass through an LLM — every numeric value is deterministically
@@ -145,7 +146,7 @@ function notFound(message: string, canonicalUrl?: string) {
   return ok({ error: 'not_found', message, hint: 'Use search_players / list_trends / list_fixtures to discover valid keys.' }, canonicalUrl);
 }
 
-// ─── Tool catalog (29 tools) ──────────────────────────────────────────
+// ─── Tool catalog (32 tools) ──────────────────────────────────────────
 
 const TOOLS = [
   // ── GROUP 1: IPL 2026 Core ──────────────────────────────────────────
@@ -296,9 +297,29 @@ const TOOLS = [
     description: 'IPL historical leaderboard from the 18-season Cricsheet corpus (2007/08–2025). 35+ aspects: orange-cap, purple-cap, most-sixes, most-fours, strike-rate, economy-leaders, most-matches, most-fifties, most-hundreds, best-bowling-avg, most-ducks, powerplay-economy, death-sr, and per-season variants. Pass season to scope to one year (e.g. "ipl-2024"). Returns canonical URL at /leagues/ipl/leaderboards/{aspect}.',
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect e.g. orange-cap, purple-cap, most-sixes, economy-leaders' }, season: { type: 'string', description: 'Optional season slug e.g. ipl-2024 (omit for all-time)' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
   },
+
+  // ── GROUP 5: Knowledge graph (L3) ───────────────────────────────────
+  {
+    name: 'get_related_entities',
+    description: 'Knowledge-graph traversal: entities connected to a player or franchise (by slug). Use for "who does Kohli play for", "which bowlers has Kohli faced", "who plays for RCB". Optional `predicate` filters the edge type (plays_for, faced, dismissed_by) and `direction` (out/in/both). Returns related entities + canonical URLs. Does NOT return per-ball detail — use get_player_h2h for one matchup. Matchup edges mirror the get_player_h2h pair set.',
+    inputSchema: { type: 'object', properties: { slug: { type: 'string', description: 'Entity slug, e.g. "virat-kohli" or "rcb"' }, predicate: { type: 'string', enum: ['plays_for', 'faced', 'dismissed_by'] }, direction: { type: 'string', enum: ['out', 'in', 'both'] }, limit: { type: 'number', description: 'Default 25, max 50' } }, required: ['slug'], additionalProperties: false },
+  },
+  {
+    name: 'get_player_connections',
+    description: 'A player\'s graph neighbourhood in one call: their franchise (plays_for), most-faced bowlers (by deliveries), and the bowlers who dismissed them most — each with canonical URLs + aggregate counts. Use for "who are Kohli\'s toughest bowlers", "which team does Kohli play for". Returns aggregates, not ball-by-ball. Matchup edges mirror the get_player_h2h pair set, so not every opponent appears.',
+    inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: 'kebab-case slug e.g. virat-kohli' }, limit: { type: 'number', description: 'Default 10, max 50' } }, required: ['playerSlug'], additionalProperties: false },
+  },
+  {
+    name: 'get_graph_path',
+    description: 'Shortest connection (≤4 hops) between two cricket entities in the knowledge graph — e.g. how one player links to another via a shared franchise. Returns the path as a list of entities with canonical URLs, or connected=false if none within maxDepth. Use for "how is Kohli connected to Bumrah".',
+    inputSchema: { type: 'object', properties: { fromSlug: { type: 'string', description: 'Start entity slug' }, toSlug: { type: 'string', description: 'End entity slug' }, maxDepth: { type: 'number', description: 'Default 3, max 4' } }, required: ['fromSlug', 'toSlug'], additionalProperties: false },
+  },
 ] as const;
 
 // ─── Zod validators ───────────────────────────────────────────────────
+
+/** L3 graph edge predicates the package ships (h2h-parity scope). */
+const GraphPredicates = ['plays_for', 'faced', 'dismissed_by'] as const;
 
 const validators = {
   get_dataset_summary: z.object({}).strict(),
@@ -330,6 +351,9 @@ const validators = {
   list_mlc_matches: z.object({ season: z.string().optional(), teamSlug: z.string().optional(), limit: z.number().optional() }).strict(),
   list_mlc_leaderboards: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
   get_ipl_leaderboard: z.object({ aspect: z.string(), season: z.string().optional(), limit: z.number().optional() }).strict(),
+  get_related_entities: z.object({ slug: z.string(), predicate: z.enum(GraphPredicates).optional(), direction: z.enum(['out', 'in', 'both']).optional(), limit: z.number().optional() }).strict(),
+  get_player_connections: z.object({ playerSlug: z.string(), limit: z.number().optional() }).strict(),
+  get_graph_path: z.object({ fromSlug: z.string(), toSlug: z.string(), maxDepth: z.number().optional() }).strict(),
 } as const;
 
 // ─── Tool handlers ────────────────────────────────────────────────────
@@ -997,10 +1021,90 @@ function handleIplLeaderboard(args: { aspect: string; season?: string; limit?: n
   }, canonical);
 }
 
+// ─── GROUP 5: Knowledge graph (L3) ────────────────────────────────────
+//
+// Slug-keyed traversal over the bundled graph.json (player + franchise
+// nodes; plays_for + faced/dismissed_by edges, h2h.json parity). All three
+// tools degrade gracefully to empty results when graph.json is absent.
+
+function urlForGraphNode(n: snap.GraphNode): string | null {
+  switch (n.type) {
+    case 'player':    return `${SITE}/players/${n.slug}`;
+    case 'franchise': return `${SITE}/teams/${n.slug}`;
+    case 'venue':     return `${SITE}/venues/${n.slug}`;
+    default:          return null;
+  }
+}
+function projectGraphNode(n: snap.GraphNode) {
+  return { id: n.slug, type: n.type, name: n.name, canonical_url: urlForGraphNode(n) };
+}
+
+function handleGetRelatedEntities(args: Record<string, unknown>) {
+  const slug = String(args.slug ?? '');
+  const node = snap.getGraphNode(slug);
+  if (!node) return notFound(`No graph entity with slug "${slug}".`);
+  const predicate = args.predicate ? String(args.predicate) : undefined;
+  const direction = (args.direction as snap.GraphDirection) ?? 'out';
+  const limit = typeof args.limit === 'number' ? Math.min(Math.max(args.limit, 1), 50) : 25;
+  const related = snap.graphRelated(slug, { predicate, direction, limit });
+  return ok({
+    entity: projectGraphNode(node),
+    predicate: predicate ?? 'all',
+    direction,
+    count: related.length,
+    related: related.map(projectGraphNode),
+    source: 'CricketStudio knowledge graph (L3)',
+  }, urlForGraphNode(node) ?? undefined);
+}
+
+function handleGetPlayerConnections(args: Record<string, unknown>) {
+  const slug = String(args.playerSlug ?? '');
+  const node = snap.getGraphNode(slug);
+  if (!node || node.type !== 'player') return notFound(`No player in the graph with slug "${slug}".`);
+  const limit = typeof args.limit === 'number' ? Math.min(Math.max(args.limit, 1), 50) : 10;
+  const playsFor = snap.graphEdges(slug, { predicate: 'plays_for', direction: 'out' })
+    .map((e) => snap.getGraphNode(e.dst)).filter((n): n is snap.GraphNode => !!n).map(projectGraphNode);
+  const mostFacedBowlers = snap.graphEdges(slug, { predicate: 'faced', direction: 'out' })
+    .slice().sort((a, b) => (b.props?.deliveries ?? 0) - (a.props?.deliveries ?? 0)).slice(0, limit)
+    .map((e) => { const n = snap.getGraphNode(e.dst); return n ? { ...projectGraphNode(n), deliveries: e.props?.deliveries ?? 0, runs: e.props?.runs ?? 0, dismissals: e.props?.dismissals ?? 0 } : null; })
+    .filter((x): x is NonNullable<typeof x> => !!x);
+  const dismissedByMost = snap.graphEdges(slug, { predicate: 'dismissed_by', direction: 'out' })
+    .slice().sort((a, b) => (b.props?.dismissals ?? 0) - (a.props?.dismissals ?? 0)).slice(0, limit)
+    .map((e) => { const n = snap.getGraphNode(e.dst); return n ? { ...projectGraphNode(n), dismissals: e.props?.dismissals ?? 0 } : null; })
+    .filter((x): x is NonNullable<typeof x> => !!x);
+  return ok({
+    player: projectGraphNode(node),
+    playsFor, mostFacedBowlers, dismissedByMost,
+    window: 'IPL career (faced/dismissed) + IPL 2026 (plays_for)',
+    source: 'CricketStudio knowledge graph (L3)',
+    note: 'Matchup edges mirror the get_player_h2h pair set; not every opponent is present.',
+  }, urlForGraphNode(node) ?? undefined);
+}
+
+function handleGetGraphPath(args: Record<string, unknown>) {
+  const fromSlug = String(args.fromSlug ?? '');
+  const toSlug = String(args.toSlug ?? '');
+  const a = snap.getGraphNode(fromSlug);
+  if (!a) return notFound(`No graph entity with slug "${fromSlug}".`);
+  const b = snap.getGraphNode(toSlug);
+  if (!b) return notFound(`No graph entity with slug "${toSlug}".`);
+  const maxDepth = typeof args.maxDepth === 'number' ? Math.min(Math.max(args.maxDepth, 1), 4) : 3;
+  const ids = snap.graphPath(fromSlug, toSlug, maxDepth);
+  if (!ids) {
+    return ok({ from: projectGraphNode(a), to: projectGraphNode(b), connected: false, path: [], note: `No connection within ${maxDepth} hops.`, source: 'CricketStudio knowledge graph (L3)' });
+  }
+  return ok({
+    from: projectGraphNode(a), to: projectGraphNode(b),
+    connected: true, hops: ids.length - 1,
+    path: ids.map((id) => { const n = snap.getGraphNode(id); return n ? projectGraphNode(n) : { id, type: 'unknown', name: null, canonical_url: null }; }),
+    source: 'CricketStudio knowledge graph (L3)',
+  });
+}
+
 // ─── Server wiring ────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '1.0.0' },
+  { name: 'cricketstudio', version: '1.1.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -1044,6 +1148,9 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'list_mlc_matches':         return handleListMlcMatches(args);
       case 'list_mlc_leaderboards':    return handleListMlcLeaderboards(args);
       case 'get_ipl_leaderboard':      return handleIplLeaderboard(args);
+      case 'get_related_entities':     return handleGetRelatedEntities(args);
+      case 'get_player_connections':   return handleGetPlayerConnections(args);
+      case 'get_graph_path':           return handleGetGraphPath(args);
       default:                         return ok({ error: 'unknown_tool', tool: name });
     }
   } catch (err) {

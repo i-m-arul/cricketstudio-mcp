@@ -1,6 +1,6 @@
 {
   "name": "cricketstudio-mcp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "CricketStudio MCP server — 29 tools for IPL 2026, IPL historical (18 seasons), and Major League Cricket data. Citation-grade atomic claims with provenance.",
   "type": "module",
   "main": "dist/index.js",
@@ -11,7 +11,8 @@
     "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js --format=esm --packages=external",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "smoke": "node scripts/smoke-test.mjs"
   },
   "keywords": [
     "mcp",

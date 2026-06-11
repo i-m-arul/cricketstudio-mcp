@@ -20,7 +20,9 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
-const SERVER = resolve(ROOT, 'src', 'server.ts');
+// The SHIPPED server (bin → dist/index.js, built from src/index.ts). The
+// legacy src/server.ts is an older v0.3.1 form and is NOT what npx runs.
+const SERVER = resolve(ROOT, 'src', 'index.ts');
 
 // Representative call per tool. Discovery tools first so we can pull
 // real keys (slug / trendId) out of their responses for the rest.
@@ -40,6 +42,11 @@ const CALLS = [
   ['get_season_stats', { sortBy: 'runs', limit: 3 }],
   ['compare_players', { playerSlugs: ['virat-kohli', 'jasprit-bumrah'] }],
   ['get_fielding_stats', { limit: 3 }],
+  ['get_partnerships', { playerSlug: 'virat-kohli' }],
+  ['get_dismissal_analysis', { playerSlug: 'virat-kohli' }],
+  ['list_fixtures', { limit: 5 }],
+  ['get_match_state', { matchId: '69518' }],
+  ['get_match_recap', { matchId: '69518' }],
   // MLC
   ['get_mlc_dataset_summary', {}],
   ['search_mlc_players', { query: 'du plessis', limit: 3 }],
@@ -49,6 +56,12 @@ const CALLS = [
   ['get_mlc_match', { matchId: '1381361' }],
   ['get_mlc_match_claim', { matchId: '1381361', kind: 'top-batter' }],
   ['list_mlc_leaderboards', { aspect: 'orange-cap', limit: 5 }],
+  // IPL historical
+  ['get_ipl_leaderboard', { aspect: 'orange-cap', limit: 5 }],
+  // Knowledge graph (L3)
+  ['get_related_entities', { slug: 'rcb', predicate: 'plays_for', direction: 'in', limit: 5 }],
+  ['get_player_connections', { playerSlug: 'virat-kohli', limit: 5 }],
+  ['get_graph_path', { fromSlug: 'virat-kohli', toSlug: 'rcb', maxDepth: 2 }],
 ];
 
 function send(child, obj) {
