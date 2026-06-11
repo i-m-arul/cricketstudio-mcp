@@ -48,7 +48,7 @@ Any MCP client that supports the stdio transport can use this command directly. 
 
 ## Tools
 
-All 29 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
+All 32 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
 
 ### IPL 2026 (20 tools)
 
@@ -93,6 +93,16 @@ All 29 tools work fully against the bundled snapshot. Each response includes `ca
 | Tool | What it returns | Maps to URL |
 |---|---|---|
 | `get_ipl_leaderboard` | All-time IPL leaderboard for any aspect across 18 seasons (2007/08–2025) — runs, wickets, sixes, centuries, economy, and more | `/leagues/ipl/leaderboards/{aspect}` |
+
+### Knowledge Graph (L3) (3 tools)
+
+Slug-keyed traversal over CricketStudio's entity graph. Nodes are players and franchises; edges are `plays_for` (squad membership) and `faced`/`dismissed_by` (batter-vs-bowler matchups, mirroring the `get_player_h2h` pair set).
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_related_entities` | Entities connected to a player or franchise, by edge type and direction | `/players/{slug}` · `/teams/{slug}` |
+| `get_player_connections` | A player's franchise + most-faced bowlers + bowlers who dismissed them most, in one call | `/players/{slug}` |
+| `get_graph_path` | Shortest connection (≤4 hops) between two entities, e.g. two players via a shared franchise | n/a |
 
 ---
 

@@ -483,3 +483,130 @@ export function getSnapshotMeta(): {
     },
   };
 }
+
+// ─── Knowledge graph (L3) ─────────────────────────────────────────────
+//
+// graph.json is a slug-keyed projection of CricketStudio's L3 knowledge
+// graph: { nodes: { [slug]: { type, name } }, edges: [{ src, predicate,
+// dst, props? }] }. Scope (moat parity with h2h.json): player + franchise
+// nodes only; plays_for (full) + faced/dismissed_by (same pair set as
+// h2h.json). Slug-keyed — no internal ids, no match/fixture nodes.
+
+export interface GraphNode {
+  /** Public slug — also the node's key. */
+  slug: string;
+  /** Entity type: 'player' | 'franchise'. */
+  type: string;
+  /** Display name. */
+  name: string | null;
+}
+
+export interface GraphEdge {
+  src: string;
+  predicate: string;
+  dst: string;
+  /** Aggregate counts for faced/dismissed_by (deliveries/runs/dismissals). */
+  props?: Record<string, number>;
+}
+
+interface RawGraphDoc {
+  nodes?: Record<string, { type: string; name?: string | null }>;
+  edges?: GraphEdge[];
+}
+
+export type GraphDirection = 'out' | 'in' | 'both';
+
+let _graphNodes: Map<string, GraphNode> | null = null;
+let _graphOut: Map<string, GraphEdge[]> | null = null;
+let _graphIn: Map<string, GraphEdge[]> | null = null;
+
+function loadGraph(): void {
+  if (_graphNodes !== null) return;
+  _graphNodes = new Map();
+  _graphOut = new Map();
+  _graphIn = new Map();
+  const doc = readJson<RawGraphDoc>('graph.json');
+  if (!doc) return; // graph.json not yet shipped → empty graph, fail-soft
+  for (const [slug, n] of Object.entries(doc.nodes ?? {})) {
+    _graphNodes.set(slug, { slug, type: n.type, name: n.name ?? null });
+  }
+  for (const e of doc.edges ?? []) {
+    if (!_graphOut.has(e.src)) _graphOut.set(e.src, []);
+    _graphOut.get(e.src)!.push(e);
+    if (!_graphIn.has(e.dst)) _graphIn.set(e.dst, []);
+    _graphIn.get(e.dst)!.push(e);
+  }
+}
+
+/** A graph node by slug; `null` when absent. */
+export function getGraphNode(slug: string): GraphNode | null {
+  loadGraph();
+  return _graphNodes!.get(slug) ?? null;
+}
+
+/** Edges incident to a node, optionally filtered by predicate + direction. */
+export function graphEdges(
+  slug: string,
+  opts: { predicate?: string; direction?: GraphDirection } = {},
+): GraphEdge[] {
+  loadGraph();
+  const { predicate, direction = 'out' } = opts;
+  const collected: GraphEdge[] = [];
+  if (direction === 'out' || direction === 'both') collected.push(...(_graphOut!.get(slug) ?? []));
+  if (direction === 'in' || direction === 'both') collected.push(...(_graphIn!.get(slug) ?? []));
+  return predicate ? collected.filter((e) => e.predicate === predicate) : collected;
+}
+
+/** Related nodes (the "other" endpoint of incident edges), de-duplicated. */
+export function graphRelated(
+  slug: string,
+  opts: { predicate?: string; direction?: GraphDirection; limit?: number } = {},
+): GraphNode[] {
+  loadGraph();
+  const { predicate, direction = 'out', limit = 25 } = opts;
+  const seen = new Set<string>();
+  const out: GraphNode[] = [];
+  const push = (otherSlug: string) => {
+    if (seen.has(otherSlug)) return;
+    const n = _graphNodes!.get(otherSlug);
+    if (n) { seen.add(otherSlug); out.push(n); }
+  };
+  if (direction === 'out' || direction === 'both') {
+    for (const e of _graphOut!.get(slug) ?? []) if (!predicate || e.predicate === predicate) push(e.dst);
+  }
+  if (direction === 'in' || direction === 'both') {
+    for (const e of _graphIn!.get(slug) ?? []) if (!predicate || e.predicate === predicate) push(e.src);
+  }
+  return out.slice(0, limit);
+}
+
+/**
+ * Shortest path between two slugs (treats edges as undirected for
+ * connectivity), ≤ maxDepth hops. Returns the slug chain or `null`.
+ * BFS, so the first path found is the shortest.
+ */
+export function graphPath(a: string, b: string, maxDepth = 4): string[] | null {
+  loadGraph();
+  if (!_graphNodes!.has(a) || !_graphNodes!.has(b)) return null;
+  if (a === b) return [a];
+  const visited = new Set<string>([a]);
+  let frontier: string[][] = [[a]];
+  for (let depth = 0; depth < maxDepth; depth++) {
+    const next: string[][] = [];
+    for (const pathSoFar of frontier) {
+      const last = pathSoFar[pathSoFar.length - 1]!;
+      const nbrs = new Set<string>();
+      for (const e of _graphOut!.get(last) ?? []) nbrs.add(e.dst);
+      for (const e of _graphIn!.get(last) ?? []) nbrs.add(e.src);
+      for (const nb of nbrs) {
+        if (visited.has(nb)) continue;
+        const newPath = [...pathSoFar, nb];
+        if (nb === b) return newPath;
+        visited.add(nb);
+        next.push(newPath);
+      }
+    }
+    frontier = next;
+  }
+  return null;
+}
