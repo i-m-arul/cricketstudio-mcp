@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * index.ts — CricketStudio MCP server entry point (v1.1.0)
+ * index.ts — CricketStudio MCP server entry point (v1.2.0)
  *
- * 32 tools covering:
+ * 34 tools covering:
  *   - IPL 2026 core (player profiles, standings, season stats, trends, H2H, venues, teams)
  *   - IPL historical (18 seasons, Cricsheet corpus) via get_ipl_leaderboard
  *   - Major League Cricket (2023–2026, Cricsheet CC BY 3.0)
@@ -298,6 +298,18 @@ const TOOLS = [
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect e.g. orange-cap, purple-cap, most-sixes, economy-leaders' }, season: { type: 'string', description: 'Optional season slug e.g. ipl-2024 (omit for all-time)' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
   },
 
+  // ── GROUP 4: Research reports ────────────────────────────────────────
+  {
+    name: 'list_research_reports',
+    description: 'All published CricketStudio research reports. Returns id, title, series, summary, status, and canonicalUrl per report. Use to discover available reports before calling get_research_report. Reports are organised into Series 1 · IPL (state-of-ipl-2026, toss-effect, death-overs) and Series 2 · MLC (state-of-mlc-2025).',
+    inputSchema: { type: 'object', properties: { series: { type: 'string', description: 'Optional series filter: "ipl" or "mlc"' } }, additionalProperties: false },
+  },
+  {
+    name: 'get_research_report',
+    description: 'Full detail for one CricketStudio research report by id: title, series, summary, key findings, provenance, and canonicalUrl. Use list_research_reports to discover valid ids. Key findings are atomic claims with sample-size provenance — each is ≤30 words. The canonical URL carries the full computed dataset with all numeric claims and JSON-LD.',
+    inputSchema: { type: 'object', properties: { reportId: { type: 'string', description: 'Report id e.g. state-of-ipl-2026, toss-effect, death-overs, state-of-mlc-2025' } }, required: ['reportId'], additionalProperties: false },
+  },
+
   // ── GROUP 5: Knowledge graph (L3) ───────────────────────────────────
   {
     name: 'get_related_entities',
@@ -351,6 +363,8 @@ const validators = {
   list_mlc_matches: z.object({ season: z.string().optional(), teamSlug: z.string().optional(), limit: z.number().optional() }).strict(),
   list_mlc_leaderboards: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
   get_ipl_leaderboard: z.object({ aspect: z.string(), season: z.string().optional(), limit: z.number().optional() }).strict(),
+  list_research_reports: z.object({ series: z.string().optional() }).strict(),
+  get_research_report: z.object({ reportId: z.string() }).strict(),
   get_related_entities: z.object({ slug: z.string(), predicate: z.enum(GraphPredicates).optional(), direction: z.enum(['out', 'in', 'both']).optional(), limit: z.number().optional() }).strict(),
   get_player_connections: z.object({ playerSlug: z.string(), limit: z.number().optional() }).strict(),
   get_graph_path: z.object({ fromSlug: z.string(), toSlug: z.string(), maxDepth: z.number().optional() }).strict(),
@@ -1021,6 +1035,49 @@ function handleIplLeaderboard(args: { aspect: string; season?: string; limit?: n
   }, canonical);
 }
 
+// ─── Research report handlers ─────────────────────────────────────────
+
+function handleListResearchReports(args: { series?: string }) {
+  let reports = snap.getResearchReports();
+  if (args.series) {
+    const s = args.series.toLowerCase();
+    reports = reports.filter((r) => r.series.toLowerCase().includes(s));
+  }
+  return ok({
+    count: reports.length,
+    reports: reports.map((r) => ({
+      id: r.id,
+      title: r.title,
+      series: r.series,
+      seriesLabel: r.seriesLabel,
+      status: r.status,
+      summary: r.summary,
+      canonicalUrl: r.canonicalUrl,
+    })),
+  }, `${SITE}/research`);
+}
+
+function handleGetResearchReport(args: { reportId: string }) {
+  const r = snap.getResearchReport(args.reportId);
+  if (!r) {
+    const ids = snap.getResearchReports().map((x) => x.id).join(', ');
+    return notFound(`No research report with id "${args.reportId}". Valid ids: ${ids}.`, `${SITE}/research`);
+  }
+  return ok({
+    id: r.id,
+    title: r.title,
+    series: r.series,
+    seriesLabel: r.seriesLabel,
+    status: r.status,
+    summary: r.summary,
+    keyFindings: r.keyFindings,
+    provenance: r.provenance,
+    license: r.license,
+    leagueContext: r.leagueContext,
+    note: 'Key findings are representative atomic claims. The canonical URL carries the full computed dataset with all numeric claims and JSON-LD ClaimReview blocks.',
+  }, r.canonicalUrl);
+}
+
 // ─── GROUP 5: Knowledge graph (L3) ────────────────────────────────────
 //
 // Slug-keyed traversal over the bundled graph.json (player + franchise
@@ -1104,7 +1161,7 @@ function handleGetGraphPath(args: Record<string, unknown>) {
 // ─── Server wiring ────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '1.1.0' },
+  { name: 'cricketstudio', version: '1.2.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -1113,7 +1170,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({ tools: TOOLS }))
 server.setRequestHandler(CallToolRequestSchema, async (req) => {
   const { name, arguments: rawArgs } = req.params;
   const v = (validators as Record<string, z.ZodTypeAny>)[name];
-  if (!v) return ok({ error: 'unknown_tool', tool: name, hint: 'Call tools/list for the full 29-tool catalog.' });
+  if (!v) return ok({ error: 'unknown_tool', tool: name, hint: 'Call tools/list for the full 34-tool catalog.' });
   const parsed = v.safeParse(rawArgs ?? {});
   if (!parsed.success) return ok({ error: 'invalid_arguments', tool: name, issues: (parsed as z.SafeParseError<unknown>).error.issues });
   const args = parsed.data as any;
@@ -1148,6 +1205,8 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'list_mlc_matches':         return handleListMlcMatches(args);
       case 'list_mlc_leaderboards':    return handleListMlcLeaderboards(args);
       case 'get_ipl_leaderboard':      return handleIplLeaderboard(args);
+      case 'list_research_reports':    return handleListResearchReports(args);
+      case 'get_research_report':      return handleGetResearchReport(args);
       case 'get_related_entities':     return handleGetRelatedEntities(args);
       case 'get_player_connections':   return handleGetPlayerConnections(args);
       case 'get_graph_path':           return handleGetGraphPath(args);

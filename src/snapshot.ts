@@ -484,6 +484,48 @@ export function getSnapshotMeta(): {
   };
 }
 
+// ─── Research reports ─────────────────────────────────────────────────
+
+export interface ResearchReport {
+  id: string;
+  title: string;
+  series: string;
+  seriesLabel: string;
+  path: string;
+  status: string;
+  summary: string;
+  keyFindings: string[];
+  provenance: string;
+  license: string;
+  leagueContext: string;
+  canonicalUrl: string;
+}
+
+let _research: ResearchReport[] | null = null;
+let _researchIndex: Map<string, ResearchReport> | null = null;
+
+function loadResearch(): ResearchReport[] {
+  if (_research !== null) return _research;
+  _research = readJson<ResearchReport[]>('research.json') ?? [];
+  return _research;
+}
+
+function loadResearchIndex(): Map<string, ResearchReport> {
+  if (_researchIndex !== null) return _researchIndex;
+  _researchIndex = new Map(loadResearch().map((r) => [r.id, r]));
+  return _researchIndex;
+}
+
+/** All research reports in publish order. */
+export function getResearchReports(): ResearchReport[] {
+  return loadResearch();
+}
+
+/** Single research report by id; `null` when not found. */
+export function getResearchReport(id: string): ResearchReport | null {
+  return loadResearchIndex().get(id) ?? null;
+}
+
 // ─── Knowledge graph (L3) ─────────────────────────────────────────────
 //
 // graph.json is a slug-keyed projection of CricketStudio's L3 knowledge

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "state-of-ipl-2026",
+    "title": "The State of IPL 2026",
+    "series": "Series 1 · IPL",
+    "seriesLabel": "Series 1 · IPL · Report 01",
+    "path": "/research/state-of-ipl-2026",
+    "status": "published",
+    "summary": "Comprehensive season analysis of IPL 2026: RCB champions, final standings, Orange/Purple Cap, batting and bowling leaders, phase trends — every claim with ball-by-ball provenance across 74 matches.",
+    "keyFindings": [
+      "RCB are IPL 2026 champions, defeating GT in the final on 2026-06-01 — their back-to-back title (2025 & 2026).",
+      "Season Orange Cap (most runs) and Purple Cap (most wickets) computed from 74-match ball-by-ball corpus.",
+      "Top batting strike rate and top bowling economy leaders — sample floors ≥30 balls faced / ≥15 balls bowled enforced.",
+      "Per-team phase performance: powerplay, middle-overs, and death-overs run rates and wicket rates."
+    ],
+    "provenance": "CricketStudio SETU aggregation · IPL 2026 · 74 matches · ball-by-ball corpus",
+    "license": "CC BY 4.0",
+    "leagueContext": "IPL 2026",
+    "canonicalUrl": "https://players.cricketstudio.ai/research/state-of-ipl-2026"
+  },
+  {
+    "id": "toss-effect",
+    "title": "The Toss Effect in IPL",
+    "series": "Series 1 · IPL",
+    "seriesLabel": "Series 1 · IPL · Report 02",
+    "path": "/research/toss-effect",
+    "status": "published",
+    "summary": "19 seasons of IPL toss data (2007/08–2026, 1,219 matches). Toss winner wins 52% of matches — barely above a coin flip. The real edge is the decision: bowl-first wins 54% vs bat-first 46%.",
+    "keyFindings": [
+      "Toss winner wins 52% of IPL matches historically — barely above a coin flip across 18 seasons.",
+      "Bowl-first captains win 54% of matches; bat-first captains win only 46% across 1,146 captured toss decisions.",
+      "IPL 2026: bat-first win rate was below 50% of matches where the toss winner chose to bat.",
+      "Year-to-year volatility is high — some seasons see 60%+ toss-winner success, others below 45%."
+    ],
+    "provenance": "Cricsheet CC BY 3.0 + CricketStudio IPL 2026 ball-by-ball · 18 seasons 2007/08–2025 + IPL 2026 · 1,219 matches",
+    "license": "CC BY 4.0",
+    "leagueContext": "IPL historical + IPL 2026",
+    "canonicalUrl": "https://players.cricketstudio.ai/research/toss-effect"
+  },
+  {
+    "id": "death-overs",
+    "title": "Death Overs Intelligence: IPL 2026",
+    "series": "Series 1 · IPL",
+    "seriesLabel": "Series 1 · IPL · Report 03",
+    "path": "/research/death-overs",
+    "status": "published",
+    "summary": "Deep-dive into IPL 2026 death overs (overs 16–20): economy rates, strike rates, top bowlers, top batters, and team performance in the phase that decides T20 matches.",
+    "keyFindings": [
+      "Top 5 death-overs bowlers by economy rate in IPL 2026 — floor ≥30 legal deliveries in overs 16–20.",
+      "Top 5 death-overs batters by strike rate in IPL 2026 — floor ≥30 balls faced in the phase.",
+      "Overall season death-overs economy (RPO) derived from total legal deliveries in overs 16–20 across all 74 matches.",
+      "Per-team death-overs run rate and wicket rate — which franchises dominated the phase."
+    ],
+    "provenance": "CricketStudio SETU aggregation · IPL 2026 · 74 matches · overs 16–20 only",
+    "license": "CC BY 4.0",
+    "leagueContext": "IPL 2026",
+    "canonicalUrl": "https://players.cricketstudio.ai/research/death-overs"
+  },
+  {
+    "id": "state-of-mlc-2025",
+    "title": "The State of MLC 2025",
+    "series": "Series 2 · MLC",
+    "seriesLabel": "Series 2 · MLC · Report 01",
+    "path": "/research/state-of-mlc-2025",
+    "status": "published",
+    "summary": "Complete ball-by-ball analysis of MLC 2025 (33 matches, 109 players, 7,736 deliveries). MI New York are champions. Three-season context (2023–2025): 75 matches, 166 players, 17,413 balls.",
+    "keyFindings": [
+      "MI New York won MLC 2025 — their second MLC title.",
+      "Season leaders (Orange Cap, Purple Cap, strike rate, economy) across 33 matches with sample-size floors enforced.",
+      "Three-season context: 2023–2025 corpus covers 75 matches, 166 players, 17,413 ball-by-ball records from Cricsheet.",
+      "Franchise stories: per-team batting and bowling phase performance across all three MLC seasons."
+    ],
+    "provenance": "Cricsheet CC BY 3.0 · MLC 2023–2025 · 75 matches · 17,413 deliveries",
+    "license": "CC BY 4.0",
+    "leagueContext": "MLC 2025",
+    "canonicalUrl": "https://players.cricketstudio.ai/research/state-of-mlc-2025"
+  }
+]
