@@ -166,6 +166,90 @@
     {
       "slug": "most-fours-death",
       "title": "Most death-overs fours"
+    },
+    {
+      "slug": "most-not-outs",
+      "title": "Most not-outs"
+    },
+    {
+      "slug": "most-innings",
+      "title": "Most innings batted"
+    },
+    {
+      "slug": "most-appearances",
+      "title": "Most matches played"
+    },
+    {
+      "slug": "most-boundaries",
+      "title": "Most boundaries (4s + 6s)"
+    },
+    {
+      "slug": "most-boundaries-pp",
+      "title": "Most powerplay boundaries"
+    },
+    {
+      "slug": "most-boundaries-death",
+      "title": "Most death-overs boundaries"
+    },
+    {
+      "slug": "pp-bowling-strike-rate",
+      "title": "Best powerplay bowling strike rate"
+    },
+    {
+      "slug": "death-bowling-strike-rate",
+      "title": "Best death-overs bowling strike rate"
+    },
+    {
+      "slug": "most-pp-overs-bowled",
+      "title": "Most powerplay balls bowled"
+    },
+    {
+      "slug": "most-death-overs-bowled",
+      "title": "Most death-overs balls bowled"
+    },
+    {
+      "slug": "most-fifties",
+      "title": "Most fifties"
+    },
+    {
+      "slug": "most-hundreds",
+      "title": "Most hundreds"
+    },
+    {
+      "slug": "most-dot-balls",
+      "title": "Most dot balls bowled"
+    },
+    {
+      "slug": "middle-runs",
+      "title": "Most middle-overs runs"
+    },
+    {
+      "slug": "middle-economy",
+      "title": "Best middle-overs economy"
+    },
+    {
+      "slug": "middle-sixes",
+      "title": "Most middle-overs sixes"
+    },
+    {
+      "slug": "middle-wickets",
+      "title": "Most middle-overs wickets"
+    },
+    {
+      "slug": "fastest-fifty",
+      "title": "Fastest fifties"
+    },
+    {
+      "slug": "fastest-hundred",
+      "title": "Fastest hundreds"
+    },
+    {
+      "slug": "most-maidens",
+      "title": "Most maiden overs"
+    },
+    {
+      "slug": "hat-tricks",
+      "title": "Hat-tricks"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-11T03:52:49.870Z",
+  "generatedAt": "2026-06-19T23:05:10.407Z",
   "bundler": "cricketstudio (build pipeline)",
   "counts": {
     "players": 256,
     "teams": 10,
     "venues": 13,
-    "trends": 42,
+    "trends": 44,
     "h2hPairs": 500,
     "teamH2hPairs": 44
   },

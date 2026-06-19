@@ -1156,5 +1156,67 @@
       }
     ],
     "tag": "Anomaly cluster"
+  },
+  {
+    "id": "typed-lhb-vs-rhb-runs",
+    "kind": "momentum",
+    "tease": "IPL 2026 run charts are dominated by right-handers by count — but do they dominate by volume?",
+    "bigStat": "38% of runs",
+    "hook": "Left-hand batters (58 players, 35% of scorers) produced **38% of total IPL 2026 runs** tracked — 9,839 of 25,959.",
+    "detail": "Across all captured IPL 2026 deliveries, left-hand batters produced 38% of total runs despite comprising 35% of batting contributors. Top LHB: Vaibhav Suryavanshi (776 runs). Top RHB: Shubman Gill (732 runs). Sample: 166 players · 16691 balls.",
+    "numbers": [
+      {
+        "label": "LHB total runs",
+        "value": 9839
+      },
+      {
+        "label": "RHB total runs",
+        "value": 16120
+      },
+      {
+        "label": "LHB players scored",
+        "value": 58
+      },
+      {
+        "label": "RHB players scored",
+        "value": 108
+      },
+      {
+        "label": "LHB share of runs",
+        "value": "38%"
+      }
+    ],
+    "tag": "Batting hand · season aggregate"
+  },
+  {
+    "id": "typed-pace-vs-spin-economy",
+    "kind": "momentum",
+    "tease": "Spin vs pace: which is cheaper to face in IPL 2026? The full-season economy split tells the real story.",
+    "bigStat": "Spin by 0.05 RPO",
+    "hook": "Pace averages **10.19 RPO** vs spin's **10.14 RPO** across 45 IPL 2026 qualifying bowlers (≥15 balls).",
+    "detail": "Season-wide economy split across 9 pace and 36 spin bowlers with ≥15 balls bowled. Best pace: Jasprit Bumrah (8.35 RPO). Best spin: Sunil Narine (6.60 RPO). Source: CricketStudio aggregation of 16,691 ball-by-ball records.",
+    "numbers": [
+      {
+        "label": "Avg pace economy (RPO)",
+        "value": "10.19"
+      },
+      {
+        "label": "Avg spin economy (RPO)",
+        "value": "10.14"
+      },
+      {
+        "label": "Pace bowlers (≥15 balls)",
+        "value": 9
+      },
+      {
+        "label": "Spin bowlers (≥15 balls)",
+        "value": 36
+      },
+      {
+        "label": "Spin advantage",
+        "value": "0.05 RPO"
+      }
+    ],
+    "tag": "Bowler type · season aggregate"
   }
 ]
