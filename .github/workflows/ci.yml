@@ -22,5 +22,25 @@ jobs:
         run: npm run typecheck
       - name: Snapshot content gate (moat)
         run: npm run validate
+      - name: Build
+        run: npm run build
       - name: Smoke test (stdio JSON-RPC, all tools)
         run: npm run smoke
+
+  # Auto-merge snapshot-refresh PRs when CI passes.
+  # Requires: Settings > General > Allow auto-merge (enable in repo settings).
+  auto-merge:
+    needs: build
+    if: |
+      github.event_name == 'pull_request' &&
+      startsWith(github.head_ref, 'snapshot-refresh/')
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Enable auto-merge
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}

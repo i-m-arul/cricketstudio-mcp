@@ -1,0 +1,148 @@
+# sync-to-public.workflow.yml
+#
+# ══════════════════════════════════════════════════════════════════════════════
+# THIS FILE BELONGS IN THE PRIVATE MONOREPO, NOT IN cricketstudio-mcp.
+# Copy it to:  .github/workflows/sync-to-public.yml  in the private repo.
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# What it does:
+#   1. Runs the private build pipeline (scripts/build-mcp-snapshot.mjs)
+#   2. Checks out cricketstudio-mcp (the public npm package repo)
+#   3. Copies the sanitized snapshot output into data/snapshot/
+#   4. Runs validate-snapshot.mjs (content gate — blocks any moat leakage)
+#   5. Bumps the version via scripts/bump-version.mjs
+#   6. Builds dist/index.js
+#   7. Opens a PR in the public repo (CI runs automatically on the PR)
+#   8. The PR auto-merges when CI passes, triggering publish.yml → npm publish
+#
+# Required secrets (set in the PRIVATE monorepo's settings):
+#   MCP_PUBLIC_REPO_TOKEN  — GitHub PAT with `repo` scope on i-m-arul/cricketstudio-mcp
+#                            (Settings > Secrets and variables > Actions)
+#
+# Trigger options:
+#   - Manual: workflow_dispatch (Run workflow button in GitHub Actions UI)
+#   - Scheduled: uncomment the cron line below (e.g. every Monday at 06:00 UTC)
+#   - After data pipeline: add `workflow_run` or call via API from the build job
+
+name: Sync snapshot to cricketstudio-mcp (public)
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Version bump type'
+        required: false
+        default: 'minor'
+        type: choice
+        options: [minor, patch]
+  # schedule:
+  #   - cron: '0 6 * * 1'   # Every Monday 06:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read   # private repo — read only
+
+    steps:
+      # ── 1. Check out PRIVATE monorepo ──────────────────────────────────────
+      - name: Checkout private monorepo
+        uses: actions/checkout@v4
+        with:
+          path: private
+
+      # ── 2. Set up Node ─────────────────────────────────────────────────────
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # ── 3. Build snapshot (runs entirely inside the private repo) ──────────
+      - name: Install private repo deps
+        run: npm ci
+        working-directory: private
+
+      - name: Build sanitized MCP snapshot
+        run: node scripts/build-mcp-snapshot.mjs
+        working-directory: private
+        # Output: private/mcp-snapshot-out/*.json  (20 files, sanitized)
+
+      # ── 4. Check out PUBLIC repo ───────────────────────────────────────────
+      - name: Checkout cricketstudio-mcp (public)
+        uses: actions/checkout@v4
+        with:
+          repository: i-m-arul/cricketstudio-mcp
+          token: ${{ secrets.MCP_PUBLIC_REPO_TOKEN }}
+          path: public
+
+      - name: Install public repo deps
+        run: npm ci
+        working-directory: public
+
+      # ── 5. Copy snapshot output ────────────────────────────────────────────
+      - name: Copy snapshot files
+        run: |
+          cp private/mcp-snapshot-out/*.json public/data/snapshot/
+          echo "Copied files:"
+          ls -lh public/data/snapshot/
+
+      # ── 6. Validate content gate (moat) — fail fast before any commit ──────
+      - name: Validate snapshot (content gate)
+        run: node scripts/validate-snapshot.mjs
+        working-directory: public
+
+      # ── 7. Bump version + update source comments ───────────────────────────
+      - name: Bump version
+        run: |
+          BUMP_FLAG=${{ github.event.inputs.bump == 'patch' && '--patch' || '' }}
+          node scripts/bump-version.mjs $BUMP_FLAG
+        working-directory: public
+
+      # ── 8. Build dist/ ─────────────────────────────────────────────────────
+      - name: Build
+        run: npm run build
+        working-directory: public
+
+      # ── 9. Run smoke test to catch schema regressions ─────────────────────
+      - name: Smoke test
+        run: npm run smoke
+        working-directory: public
+
+      # ── 10. Open PR in public repo ────────────────────────────────────────
+      - name: Create PR
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          VERSION=$(node -p "require('./package.json').version")
+          BRANCH="snapshot-refresh/${DATE}"
+
+          git config user.name "CricketStudio Bot"
+          git config user.email "hello@cricketstudio.ai"
+
+          git checkout -b "$BRANCH"
+          git add data/snapshot/ package.json src/index.ts dist/
+          git commit -m "snapshot refresh ${DATE} — MLC 2026 + IPL 2026 corrections (v${VERSION})"
+          git push origin "$BRANCH"
+
+          gh pr create \
+            --title "snapshot refresh ${DATE} (v${VERSION})" \
+            --body "$(cat <<'EOF'
+          ## Automated snapshot refresh
+
+          Built by: sync-to-public.yml in the private monorepo.
+
+          **Changes:**
+          - Updated \`data/snapshot/\` from the private build pipeline
+          - Version bumped to v${VERSION}
+
+          **Checks run before this PR was opened:**
+          - [x] Snapshot content gate (moat) — no banned substrings
+          - [x] Build succeeded
+          - [x] Smoke test — all 34 tools returned non-error responses
+
+          CI will re-run validate + smoke here. Auto-merge when green.
+          EOF
+          )" \
+            --base main \
+            --head "$BRANCH"
+        working-directory: public
+        env:
+          GH_TOKEN: ${{ secrets.MCP_PUBLIC_REPO_TOKEN }}

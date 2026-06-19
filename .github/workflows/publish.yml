@@ -1,0 +1,66 @@
+name: Publish to npm
+
+# Runs on every push to main. Publishes only if package.json version
+# is higher than what is already on the npm registry — so README-only
+# commits and other non-version bumps are safe no-ops.
+#
+# Required repo secret: NPM_TOKEN (Automation token from npmjs.com)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+
+      - run: npm ci
+
+      # Gate: only proceed if local version > published version
+      - name: Check if version is new
+        id: version_check
+        run: |
+          LOCAL=$(node -p "require('./package.json').version")
+          PUBLISHED=$(npm view cricketstudio-mcp version 2>/dev/null || echo "0.0.0")
+          echo "local=$LOCAL" >> $GITHUB_OUTPUT
+          echo "published=$PUBLISHED" >> $GITHUB_OUTPUT
+          if [ "$LOCAL" = "$PUBLISHED" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Version $LOCAL already published — skipping."
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "New version: $LOCAL (was $PUBLISHED)"
+          fi
+
+      - name: Type-check
+        if: steps.version_check.outputs.skip == 'false'
+        run: npm run typecheck
+
+      - name: Snapshot content gate (moat)
+        if: steps.version_check.outputs.skip == 'false'
+        run: npm run validate
+
+      - name: Smoke test (all tools)
+        if: steps.version_check.outputs.skip == 'false'
+        run: npm run smoke
+
+      - name: Build
+        if: steps.version_check.outputs.skip == 'false'
+        run: npm run build
+
+      - name: Publish
+        if: steps.version_check.outputs.skip == 'false'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
