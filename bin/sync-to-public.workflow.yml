@@ -5,32 +5,40 @@
 # Copy it to:  .github/workflows/sync-to-public.yml  in the private repo.
 # ══════════════════════════════════════════════════════════════════════════════
 #
-# What it does:
-#   1. Runs the private build pipeline (scripts/build-mcp-snapshot.mjs)
-#   2. Checks out cricketstudio-mcp (the public npm package repo)
-#   3. Copies the sanitized snapshot output into data/snapshot/
-#   4. Runs validate-snapshot.mjs (content gate — blocks any moat leakage)
-#   5. Bumps the version via scripts/bump-version.mjs
-#   6. Builds dist/index.js
-#   7. Opens a PR in the public repo (CI runs automatically on the PR)
-#   8. The PR auto-merges when CI passes, triggering publish.yml → npm publish
+# Security model (moat boundary):
 #
-# Required secrets (set in the PRIVATE monorepo's settings):
-#   MCP_PUBLIC_REPO_TOKEN  — GitHub PAT with `repo` scope on i-m-arul/cricketstudio-mcp
-#                            (Settings > Secrets and variables > Actions)
+#   The private monorepo holds the algorithm (ball-by-ball aggregation code).
+#   The public repo (cricketstudio-mcp) holds ONLY the sanitized output.
+#   These must NEVER be in the same git push or CI job.
 #
-# Trigger options:
+#   This workflow generates the snapshot, validates it against the content
+#   gate, then uploads it as a GitHub Actions artifact — it does NOT commit
+#   to the public repo directly. A human downloads the artifact, runs
+#   `node scripts/verify-snapshot.mjs --incoming <dir>` locally, reviews
+#   the diff, then runs with --apply to copy + bump + commit.
+#
+#   Why local-first instead of automated push?
+#   - Protects against accidental source-code leaks in build-mcp-snapshot.mjs
+#   - Gives a human a chance to review count changes before they go public
+#   - Separates "build" (automated) from "publish" (intentional human action)
+#
+# Required secrets (in the PRIVATE repo's settings):
+#   None needed for artifact-only mode. The human handles the push.
+#
+# Optional: if you trust the pipeline fully and want fully automated push,
+#   see the AUTOMATED PUSH section at the bottom (disabled by default).
+#
+# Trigger:
 #   - Manual: workflow_dispatch (Run workflow button in GitHub Actions UI)
-#   - Scheduled: uncomment the cron line below (e.g. every Monday at 06:00 UTC)
-#   - After data pipeline: add `workflow_run` or call via API from the build job
+#   - Scheduled: uncomment the cron line (e.g. every Monday 06:00 UTC)
 
-name: Sync snapshot to cricketstudio-mcp (public)
+name: Build MCP snapshot (artifact)
 
 on:
   workflow_dispatch:
     inputs:
       bump:
-        description: 'Version bump type'
+        description: 'Version bump (minor = new season data, patch = corrections only)'
         required: false
         default: 'minor'
         type: choice
@@ -39,110 +47,81 @@ on:
   #   - cron: '0 6 * * 1'   # Every Monday 06:00 UTC
 
 jobs:
-  sync:
+  build-snapshot:
     runs-on: ubuntu-latest
     permissions:
-      contents: read   # private repo — read only
+      contents: read   # read private repo only
 
     steps:
-      # ── 1. Check out PRIVATE monorepo ──────────────────────────────────────
-      - name: Checkout private monorepo
-        uses: actions/checkout@v4
-        with:
-          path: private
+      # ── 1. Checkout private monorepo ───────────────────────────────────────
+      - uses: actions/checkout@v4
 
-      # ── 2. Set up Node ─────────────────────────────────────────────────────
+      # ── 2. Node setup ──────────────────────────────────────────────────────
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
 
-      # ── 3. Build snapshot (runs entirely inside the private repo) ──────────
-      - name: Install private repo deps
-        run: npm ci
-        working-directory: private
+      - run: npm ci
 
+      # ── 3. Build sanitized snapshot ────────────────────────────────────────
+      #    Output must land in: mcp-snapshot-out/*.json  (all 20 files)
       - name: Build sanitized MCP snapshot
-        run: node scripts/build-mcp-snapshot.mjs
-        working-directory: private
-        # Output: private/mcp-snapshot-out/*.json  (20 files, sanitized)
+        run: node scripts/build-mcp-snapshot.mjs --out mcp-snapshot-out
 
-      # ── 4. Check out PUBLIC repo ───────────────────────────────────────────
-      - name: Checkout cricketstudio-mcp (public)
-        uses: actions/checkout@v4
+      # ── 4. Content gate — validate BEFORE artifact upload ─────────────────
+      #    Uses the public repo's validate-snapshot.mjs via npx.
+      #    Blocks the artifact if any banned string / unknown file is present.
+      - name: Install cricketstudio-mcp (content gate script only)
+        run: npm install --no-save cricketstudio-mcp
+
+      - name: Run content gate on output
+        run: node node_modules/cricketstudio-mcp/scripts/validate-snapshot.mjs --dir mcp-snapshot-out
+
+      # ── 5. Upload artifact ─────────────────────────────────────────────────
+      #    Retained for 7 days. Download via GitHub UI or `gh run download`.
+      - name: Upload snapshot artifact
+        uses: actions/upload-artifact@v4
         with:
-          repository: i-m-arul/cricketstudio-mcp
-          token: ${{ secrets.MCP_PUBLIC_REPO_TOKEN }}
-          path: public
+          name: mcp-snapshot-${{ github.run_number }}
+          path: mcp-snapshot-out/
+          retention-days: 7
 
-      - name: Install public repo deps
-        run: npm ci
-        working-directory: public
-
-      # ── 5. Copy snapshot output ────────────────────────────────────────────
-      - name: Copy snapshot files
+      - name: Summary
         run: |
-          cp private/mcp-snapshot-out/*.json public/data/snapshot/
-          echo "Copied files:"
-          ls -lh public/data/snapshot/
+          echo "## Snapshot artifact ready" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Content gate: ✓ passed" >> $GITHUB_STEP_SUMMARY
+          echo "Bump type: ${{ github.event.inputs.bump || 'minor' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### To apply locally:" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          echo "gh run download ${{ github.run_id }} -n mcp-snapshot-${{ github.run_number }} -D /tmp/mcp-snapshot" >> $GITHUB_STEP_SUMMARY
+          echo "cd /path/to/cricketstudio-mcp" >> $GITHUB_STEP_SUMMARY
+          echo "node scripts/verify-snapshot.mjs --incoming /tmp/mcp-snapshot" >> $GITHUB_STEP_SUMMARY
+          echo "# review the diff above, then:" >> $GITHUB_STEP_SUMMARY
+          echo "node scripts/verify-snapshot.mjs --incoming /tmp/mcp-snapshot --apply ${{ github.event.inputs.bump == 'patch' && '--patch' || '' }}" >> $GITHUB_STEP_SUMMARY
+          echo "git add data/snapshot/ package.json src/index.ts dist/" >> $GITHUB_STEP_SUMMARY
+          echo 'git commit -m "snapshot refresh $(date +%Y-%m-%d)"' >> $GITHUB_STEP_SUMMARY
+          echo "git push" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
 
-      # ── 6. Validate content gate (moat) — fail fast before any commit ──────
-      - name: Validate snapshot (content gate)
-        run: node scripts/validate-snapshot.mjs
-        working-directory: public
-
-      # ── 7. Bump version + update source comments ───────────────────────────
-      - name: Bump version
-        run: |
-          BUMP_FLAG=${{ github.event.inputs.bump == 'patch' && '--patch' || '' }}
-          node scripts/bump-version.mjs $BUMP_FLAG
-        working-directory: public
-
-      # ── 8. Build dist/ ─────────────────────────────────────────────────────
-      - name: Build
-        run: npm run build
-        working-directory: public
-
-      # ── 9. Run smoke test to catch schema regressions ─────────────────────
-      - name: Smoke test
-        run: npm run smoke
-        working-directory: public
-
-      # ── 10. Open PR in public repo ────────────────────────────────────────
-      - name: Create PR
-        run: |
-          DATE=$(date -u +%Y-%m-%d)
-          VERSION=$(node -p "require('./package.json').version")
-          BRANCH="snapshot-refresh/${DATE}"
-
-          git config user.name "CricketStudio Bot"
-          git config user.email "hello@cricketstudio.ai"
-
-          git checkout -b "$BRANCH"
-          git add data/snapshot/ package.json src/index.ts dist/
-          git commit -m "snapshot refresh ${DATE} — MLC 2026 + IPL 2026 corrections (v${VERSION})"
-          git push origin "$BRANCH"
-
-          gh pr create \
-            --title "snapshot refresh ${DATE} (v${VERSION})" \
-            --body "$(cat <<'EOF'
-          ## Automated snapshot refresh
-
-          Built by: sync-to-public.yml in the private monorepo.
-
-          **Changes:**
-          - Updated \`data/snapshot/\` from the private build pipeline
-          - Version bumped to v${VERSION}
-
-          **Checks run before this PR was opened:**
-          - [x] Snapshot content gate (moat) — no banned substrings
-          - [x] Build succeeded
-          - [x] Smoke test — all 34 tools returned non-error responses
-
-          CI will re-run validate + smoke here. Auto-merge when green.
-          EOF
-          )" \
-            --base main \
-            --head "$BRANCH"
-        working-directory: public
-        env:
-          GH_TOKEN: ${{ secrets.MCP_PUBLIC_REPO_TOKEN }}
+# ══════════════════════════════════════════════════════════════════════════════
+# OPTIONAL: FULLY AUTOMATED PUSH (disabled by default — see security model above)
+#
+# If you decide the pipeline is trustworthy enough to push without human review,
+# add a second job that depends on build-snapshot and does the following:
+#
+#   needs: build-snapshot
+#   steps:
+#     - Download artifact
+#     - Checkout cricketstudio-mcp (using MCP_PUBLIC_REPO_TOKEN secret — PAT
+#       with repo scope on i-m-arul/cricketstudio-mcp)
+#     - Run: node scripts/verify-snapshot.mjs --incoming <artifact-dir> --apply
+#     - git add / commit / push branch snapshot-refresh/YYYY-MM-DD
+#     - gh pr create
+#
+# The PR still goes through CI (validate + smoke) before auto-merging.
+# Even in this mode, the human checkpoint is "approve the PR" rather than
+# "run the apply script".
+# ══════════════════════════════════════════════════════════════════════════════
