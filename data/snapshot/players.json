@@ -7,6 +7,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2001-01-01",
     "birthPlace": "Kalakote",
     "sameAs": {
@@ -84,6 +86,8 @@
     "nationality": "",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -131,6 +135,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2000-09-04",
     "birthPlace": "Amritsar",
     "sameAs": {
@@ -195,6 +201,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "2002-10-17",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Abhishek_Porel",
@@ -264,6 +272,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -309,6 +319,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1994-10-04",
     "birthPlace": "Centurion",
     "sameAs": {
@@ -400,6 +412,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -427,6 +441,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1988-06-05",
     "birthPlace": "Ashwi KD",
     "sameAs": {
@@ -511,6 +527,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -538,6 +556,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [],
@@ -558,6 +578,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1993-04-25",
     "birthPlace": "Port of Spain",
     "sameAs": {
@@ -635,6 +657,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2003-09-15",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Akshat_Raghuwanshi",
@@ -704,6 +728,8 @@
     "nationality": "",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -775,6 +801,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -802,6 +830,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -829,6 +859,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -856,6 +888,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2004-06-05",
     "birthPlace": "Delhi",
     "sameAs": {
@@ -939,6 +973,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2002-02-05",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Aniket_Verma",
@@ -1008,6 +1044,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1993-11-16",
     "birthPlace": "Uitenhage",
     "sameAs": {
@@ -1085,6 +1123,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1994-12-06",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Anshul_Kamboj",
@@ -1174,6 +1214,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1999-10-17",
     "birthPlace": "Ramnagar",
     "sameAs": {
@@ -1233,6 +1275,8 @@
     "nationality": "",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -1317,6 +1361,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -1362,6 +1408,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1971-03-22",
     "birthPlace": "Peshawar",
     "sameAs": {
@@ -1452,6 +1500,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1999-02-05",
     "birthPlace": "Guna",
     "sameAs": {
@@ -1544,6 +1594,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -1582,6 +1634,8 @@
     "nationality": "",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2002-06-17",
     "birthPlace": "Rajasthan",
     "sameAs": {
@@ -1671,6 +1725,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": null,
+    "bowlingStyle": null,
     "dateOfBirth": "1998-09-15",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ashutosh_Sharma_(cricketer)",
@@ -1740,6 +1796,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "2001-01-01",
     "birthPlace": "Mohali",
     "sameAs": {
@@ -1817,6 +1875,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -1844,6 +1904,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1996-11-04",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Auqib_Nabi",
@@ -1920,6 +1982,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1996-12-13",
     "birthPlace": "Indore",
     "sameAs": {
@@ -2010,6 +2074,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1994-01-20",
     "birthPlace": "Nadiad",
     "sameAs": {
@@ -2087,6 +2153,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1999-12-03",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ayush_Badoni",
@@ -2176,6 +2244,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2007-07-16",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ayush_Mhatre",
@@ -2258,6 +2328,8 @@
     "nationality": "Afghan",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm fast-medium",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Azmatullah_Omarzai"
     },
@@ -2344,6 +2416,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -2371,6 +2445,8 @@
     "nationality": "Australian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left-arm fast-medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -2405,6 +2481,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1990-02-05",
     "birthPlace": "Meerut",
     "sameAs": {
@@ -2497,6 +2575,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1996-10-02",
     "birthPlace": "Harare",
     "sameAs": {
@@ -2563,6 +2643,8 @@
     "nationality": "",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -2647,6 +2729,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -2674,6 +2758,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1999-06-03",
     "birthPlace": "Subiaco",
     "sameAs": {
@@ -2764,6 +2850,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2003-08-22",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Cooper_Connolly",
@@ -2846,6 +2934,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1994-09-10",
     "birthPlace": "Durban",
     "sameAs": {
@@ -2936,6 +3026,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -2963,6 +3055,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -3001,6 +3095,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-09-09",
     "birthPlace": "Negombo",
     "sameAs": {
@@ -3078,6 +3174,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1989-06-10",
     "birthPlace": "Pietermaritzburg",
     "sameAs": {
@@ -3150,6 +3248,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1991-02-15",
     "birthPlace": "Poole",
     "sameAs": {
@@ -3227,6 +3327,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1972-08-07",
     "birthPlace": "Agra",
     "sameAs": {
@@ -3317,6 +3419,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2000-07-07",
     "birthPlace": "Edapal",
     "sameAs": {
@@ -3400,6 +3504,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2003-04-29",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Dewald_Brevis",
@@ -3471,6 +3577,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "2001-01-21",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Dhruv_Jurel",
@@ -3553,6 +3661,8 @@
     "nationality": "",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1999-12-15",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Digvesh_Rathi",
@@ -3641,6 +3751,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "2000-09-18",
     "birthPlace": "Hambantota",
     "sameAs": {
@@ -3707,6 +3819,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1998-07-21",
     "birthPlace": "Pretoria",
     "sameAs": {
@@ -3784,6 +3898,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1992-01-11",
     "birthPlace": "Ragama",
     "sameAs": {
@@ -3861,6 +3977,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2001-02-04",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Eshan_Malinga",
@@ -3950,6 +4068,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1999-04-22",
     "birthPlace": "Auckland",
     "sameAs": {
@@ -4033,6 +4153,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1991-12-04",
     "birthPlace": "Cape Town",
     "sameAs": {
@@ -4110,6 +4232,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1996-12-06",
     "birthPlace": "East London",
     "sameAs": {
@@ -4180,6 +4304,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -4207,6 +4333,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": null,
+    "bowlingStyle": null,
     "dateOfBirth": "1998-11-08",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Gurjapneet_Singh",
@@ -4285,6 +4413,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -4312,6 +4442,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm medium-fast",
     "dateOfBirth": "1993-10-11",
     "birthPlace": "Choryasi, Surat, Gujarat, India",
     "sameAs": {
@@ -4378,6 +4510,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -4405,6 +4539,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1995-09-16",
     "birthPlace": "Moga",
     "sameAs": {
@@ -4482,6 +4618,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2002-07-23",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Harsh_Dubey",
@@ -4571,6 +4709,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1990-11-23",
     "birthPlace": "Sanand",
     "sameAs": {
@@ -4662,6 +4802,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1991-07-30",
     "birthPlace": "Pretoria",
     "sameAs": {
@@ -4732,6 +4874,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1996-11-08",
     "birthPlace": "Delhi",
     "sameAs": {
@@ -4802,6 +4946,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1998-07-18",
     "birthPlace": "Patna",
     "sameAs": {
@@ -4886,6 +5032,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -4913,6 +5061,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2003-10-23",
     "birthPlace": "Barbados",
     "sameAs": {
@@ -4996,6 +5146,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2000-12-21",
     "birthPlace": "Lumsden",
     "sameAs": {
@@ -5062,6 +5214,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1994-04-10",
     "birthPlace": "Barnstaple",
     "sameAs": {
@@ -5152,6 +5306,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-11-05",
     "birthPlace": "Barbados",
     "sameAs": {
@@ -5244,6 +5400,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm fast",
     "dateOfBirth": "1993-12-06",
     "birthPlace": "Ahmedabad, Gujarat, India",
     "sameAs": {
@@ -5323,6 +5481,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1990-01-22",
     "birthPlace": "Delhi",
     "sameAs": {
@@ -5382,6 +5542,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1992-10-18",
     "birthPlace": "Jaysingpur",
     "sameAs": {
@@ -5473,6 +5635,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1993-10-22",
     "birthPlace": "Amravati",
     "sameAs": {
@@ -5543,6 +5707,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1995-04-01",
     "birthPlace": "Bridgetown",
     "sameAs": {
@@ -5635,6 +5801,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "2000-10-21",
     "birthPlace": "Margate",
     "sameAs": {
@@ -5694,6 +5862,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1990-09-08",
     "birthPlace": "Taunton",
     "sameAs": {
@@ -5779,6 +5949,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-01-08",
     "birthPlace": "Tamworth",
     "sameAs": {
@@ -5869,6 +6041,8 @@
     "nationality": "Australian",
     "team": "Lucknow Super Giants",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Josh_Inglis",
       "espncricinfo": "https://www.espncricinfo.com/cricketers/josh-inglis-720471"
@@ -5949,6 +6123,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1995-05-25",
     "birthPlace": "Johannesburg",
     "sameAs": {
@@ -6040,6 +6216,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1998-09-30",
     "birthPlace": "Galle",
     "sameAs": {
@@ -6099,6 +6277,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -6126,6 +6306,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "2006-04-26",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Kartik_Sharma",
@@ -6195,6 +6377,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2000-11-08",
     "birthPlace": "Hapur",
     "sameAs": {
@@ -6285,6 +6469,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1991-12-06",
     "birthPlace": "Jodhpur",
     "sameAs": {
@@ -6355,6 +6541,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1997-12-05",
     "birthPlace": "Tonk",
     "sameAs": {
@@ -6421,6 +6609,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -6448,6 +6638,8 @@
     "nationality": "",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -6519,6 +6711,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1991-03-24",
     "birthPlace": "Ahmedabad",
     "sameAs": {
@@ -6610,6 +6804,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -6637,6 +6833,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm chinaman",
     "dateOfBirth": "1994-12-14",
     "birthPlace": "Kanpur",
     "sameAs": {
@@ -6728,6 +6926,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1992-03-13",
     "birthPlace": "Jhunjhunu",
     "sameAs": {
@@ -6794,6 +6994,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "2004-10-23",
     "birthPlace": "Bokaro",
     "sameAs": {
@@ -6865,6 +7067,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -6892,6 +7096,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1994-12-30",
     "birthPlace": "Auckland",
     "sameAs": {
@@ -6969,6 +7175,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7007,6 +7215,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "1993-08-04",
     "birthPlace": "Barrow-in-Furness",
     "sameAs": {
@@ -7077,6 +7287,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1991-06-13",
     "birthPlace": "Auckland",
     "sameAs": {
@@ -7156,6 +7368,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1992-04-18",
     "birthPlace": "Bengaluru",
     "sameAs": {
@@ -7240,6 +7454,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7267,6 +7483,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1996-03-29",
     "birthPlace": "Durban",
     "sameAs": {
@@ -7358,6 +7576,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm fast-medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7403,6 +7623,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7430,6 +7652,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2002-08-03",
     "birthPlace": "Sri Ganganagar district",
     "sameAs": {
@@ -7509,6 +7733,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7536,6 +7762,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1998-07-03",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Manimaran_Siddharth",
@@ -7614,6 +7842,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1989-09-10",
     "birthPlace": "Nainital",
     "sameAs": {
@@ -7685,6 +7915,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast",
     "dateOfBirth": "2000-05-01",
     "birthPlace": "Klerksdorp",
     "sameAs": {
@@ -7775,6 +8007,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1989-08-16",
     "birthPlace": "Perth",
     "sameAs": {
@@ -7852,6 +8086,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -7886,6 +8122,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-12-14",
     "birthPlace": "Christchurch",
     "sameAs": {
@@ -7964,6 +8202,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1998-11-03",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Matthew_Breetzke",
@@ -8022,6 +8262,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1995-11-08",
     "birthPlace": "Australia",
     "sameAs": {
@@ -8099,6 +8341,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "1997-11-11",
     "birthPlace": "Bathinda",
     "sameAs": {
@@ -8165,6 +8409,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -8192,6 +8438,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2002-06-17",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Mayank_Yadav",
@@ -8281,6 +8529,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-10-20",
     "birthPlace": "Attadale",
     "sameAs": {
@@ -8364,6 +8614,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -8391,6 +8643,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1992-02-05",
     "birthPlace": "Hamilton",
     "sameAs": {
@@ -8469,6 +8723,8 @@
     "nationality": "",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -8540,6 +8796,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -8567,6 +8825,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1990-03-09",
     "birthPlace": "Amroha",
     "sameAs": {
@@ -8658,6 +8918,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm fast-medium",
     "dateOfBirth": "1994-03-13",
     "birthPlace": "Hyderabad",
     "sameAs": {
@@ -8724,6 +8986,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1998-08-03",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Mohsin_Khan_(Hong_Kong_cricketer)",
@@ -8813,6 +9077,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1986-07-06",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Mukesh_Choudhary",
@@ -8902,6 +9168,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": null,
+    "bowlingStyle": null,
     "dateOfBirth": "1993-10-12",
     "birthPlace": "Kolkata",
     "sameAs": {
@@ -8981,6 +9249,8 @@
     "nationality": "",
     "team": "Lucknow Super Giants",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9032,6 +9302,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Musheer_Khan",
       "wikidata": "http://www.wikidata.org/entity/Q124409351",
@@ -9089,6 +9361,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9116,6 +9390,8 @@
     "nationality": "",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9180,6 +9456,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9207,6 +9485,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1995-08-11",
     "birthPlace": "Krugersdorp",
     "sameAs": {
@@ -9297,6 +9577,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1992-11-23",
     "birthPlace": "Karnal",
     "sameAs": {
@@ -9363,6 +9645,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2000-09-04",
     "birthPlace": "Ludhiana",
     "sameAs": {
@@ -9433,6 +9717,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1995-10-02",
     "birthPlace": "Trinidad",
     "sameAs": {
@@ -9518,6 +9804,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2004-04-09",
     "birthPlace": "Rohtak district",
     "sameAs": {
@@ -9588,6 +9876,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right-arm medium",
     "dateOfBirth": "2003-05-26",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Nitish_Kumar_Reddy",
@@ -9639,6 +9929,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1993-12-27",
     "birthPlace": "Delhi",
     "sameAs": {
@@ -9729,6 +10021,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2005-01-03",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Noor_Ahmad",
@@ -9818,6 +10112,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9845,6 +10141,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -9872,6 +10170,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast",
     "dateOfBirth": "1993-05-08",
     "birthPlace": "Westmead",
     "sameAs": {
@@ -9964,6 +10264,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1998-05-18",
     "birthPlace": "Galle",
     "sameAs": {
@@ -10047,6 +10349,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1996-08-28",
     "birthPlace": "Bodelwyddan",
     "sameAs": {
@@ -10130,6 +10434,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "2000-08-10",
     "birthPlace": "Patiala",
     "sameAs": {
@@ -10213,6 +10519,8 @@
     "nationality": "",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -10284,6 +10592,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -10311,6 +10621,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2005-11-24",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Prashant_Veer",
@@ -10387,6 +10699,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1996-02-19",
     "birthPlace": "Bengaluru",
     "sameAs": {
@@ -10477,6 +10791,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1993-07-01",
     "birthPlace": "Azamgarh",
     "sameAs": {
@@ -10536,6 +10852,8 @@
     "nationality": "",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2001-12-12",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Prince_Yadav",
@@ -10611,6 +10929,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -10638,6 +10958,8 @@
     "nationality": "",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2001-01-01",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Priyansh_Arya",
@@ -10706,6 +11028,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -10733,6 +11057,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1992-12-17",
     "birthPlace": "Johannesburg",
     "sameAs": {
@@ -10817,6 +11143,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -10844,6 +11172,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": null,
+    "bowlingStyle": null,
     "dateOfBirth": "1993-03-11",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Raghu_Sharma_(cricketer)",
@@ -10909,6 +11239,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1999-08-04",
     "birthPlace": "Bharatpur",
     "sameAs": {
@@ -10975,6 +11307,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "1993-05-20",
     "birthPlace": "Faridabad",
     "sameAs": {
@@ -11045,6 +11379,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-03-02",
     "birthPlace": "Ranchi",
     "sameAs": {
@@ -11104,6 +11440,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2002-11-12",
     "birthPlace": "Nahan",
     "sameAs": {
@@ -11182,6 +11520,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1993-06-01",
     "birthPlace": "Indore",
     "sameAs": {
@@ -11265,6 +11605,8 @@
     "nationality": "",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1997-08-28",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ramakrishna_Ghosh",
@@ -11316,6 +11658,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1997-04-13",
     "birthPlace": "Chandigarh",
     "sameAs": {
@@ -11393,6 +11737,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1998-09-20",
     "birthPlace": "Nangarhar Province",
     "sameAs": {
@@ -11483,6 +11829,8 @@
     "nationality": "",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -11554,6 +11902,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "2000-09-05",
     "birthPlace": "Jodhpur",
     "sameAs": {
@@ -11644,6 +11994,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "1974-04-06",
     "birthPlace": "New Delhi",
     "sameAs": {
@@ -11714,6 +12066,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -11752,6 +12106,8 @@
     "nationality": "",
     "team": "Rajasthan Royals",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1988-12-06",
     "birthPlace": "Navagam Ghed",
     "sameAs": {
@@ -11842,6 +12198,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1997-10-12",
     "birthPlace": "Aligarh",
     "sameAs": {
@@ -11914,6 +12272,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1997-10-04",
     "birthPlace": "Haridwar",
     "sameAs": {
@@ -11973,6 +12333,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2001-10-11",
     "birthPlace": "Guwahati",
     "sameAs": {
@@ -12038,6 +12400,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "2002-09-13",
     "birthPlace": "Jharkhand",
     "sameAs": {
@@ -12109,6 +12473,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1987-04-30",
     "birthPlace": "Nagpur",
     "sameAs": {
@@ -12194,6 +12560,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1994-11-26",
     "birthPlace": "Georgetown",
     "sameAs": {
@@ -12284,6 +12652,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1993-07-23",
     "birthPlace": "Jamaica",
     "sameAs": {
@@ -12354,6 +12724,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1997-01-31",
     "birthPlace": "Pune",
     "sameAs": {
@@ -12437,6 +12809,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "wk-batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1996-07-11",
     "birthPlace": "Perth",
     "sameAs": {
@@ -12520,6 +12894,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -12558,6 +12934,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -12592,6 +12970,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2000-10-15",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/B._Sai_Sudharsan",
@@ -12649,6 +13029,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2004-12-14",
     "birthPlace": "Bihar",
     "sameAs": {
@@ -12739,6 +13121,8 @@
     "nationality": "",
     "team": "Sunrisers Hyderabad",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -12790,6 +13174,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2003-12-06",
     "birthPlace": "Meerut",
     "sameAs": {
@@ -12860,6 +13246,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1993-05-18",
     "birthPlace": "Patiala",
     "sameAs": {
@@ -12939,6 +13327,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1994-11-11",
     "birthPlace": "Thiruvananthapuram",
     "sameAs": {
@@ -13023,6 +13413,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "1997-10-27",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -13106,6 +13498,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -13133,6 +13527,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -13160,6 +13556,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1988-12-01",
     "birthPlace": "Gorakhpur",
     "sameAs": {
@@ -13250,6 +13648,8 @@
     "nationality": "",
     "team": "Lucknow Super Giants",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -13321,6 +13721,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1995-05-27",
     "birthPlace": "Chennai",
     "sameAs": {
@@ -13391,6 +13793,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1991-10-16",
     "birthPlace": "Palghar",
     "sameAs": {
@@ -13482,6 +13886,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1991-11-21",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -13559,6 +13965,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1998-08-15",
     "birthPlace": "Enmore",
     "sameAs": {
@@ -13629,6 +14037,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "dateOfBirth": "1996-12-26",
     "birthPlace": "East Berbice-Corentyne",
     "sameAs": {
@@ -13701,6 +14111,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1993-06-26",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -13778,6 +14190,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1998-11-26",
     "birthPlace": "Noida",
     "sameAs": {
@@ -13837,6 +14251,8 @@
     "nationality": "",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -13908,6 +14324,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -13935,6 +14353,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1994-12-06",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -14018,6 +14438,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1994-08-27",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Shubham_Dubey",
@@ -14087,6 +14509,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1999-09-08",
     "birthPlace": "Fazilka",
     "sameAs": {
@@ -14146,6 +14570,8 @@
     "nationality": "Australian",
     "team": "Chennai Super Kings",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left-arm fast",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Spencer_Johnson_(cricketer)"
     },
@@ -14219,6 +14645,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1989-05-26",
     "birthPlace": "Arima",
     "sameAs": {
@@ -14309,6 +14737,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1990-09-14",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -14392,6 +14822,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "2003-01-29",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Suryansh_Shedge",
@@ -14461,6 +14893,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "2000-12-23",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Sushant_Mishra",
@@ -14537,6 +14971,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2003-05-15",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Suyash_Sharma",
@@ -14615,6 +15051,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "1991-01-22",
     "birthPlace": "Raebareli",
     "sameAs": {
@@ -14674,6 +15112,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -14712,6 +15152,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1991-05-27",
     "birthPlace": "Salem",
     "sameAs": {
@@ -14802,6 +15244,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "2002-11-08",
     "birthPlace": "Hyderabad",
     "sameAs": {
@@ -14861,6 +15305,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1996-03-16",
     "birthPlace": "Singapore",
     "sameAs": {
@@ -14938,6 +15384,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1994-12-14",
     "birthPlace": "Whanganui",
     "sameAs": {
@@ -15008,6 +15456,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15035,6 +15485,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1993-12-29",
     "birthPlace": "Adelaide",
     "sameAs": {
@@ -15125,6 +15577,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "left arm fast medium",
     "dateOfBirth": "1989-07-22",
     "birthPlace": "Rotorua",
     "sameAs": {
@@ -15216,6 +15670,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15250,6 +15706,8 @@
     "nationality": "Indian",
     "team": "Delhi Capitals",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2000-08-14",
     "birthPlace": "Knysna",
     "sameAs": {
@@ -15320,6 +15778,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1995-05-15",
     "birthPlace": "Mumbai",
     "sameAs": {
@@ -15410,6 +15870,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15437,6 +15899,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1998-10-17",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Urvil_Patel",
@@ -15519,6 +15983,8 @@
     "nationality": "Indian",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1997-12-14",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Vaibhav_Arora",
@@ -15608,6 +16074,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "slow left arm orthodox",
     "dateOfBirth": "2011-03-27",
     "sameAs": {
       "wikipedia": "https://en.wikipedia.org/wiki/Vaibhav_Sooryavanshi",
@@ -15690,6 +16158,8 @@
     "nationality": "",
     "team": "Kolkata Knight Riders",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15761,6 +16231,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1990-11-25",
     "birthPlace": "Indore",
     "sameAs": {
@@ -15844,6 +16316,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "slow left arm orthodox",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15871,6 +16345,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "all-rounder",
+    "battingHandedness": null,
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15898,6 +16374,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -15925,6 +16403,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1997-01-31",
     "birthPlace": "Bengaluru",
     "sameAs": {
@@ -16015,6 +16495,8 @@
     "nationality": "",
     "team": "Delhi Capitals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16086,6 +16568,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1988-11-05",
     "birthPlace": "Delhi",
     "sameAs": {
@@ -16171,6 +16655,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16198,6 +16684,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "wk-batter",
+    "battingHandedness": "right",
+    "bowlingStyle": null,
     "dateOfBirth": "1993-12-02",
     "birthPlace": "Pathanamthitta",
     "sameAs": {
@@ -16268,6 +16756,8 @@
     "nationality": "Indian",
     "team": "Lucknow Super Giants",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16295,6 +16785,8 @@
     "nationality": "Indian",
     "team": "Gujarat Titans",
     "role": "all-rounder",
+    "battingHandedness": "left",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1999-10-05",
     "birthPlace": "Chennai",
     "sameAs": {
@@ -16372,6 +16864,8 @@
     "nationality": "Indian",
     "team": "Mumbai Indians",
     "role": "batter",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm offbreak",
     "dateOfBirth": "1998-11-21",
     "birthPlace": "Chertsey",
     "sameAs": {
@@ -16449,6 +16943,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1998-12-17",
     "birthPlace": "Adelaide",
     "sameAs": {
@@ -16539,6 +17035,8 @@
     "nationality": "Indian",
     "team": "Royal Challengers Bengaluru",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": "left arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16566,6 +17064,8 @@
     "nationality": "",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "left",
+    "bowlingStyle": null,
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16626,6 +17126,8 @@
     "nationality": "Indian",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "dateOfBirth": "1999-06-28",
     "birthPlace": "Rajnandgaon",
     "sameAs": {
@@ -16692,6 +17194,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "batter",
+    "battingHandedness": "left",
+    "bowlingStyle": "legbreak",
     "dateOfBirth": "2001-12-28",
     "birthPlace": "Suriyawan",
     "sameAs": {
@@ -16750,6 +17254,8 @@
     "nationality": "Indian",
     "team": "Rajasthan Royals",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16777,6 +17283,8 @@
     "nationality": "",
     "team": "Punjab Kings",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1990-07-23",
     "birthPlace": "Jind",
     "sameAs": {
@@ -16843,6 +17351,8 @@
     "nationality": "Indian",
     "team": "Chennai Super Kings",
     "role": "all-rounder",
+    "battingHandedness": "right",
+    "bowlingStyle": "right arm fast medium",
     "sameAs": {},
     "headlineClaimId": null,
     "claims": [
@@ -16870,6 +17380,8 @@
     "nationality": "Indian",
     "team": "Sunrisers Hyderabad",
     "role": "bowler",
+    "battingHandedness": "right",
+    "bowlingStyle": "legbreak googly",
     "dateOfBirth": "1999-12-16",
     "birthPlace": "Lucknow",
     "sameAs": {
