@@ -146,7 +146,7 @@ function notFound(message: string, canonicalUrl?: string) {
   return ok({ error: 'not_found', message, hint: 'Use search_players / list_trends / list_fixtures to discover valid keys.' }, canonicalUrl);
 }
 
-// ─── Tool catalog (32 tools) ──────────────────────────────────────────
+// ─── Tool catalog (34 tools) ──────────────────────────────────────────
 
 const TOOLS = [
   // ── GROUP 1: IPL 2026 Core ──────────────────────────────────────────
@@ -253,7 +253,7 @@ const TOOLS = [
   // ── GROUP 2: MLC ────────────────────────────────────────────────────
   {
     name: 'get_mlc_dataset_summary',
-    description: 'First call for Major League Cricket (MLC) coverage. Returns seasons covered (2023–2026), corpus stats, surface URLs, 14 leaderboard aspects, and Cricsheet CC BY 3.0 attribution. MLC is distinct from IPL and lives under /leagues/mlc.',
+    description: 'First call for Major League Cricket (MLC) coverage. Returns seasons covered (2023–2026), corpus stats, surface URLs, 55 leaderboard aspects, and Cricsheet CC BY 3.0 attribution. MLC is distinct from IPL and lives under /leagues/mlc.',
     inputSchema: { type: 'object', properties: {}, additionalProperties: false },
   },
   {
@@ -288,13 +288,13 @@ const TOOLS = [
   },
   {
     name: 'list_mlc_leaderboards',
-    description: 'Top-N rows of one MLC leaderboard aspect. 14 aspects include: orange-cap, purple-cap, strike-rate, economy-leaders, most-sixes, most-fours, top-knocks, best-bowling, powerplay-strike-rate, death-overs-economy. Call get_mlc_dataset_summary for the full aspect list. Sample-size floors enforced.',
+    description: 'Top-N rows of one MLC leaderboard aspect. 55 aspects including orange-cap, purple-cap, strike-rate, economy-leaders, most-sixes, most-fours, top-knocks, best-bowling, powerplay-strike-rate, death-overs-economy, partnership-stands, opening-stands, partnership-run-rate, 2nd-wicket-stands, 3rd-wicket-stands. Call get_mlc_dataset_summary for the full list. Sample-size floors enforced.',
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect slug e.g. orange-cap' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
   },
   // ── GROUP 3: IPL Historical ─────────────────────────────────────────
   {
     name: 'get_ipl_leaderboard',
-    description: 'IPL historical leaderboard from the 18-season Cricsheet corpus (2007/08–2025). 35+ aspects: orange-cap, purple-cap, most-sixes, most-fours, strike-rate, economy-leaders, most-matches, most-fifties, most-hundreds, best-bowling-avg, most-ducks, powerplay-economy, death-sr, and per-season variants. Pass season to scope to one year (e.g. "ipl-2024"). Returns canonical URL at /leagues/ipl/leaderboards/{aspect}.',
+    description: 'IPL historical leaderboard from the 18-season Cricsheet corpus (2007/08–2025). 46 aspects: orange-cap, purple-cap, most-sixes, most-fours, strike-rate, economy-leaders, most-fifties, most-hundreds, batting-average, bowling-average, most-dot-balls, dot-ball-pct, boundary-dependency, century-rate, powerplay-economy, death-sr, partnership-stands, opening-stands, partnership-run-rate, 2nd-wicket-stands, 3rd-wicket-stands, and more. Pass season to scope to one year (e.g. "ipl-2024"). Returns canonical URL at /leagues/ipl/leaderboards/{aspect}.',
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect e.g. orange-cap, purple-cap, most-sixes, economy-leaders' }, season: { type: 'string', description: 'Optional season slug e.g. ipl-2024 (omit for all-time)' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
   },
 

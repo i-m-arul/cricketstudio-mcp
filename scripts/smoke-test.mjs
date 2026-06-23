@@ -58,6 +58,9 @@ const CALLS = [
   ['list_mlc_leaderboards', { aspect: 'orange-cap', limit: 5 }],
   // IPL historical
   ['get_ipl_leaderboard', { aspect: 'orange-cap', limit: 5 }],
+  // Research reports
+  ['list_research_reports', {}],
+  ['get_research_report', { reportId: 'state-of-ipl-2026' }],
   // Knowledge graph (L3)
   ['get_related_entities', { slug: 'rcb', predicate: 'plays_for', direction: 'in', limit: 5 }],
   ['get_player_connections', { playerSlug: 'virat-kohli', limit: 5 }],

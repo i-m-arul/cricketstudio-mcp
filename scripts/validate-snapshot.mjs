@@ -77,28 +77,41 @@ const TOP_LEVEL_KEYS = {
   'matches.json': null,
   'trends.json': null,
   'research.json': null,
-  'mlc-league.json': new Set(['seasons', 'latestSeason', 'teams', 'summary', 'attribution']),
+  'mlc-league.json': new Set([
+    'v', 'code', 'displayName', 'format', 'seasons', 'teams', 'venues',
+    'playerCount', 'totalMatches', 'seasonBreakdown', 'crossTeamMoves',
+    'generatedAt', 'ballsCaptured', 'leaderboardAspects',
+  ]),
   'mlc-teams.json': null,
 };
 
 // Allowed keys inside array elements for each file
 const ELEMENT_KEYS = {
-  'venues.json': new Set(['slug', 'name', 'city', 'country', 'lat', 'lng', 'matchCount', 'canonicalUrl']),
-  'teams.json': new Set(['code', 'name', 'slug', 'wikidataId', 'canonicalUrl']),
-  'standings.json': new Set(['teamCode', 'teamName', 'slug', 'played', 'won', 'lost', 'noResult', 'points', 'nrr', 'canonicalUrl']),
+  'venues.json': new Set(['slug', 'name', 'city', 'country', 'lat', 'lng', 'matchCount', 'canonicalUrl', 'geo']),
+  'teams.json': new Set(['code', 'name', 'slug', 'wikidataId', 'wikidataQid', 'canonicalUrl']),
+  'standings.json': new Set([
+    'teamCode', 'teamName', 'teamId', 'slug', 'played', 'won', 'lost', 'noResult',
+    'points', 'nrr', 'runsFor', 'runsAgainst', 'oversFaced', 'oversBowled', 'canonicalUrl',
+  ]),
   'matches.json': new Set([
-    'id', 'home', 'homeName', 'away', 'awayName', 'date', 'venue', 'status',
+    'id', 'home', 'homeName', 'away', 'awayName', 'date', 'startingAt', 'venue', 'status',
     'result', 'toss', 'homeScore', 'awayScore', 'playerOfMatch', 'canonicalUrl',
+    'winnerId', 'tossWinnerId', 'elected',
   ]),
   'trends.json': new Set([
     'id', 'category', 'headline', 'summary', 'dataPoints', 'sampleSize',
     'computedAt', 'dataWindow', 'canonicalUrl',
+    'kind', 'tease', 'bigStat', 'hook', 'detail', 'numbers', 'tag',
   ]),
   'research.json': new Set([
     'id', 'title', 'summary', 'publishedAt', 'dataWindow', 'keyFindings',
     'methodology', 'canonicalUrl', 'tags',
+    'series', 'seriesLabel', 'path', 'status', 'provenance', 'license', 'leagueContext',
   ]),
-  'mlc-teams.json': new Set(['slug', 'name', 'shortName', 'homeCity', 'canonicalUrl']),
+  'mlc-teams.json': new Set([
+    'slug', 'name', 'shortName', 'homeCity', 'canonicalUrl',
+    'v', 'leagueCode', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
+  ]),
 };
 
 // ── 3. STRING DENYLIST ───────────────────────────────────────────────────────

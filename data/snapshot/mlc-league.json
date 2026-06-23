@@ -250,6 +250,38 @@
     {
       "slug": "hat-tricks",
       "title": "Hat-tricks"
+    },
+    {
+      "slug": "dot-ball-pct",
+      "title": "Highest dot-ball percentage"
+    },
+    {
+      "slug": "boundary-dependency",
+      "title": "Highest boundary dependency"
+    },
+    {
+      "slug": "century-rate",
+      "title": "Best century rate"
+    },
+    {
+      "slug": "partnership-stands",
+      "title": "Highest partnership stands"
+    },
+    {
+      "slug": "opening-stands",
+      "title": "Highest opening partnerships"
+    },
+    {
+      "slug": "partnership-run-rate",
+      "title": "Fastest partnerships by run rate"
+    },
+    {
+      "slug": "2nd-wicket-stands",
+      "title": "Highest 2nd wicket partnerships"
+    },
+    {
+      "slug": "3rd-wicket-stands",
+      "title": "Highest 3rd wicket partnerships"
     }
   ]
 }

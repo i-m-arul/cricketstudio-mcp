@@ -2,7 +2,7 @@
  * src/tools/ipl-leaderboard.ts
  *
  * Helper module for the get_ipl_leaderboard tool (tool #29).
- * Maps the 35 IPL leaderboard aspect slugs to human-readable
+ * Maps the 46 IPL leaderboard aspect slugs to human-readable
  * descriptions and formats, and provides a response formatter.
  *
  * Source-of-truth for slug definitions:
@@ -391,6 +391,119 @@ export const LEADERBOARD_ASPECTS: LeaderboardAspectMeta[] = [
     unit: 'Death econ (RPO)',
     ascending: true,
     floorNote: 'Minimum 240 legal deliveries bowled in overs 17–20.',
+    liveSeasonOnly: false,
+  },
+
+  // ── Fours by phase ───────────────────────────────────────────────────
+  {
+    slug: 'most-fours-pp',
+    title: 'Most fours in the powerplay',
+    description: 'Most fours hit in powerplay overs (1–6) across IPL career.',
+    unit: 'PP fours',
+    ascending: false,
+    floorNote: 'Minimum 30 balls faced in powerplay.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'most-fours-middle',
+    title: 'Most fours in the middle overs',
+    description: 'Most fours hit in middle overs (7–15) across IPL career.',
+    unit: 'Middle fours',
+    ascending: false,
+    floorNote: 'Minimum 30 balls faced in middle overs.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'most-fours-death',
+    title: 'Most fours in the death overs',
+    description: 'Most fours hit in death overs (16–20) across IPL career.',
+    unit: 'Death fours',
+    ascending: false,
+    floorNote: 'Minimum 20 balls faced in death overs.',
+    liveSeasonOnly: false,
+  },
+
+  // ── Bowling quality metrics ──────────────────────────────────────────
+  {
+    slug: 'dot-ball-pct',
+    title: 'Highest dot-ball percentage',
+    description:
+      'Highest percentage of legal deliveries resulting in no runs scored. Measures bowling pressure. Higher is better for bowlers.',
+    unit: 'Dot-ball %',
+    ascending: false,
+    floorNote: 'Minimum 240 legal deliveries bowled.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'boundary-dependency',
+    title: 'Highest boundary dependency',
+    description:
+      'Percentage of a batter\'s runs scored via boundaries (fours and sixes). High dependency can indicate vulnerability on slow surfaces.',
+    unit: 'Boundary dep %',
+    ascending: false,
+    floorNote: 'Minimum 300 balls faced.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'century-rate',
+    title: 'Best century rate',
+    description:
+      'Centuries per 100 innings across IPL career. Measures the frequency of three-figure scores among eligible batters.',
+    unit: 'Centuries/100 inn',
+    ascending: false,
+    floorNote: 'Minimum 20 innings.',
+    liveSeasonOnly: false,
+  },
+
+  // ── Batting partnerships ─────────────────────────────────────────────
+  {
+    slug: 'partnership-stands',
+    title: 'Highest partnership stands',
+    description:
+      'Largest individual batting partnership stands across the IPL historical archive (2007/08–2025). Ranked by runs scored together. Row slug is "batter1--batter2" — use canonical URL for the stand\'s match page.',
+    unit: 'Runs',
+    ascending: false,
+    floorNote: 'Minimum 18 balls in the partnership.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'opening-stands',
+    title: 'Highest opening partnerships',
+    description:
+      'Largest 1st-wicket partnership stands across the IPL historical archive. Row slug is "batter1--batter2".',
+    unit: 'Runs',
+    ascending: false,
+    floorNote: 'Minimum 18 balls in the partnership.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: 'partnership-run-rate',
+    title: 'Fastest partnerships by run rate',
+    description:
+      'Partnerships with the highest run rate (runs per over) across the IPL historical archive. Row slug is "batter1--batter2".',
+    unit: 'Run rate',
+    ascending: false,
+    floorNote: 'Minimum 18 balls in the partnership.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: '2nd-wicket-stands',
+    title: 'Highest 2nd wicket partnerships',
+    description:
+      'Largest 2nd-wicket partnership stands across the IPL historical archive. Row slug is "batter1--batter2".',
+    unit: 'Runs',
+    ascending: false,
+    floorNote: 'Minimum 18 balls in the partnership.',
+    liveSeasonOnly: false,
+  },
+  {
+    slug: '3rd-wicket-stands',
+    title: 'Highest 3rd wicket partnerships',
+    description:
+      'Largest 3rd-wicket partnership stands across the IPL historical archive. Row slug is "batter1--batter2".',
+    unit: 'Runs',
+    ascending: false,
+    floorNote: 'Minimum 18 balls in the partnership.',
     liveSeasonOnly: false,
   },
 ];
