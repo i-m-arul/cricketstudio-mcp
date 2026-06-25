@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Citation infrastructure for cricket — 32 MCP tools (incl. a knowledge-graph layer), zero network calls, 1,317 matches, 312,309 deliveries.**
+**Citation infrastructure for cricket — 43 MCP tools (incl. a knowledge-graph layer), zero network calls, 1,635 matches, 385,486 deliveries.**
 
 ---
 
@@ -12,7 +12,7 @@
 
 CricketStudio MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI client — Claude Desktop, Cursor, ChatGPT Connectors, and others — structured, citable access to cricket data. Every response carries a `canonicalUrl` back to `players.cricketstudio.ai`, an explicit date window, a sample-size count, and a provenance trail to the underlying ball-by-ball corpus. The data is fully bundled in `data/snapshot/` — tool answers are computed locally with no data-fetch calls, no API keys, and no rate limits. (The package sends one anonymous startup ping for usage counts; disable it with `CRICKETSTUDIO_NO_TELEMETRY=1`.)
 
-The corpus covers **IPL 2026** (complete season, RCB champions), **18 seasons of IPL history** (2007/08–2025, Cricsheet), and **Major League Cricket 2023–2026** (Cricsheet). Batting claims require a minimum of 30 balls faced; bowling claims require 15 deliveries. Claims that do not clear those floors are not surfaced.
+The corpus covers **IPL 2026** (complete season, RCB champions), **18 seasons of IPL history** (2007/08–2025), **Major League Cricket 2023–2026**, **WPL 2022/23–2025/26** (Women's Premier League), and **ICC T20 World Cup** (6 editions, 2013/14–2025/26) — all from Cricsheet CC BY 3.0. Batting claims require a minimum of 30 balls faced; bowling claims require 15 deliveries. Claims that do not clear those floors are not surfaced.
 
 ---
 
@@ -42,13 +42,13 @@ Add to your Claude Desktop config file and restart the app.
 npx cricketstudio-mcp
 ```
 
-Any MCP client that supports the stdio transport can use this command directly. The server starts on stdin/stdout and requires Node 20 or later.
+Any MCP client that supports the stdio transport can use this command directly. The server starts on stdin/stdout and requires Node 18 or later.
 
 ---
 
 ## Tools
 
-All 32 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
+All 43 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
 
 ### IPL 2026 (20 tools)
 
@@ -88,11 +88,42 @@ All 32 tools work fully against the bundled snapshot. Each response includes `ca
 | `list_mlc_matches` | All MLC matches with status and results | `/leagues/mlc/matches` |
 | `list_mlc_leaderboards` | Season or all-time leaderboard for a given MLC aspect | `/leagues/mlc/leaderboards/{aspect}` |
 
+### WPL — Women's Premier League (3 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_wpl_dataset_summary` | WPL corpus overview: seasons, matches, players, deliveries (2022/23–2025/26) | `/leagues/wpl` |
+| `get_wpl_leaderboard` | Season or all-time leaderboard for any WPL aspect (runs, wickets, economy, …) | `/leagues/wpl/leaderboards/{aspect}` |
+| `get_wpl_team_profile` | Franchise profile, season record, and squad stats | `/leagues/wpl/teams/{slug}` |
+
+### ICC T20 World Cup (3 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_t20wc_dataset_summary` | T20 WC corpus overview: editions, matches, players, deliveries (2013/14–2025/26) | `/leagues/t20wc` |
+| `get_t20wc_leaderboard` | All-edition leaderboard for any T20 WC aspect | `/leagues/t20wc/leaderboards/{aspect}` |
+| `get_t20wc_team_stats` | National team career record across all T20 WC editions | `/leagues/t20wc/teams/{slug}` |
+
+### Cross-league (3 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_cross_league_leaders` | Top performers on a metric (runs, wickets, economy, sixes, fours) across MLC + WPL + T20 WC | n/a |
+| `get_player_all_leagues` | A player's stats across every league in the corpus (IPL, MLC, WPL, T20 WC) | `/players/{slug}` |
+| `get_women_cricket_leaders` | WPL leaderboard with gender context — top women's T20 performers | `/leagues/wpl/leaderboards/{aspect}` |
+
 ### IPL Career / Historical (1 tool)
 
 | Tool | What it returns | Maps to URL |
 |---|---|---|
 | `get_ipl_leaderboard` | All-time IPL leaderboard for any aspect across 18 seasons (2007/08–2025) — runs, wickets, sixes, centuries, economy, and more | `/leagues/ipl/leaderboards/{aspect}` |
+
+### Research (2 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `list_research_reports` | Index of all published data investigations (venue, rivalry, strategy, era, cross-league, season) | `/stories` |
+| `get_research_report` | A single focused report with one question, one dataset, one citable answer | `/stories/{slug}` |
 
 ### Knowledge Graph (L3) (3 tools)
 
@@ -118,6 +149,10 @@ Once connected in Claude Desktop, you can ask questions like:
 - "Which venues favour the team batting first in IPL 2026?"
 - "Who has the best death-over economy in MLC 2025?"
 - "List the top wicket-takers in IPL history"
+- "Who are the leading run-scorers in WPL history?"
+- "Which team has won the most T20 World Cups?"
+- "Who scores most sixes across WPL and T20 WC combined?"
+- "Show me Smriti Mandhana's stats across all leagues"
 
 ---
 
@@ -127,9 +162,11 @@ Once connected in Claude Desktop, you can ask questions like:
 |---|---|---|
 | Licensed feed | IPL 2026 ball-by-ball (complete season — RCB champions) | Proprietary |
 | Cricsheet | IPL historical, 18 seasons, 1,169 matches (2007/08–2025) | CC BY 3.0 |
-| Cricsheet | MLC 2023–2026, 138 matches | CC BY 3.0 |
+| Cricsheet | MLC 2023–2026, 75 matches | CC BY 3.0 |
+| Cricsheet | WPL 2022/23–2025/26, 88 matches, 133 players | CC BY 3.0 |
+| Cricsheet | ICC T20 World Cup, 6 editions, 230 matches, 687 players | CC BY 3.0 |
 
-**Total corpus:** 1,317 matches · 312,309 ball-by-ball deliveries.
+**Total corpus:** 1,635 matches · 385,486 ball-by-ball deliveries.
 
 **Sample-size floors (publicly disclosed):**
 - Batting claims: ≥30 balls faced
@@ -183,7 +220,7 @@ npm run smoke
 
 ## Building something?
 
-Register at **[cricketstudio.ai/developers](https://cricketstudio.ai/developers)** to get early access to the hosted HTTP transport (`mcp.cricketstudio.ai`), live ball-by-ball endpoints, API-key tiers, and the full 29-tool catalog with live data rather than snapshots.
+Register at **[cricketstudio.ai/developers](https://cricketstudio.ai/developers)** to get early access to the hosted HTTP transport (`mcp.cricketstudio.ai`), live ball-by-ball endpoints, API-key tiers, and the full 43-tool catalog with live data rather than snapshots.
 
 ---
 
