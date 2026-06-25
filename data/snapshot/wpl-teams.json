@@ -1,0 +1,94 @@
+[
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "delhi-capitals",
+    "name": "Delhi Capitals",
+    "seasons": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "firstSeason": "2022/23",
+    "lastSeason": "2025/26",
+    "matchCount": 37,
+    "generatedAt": "2026-06-25T03:45:01.856Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "gujarat-giants",
+    "name": "Gujarat Giants",
+    "seasons": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "firstSeason": "2022/23",
+    "lastSeason": "2025/26",
+    "matchCount": 34,
+    "generatedAt": "2026-06-25T03:45:01.855Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "mumbai-indians",
+    "name": "Mumbai Indians",
+    "seasons": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "firstSeason": "2022/23",
+    "lastSeason": "2025/26",
+    "matchCount": 37,
+    "generatedAt": "2026-06-25T03:45:01.854Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "royal-challengers-bangalore",
+    "name": "Royal Challengers Bangalore",
+    "seasons": [
+      "2022/23",
+      "2023/24"
+    ],
+    "firstSeason": "2022/23",
+    "lastSeason": "2023/24",
+    "matchCount": 18,
+    "generatedAt": "2026-06-25T03:45:01.858Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "royal-challengers-bengaluru",
+    "name": "Royal Challengers Bengaluru",
+    "seasons": [
+      "2024/25",
+      "2025/26"
+    ],
+    "firstSeason": "2024/25",
+    "lastSeason": "2025/26",
+    "matchCount": 17,
+    "generatedAt": "2026-06-25T03:45:01.859Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "wpl",
+    "slug": "up-warriorz",
+    "name": "UP Warriorz",
+    "seasons": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "firstSeason": "2022/23",
+    "lastSeason": "2025/26",
+    "matchCount": 33,
+    "generatedAt": "2026-06-25T03:45:01.858Z"
+  }
+]

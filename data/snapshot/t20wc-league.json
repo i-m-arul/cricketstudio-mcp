@@ -1,0 +1,258 @@
+{
+  "v": 1,
+  "code": "t20wc",
+  "displayName": "ICC Men's T20 World Cup",
+  "format": "T20",
+  "seasons": [
+    "2013/14",
+    "2015/16",
+    "2021/22",
+    "2022/23",
+    "2024",
+    "2025/26"
+  ],
+  "teams": [
+    "australia",
+    "bangladesh",
+    "canada",
+    "england",
+    "hong-kong",
+    "india",
+    "ireland",
+    "italy",
+    "namibia",
+    "nepal",
+    "netherlands",
+    "new-zealand",
+    "oman",
+    "pakistan",
+    "papua-new-guinea",
+    "scotland",
+    "south-africa",
+    "sri-lanka",
+    "uganda",
+    "united-arab-emirates",
+    "united-states-of-america",
+    "west-indies",
+    "zimbabwe"
+  ],
+  "venues": [
+    "adelaide-oval",
+    "al-amerat-cricket-ground-oman-cricket-ministry-turf-1",
+    "arnos-vale-ground-kingstown-st-vincent",
+    "arun-jaitley-stadium-delhi",
+    "bellerive-oval-hobart",
+    "brian-lara-stadium-tarouba-trinidad",
+    "brisbane-cricket-ground-woolloongabba-brisbane",
+    "central-broward-regional-park-stadium-turf-ground-lauderhill",
+    "daren-sammy-national-cricket-stadium-gros-islet-st-lucia",
+    "dubai-international-cricket-stadium",
+    "eden-gardens",
+    "eden-gardens-kolkata",
+    "feroz-shah-kotla",
+    "gmhba-stadium-south-geelong-victoria",
+    "grand-prairie-stadium-dallas",
+    "himachal-pradesh-cricket-association-stadium",
+    "kensington-oval-bridgetown-barbados",
+    "m-chinnaswamy-stadium",
+    "ma-chidambaram-stadium-chepauk-chennai",
+    "melbourne-cricket-ground",
+    "narendra-modi-stadium-ahmedabad",
+    "nassau-county-international-cricket-stadium-new-york",
+    "pallekele-international-cricket-stadium",
+    "perth-stadium",
+    "providence-stadium-guyana",
+    "punjab-cricket-association-is-bindra-stadium-mohali",
+    "r-premadasa-stadium-colombo",
+    "sharjah-cricket-stadium",
+    "shere-bangla-national-stadium",
+    "sinhalese-sports-club-ground-colombo",
+    "sir-vivian-richards-stadium-north-sound-antigua",
+    "sydney-cricket-ground",
+    "sylhet-stadium",
+    "vidarbha-cricket-association-stadium-jamtha",
+    "wankhede-stadium",
+    "wankhede-stadium-mumbai",
+    "zahur-ahmed-chowdhury-stadium",
+    "zayed-cricket-stadium-abu-dhabi"
+  ],
+  "playerCount": 693,
+  "totalMatches": 230,
+  "seasonBreakdown": [
+    {
+      "season": "2013/14",
+      "matches": 32,
+      "teams": 15,
+      "venues": 3,
+      "playersUsed": 194
+    },
+    {
+      "season": "2015/16",
+      "matches": 26,
+      "teams": 15,
+      "venues": 7,
+      "playersUsed": 194
+    },
+    {
+      "season": "2021/22",
+      "matches": 40,
+      "teams": 15,
+      "venues": 4,
+      "playersUsed": 198
+    },
+    {
+      "season": "2022/23",
+      "matches": 39,
+      "teams": 15,
+      "venues": 7,
+      "playersUsed": 199
+    },
+    {
+      "season": "2024",
+      "matches": 44,
+      "teams": 19,
+      "venues": 9,
+      "playersUsed": 246
+    },
+    {
+      "season": "2025/26",
+      "matches": 49,
+      "teams": 19,
+      "venues": 8,
+      "playersUsed": 267
+    }
+  ],
+  "crossTeamMoves": 5,
+  "generatedAt": "2026-06-25T03:46:03.464Z",
+  "ballsCaptured": 52521,
+  "leaderboardAspects": [
+    {
+      "slug": "most-runs",
+      "title": "ICC Men's T20 World Cup — All-time Most Runs"
+    },
+    {
+      "slug": "most-wickets",
+      "title": "ICC Men's T20 World Cup — All-time Most Wickets"
+    },
+    {
+      "slug": "strike-rate",
+      "title": "ICC Men's T20 World Cup — Best Batting Strike Rate"
+    },
+    {
+      "slug": "economy-leaders",
+      "title": "ICC Men's T20 World Cup — Best Bowling Economy"
+    },
+    {
+      "slug": "most-sixes",
+      "title": "ICC Men's T20 World Cup — Most Sixes"
+    },
+    {
+      "slug": "most-fours",
+      "title": "ICC Men's T20 World Cup — Most Fours"
+    },
+    {
+      "slug": "batting-average",
+      "title": "ICC Men's T20 World Cup — Best Batting Average"
+    },
+    {
+      "slug": "bowling-average",
+      "title": "ICC Men's T20 World Cup — Best Bowling Average"
+    },
+    {
+      "slug": "bowling-strike-rate",
+      "title": "ICC Men's T20 World Cup — Best Bowling Strike Rate"
+    },
+    {
+      "slug": "most-fifties",
+      "title": "ICC Men's T20 World Cup — Most Fifties"
+    },
+    {
+      "slug": "most-hundreds",
+      "title": "ICC Men's T20 World Cup — Most Centuries"
+    },
+    {
+      "slug": "most-dot-balls",
+      "title": "ICC Men's T20 World Cup — Most Dot Balls Bowled"
+    },
+    {
+      "slug": "powerplay-strike-rate",
+      "title": "ICC Men's T20 World Cup — Powerplay Batting Strike Rate (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-economy",
+      "title": "ICC Men's T20 World Cup — Powerplay Bowling Economy (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-sixes",
+      "title": "ICC Men's T20 World Cup — Most Powerplay Sixes (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-wickets",
+      "title": "ICC Men's T20 World Cup — Most Powerplay Wickets (Overs 1–6)"
+    },
+    {
+      "slug": "death-strike-rate",
+      "title": "ICC Men's T20 World Cup — Death Overs Batting Strike Rate (Overs 17–20)"
+    },
+    {
+      "slug": "death-economy",
+      "title": "ICC Men's T20 World Cup — Death Overs Bowling Economy (Overs 17–20)"
+    },
+    {
+      "slug": "death-sixes",
+      "title": "ICC Men's T20 World Cup — Most Death Overs Sixes (Overs 17–20)"
+    },
+    {
+      "slug": "death-wickets",
+      "title": "ICC Men's T20 World Cup — Most Death Overs Wickets (Overs 17–20)"
+    },
+    {
+      "slug": "dot-ball-pct",
+      "title": "ICC Men's T20 World Cup — Dot Ball Percentage"
+    },
+    {
+      "slug": "middle-runs",
+      "title": "ICC Men's T20 World Cup — Middle Overs Runs (Overs 7–15)"
+    },
+    {
+      "slug": "middle-economy",
+      "title": "ICC Men's T20 World Cup — Middle Overs Bowling Economy (Overs 7–15)"
+    },
+    {
+      "slug": "middle-sixes",
+      "title": "ICC Men's T20 World Cup — Most Middle Overs Sixes (Overs 7–15)"
+    },
+    {
+      "slug": "middle-wickets",
+      "title": "ICC Men's T20 World Cup — Most Middle Overs Wickets (Overs 7–15)"
+    },
+    {
+      "slug": "powerplay-runs",
+      "title": "ICC Men's T20 World Cup — Most Powerplay Runs (Overs 1–6)"
+    },
+    {
+      "slug": "death-runs",
+      "title": "ICC Men's T20 World Cup — Most Death Overs Runs (Overs 17–20)"
+    },
+    {
+      "slug": "powerplay-fours",
+      "title": "ICC Men's T20 World Cup — Most Powerplay Fours (Overs 1–6)"
+    },
+    {
+      "slug": "death-fours",
+      "title": "ICC Men's T20 World Cup — Most Death Overs Fours (Overs 17–20)"
+    },
+    {
+      "slug": "most-not-outs",
+      "title": "ICC Men's T20 World Cup — Most Not Outs"
+    },
+    {
+      "slug": "most-matches",
+      "title": "ICC Men's T20 World Cup — Most Matches Played"
+    },
+    {
+      "slug": "most-innings",
+      "title": "ICC Men's T20 World Cup — Most Innings Played"
+    }
+  ]
+}

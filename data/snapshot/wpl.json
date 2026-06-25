@@ -1,0 +1,4183 @@
+{
+  "computedAt": "2026-06-25T03:45:08.744Z",
+  "league": "wpl",
+  "cohort": {
+    "matches": 88,
+    "players": 133,
+    "balls": 20656,
+    "seasonsCovered": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ]
+  },
+  "seasonsCovered": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "leagueMeta": {
+    "displayName": "Women's Premier League",
+    "format": "T20"
+  },
+  "bySlug": {
+    "a-capsey": {
+      "fullName": "A Capsey",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 16,
+        "innings": 16,
+        "runs": 405,
+        "balls": 301,
+        "sr": 134.6,
+        "avg": 27,
+        "highScore": 75,
+        "fours": 48,
+        "sixes": 16
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 11,
+        "econ": 7.14,
+        "avg": 20.45
+      }
+    },
+    "a-gardner": {
+      "fullName": "A Gardner",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 34,
+        "innings": 34,
+        "runs": 811,
+        "balls": 569,
+        "sr": 142.5,
+        "avg": 25.34,
+        "highScore": 79,
+        "fours": 83,
+        "sixes": 34
+      },
+      "bowling": {
+        "matches": 34,
+        "wickets": 31,
+        "econ": 8.74,
+        "avg": 30.03
+      }
+    },
+    "a-king": {
+      "fullName": "A King",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 19,
+        "balls": 14,
+        "sr": 135.7,
+        "avg": null,
+        "highScore": 19,
+        "fours": 2,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 12.67,
+        "avg": null
+      }
+    },
+    "a-reddy": {
+      "fullName": "A Reddy",
+      "teamSlugs": [
+        "delhi-capitals",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 13,
+        "innings": 13,
+        "runs": 94,
+        "balls": 106,
+        "sr": 88.7,
+        "avg": 9.4,
+        "highScore": 25,
+        "fours": 9,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 24,
+        "wickets": 16,
+        "econ": 8.41,
+        "avg": 39.31
+      }
+    },
+    "a-soni": {
+      "fullName": "A Soni",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 11,
+        "balls": 14,
+        "sr": 78.6,
+        "avg": 11,
+        "highScore": 11,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "a-sutherland": {
+      "fullName": "A Sutherland",
+      "teamSlugs": [
+        "delhi-capitals",
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 150,
+        "balls": 137,
+        "sr": 109.5,
+        "avg": 12.5,
+        "highScore": 41,
+        "fours": 13,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 17,
+        "wickets": 13,
+        "econ": 8.59,
+        "avg": 40.31
+      }
+    },
+    "ab-kaur": {
+      "fullName": "AB Kaur",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 24,
+        "innings": 24,
+        "runs": 348,
+        "balls": 268,
+        "sr": 129.9,
+        "avg": 23.2,
+        "highScore": 42,
+        "fours": 42,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 20,
+        "wickets": 9,
+        "econ": 8.7,
+        "avg": 41.56
+      }
+    },
+    "ab-sharma": {
+      "fullName": "AB Sharma",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 177,
+        "balls": 137,
+        "sr": 129.2,
+        "avg": 25.29,
+        "highScore": 44,
+        "fours": 28,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ac-jayangani": {
+      "fullName": "AC Jayangani",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 28,
+        "balls": 27,
+        "sr": 103.7,
+        "avg": 7,
+        "highScore": 17,
+        "fours": 6,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 3,
+        "econ": 6.87,
+        "avg": 34.33
+      }
+    },
+    "ac-kerr": {
+      "fullName": "AC Kerr",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 29,
+        "innings": 29,
+        "runs": 511,
+        "balls": 426,
+        "sr": 120,
+        "avg": 24.33,
+        "highScore": 49,
+        "fours": 59,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 36,
+        "wickets": 54,
+        "econ": 7.61,
+        "avg": 17.15
+      }
+    },
+    "ae-jones": {
+      "fullName": "AE Jones",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 1,
+        "balls": 2,
+        "sr": 50,
+        "avg": 1,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "aj-healy": {
+      "fullName": "AJ Healy",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 428,
+        "balls": 327,
+        "sr": 130.9,
+        "avg": 26.75,
+        "highScore": 96,
+        "fours": 69,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ashwani-kumari": {
+      "fullName": "Ashwani Kumari",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 5,
+        "balls": 5,
+        "sr": 100,
+        "avg": 5,
+        "highScore": 5,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 18,
+        "avg": null
+      }
+    },
+    "bl-mooney": {
+      "fullName": "BL Mooney",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 27,
+        "innings": 27,
+        "runs": 780,
+        "balls": 599,
+        "sr": 130.2,
+        "avg": 33.91,
+        "highScore": 96,
+        "fours": 103,
+        "sixes": 7
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "bs-fulmali": {
+      "fullName": "BS Fulmali",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 16,
+        "innings": 16,
+        "runs": 316,
+        "balls": 211,
+        "sr": 149.8,
+        "avg": 31.6,
+        "highScore": 61,
+        "fours": 30,
+        "sixes": 16
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ca-henry": {
+      "fullName": "CA Henry",
+      "teamSlugs": [
+        "delhi-capitals",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 12,
+        "innings": 13,
+        "runs": 275,
+        "balls": 154,
+        "sr": 178.6,
+        "avg": 25,
+        "highScore": 62,
+        "fours": 22,
+        "sixes": 21
+      },
+      "bowling": {
+        "matches": 15,
+        "wickets": 20,
+        "econ": 8.45,
+        "avg": 23.65
+      }
+    },
+    "ce-dean": {
+      "fullName": "CE Dean",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 9,
+        "balls": 5,
+        "sr": 180,
+        "avg": 9,
+        "highScore": 9,
+        "fours": 0,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 11.75,
+        "avg": 47
+      }
+    },
+    "cl-tryon": {
+      "fullName": "CL Tryon",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 85,
+        "balls": 56,
+        "sr": 151.8,
+        "avg": 28.33,
+        "highScore": 30,
+        "fours": 9,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 2,
+        "econ": 10.55,
+        "avg": 58
+      }
+    },
+    "cr-knott": {
+      "fullName": "CR Knott",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 12,
+        "balls": 12,
+        "sr": 100,
+        "avg": 12,
+        "highScore": 12,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "d-hemalatha": {
+      "fullName": "D Hemalatha",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 23,
+        "innings": 23,
+        "runs": 304,
+        "balls": 253,
+        "sr": 120.2,
+        "avg": 16.89,
+        "highScore": 74,
+        "fours": 30,
+        "sixes": 11
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 4,
+        "avg": null
+      }
+    },
+    "d-vrinda": {
+      "fullName": "D Vrinda",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 102,
+        "balls": 118,
+        "sr": 86.4,
+        "avg": 11.33,
+        "highScore": 33,
+        "fours": 15,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "db-sharma": {
+      "fullName": "DB Sharma",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 31,
+        "innings": 31,
+        "runs": 638,
+        "balls": 539,
+        "sr": 118.4,
+        "avg": 26.58,
+        "highScore": 88,
+        "fours": 75,
+        "sixes": 12
+      },
+      "bowling": {
+        "matches": 33,
+        "wickets": 34,
+        "econ": 8.4,
+        "avg": 29.74
+      }
+    },
+    "dd-kasat": {
+      "fullName": "DD Kasat",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 11,
+        "balls": 25,
+        "sr": 44,
+        "avg": 2.2,
+        "highScore": 9,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "djs-dottin": {
+      "fullName": "DJS Dottin",
+      "teamSlugs": [
+        "gujarat-giants",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 11,
+        "innings": 11,
+        "runs": 199,
+        "balls": 146,
+        "sr": 136.3,
+        "avg": 24.88,
+        "highScore": 40,
+        "fours": 22,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 11,
+        "econ": 9.28,
+        "avg": 32.64
+      }
+    },
+    "dn-wyatt": {
+      "fullName": "DN Wyatt",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 151,
+        "balls": 116,
+        "sr": 130.2,
+        "avg": 21.57,
+        "highScore": 57,
+        "fours": 19,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "dp-vaidya": {
+      "fullName": "DP Vaidya",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 77,
+        "balls": 80,
+        "sr": 96.3,
+        "avg": 12.83,
+        "highScore": 36,
+        "fours": 9,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 1,
+        "econ": 11,
+        "avg": 55
+      }
+    },
+    "dr-gibson": {
+      "fullName": "DR Gibson",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 34,
+        "balls": 24,
+        "sr": 141.7,
+        "avg": 34,
+        "highScore": 34,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 2,
+        "econ": 10,
+        "avg": 20
+      }
+    },
+    "dv-gujjar": {
+      "fullName": "DV Gujjar",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 4,
+        "balls": 4,
+        "sr": 100,
+        "avg": 4,
+        "highScore": 3,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "e-bisht": {
+      "fullName": "E Bisht",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 14,
+        "balls": 6,
+        "sr": 233.3,
+        "avg": 14,
+        "highScore": 12,
+        "fours": 0,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 3,
+        "econ": 9.73,
+        "avg": 51.33
+      }
+    },
+    "ea-burns": {
+      "fullName": "EA Burns",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 12,
+        "balls": 9,
+        "sr": 133.3,
+        "avg": 12,
+        "highScore": 12,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 9,
+        "avg": null
+      }
+    },
+    "ea-perry": {
+      "fullName": "EA Perry",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 25,
+        "innings": 25,
+        "runs": 972,
+        "balls": 730,
+        "sr": 133.2,
+        "avg": 64.8,
+        "highScore": 90,
+        "fours": 109,
+        "sixes": 25
+      },
+      "bowling": {
+        "matches": 20,
+        "wickets": 14,
+        "econ": 8.25,
+        "avg": 30.86
+      }
+    },
+    "g-kamalini": {
+      "fullName": "G Kamalini",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 107,
+        "balls": 102,
+        "sr": 104.9,
+        "avg": 15.29,
+        "highScore": 32,
+        "fours": 13,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "g-sultana": {
+      "fullName": "G Sultana",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 3,
+        "balls": 7,
+        "sr": 42.9,
+        "avg": 3,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "g-voll": {
+      "fullName": "G Voll",
+      "teamSlugs": [
+        "royal-challengers-bengaluru",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 324,
+        "balls": 226,
+        "sr": 143.4,
+        "avg": 46.29,
+        "highScore": 99,
+        "fours": 52,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 8,
+        "avg": null
+      }
+    },
+    "g-wareham": {
+      "fullName": "G Wareham",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 22,
+        "innings": 22,
+        "runs": 412,
+        "balls": 292,
+        "sr": 141.1,
+        "avg": 27.47,
+        "highScore": 48,
+        "fours": 40,
+        "sixes": 12
+      },
+      "bowling": {
+        "matches": 28,
+        "wickets": 27,
+        "econ": 8.76,
+        "avg": 26.59
+      }
+    },
+    "gj-naik": {
+      "fullName": "GJ Naik",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 86,
+        "balls": 70,
+        "sr": 122.9,
+        "avg": 21.5,
+        "highScore": 73,
+        "fours": 9,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "gm-harris": {
+      "fullName": "GM Harris",
+      "teamSlugs": [
+        "royal-challengers-bengaluru",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 30,
+        "innings": 31,
+        "runs": 819,
+        "balls": 545,
+        "sr": 150.3,
+        "avg": 30.33,
+        "highScore": 85,
+        "fours": 112,
+        "sixes": 28
+      },
+      "bowling": {
+        "matches": 21,
+        "wickets": 15,
+        "econ": 7.89,
+        "avg": 25.93
+      }
+    },
+    "h-deol": {
+      "fullName": "H Deol",
+      "teamSlugs": [
+        "gujarat-giants",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 28,
+        "innings": 28,
+        "runs": 649,
+        "balls": 560,
+        "sr": 115.9,
+        "avg": 28.22,
+        "highScore": 70,
+        "fours": 90,
+        "sixes": 5
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 1,
+        "econ": 10.8,
+        "avg": 54
+      }
+    },
+    "h-graham": {
+      "fullName": "H Graham",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 11.75,
+        "avg": 47
+      }
+    },
+    "h-kaur": {
+      "fullName": "H Kaur",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 34,
+        "innings": 34,
+        "runs": 1193,
+        "balls": 815,
+        "sr": 146.4,
+        "avg": 45.88,
+        "highScore": 95,
+        "fours": 148,
+        "sixes": 35
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "happy-kumari": {
+      "fullName": "Happy Kumari",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "hc-knight": {
+      "fullName": "HC Knight",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 8,
+        "innings": 8,
+        "runs": 135,
+        "balls": 96,
+        "sr": 140.6,
+        "avg": 22.5,
+        "highScore": 34,
+        "fours": 18,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 4,
+        "econ": 11.14,
+        "avg": 19.5
+      }
+    },
+    "hk-matthews": {
+      "fullName": "HK Matthews",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 34,
+        "innings": 34,
+        "runs": 867,
+        "balls": 707,
+        "sr": 122.6,
+        "avg": 26.27,
+        "highScore": 77,
+        "fours": 122,
+        "sixes": 24
+      },
+      "bowling": {
+        "matches": 34,
+        "wickets": 46,
+        "econ": 7.61,
+        "avg": 18.76
+      }
+    },
+    "hy-kazi": {
+      "fullName": "HY Kazi",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 18,
+        "balls": 25,
+        "sr": 72,
+        "avg": 4.5,
+        "highScore": 6,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "iecm-wong": {
+      "fullName": "IECM Wong",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 76,
+        "balls": 52,
+        "sr": 146.2,
+        "avg": 19,
+        "highScore": 32,
+        "fours": 5,
+        "sixes": 4
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 18,
+        "econ": 6.75,
+        "avg": 14.44
+      }
+    },
+    "ji-rodrigues": {
+      "fullName": "JI Rodrigues",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 34,
+        "innings": 34,
+        "runs": 771,
+        "balls": 546,
+        "sr": 141.2,
+        "avg": 29.65,
+        "highScore": 69,
+        "fours": 92,
+        "sixes": 13
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "jl-jonassen": {
+      "fullName": "JL Jonassen",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 18,
+        "innings": 18,
+        "runs": 295,
+        "balls": 213,
+        "sr": 138.5,
+        "avg": 24.58,
+        "highScore": 61,
+        "fours": 34,
+        "sixes": 11
+      },
+      "bowling": {
+        "matches": 24,
+        "wickets": 33,
+        "econ": 7.74,
+        "avg": 20.76
+      }
+    },
+    "jn-kalita": {
+      "fullName": "JN Kalita",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 6,
+        "balls": 8,
+        "sr": 75,
+        "avg": 3,
+        "highScore": 3,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 1,
+        "econ": 8.29,
+        "avg": 58
+      }
+    },
+    "k-anjali-sarvani": {
+      "fullName": "K Anjali Sarvani",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 19,
+        "balls": 30,
+        "sr": 63.3,
+        "avg": 9.5,
+        "highScore": 8,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 7,
+        "econ": 9.29,
+        "avg": 46.43
+      }
+    },
+    "k-goud": {
+      "fullName": "K Goud",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 9,
+        "balls": 9,
+        "sr": 100,
+        "avg": 9,
+        "highScore": 5,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 16,
+        "wickets": 9,
+        "econ": 8.78,
+        "avg": 43.89
+      }
+    },
+    "ke-bryce": {
+      "fullName": "KE Bryce",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 8,
+        "innings": 8,
+        "runs": 83,
+        "balls": 85,
+        "sr": 97.6,
+        "avg": 20.75,
+        "highScore": 28,
+        "fours": 8,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 4,
+        "econ": 8.67,
+        "avg": 45.5
+      }
+    },
+    "kj-garth": {
+      "fullName": "KJ Garth",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 8,
+        "innings": 8,
+        "runs": 71,
+        "balls": 79,
+        "sr": 89.9,
+        "avg": 23.67,
+        "highScore": 32,
+        "fours": 5,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 15,
+        "wickets": 20,
+        "econ": 8.05,
+        "avg": 22.15
+      }
+    },
+    "komal-zanzad": {
+      "fullName": "Komal Zanzad",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 5,
+        "balls": 7,
+        "sr": 71.4,
+        "avg": null,
+        "highScore": 5,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 11,
+        "avg": null
+      }
+    },
+    "kp-navgire": {
+      "fullName": "KP Navgire",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 30,
+        "innings": 30,
+        "runs": 435,
+        "balls": 323,
+        "sr": 134.7,
+        "avg": 14.5,
+        "highScore": 57,
+        "fours": 47,
+        "sixes": 24
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ks-ahuja": {
+      "fullName": "KS Ahuja",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 19,
+        "innings": 19,
+        "runs": 250,
+        "balls": 198,
+        "sr": 126.3,
+        "avg": 13.89,
+        "highScore": 46,
+        "fours": 27,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 3,
+        "econ": 8,
+        "avg": 24
+      }
+    },
+    "ks-gautam": {
+      "fullName": "KS Gautam",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 11,
+        "innings": 11,
+        "runs": 110,
+        "balls": 90,
+        "sr": 122.2,
+        "avg": 11,
+        "highScore": 20,
+        "fours": 9,
+        "sixes": 5
+      },
+      "bowling": {
+        "matches": 18,
+        "wickets": 19,
+        "econ": 7.95,
+        "avg": 25.11
+      }
+    },
+    "l-lee": {
+      "fullName": "L Lee",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 10,
+        "innings": 10,
+        "runs": 320,
+        "balls": 229,
+        "sr": 139.7,
+        "avg": 32,
+        "highScore": 86,
+        "fours": 46,
+        "sixes": 11
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "l-wolvaardt": {
+      "fullName": "L Wolvaardt",
+      "teamSlugs": [
+        "delhi-capitals",
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 23,
+        "innings": 23,
+        "runs": 659,
+        "balls": 505,
+        "sr": 130.5,
+        "avg": 32.95,
+        "highScore": 77,
+        "fours": 80,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "lcn-smith": {
+      "fullName": "LCN Smith",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "lk-bell": {
+      "fullName": "LK Bell",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 1,
+        "balls": 1,
+        "sr": 100,
+        "avg": null,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 12,
+        "econ": 5.53,
+        "avg": 16.58
+      }
+    },
+    "lk-hamilton": {
+      "fullName": "LK Hamilton",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 36,
+        "balls": 19,
+        "sr": 189.5,
+        "avg": 36,
+        "highScore": 36,
+        "fours": 3,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 9.95,
+        "avg": null
+      }
+    },
+    "lmm-tahuhu": {
+      "fullName": "LMM Tahuhu",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 2,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 1,
+        "econ": 7.6,
+        "avg": 38
+      }
+    },
+    "m-joshi": {
+      "fullName": "M Joshi",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 18,
+        "balls": 30,
+        "sr": 60,
+        "avg": 18,
+        "highScore": 7,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 2,
+        "econ": 11,
+        "avg": 44
+      }
+    },
+    "m-kapp": {
+      "fullName": "M Kapp",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 27,
+        "innings": 27,
+        "runs": 411,
+        "balls": 329,
+        "sr": 124.9,
+        "avg": 27.4,
+        "highScore": 40,
+        "fours": 42,
+        "sixes": 14
+      },
+      "bowling": {
+        "matches": 34,
+        "wickets": 38,
+        "econ": 6.05,
+        "avg": 21.16
+      }
+    },
+    "m-mani": {
+      "fullName": "M Mani",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 28,
+        "balls": 33,
+        "sr": 84.8,
+        "avg": 4,
+        "highScore": 7,
+        "fours": 5,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 22,
+        "wickets": 15,
+        "econ": 7.62,
+        "avg": 25.4
+      }
+    },
+    "mc-patel": {
+      "fullName": "MC Patel",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 10,
+        "balls": 9,
+        "sr": 111.1,
+        "avg": 10,
+        "highScore": 10,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 1,
+        "econ": 12.2,
+        "avg": 61
+      }
+    },
+    "meghna-singh": {
+      "fullName": "Meghna Singh",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 20,
+        "balls": 19,
+        "sr": 105.3,
+        "avg": 6.67,
+        "highScore": 10,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 14,
+        "wickets": 9,
+        "econ": 10.05,
+        "avg": 41.33
+      }
+    },
+    "ml-schutt": {
+      "fullName": "ML Schutt",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 52,
+        "balls": 38,
+        "sr": 136.8,
+        "avg": 26,
+        "highScore": 30,
+        "fours": 8,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 7,
+        "wickets": 4,
+        "econ": 8.46,
+        "avg": 55
+      }
+    },
+    "mm-lanning": {
+      "fullName": "MM Lanning",
+      "teamSlugs": [
+        "delhi-capitals",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 35,
+        "innings": 35,
+        "runs": 1200,
+        "balls": 946,
+        "sr": 126.8,
+        "avg": 37.5,
+        "highScore": 92,
+        "fours": 179,
+        "sixes": 16
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "ms-kashyap": {
+      "fullName": "MS Kashyap",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 1,
+        "econ": 8.16,
+        "avg": 83
+      }
+    },
+    "n-de-klerk": {
+      "fullName": "N de Klerk",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 134,
+        "balls": 98,
+        "sr": 136.7,
+        "avg": 33.5,
+        "highScore": 63,
+        "fours": 13,
+        "sixes": 5
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 18,
+        "econ": 7.94,
+        "avg": 15.89
+      }
+    },
+    "n-shree-charani": {
+      "fullName": "N Shree Charani",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 24,
+        "balls": 21,
+        "sr": 114.3,
+        "avg": null,
+        "highScore": 11,
+        "fours": 3,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 18,
+        "econ": 8.41,
+        "avg": 21.33
+      }
+    },
+    "nj-carey": {
+      "fullName": "NJ Carey",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 149,
+        "balls": 104,
+        "sr": 143.3,
+        "avg": 37.25,
+        "highScore": 40,
+        "fours": 20,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 7,
+        "econ": 8.9,
+        "avg": 25.43
+      }
+    },
+    "nr-sciver-brunt": {
+      "fullName": "NR Sciver-Brunt",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 36,
+        "innings": 36,
+        "runs": 1348,
+        "balls": 932,
+        "sr": 144.6,
+        "avg": 49.93,
+        "highScore": 100,
+        "fours": 205,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 36,
+        "wickets": 40,
+        "econ": 8.07,
+        "avg": 24
+      }
+    },
+    "ns-prasad": {
+      "fullName": "NS Prasad",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 153,
+        "balls": 128,
+        "sr": 119.5,
+        "avg": 30.6,
+        "highScore": 47,
+        "fours": 19,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "nss-sharma": {
+      "fullName": "NSS Sharma",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 1,
+        "balls": 4,
+        "sr": 25,
+        "avg": 0.5,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 17,
+        "econ": 8.32,
+        "avg": 18.59
+      }
+    },
+    "p-litchfield": {
+      "fullName": "P Litchfield",
+      "teamSlugs": [
+        "gujarat-giants",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 20,
+        "innings": 20,
+        "runs": 442,
+        "balls": 330,
+        "sr": 133.9,
+        "avg": 23.26,
+        "highScore": 78,
+        "fours": 53,
+        "sixes": 15
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "p-rawat": {
+      "fullName": "P Rawat",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 8,
+        "balls": 4,
+        "sr": 200,
+        "avg": null,
+        "highScore": 8,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 3,
+        "econ": 10.17,
+        "avg": 20.33
+      }
+    },
+    "p-vastrakar": {
+      "fullName": "P Vastrakar",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 11,
+        "innings": 11,
+        "runs": 126,
+        "balls": 108,
+        "sr": 116.7,
+        "avg": 14,
+        "highScore": 26,
+        "fours": 11,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 12,
+        "wickets": 7,
+        "econ": 7.09,
+        "avg": 28.86
+      }
+    },
+    "pg-chopra": {
+      "fullName": "PG Chopra",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 5,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 3,
+        "econ": 8.17,
+        "avg": 32.67
+      }
+    },
+    "pn-khemnar": {
+      "fullName": "PN Khemnar",
+      "teamSlugs": [
+        "mumbai-indians",
+        "royal-challengers-bangalore",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 103,
+        "balls": 98,
+        "sr": 105.1,
+        "avg": 14.71,
+        "highScore": 36,
+        "fours": 13,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 7,
+        "avg": null
+      }
+    },
+    "poonam-yadav": {
+      "fullName": "Poonam Yadav",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 3,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 8.33,
+        "avg": null
+      }
+    },
+    "pp-bala": {
+      "fullName": "PP Bala",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 19,
+        "balls": 18,
+        "sr": 105.6,
+        "avg": null,
+        "highScore": 19,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "preeti-bose": {
+      "fullName": "Preeti Bose",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 3,
+        "balls": 9,
+        "sr": 33.3,
+        "avg": null,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 6,
+        "wickets": 3,
+        "econ": 9.53,
+        "avg": 54
+      }
+    },
+    "priya-mishra": {
+      "fullName": "Priya Mishra",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 4,
+        "balls": 14,
+        "sr": 28.6,
+        "avg": 2,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 9,
+        "wickets": 6,
+        "econ": 9.13,
+        "avg": 39.83
+      }
+    },
+    "ps-sisodia": {
+      "fullName": "PS Sisodia",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 1,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 1,
+        "econ": 9.33,
+        "avg": 84
+      }
+    },
+    "raghvi-bist": {
+      "fullName": "Raghvi Bist",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 95,
+        "balls": 93,
+        "sr": 102.2,
+        "avg": 19,
+        "highScore": 33,
+        "fours": 6,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 11,
+        "avg": null
+      }
+    },
+    "rahila-firdous": {
+      "fullName": "Rahila Firdous",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 1,
+        "balls": 1,
+        "sr": 100,
+        "avg": null,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "renuka-singh": {
+      "fullName": "Renuka Singh",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 19,
+        "balls": 30,
+        "sr": 63.3,
+        "avg": 3.17,
+        "highScore": 6,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 32,
+        "wickets": 20,
+        "econ": 8.28,
+        "avg": 40.85
+      }
+    },
+    "rm-ghosh": {
+      "fullName": "RM Ghosh",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 32,
+        "innings": 33,
+        "runs": 816,
+        "balls": 542,
+        "sr": 150.6,
+        "avg": 34,
+        "highScore": 90,
+        "fours": 88,
+        "sixes": 41
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "rp-yadav": {
+      "fullName": "RP Yadav",
+      "teamSlugs": [
+        "delhi-capitals",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 15,
+        "innings": 15,
+        "runs": 188,
+        "balls": 132,
+        "sr": 142.4,
+        "avg": 17.09,
+        "highScore": 66,
+        "fours": 14,
+        "sixes": 10
+      },
+      "bowling": {
+        "matches": 27,
+        "wickets": 16,
+        "econ": 7.63,
+        "avg": 33.38
+      }
+    },
+    "rs-gayakwad": {
+      "fullName": "RS Gayakwad",
+      "teamSlugs": [
+        "gujarat-giants",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 8,
+        "balls": 15,
+        "sr": 53.3,
+        "avg": 4,
+        "highScore": 5,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 24,
+        "wickets": 24,
+        "econ": 8.46,
+        "avg": 28.54
+      }
+    },
+    "s-asha": {
+      "fullName": "S Asha",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 9,
+        "innings": 9,
+        "runs": 55,
+        "balls": 44,
+        "sr": 125,
+        "avg": 13.75,
+        "highScore": 27,
+        "fours": 4,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 23,
+        "wickets": 20,
+        "econ": 8.1,
+        "avg": 24.7
+      }
+    },
+    "s-ecclestone": {
+      "fullName": "S Ecclestone",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 26,
+        "innings": 27,
+        "runs": 214,
+        "balls": 198,
+        "sr": 108.1,
+        "avg": 10.19,
+        "highScore": 33,
+        "fours": 18,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 33,
+        "wickets": 43,
+        "econ": 6.87,
+        "avg": 20.44
+      }
+    },
+    "s-gupta": {
+      "fullName": "S Gupta",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 33,
+        "balls": 24,
+        "sr": 137.5,
+        "avg": 8.25,
+        "highScore": 10,
+        "fours": 3,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 5,
+        "econ": 7.33,
+        "avg": 24.2
+      }
+    },
+    "s-ishaque": {
+      "fullName": "S Ishaque",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 3,
+        "innings": 3,
+        "runs": 1,
+        "balls": 7,
+        "sr": 14.3,
+        "avg": 0.33,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 23,
+        "wickets": 25,
+        "econ": 7.7,
+        "avg": 21.2
+      }
+    },
+    "s-ismail": {
+      "fullName": "S Ismail",
+      "teamSlugs": [
+        "mumbai-indians",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 12,
+        "balls": 9,
+        "sr": 133.3,
+        "avg": 6,
+        "highScore": 8,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 27,
+        "wickets": 26,
+        "econ": 6.66,
+        "avg": 27.27
+      }
+    },
+    "s-mandhana": {
+      "fullName": "S Mandhana",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 35,
+        "innings": 36,
+        "runs": 1025,
+        "balls": 747,
+        "sr": 137.2,
+        "avg": 31.06,
+        "highScore": 96,
+        "fours": 145,
+        "sixes": 29
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 18,
+        "avg": null
+      }
+    },
+    "s-meghana": {
+      "fullName": "S Meghana",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 302,
+        "balls": 255,
+        "sr": 118.4,
+        "avg": 23.23,
+        "highScore": 53,
+        "fours": 40,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "s-molineux": {
+      "fullName": "S Molineux",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 78,
+        "balls": 84,
+        "sr": 92.9,
+        "avg": 13,
+        "highScore": 33,
+        "fours": 10,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 10,
+        "wickets": 12,
+        "econ": 7.32,
+        "avg": 23.17
+      }
+    },
+    "s-pandey": {
+      "fullName": "S Pandey",
+      "teamSlugs": [
+        "delhi-capitals",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 15,
+        "innings": 15,
+        "runs": 120,
+        "balls": 99,
+        "sr": 121.2,
+        "avg": 24,
+        "highScore": 27,
+        "fours": 12,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 35,
+        "wickets": 37,
+        "econ": 7.2,
+        "avg": 25.3
+      }
+    },
+    "s-rana": {
+      "fullName": "S Rana",
+      "teamSlugs": [
+        "delhi-capitals",
+        "gujarat-giants",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 136,
+        "balls": 103,
+        "sr": 132,
+        "avg": 12.36,
+        "highScore": 29,
+        "fours": 14,
+        "sixes": 6
+      },
+      "bowling": {
+        "matches": 26,
+        "wickets": 13,
+        "econ": 9.32,
+        "avg": 46
+      }
+    },
+    "s-sajana": {
+      "fullName": "S Sajana",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 21,
+        "innings": 21,
+        "runs": 241,
+        "balls": 171,
+        "sr": 140.9,
+        "avg": 17.21,
+        "highScore": 45,
+        "fours": 33,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 3,
+        "econ": 12.63,
+        "avg": 13.33
+      }
+    },
+    "s-sehrawat": {
+      "fullName": "S Sehrawat",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 26,
+        "innings": 26,
+        "runs": 307,
+        "balls": 296,
+        "sr": 103.7,
+        "avg": 12.28,
+        "highScore": 45,
+        "fours": 31,
+        "sixes": 9
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "s-verma": {
+      "fullName": "S Verma",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 42,
+        "balls": 53,
+        "sr": 79.2,
+        "avg": 21,
+        "highScore": 18,
+        "fours": 4,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sb-keerthana": {
+      "fullName": "SB Keerthana",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 8.6,
+        "avg": null
+      }
+    },
+    "sb-pokharkar": {
+      "fullName": "SB Pokharkar",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 8.75,
+        "avg": null
+      }
+    },
+    "sd-bahadur": {
+      "fullName": "SD Bahadur",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 2,
+        "innings": 2,
+        "runs": 3,
+        "balls": 4,
+        "sr": 75,
+        "avg": 3,
+        "highScore": 2,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 11,
+        "avg": null
+      }
+    },
+    "sfm-devine": {
+      "fullName": "SFM Devine",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 27,
+        "innings": 27,
+        "runs": 645,
+        "balls": 424,
+        "sr": 152.1,
+        "avg": 25.8,
+        "highScore": 99,
+        "fours": 69,
+        "sixes": 33
+      },
+      "bowling": {
+        "matches": 23,
+        "wickets": 26,
+        "econ": 8.33,
+        "avg": 20.77
+      }
+    },
+    "sg-satghare": {
+      "fullName": "SG Satghare",
+      "teamSlugs": [
+        "gujarat-giants",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 23,
+        "balls": 24,
+        "sr": 95.8,
+        "avg": 11.5,
+        "highScore": 13,
+        "fours": 2,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 8,
+        "wickets": 10,
+        "econ": 9.19,
+        "avg": 23.9
+      }
+    },
+    "shafali-verma": {
+      "fullName": "Shafali Verma",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 37,
+        "innings": 37,
+        "runs": 1124,
+        "balls": 737,
+        "sr": 152.5,
+        "avg": 33.06,
+        "highScore": 84,
+        "fours": 132,
+        "sixes": 53
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 3,
+        "econ": 8.22,
+        "avg": 24.67
+      }
+    },
+    "shivani-singh": {
+      "fullName": "Shivani Singh",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 2,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "simran-shaikh": {
+      "fullName": "Simran Shaikh",
+      "teamSlugs": [
+        "gujarat-giants",
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 14,
+        "innings": 14,
+        "runs": 115,
+        "balls": 117,
+        "sr": 98.3,
+        "avg": 9.58,
+        "highScore": 22,
+        "fours": 11,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sir-dunkley": {
+      "fullName": "SIR Dunkley",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 121,
+        "balls": 69,
+        "sr": 175.4,
+        "avg": 20.17,
+        "highScore": 65,
+        "fours": 19,
+        "sixes": 3
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sj-bryce": {
+      "fullName": "SJ Bryce",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 60,
+        "balls": 40,
+        "sr": 150,
+        "avg": 15,
+        "highScore": 23,
+        "fours": 5,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sm-shakil": {
+      "fullName": "SM Shakil",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 1,
+        "balls": 2,
+        "sr": 50,
+        "avg": 0.5,
+        "highScore": 1,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 4,
+        "wickets": 4,
+        "econ": 7,
+        "avg": 21
+      }
+    },
+    "sr-giri": {
+      "fullName": "SR Giri",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 9,
+        "balls": 8,
+        "sr": 112.5,
+        "avg": 9,
+        "highScore": 9,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "sr-patil": {
+      "fullName": "SR Patil",
+      "teamSlugs": [
+        "royal-challengers-bangalore",
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 15,
+        "innings": 15,
+        "runs": 109,
+        "balls": 72,
+        "sr": 151.4,
+        "avg": 21.8,
+        "highScore": 23,
+        "fours": 17,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 24,
+        "wickets": 30,
+        "econ": 8.73,
+        "avg": 20.8
+      }
+    },
+    "ss-pawar": {
+      "fullName": "SS Pawar",
+      "teamSlugs": [
+        "royal-challengers-bangalore"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 1,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 11,
+        "avg": null
+      }
+    },
+    "sv-yashasri": {
+      "fullName": "SV Yashasri",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 1,
+        "econ": 8.67,
+        "avg": 26
+      }
+    },
+    "sz-thakor": {
+      "fullName": "SZ Thakor",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 6,
+        "innings": 6,
+        "runs": 38,
+        "balls": 27,
+        "sr": 140.7,
+        "avg": 9.5,
+        "highScore": 15,
+        "fours": 5,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 7,
+        "wickets": 3,
+        "econ": 10.31,
+        "avg": 44.67
+      }
+    },
+    "t-bhatia": {
+      "fullName": "T Bhatia",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 5,
+        "innings": 5,
+        "runs": 5,
+        "balls": 17,
+        "sr": 29.4,
+        "avg": 1.25,
+        "highScore": 4,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "t-vasistha": {
+      "fullName": "T Vasistha",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 2,
+        "wickets": 0,
+        "econ": 11.5,
+        "avg": null
+      }
+    },
+    "tg-norris": {
+      "fullName": "TG Norris",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 1,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 5,
+        "wickets": 7,
+        "econ": 8.09,
+        "avg": 12.71
+      }
+    },
+    "tm-mcgrath": {
+      "fullName": "TM McGrath",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 355,
+        "balls": 260,
+        "sr": 136.5,
+        "avg": 23.67,
+        "highScore": 90,
+        "fours": 51,
+        "sixes": 8
+      },
+      "bowling": {
+        "matches": 11,
+        "wickets": 5,
+        "econ": 9.83,
+        "avg": 50.8
+      }
+    },
+    "tn-pathan": {
+      "fullName": "TN Pathan",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 9,
+        "balls": 11,
+        "sr": 81.8,
+        "avg": 9,
+        "highScore": 9,
+        "fours": 1,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 1,
+        "wickets": 0,
+        "econ": 10,
+        "avg": null
+      }
+    },
+    "tp-kanwar": {
+      "fullName": "TP Kanwar",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 17,
+        "innings": 17,
+        "runs": 168,
+        "balls": 160,
+        "sr": 105,
+        "avg": 12.92,
+        "highScore": 28,
+        "fours": 20,
+        "sixes": 2
+      },
+      "bowling": {
+        "matches": 31,
+        "wickets": 23,
+        "econ": 8.02,
+        "avg": 34.57
+      }
+    },
+    "tr-sadhu": {
+      "fullName": "TR Sadhu",
+      "teamSlugs": [
+        "delhi-capitals"
+      ],
+      "batting": {
+        "matches": 1,
+        "innings": 1,
+        "runs": 0,
+        "balls": 1,
+        "sr": 0,
+        "avg": 0,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 7,
+        "wickets": 4,
+        "econ": 8.47,
+        "avg": 31.75
+      }
+    },
+    "u-chetry": {
+      "fullName": "U Chetry",
+      "teamSlugs": [
+        "up-warriorz"
+      ],
+      "batting": {
+        "matches": 7,
+        "innings": 7,
+        "runs": 80,
+        "balls": 102,
+        "sr": 78.4,
+        "avg": 13.33,
+        "highScore": 24,
+        "fours": 9,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "v-krishnamurthy": {
+      "fullName": "V Krishnamurthy",
+      "teamSlugs": [
+        "gujarat-giants"
+      ],
+      "batting": {
+        "matches": 4,
+        "innings": 4,
+        "runs": 22,
+        "balls": 32,
+        "sr": 68.8,
+        "avg": 5.5,
+        "highScore": 12,
+        "fours": 2,
+        "sixes": 1
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    },
+    "vaishnavi-sharma": {
+      "fullName": "Vaishnavi Sharma",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 1,
+        "econ": 7,
+        "avg": 56
+      }
+    },
+    "vj-joshitha": {
+      "fullName": "VJ Joshitha",
+      "teamSlugs": [
+        "royal-challengers-bengaluru"
+      ],
+      "batting": {
+        "matches": 0,
+        "innings": 0,
+        "runs": 0,
+        "balls": 0,
+        "sr": 0,
+        "avg": null,
+        "highScore": 0,
+        "fours": 0,
+        "sixes": 0
+      },
+      "bowling": {
+        "matches": 3,
+        "wickets": 0,
+        "econ": 10.38,
+        "avg": null
+      }
+    },
+    "yh-bhatia": {
+      "fullName": "YH Bhatia",
+      "teamSlugs": [
+        "mumbai-indians"
+      ],
+      "batting": {
+        "matches": 28,
+        "innings": 28,
+        "runs": 506,
+        "balls": 444,
+        "sr": 114,
+        "avg": 18.74,
+        "highScore": 57,
+        "fours": 80,
+        "sixes": 10
+      },
+      "bowling": {
+        "matches": 0,
+        "wickets": 0,
+        "econ": 0,
+        "avg": null
+      }
+    }
+  },
+  "matches": [
+    {
+      "id": "1358929",
+      "season": "2022/23",
+      "date": "2023-03-04",
+      "teams": [
+        "Mumbai Indians",
+        "Gujarat Giants"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358930",
+      "season": "2022/23",
+      "date": "2023-03-05",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358931",
+      "season": "2022/23",
+      "date": "2023-03-05",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358932",
+      "season": "2022/23",
+      "date": "2023-03-06",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "Mumbai Indians"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358933",
+      "season": "2022/23",
+      "date": "2023-03-07",
+      "teams": [
+        "Delhi Capitals",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358934",
+      "season": "2022/23",
+      "date": "2023-03-08",
+      "teams": [
+        "Gujarat Giants",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358935",
+      "season": "2022/23",
+      "date": "2023-03-09",
+      "teams": [
+        "Delhi Capitals",
+        "Mumbai Indians"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358936",
+      "season": "2022/23",
+      "date": "2023-03-10",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "UP Warriorz"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358937",
+      "season": "2022/23",
+      "date": "2023-03-11",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358938",
+      "season": "2022/23",
+      "date": "2023-03-12",
+      "teams": [
+        "UP Warriorz",
+        "Mumbai Indians"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358939",
+      "season": "2022/23",
+      "date": "2023-03-13",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358940",
+      "season": "2022/23",
+      "date": "2023-03-14",
+      "teams": [
+        "Mumbai Indians",
+        "Gujarat Giants"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358941",
+      "season": "2022/23",
+      "date": "2023-03-15",
+      "teams": [
+        "UP Warriorz",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358942",
+      "season": "2022/23",
+      "date": "2023-03-16",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358943",
+      "season": "2022/23",
+      "date": "2023-03-18",
+      "teams": [
+        "Mumbai Indians",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358944",
+      "season": "2022/23",
+      "date": "2023-03-18",
+      "teams": [
+        "Gujarat Giants",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358945",
+      "season": "2022/23",
+      "date": "2023-03-20",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358946",
+      "season": "2022/23",
+      "date": "2023-03-20",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358947",
+      "season": "2022/23",
+      "date": "2023-03-21",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "Mumbai Indians"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358948",
+      "season": "2022/23",
+      "date": "2023-03-21",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358949",
+      "season": "2022/23",
+      "date": "2023-03-24",
+      "teams": [
+        "Mumbai Indians",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1358950",
+      "season": "2022/23",
+      "date": "2023-03-26",
+      "teams": [
+        "Delhi Capitals",
+        "Mumbai Indians"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417716",
+      "season": "2023/24",
+      "date": "2024-02-23",
+      "teams": [
+        "Delhi Capitals",
+        "Mumbai Indians"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417717",
+      "season": "2023/24",
+      "date": "2024-02-24",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "UP Warriorz"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417718",
+      "season": "2023/24",
+      "date": "2024-02-25",
+      "teams": [
+        "Gujarat Giants",
+        "Mumbai Indians"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417719",
+      "season": "2023/24",
+      "date": "2024-02-26",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417720",
+      "season": "2023/24",
+      "date": "2024-02-27",
+      "teams": [
+        "Gujarat Giants",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417721",
+      "season": "2023/24",
+      "date": "2024-02-28",
+      "teams": [
+        "Mumbai Indians",
+        "UP Warriorz"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417722",
+      "season": "2023/24",
+      "date": "2024-02-29",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417723",
+      "season": "2023/24",
+      "date": "2024-03-01",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417724",
+      "season": "2023/24",
+      "date": "2024-03-02",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "Mumbai Indians"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417725",
+      "season": "2023/24",
+      "date": "2024-03-03",
+      "teams": [
+        "Delhi Capitals",
+        "Gujarat Giants"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417726",
+      "season": "2023/24",
+      "date": "2024-03-04",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "UP Warriorz"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417727",
+      "season": "2023/24",
+      "date": "2024-03-05",
+      "teams": [
+        "Delhi Capitals",
+        "Mumbai Indians"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417728",
+      "season": "2023/24",
+      "date": "2024-03-06",
+      "teams": [
+        "Gujarat Giants",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417729",
+      "season": "2023/24",
+      "date": "2024-03-07",
+      "teams": [
+        "Mumbai Indians",
+        "UP Warriorz"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417730",
+      "season": "2023/24",
+      "date": "2024-03-08",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417731",
+      "season": "2023/24",
+      "date": "2024-03-09",
+      "teams": [
+        "Gujarat Giants",
+        "Mumbai Indians"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417732",
+      "season": "2023/24",
+      "date": "2024-03-10",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417733",
+      "season": "2023/24",
+      "date": "2024-03-11",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417734",
+      "season": "2023/24",
+      "date": "2024-03-12",
+      "teams": [
+        "Mumbai Indians",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417735",
+      "season": "2023/24",
+      "date": "2024-03-13",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417736",
+      "season": "2023/24",
+      "date": "2024-03-15",
+      "teams": [
+        "Royal Challengers Bangalore",
+        "Mumbai Indians"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1417737",
+      "season": "2023/24",
+      "date": "2024-03-17",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bangalore"
+      ],
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469298",
+      "season": "2024/25",
+      "date": "2025-02-14",
+      "teams": [
+        "Gujarat Giants",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469299",
+      "season": "2024/25",
+      "date": "2025-02-15",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469300",
+      "season": "2024/25",
+      "date": "2025-02-16",
+      "teams": [
+        "UP Warriorz",
+        "Gujarat Giants"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469301",
+      "season": "2024/25",
+      "date": "2025-02-17",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469302",
+      "season": "2024/25",
+      "date": "2025-02-18",
+      "teams": [
+        "Gujarat Giants",
+        "Mumbai Indians"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469303",
+      "season": "2024/25",
+      "date": "2025-02-19",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469304",
+      "season": "2024/25",
+      "date": "2025-02-21",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Mumbai Indians"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469305",
+      "season": "2024/25",
+      "date": "2025-02-22",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469306",
+      "season": "2024/25",
+      "date": "2025-02-24",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "UP Warriorz"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469307",
+      "season": "2024/25",
+      "date": "2025-02-25",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469308",
+      "season": "2024/25",
+      "date": "2025-02-26",
+      "teams": [
+        "UP Warriorz",
+        "Mumbai Indians"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469309",
+      "season": "2024/25",
+      "date": "2025-02-27",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Gujarat Giants"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469310",
+      "season": "2024/25",
+      "date": "2025-02-28",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469311",
+      "season": "2024/25",
+      "date": "2025-03-01",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Delhi Capitals"
+      ],
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469312",
+      "season": "2024/25",
+      "date": "2025-03-03",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469313",
+      "season": "2024/25",
+      "date": "2025-03-06",
+      "teams": [
+        "UP Warriorz",
+        "Mumbai Indians"
+      ],
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469314",
+      "season": "2024/25",
+      "date": "2025-03-07",
+      "teams": [
+        "Delhi Capitals",
+        "Gujarat Giants"
+      ],
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469315",
+      "season": "2024/25",
+      "date": "2025-03-08",
+      "teams": [
+        "UP Warriorz",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469316",
+      "season": "2024/25",
+      "date": "2025-03-10",
+      "teams": [
+        "Mumbai Indians",
+        "Gujarat Giants"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469317",
+      "season": "2024/25",
+      "date": "2025-03-11",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Mumbai Indians"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469318",
+      "season": "2024/25",
+      "date": "2025-03-13",
+      "teams": [
+        "Mumbai Indians",
+        "Gujarat Giants"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1469319",
+      "season": "2024/25",
+      "date": "2025-03-15",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "Brabourne Stadium, Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513682",
+      "season": "2025/26",
+      "date": "2026-01-09",
+      "teams": [
+        "Mumbai Indians",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513683",
+      "season": "2025/26",
+      "date": "2026-01-10",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513684",
+      "season": "2025/26",
+      "date": "2026-01-10",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513685",
+      "season": "2025/26",
+      "date": "2026-01-11",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513686",
+      "season": "2025/26",
+      "date": "2026-01-12",
+      "teams": [
+        "UP Warriorz",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513687",
+      "season": "2025/26",
+      "date": "2026-01-13",
+      "teams": [
+        "Gujarat Giants",
+        "Mumbai Indians"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513688",
+      "season": "2025/26",
+      "date": "2026-01-14",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513689",
+      "season": "2025/26",
+      "date": "2026-01-15",
+      "teams": [
+        "Mumbai Indians",
+        "UP Warriorz"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513690",
+      "season": "2025/26",
+      "date": "2026-01-16",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Gujarat Giants"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513691",
+      "season": "2025/26",
+      "date": "2026-01-17",
+      "teams": [
+        "UP Warriorz",
+        "Mumbai Indians"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513692",
+      "season": "2025/26",
+      "date": "2026-01-17",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Dr DY Patil Sports Academy, Navi Mumbai",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513693",
+      "season": "2025/26",
+      "date": "2026-01-19",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Gujarat Giants"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513694",
+      "season": "2025/26",
+      "date": "2026-01-20",
+      "teams": [
+        "Mumbai Indians",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513695",
+      "season": "2025/26",
+      "date": "2026-01-22",
+      "teams": [
+        "Gujarat Giants",
+        "UP Warriorz"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513696",
+      "season": "2025/26",
+      "date": "2026-01-24",
+      "teams": [
+        "Royal Challengers Bengaluru",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513697",
+      "season": "2025/26",
+      "date": "2026-01-26",
+      "teams": [
+        "Mumbai Indians",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513698",
+      "season": "2025/26",
+      "date": "2026-01-27",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513699",
+      "season": "2025/26",
+      "date": "2026-01-29",
+      "teams": [
+        "UP Warriorz",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513700",
+      "season": "2025/26",
+      "date": "2026-01-30",
+      "teams": [
+        "Gujarat Giants",
+        "Mumbai Indians"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513701",
+      "season": "2025/26",
+      "date": "2026-02-01",
+      "teams": [
+        "UP Warriorz",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513702",
+      "season": "2025/26",
+      "date": "2026-02-03",
+      "teams": [
+        "Gujarat Giants",
+        "Delhi Capitals"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    },
+    {
+      "id": "1513703",
+      "season": "2025/26",
+      "date": "2026-02-05",
+      "teams": [
+        "Delhi Capitals",
+        "Royal Challengers Bengaluru"
+      ],
+      "venue": "Kotambi Stadium, Vadodara",
+      "winner": null,
+      "result": null
+    }
+  ]
+}

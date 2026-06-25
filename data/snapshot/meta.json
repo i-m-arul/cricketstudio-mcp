@@ -1,21 +1,29 @@
 {
-  "builtAt": "2026-06-23T13:10:36.137Z",
-  "version": "2.2",
+  "builtAt": "2026-06-25T16:33:48.163Z",
+  "version": "2.3",
   "mode": "local",
   "corpus": {
-    "matches": 1317,
-    "deliveries": 312309,
+    "matches": 1635,
+    "deliveries": 385486,
     "players": 256
   },
   "counts": {
     "players": 256,
     "standings": 10,
     "h2hPairs": 1487,
-    "trends": 44,
+    "trends": 140,
     "matches": 73,
     "mlc": {
       "players": 166,
       "matches": 75
+    },
+    "wpl": {
+      "players": 133,
+      "matches": 88
+    },
+    "t20wc": {
+      "players": 687,
+      "matches": 230
     },
     "iplHistorical": {
       "players": 767,

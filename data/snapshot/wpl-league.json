@@ -1,0 +1,194 @@
+{
+  "v": 1,
+  "code": "wpl",
+  "displayName": "Women's Premier League",
+  "format": "T20",
+  "seasons": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "teams": [
+    "delhi-capitals",
+    "gujarat-giants",
+    "mumbai-indians",
+    "royal-challengers-bangalore",
+    "royal-challengers-bengaluru",
+    "up-warriorz"
+  ],
+  "venues": [
+    "arun-jaitley-stadium-delhi",
+    "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium-lucknow",
+    "brabourne-stadium-mumbai",
+    "dr-dy-patil-sports-academy-mumbai",
+    "dr-dy-patil-sports-academy-navi-mumbai",
+    "kotambi-stadium-vadodara",
+    "m-chinnaswamy-stadium-bengaluru"
+  ],
+  "playerCount": 136,
+  "totalMatches": 88,
+  "seasonBreakdown": [
+    {
+      "season": "2022/23",
+      "matches": 22,
+      "teams": 5,
+      "venues": 2,
+      "playersUsed": 72
+    },
+    {
+      "season": "2023/24",
+      "matches": 22,
+      "teams": 5,
+      "venues": 2,
+      "playersUsed": 74
+    },
+    {
+      "season": "2024/25",
+      "matches": 22,
+      "teams": 5,
+      "venues": 4,
+      "playersUsed": 76
+    },
+    {
+      "season": "2025/26",
+      "matches": 22,
+      "teams": 5,
+      "venues": 2,
+      "playersUsed": 75
+    }
+  ],
+  "crossTeamMoves": 34,
+  "generatedAt": "2026-06-25T03:45:01.868Z",
+  "ballsCaptured": 20656,
+  "leaderboardAspects": [
+    {
+      "slug": "orange-cap",
+      "title": "WPL Orange Cap — Most Runs"
+    },
+    {
+      "slug": "purple-cap",
+      "title": "WPL Purple Cap — Most Wickets"
+    },
+    {
+      "slug": "strike-rate",
+      "title": "WPL — Best Batting Strike Rate"
+    },
+    {
+      "slug": "economy-leaders",
+      "title": "WPL — Best Bowling Economy"
+    },
+    {
+      "slug": "most-sixes",
+      "title": "WPL — Most Sixes"
+    },
+    {
+      "slug": "most-fours",
+      "title": "WPL — Most Fours"
+    },
+    {
+      "slug": "batting-average",
+      "title": "WPL — Best Batting Average"
+    },
+    {
+      "slug": "bowling-average",
+      "title": "WPL — Best Bowling Average"
+    },
+    {
+      "slug": "bowling-strike-rate",
+      "title": "WPL — Best Bowling Strike Rate"
+    },
+    {
+      "slug": "most-fifties",
+      "title": "WPL — Most Fifties"
+    },
+    {
+      "slug": "most-dot-balls",
+      "title": "WPL — Most Dot Balls Bowled"
+    },
+    {
+      "slug": "powerplay-strike-rate",
+      "title": "WPL — Powerplay Batting Strike Rate (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-economy",
+      "title": "WPL — Powerplay Bowling Economy (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-sixes",
+      "title": "WPL — Most Powerplay Sixes (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-wickets",
+      "title": "WPL — Most Powerplay Wickets (Overs 1–6)"
+    },
+    {
+      "slug": "death-strike-rate",
+      "title": "WPL — Death Overs Batting Strike Rate (Overs 17–20)"
+    },
+    {
+      "slug": "death-economy",
+      "title": "WPL — Death Overs Bowling Economy (Overs 17–20)"
+    },
+    {
+      "slug": "death-sixes",
+      "title": "WPL — Most Death Overs Sixes (Overs 17–20)"
+    },
+    {
+      "slug": "death-wickets",
+      "title": "WPL — Most Death Overs Wickets (Overs 17–20)"
+    },
+    {
+      "slug": "dot-ball-pct",
+      "title": "WPL — Dot Ball Percentage"
+    },
+    {
+      "slug": "middle-runs",
+      "title": "WPL — Middle Overs Runs (Overs 7–15)"
+    },
+    {
+      "slug": "middle-economy",
+      "title": "WPL — Middle Overs Bowling Economy (Overs 7–15)"
+    },
+    {
+      "slug": "middle-sixes",
+      "title": "WPL — Most Middle Overs Sixes (Overs 7–15)"
+    },
+    {
+      "slug": "middle-wickets",
+      "title": "WPL — Most Middle Overs Wickets (Overs 7–15)"
+    },
+    {
+      "slug": "powerplay-runs",
+      "title": "WPL — Most Powerplay Runs (Overs 1–6)"
+    },
+    {
+      "slug": "death-runs",
+      "title": "WPL — Most Death Overs Runs (Overs 17–20)"
+    },
+    {
+      "slug": "powerplay-fours",
+      "title": "WPL — Most Powerplay Fours (Overs 1–6)"
+    },
+    {
+      "slug": "death-fours",
+      "title": "WPL — Most Death Overs Fours (Overs 17–20)"
+    },
+    {
+      "slug": "most-hundreds",
+      "title": "WPL — Most Centuries"
+    },
+    {
+      "slug": "most-not-outs",
+      "title": "WPL — Most Not Outs"
+    },
+    {
+      "slug": "most-matches",
+      "title": "WPL — Most Matches Played"
+    },
+    {
+      "slug": "most-innings",
+      "title": "WPL — Most Innings Played"
+    }
+  ]
+}

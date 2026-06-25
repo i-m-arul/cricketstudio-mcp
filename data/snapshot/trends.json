@@ -1163,7 +1163,7 @@
     "tease": "IPL 2026 run charts are dominated by right-handers by count — but do they dominate by volume?",
     "bigStat": "38% of runs",
     "hook": "Left-hand batters (58 players, 35% of scorers) produced **38% of total IPL 2026 runs** tracked — 9,839 of 25,959.",
-    "detail": "Across all captured IPL 2026 deliveries, left-hand batters produced 38% of total runs despite comprising 35% of batting contributors. Top LHB: Vaibhav Suryavanshi (776 runs). Top RHB: Shubman Gill (732 runs). Sample: 166 players · 16691 balls.",
+    "detail": "Across all captured IPL 2026 deliveries, left-hand batters produced 38% of total runs despite comprising 35% of batting contributors. Top LHB: Vaibhav Suryavanshi (776 runs). Top RHB: Shubman Gill (732 runs). Sample: 166 players · 17009 balls.",
     "numbers": [
       {
         "label": "LHB total runs",
@@ -1194,7 +1194,7 @@
     "tease": "Spin vs pace: which is cheaper to face in IPL 2026? The full-season economy split tells the real story.",
     "bigStat": "Spin by 0.05 RPO",
     "hook": "Pace averages **10.19 RPO** vs spin's **10.14 RPO** across 45 IPL 2026 qualifying bowlers (≥15 balls).",
-    "detail": "Season-wide economy split across 9 pace and 36 spin bowlers with ≥15 balls bowled. Best pace: Jasprit Bumrah (8.35 RPO). Best spin: Sunil Narine (6.60 RPO). Source: CricketStudio aggregation of 16,691 ball-by-ball records.",
+    "detail": "Season-wide economy split across 9 pace and 36 spin bowlers with ≥15 balls bowled. Best pace: Jasprit Bumrah (8.35 RPO). Best spin: Sunil Narine (6.60 RPO). Source: CricketStudio aggregation of 17,009 ball-by-ball records.",
     "numbers": [
       {
         "label": "Avg pace economy (RPO)",
@@ -1218,5 +1218,2805 @@
       }
     ],
     "tag": "Bowler type · season aggregate"
+  },
+  {
+    "id": "ipl-hist-venue-sig-rajiv-gandhi-international-stadium",
+    "kind": "venue-signature",
+    "tease": "Rajiv Gandhi International Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "57% chase rate",
+    "hook": "Rajiv Gandhi International Stadium (Hyderabad): bat-first wins **43%** of 81 IPL matches across 13 seasons (2007/08–2025).",
+    "detail": "35 of 81 matches won by the team batting first at Rajiv Gandhi International Stadium. 46 won chasing. Across 13 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 81
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 13
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 35
+      },
+      {
+        "label": "Chase wins",
+        "value": 46
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "43%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "57%"
+      }
+    ],
+    "tag": "Rajiv Gandhi International Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-maharashtra-cricket-association-stadium",
+    "kind": "venue-signature",
+    "tease": "Maharashtra Cricket Association Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "64% chase rate",
+    "hook": "Maharashtra Cricket Association Stadium (Pune): bat-first wins **36%** of 22 IPL matches across 5 seasons (2007/08–2025).",
+    "detail": "8 of 22 matches won by the team batting first at Maharashtra Cricket Association Stadium. 14 won chasing. Across 5 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 22
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 5
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 8
+      },
+      {
+        "label": "Chase wins",
+        "value": 14
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "36%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "64%"
+      }
+    ],
+    "tag": "Maharashtra Cricket Association Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-mchinnaswamy-stadium",
+    "kind": "venue-signature",
+    "tease": "M.Chinnaswamy Stadium has rewarded batting-first sides across 3 IPL seasons. 2026 is following the same script.",
+    "bigStat": "50% bat-first rate",
+    "hook": "M.Chinnaswamy Stadium (Bengaluru): bat-first wins **50%** of 14 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "7 of 14 matches won by the team batting first at M.Chinnaswamy Stadium. 7 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 14
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 7
+      },
+      {
+        "label": "Chase wins",
+        "value": 7
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "50%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "50%"
+      }
+    ],
+    "tag": "M.Chinnaswamy Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-wankhede-stadium",
+    "kind": "venue-signature",
+    "tease": "Wankhede Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "55% chase rate",
+    "hook": "Wankhede Stadium (Mumbai): bat-first wins **45%** of 124 IPL matches across 15 seasons (2007/08–2025).",
+    "detail": "56 of 124 matches won by the team batting first at Wankhede Stadium. 68 won chasing. Across 15 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 124
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 15
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 56
+      },
+      {
+        "label": "Chase wins",
+        "value": 68
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "45%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "55%"
+      }
+    ],
+    "tag": "Wankhede Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-eden-gardens",
+    "kind": "venue-signature",
+    "tease": "Eden Gardens belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "58% chase rate",
+    "hook": "Eden Gardens (Kolkata): bat-first wins **42%** of 99 IPL matches across 15 seasons (2007/08–2025).",
+    "detail": "42 of 99 matches won by the team batting first at Eden Gardens. 57 won chasing. Across 15 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 99
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 15
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 42
+      },
+      {
+        "label": "Chase wins",
+        "value": 57
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "42%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "58%"
+      }
+    ],
+    "tag": "Eden Gardens · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-m-chinnaswamy-stadium",
+    "kind": "venue-signature",
+    "tease": "M Chinnaswamy Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "56% chase rate",
+    "hook": "M Chinnaswamy Stadium (Bengaluru): bat-first wins **44%** of 81 IPL matches across 12 seasons (2007/08–2025).",
+    "detail": "36 of 81 matches won by the team batting first at M Chinnaswamy Stadium. 45 won chasing. Across 12 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 81
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 12
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 36
+      },
+      {
+        "label": "Chase wins",
+        "value": 45
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "44%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "56%"
+      }
+    ],
+    "tag": "M Chinnaswamy Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-arun-jaitley-stadium",
+    "kind": "venue-signature",
+    "tease": "Arun Jaitley Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "51% chase rate",
+    "hook": "Arun Jaitley Stadium (Delhi): bat-first wins **49%** of 94 IPL matches across 15 seasons (2007/08–2025).",
+    "detail": "46 of 94 matches won by the team batting first at Arun Jaitley Stadium. 48 won chasing. Across 15 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 94
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 15
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 46
+      },
+      {
+        "label": "Chase wins",
+        "value": 48
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "49%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "51%"
+      }
+    ],
+    "tag": "Arun Jaitley Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-punjab-cricket-association-is-bindra-stadium-mohali",
+    "kind": "venue-signature",
+    "tease": "Punjab Cricket Association IS Bindra Stadium, Mohali belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "55% chase rate",
+    "hook": "Punjab Cricket Association IS Bindra Stadium, Mohali (Chandigarh): bat-first wins **45%** of 11 IPL matches across 2 seasons (2007/08–2025).",
+    "detail": "5 of 11 matches won by the team batting first at Punjab Cricket Association IS Bindra Stadium, Mohali. 6 won chasing. Across 2 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 11
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 2
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 5
+      },
+      {
+        "label": "Chase wins",
+        "value": 6
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "45%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "55%"
+      }
+    ],
+    "tag": "Punjab Cricket Association IS Bindra Stadium, Mohali · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
+    "kind": "venue-signature",
+    "tease": "Maharaja Yadavindra Singh International Cricket Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "55% chase rate",
+    "hook": "Maharaja Yadavindra Singh International Cricket Stadium (Mullanpur): bat-first wins **45%** of 56 IPL matches across 11 seasons (2007/08–2025).",
+    "detail": "25 of 56 matches won by the team batting first at Maharaja Yadavindra Singh International Cricket Stadium. 31 won chasing. Across 11 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 56
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 11
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 25
+      },
+      {
+        "label": "Chase wins",
+        "value": 31
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "45%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "55%"
+      }
+    ],
+    "tag": "Maharaja Yadavindra Singh International Cricket Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-ma-chidambaram-stadium",
+    "kind": "venue-signature",
+    "tease": "MA Chidambaram Stadium has rewarded batting-first sides across 12 IPL seasons. 2026 is following the same script.",
+    "bigStat": "55% bat-first rate",
+    "hook": "MA Chidambaram Stadium (Chennai): bat-first wins **55%** of 89 IPL matches across 12 seasons (2007/08–2025).",
+    "detail": "49 of 89 matches won by the team batting first at MA Chidambaram Stadium. 40 won chasing. Across 12 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 89
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 12
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 49
+      },
+      {
+        "label": "Chase wins",
+        "value": 40
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "55%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "45%"
+      }
+    ],
+    "tag": "MA Chidambaram Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-sawai-mansingh-stadium",
+    "kind": "venue-signature",
+    "tease": "Sawai Mansingh Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "64% chase rate",
+    "hook": "Sawai Mansingh Stadium (Jaipur): bat-first wins **36%** of 64 IPL matches across 10 seasons (2007/08–2025).",
+    "detail": "23 of 64 matches won by the team batting first at Sawai Mansingh Stadium. 41 won chasing. Across 10 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 64
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 10
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 23
+      },
+      {
+        "label": "Chase wins",
+        "value": 41
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "36%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "64%"
+      }
+    ],
+    "tag": "Sawai Mansingh Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-dr-ys-rajasekhara-reddy-aca-vdca-cricket-stadium",
+    "kind": "venue-signature",
+    "tease": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "53% chase rate",
+    "hook": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium (Visakhapatnam): bat-first wins **47%** of 17 IPL matches across 6 seasons (2007/08–2025).",
+    "detail": "8 of 17 matches won by the team batting first at Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium. 9 won chasing. Across 6 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 6
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 8
+      },
+      {
+        "label": "Chase wins",
+        "value": 9
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "47%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "53%"
+      }
+    ],
+    "tag": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-sheikh-zayed-stadium",
+    "kind": "venue-signature",
+    "tease": "Sheikh Zayed Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "59% chase rate",
+    "hook": "Sheikh Zayed Stadium (Abu Dhabi): bat-first wins **41%** of 27 IPL matches across 2 seasons (2007/08–2025).",
+    "detail": "11 of 27 matches won by the team batting first at Sheikh Zayed Stadium. 16 won chasing. Across 2 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 27
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 2
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 11
+      },
+      {
+        "label": "Chase wins",
+        "value": 16
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "41%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "59%"
+      }
+    ],
+    "tag": "Sheikh Zayed Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-sharjah-cricket-stadium",
+    "kind": "venue-signature",
+    "tease": "Sharjah Cricket Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "64% chase rate",
+    "hook": "Sharjah Cricket Stadium (): bat-first wins **36%** of 28 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "10 of 28 matches won by the team batting first at Sharjah Cricket Stadium. 18 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 28
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 10
+      },
+      {
+        "label": "Chase wins",
+        "value": 18
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "36%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "64%"
+      }
+    ],
+    "tag": "Sharjah Cricket Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-dubai-international-cricket-stadium",
+    "kind": "venue-signature",
+    "tease": "Dubai International Cricket Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "51% chase rate",
+    "hook": "Dubai International Cricket Stadium (): bat-first wins **49%** of 43 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "21 of 43 matches won by the team batting first at Dubai International Cricket Stadium. 22 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 43
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 21
+      },
+      {
+        "label": "Chase wins",
+        "value": 22
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "49%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "51%"
+      }
+    ],
+    "tag": "Dubai International Cricket Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-narendra-modi-stadium",
+    "kind": "venue-signature",
+    "tease": "Narendra Modi Stadium has rewarded batting-first sides across 8 IPL seasons. 2026 is following the same script.",
+    "bigStat": "50% bat-first rate",
+    "hook": "Narendra Modi Stadium (Ahmedabad): bat-first wins **50%** of 44 IPL matches across 8 seasons (2007/08–2025).",
+    "detail": "22 of 44 matches won by the team batting first at Narendra Modi Stadium. 22 won chasing. Across 8 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 44
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 8
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 22
+      },
+      {
+        "label": "Chase wins",
+        "value": 22
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "50%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "50%"
+      }
+    ],
+    "tag": "Narendra Modi Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-brabourne-stadium-mumbai",
+    "kind": "venue-signature",
+    "tease": "Brabourne Stadium, Mumbai belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "53% chase rate",
+    "hook": "Brabourne Stadium, Mumbai (Mumbai): bat-first wins **47%** of 17 IPL matches across 2 seasons (2007/08–2025).",
+    "detail": "8 of 17 matches won by the team batting first at Brabourne Stadium, Mumbai. 9 won chasing. Across 2 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 2
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 8
+      },
+      {
+        "label": "Chase wins",
+        "value": 9
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "47%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "53%"
+      }
+    ],
+    "tag": "Brabourne Stadium, Mumbai · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-dr-dy-patil-sports-academy-mumbai",
+    "kind": "venue-signature",
+    "tease": "Dr DY Patil Sports Academy, Mumbai has rewarded batting-first sides across 1 IPL seasons. 2026 is following the same script.",
+    "bigStat": "50% bat-first rate",
+    "hook": "Dr DY Patil Sports Academy, Mumbai (Mumbai): bat-first wins **50%** of 20 IPL matches across 1 seasons (2007/08–2025).",
+    "detail": "10 of 20 matches won by the team batting first at Dr DY Patil Sports Academy, Mumbai. 10 won chasing. Across 1 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 20
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 1
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 10
+      },
+      {
+        "label": "Chase wins",
+        "value": 10
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "50%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "50%"
+      }
+    ],
+    "tag": "Dr DY Patil Sports Academy, Mumbai · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-maharashtra-cricket-association-stadium-pune",
+    "kind": "venue-signature",
+    "tease": "Maharashtra Cricket Association Stadium, Pune has rewarded batting-first sides across 1 IPL seasons. 2026 is following the same script.",
+    "bigStat": "77% bat-first rate",
+    "hook": "Maharashtra Cricket Association Stadium, Pune (Pune): bat-first wins **77%** of 13 IPL matches across 1 seasons (2007/08–2025).",
+    "detail": "10 of 13 matches won by the team batting first at Maharashtra Cricket Association Stadium, Pune. 3 won chasing. Across 1 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 13
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 1
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 10
+      },
+      {
+        "label": "Chase wins",
+        "value": 3
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "77%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "23%"
+      }
+    ],
+    "tag": "Maharashtra Cricket Association Stadium, Pune · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
+    "kind": "venue-signature",
+    "tease": "BRSABV Ekana Cricket Stadium belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "57% chase rate",
+    "hook": "BRSABV Ekana Cricket Stadium (Lucknow): bat-first wins **43%** of 21 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "9 of 21 matches won by the team batting first at BRSABV Ekana Cricket Stadium. 12 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 21
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 9
+      },
+      {
+        "label": "Chase wins",
+        "value": 12
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "43%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "57%"
+      }
+    ],
+    "tag": "BRSABV Ekana Cricket Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-himachal-pradesh-cricket-association-stadium",
+    "kind": "venue-signature",
+    "tease": "Himachal Pradesh Cricket Association Stadium has rewarded batting-first sides across 7 IPL seasons. 2026 is following the same script.",
+    "bigStat": "64% bat-first rate",
+    "hook": "Himachal Pradesh Cricket Association Stadium (Dharamsala): bat-first wins **64%** of 14 IPL matches across 7 seasons (2007/08–2025).",
+    "detail": "9 of 14 matches won by the team batting first at Himachal Pradesh Cricket Association Stadium. 5 won chasing. Across 7 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 14
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 7
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 9
+      },
+      {
+        "label": "Chase wins",
+        "value": 5
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "64%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "36%"
+      }
+    ],
+    "tag": "Himachal Pradesh Cricket Association Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-dr-dy-patil-sports-academy",
+    "kind": "venue-signature",
+    "tease": "Dr DY Patil Sports Academy belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "59% chase rate",
+    "hook": "Dr DY Patil Sports Academy (Mumbai): bat-first wins **41%** of 17 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "7 of 17 matches won by the team batting first at Dr DY Patil Sports Academy. 10 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 7
+      },
+      {
+        "label": "Chase wins",
+        "value": 10
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "41%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "59%"
+      }
+    ],
+    "tag": "Dr DY Patil Sports Academy · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-kingsmead",
+    "kind": "venue-signature",
+    "tease": "Kingsmead has rewarded batting-first sides across 1 IPL seasons. 2026 is following the same script.",
+    "bigStat": "53% bat-first rate",
+    "hook": "Kingsmead (Durban): bat-first wins **53%** of 15 IPL matches across 1 seasons (2007/08–2025).",
+    "detail": "8 of 15 matches won by the team batting first at Kingsmead. 7 won chasing. Across 1 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 15
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 1
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 8
+      },
+      {
+        "label": "Chase wins",
+        "value": 7
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "53%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "47%"
+      }
+    ],
+    "tag": "Kingsmead · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-supersport-park",
+    "kind": "venue-signature",
+    "tease": "SuperSport Park belongs to the chasing team — this pattern spans 18 IPL seasons, not just 2026.",
+    "bigStat": "67% chase rate",
+    "hook": "SuperSport Park (Centurion): bat-first wins **33%** of 12 IPL matches across 1 seasons (2007/08–2025).",
+    "detail": "4 of 12 matches won by the team batting first at SuperSport Park. 8 won chasing. Across 1 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 12
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 1
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 4
+      },
+      {
+        "label": "Chase wins",
+        "value": 8
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "33%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "67%"
+      }
+    ],
+    "tag": "SuperSport Park · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-brabourne-stadium",
+    "kind": "venue-signature",
+    "tease": "Brabourne Stadium has rewarded batting-first sides across 3 IPL seasons. 2026 is following the same script.",
+    "bigStat": "60% bat-first rate",
+    "hook": "Brabourne Stadium (Mumbai): bat-first wins **60%** of 10 IPL matches across 3 seasons (2007/08–2025).",
+    "detail": "6 of 10 matches won by the team batting first at Brabourne Stadium. 4 won chasing. Across 3 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 10
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 3
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 6
+      },
+      {
+        "label": "Chase wins",
+        "value": 4
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "60%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "40%"
+      }
+    ],
+    "tag": "Brabourne Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-sig-subrata-roy-sahara-stadium",
+    "kind": "venue-signature",
+    "tease": "Subrata Roy Sahara Stadium has rewarded batting-first sides across 2 IPL seasons. 2026 is following the same script.",
+    "bigStat": "63% bat-first rate",
+    "hook": "Subrata Roy Sahara Stadium (Pune): bat-first wins **63%** of 16 IPL matches across 2 seasons (2007/08–2025).",
+    "detail": "10 of 16 matches won by the team batting first at Subrata Roy Sahara Stadium. 6 won chasing. Across 2 IPL seasons — the most comprehensive publicly citable historical record of this venue's pitch character. Source: Cricsheet CC BY 3.0, 1146 matches verified.",
+    "numbers": [
+      {
+        "label": "IPL matches at venue (2007/08–2025)",
+        "value": 16
+      },
+      {
+        "label": "Seasons hosted",
+        "value": 2
+      },
+      {
+        "label": "Bat-first wins",
+        "value": 10
+      },
+      {
+        "label": "Chase wins",
+        "value": 6
+      },
+      {
+        "label": "Bat-first win rate",
+        "value": "63%"
+      },
+      {
+        "label": "Chase win rate",
+        "value": "37%"
+      }
+    ],
+    "tag": "Subrata Roy Sahara Stadium · IPL all-time"
+  },
+  {
+    "id": "ipl-hist-venue-toss-rajiv-gandhi-international-stadium",
+    "kind": "toss-decision",
+    "tease": "At Rajiv Gandhi International Stadium, the captain who won the toss and chose to bowl has held an edge across 13 IPL seasons — not just this year.",
+    "bigStat": "46% when elect to bowl",
+    "hook": "Rajiv Gandhi International Stadium: toss winners who elected to **bowl** won 46% of those 46 matches across 13 IPL seasons.",
+    "detail": "Toss-elect outcomes at Rajiv Gandhi International Stadium across 81 IPL matches (2007/08–2025): elect to field → 46% win rate (21/46); elect to bat → 29% win rate (10/35). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 81
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "46 matches · 46%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "35 matches · 29%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 13
+      }
+    ],
+    "tag": "Rajiv Gandhi International Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-maharashtra-cricket-association-stadium",
+    "kind": "toss-decision",
+    "tease": "At Maharashtra Cricket Association Stadium, the captain who won the toss and chose to bowl has held an edge across 5 IPL seasons — not just this year.",
+    "bigStat": "65% when elect to bowl",
+    "hook": "Maharashtra Cricket Association Stadium: toss winners who elected to **bowl** won 65% of those 20 matches across 5 IPL seasons.",
+    "detail": "Toss-elect outcomes at Maharashtra Cricket Association Stadium across 22 IPL matches (2007/08–2025): elect to field → 65% win rate (13/20); elect to bat → 50% win rate (1/2). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 22
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "20 matches · 65%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "2 matches · 50%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 5
+      }
+    ],
+    "tag": "Maharashtra Cricket Association Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-mchinnaswamy-stadium",
+    "kind": "toss-decision",
+    "tease": "At M.Chinnaswamy Stadium, the captain who won the toss and chose to bat has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "100% when elect to bat",
+    "hook": "M.Chinnaswamy Stadium: toss winners who elected to **bat** won 100% of those 1 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at M.Chinnaswamy Stadium across 14 IPL matches (2007/08–2025): elect to field → 54% win rate (7/13); elect to bat → 100% win rate (1/1). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 14
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "13 matches · 54%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "1 matches · 100%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "M.Chinnaswamy Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-wankhede-stadium",
+    "kind": "toss-decision",
+    "tease": "At Wankhede Stadium, the captain who won the toss and chose to bowl has held an edge across 15 IPL seasons — not just this year.",
+    "bigStat": "55% when elect to bowl",
+    "hook": "Wankhede Stadium: toss winners who elected to **bowl** won 55% of those 95 matches across 15 IPL seasons.",
+    "detail": "Toss-elect outcomes at Wankhede Stadium across 124 IPL matches (2007/08–2025): elect to field → 55% win rate (52/95); elect to bat → 45% win rate (13/29). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 124
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "95 matches · 55%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "29 matches · 45%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 15
+      }
+    ],
+    "tag": "Wankhede Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-eden-gardens",
+    "kind": "toss-decision",
+    "tease": "At Eden Gardens, the captain who won the toss and chose to bowl has held an edge across 15 IPL seasons — not just this year.",
+    "bigStat": "57% when elect to bowl",
+    "hook": "Eden Gardens: toss winners who elected to **bowl** won 57% of those 67 matches across 15 IPL seasons.",
+    "detail": "Toss-elect outcomes at Eden Gardens across 99 IPL matches (2007/08–2025): elect to field → 57% win rate (38/67); elect to bat → 41% win rate (13/32). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 99
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "67 matches · 57%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "32 matches · 41%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 15
+      }
+    ],
+    "tag": "Eden Gardens · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-m-chinnaswamy-stadium",
+    "kind": "toss-decision",
+    "tease": "At M Chinnaswamy Stadium, the captain who won the toss and chose to bowl has held an edge across 12 IPL seasons — not just this year.",
+    "bigStat": "55% when elect to bowl",
+    "hook": "M Chinnaswamy Stadium: toss winners who elected to **bowl** won 55% of those 73 matches across 12 IPL seasons.",
+    "detail": "Toss-elect outcomes at M Chinnaswamy Stadium across 81 IPL matches (2007/08–2025): elect to field → 55% win rate (40/73); elect to bat → 38% win rate (3/8). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 81
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "73 matches · 55%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "8 matches · 38%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 12
+      }
+    ],
+    "tag": "M Chinnaswamy Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-arun-jaitley-stadium",
+    "kind": "toss-decision",
+    "tease": "At Arun Jaitley Stadium, the captain who won the toss and chose to bowl has held an edge across 15 IPL seasons — not just this year.",
+    "bigStat": "52% when elect to bowl",
+    "hook": "Arun Jaitley Stadium: toss winners who elected to **bowl** won 52% of those 58 matches across 15 IPL seasons.",
+    "detail": "Toss-elect outcomes at Arun Jaitley Stadium across 94 IPL matches (2007/08–2025): elect to field → 52% win rate (30/58); elect to bat → 50% win rate (18/36). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 94
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "58 matches · 52%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "36 matches · 50%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 15
+      }
+    ],
+    "tag": "Arun Jaitley Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-punjab-cricket-association-is-bindra-stadium-mohali",
+    "kind": "toss-decision",
+    "tease": "At Punjab Cricket Association IS Bindra Stadium, Mohali, the captain who won the toss and chose to bowl has held an edge across 2 IPL seasons — not just this year.",
+    "bigStat": "44% when elect to bowl",
+    "hook": "Punjab Cricket Association IS Bindra Stadium, Mohali: toss winners who elected to **bowl** won 44% of those 9 matches across 2 IPL seasons.",
+    "detail": "Toss-elect outcomes at Punjab Cricket Association IS Bindra Stadium, Mohali across 11 IPL matches (2007/08–2025): elect to field → 44% win rate (4/9); elect to bat → 0% win rate (0/2). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 11
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "9 matches · 44%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "2 matches · 0%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 2
+      }
+    ],
+    "tag": "Punjab Cricket Association IS Bindra Stadium, Mohali · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
+    "kind": "toss-decision",
+    "tease": "At Maharaja Yadavindra Singh International Cricket Stadium, the captain who won the toss and chose to bowl has held an edge across 11 IPL seasons — not just this year.",
+    "bigStat": "57% when elect to bowl",
+    "hook": "Maharaja Yadavindra Singh International Cricket Stadium: toss winners who elected to **bowl** won 57% of those 37 matches across 11 IPL seasons.",
+    "detail": "Toss-elect outcomes at Maharaja Yadavindra Singh International Cricket Stadium across 56 IPL matches (2007/08–2025): elect to field → 57% win rate (21/37); elect to bat → 47% win rate (9/19). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 56
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "37 matches · 57%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "19 matches · 47%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 11
+      }
+    ],
+    "tag": "Maharaja Yadavindra Singh International Cricket Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-ma-chidambaram-stadium",
+    "kind": "toss-decision",
+    "tease": "At MA Chidambaram Stadium, the captain who won the toss and chose to bat has held an edge across 12 IPL seasons — not just this year.",
+    "bigStat": "56% when elect to bat",
+    "hook": "MA Chidambaram Stadium: toss winners who elected to **bat** won 56% of those 48 matches across 12 IPL seasons.",
+    "detail": "Toss-elect outcomes at MA Chidambaram Stadium across 89 IPL matches (2007/08–2025): elect to field → 46% win rate (19/41); elect to bat → 56% win rate (27/48). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 89
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "41 matches · 46%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "48 matches · 56%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 12
+      }
+    ],
+    "tag": "MA Chidambaram Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-sawai-mansingh-stadium",
+    "kind": "toss-decision",
+    "tease": "At Sawai Mansingh Stadium, the captain who won the toss and chose to bowl has held an edge across 10 IPL seasons — not just this year.",
+    "bigStat": "68% when elect to bowl",
+    "hook": "Sawai Mansingh Stadium: toss winners who elected to **bowl** won 68% of those 37 matches across 10 IPL seasons.",
+    "detail": "Toss-elect outcomes at Sawai Mansingh Stadium across 64 IPL matches (2007/08–2025): elect to field → 68% win rate (25/37); elect to bat → 41% win rate (11/27). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 64
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "37 matches · 68%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "27 matches · 41%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 10
+      }
+    ],
+    "tag": "Sawai Mansingh Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-dr-ys-rajasekhara-reddy-aca-vdca-cricket-stadium",
+    "kind": "toss-decision",
+    "tease": "At Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, the captain who won the toss and chose to bowl has held an edge across 6 IPL seasons — not just this year.",
+    "bigStat": "56% when elect to bowl",
+    "hook": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium: toss winners who elected to **bowl** won 56% of those 9 matches across 6 IPL seasons.",
+    "detail": "Toss-elect outcomes at Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium across 17 IPL matches (2007/08–2025): elect to field → 56% win rate (5/9); elect to bat → 50% win rate (4/8). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "9 matches · 56%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "8 matches · 50%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 6
+      }
+    ],
+    "tag": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-sheikh-zayed-stadium",
+    "kind": "toss-decision",
+    "tease": "At Sheikh Zayed Stadium, the captain who won the toss and chose to bowl has held an edge across 2 IPL seasons — not just this year.",
+    "bigStat": "62% when elect to bowl",
+    "hook": "Sheikh Zayed Stadium: toss winners who elected to **bowl** won 62% of those 13 matches across 2 IPL seasons.",
+    "detail": "Toss-elect outcomes at Sheikh Zayed Stadium across 27 IPL matches (2007/08–2025): elect to field → 62% win rate (8/13); elect to bat → 43% win rate (6/14). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 27
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "13 matches · 62%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "14 matches · 43%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 2
+      }
+    ],
+    "tag": "Sheikh Zayed Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-sharjah-cricket-stadium",
+    "kind": "toss-decision",
+    "tease": "At Sharjah Cricket Stadium, the captain who won the toss and chose to bowl has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "65% when elect to bowl",
+    "hook": "Sharjah Cricket Stadium: toss winners who elected to **bowl** won 65% of those 20 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at Sharjah Cricket Stadium across 28 IPL matches (2007/08–2025): elect to field → 65% win rate (13/20); elect to bat → 38% win rate (3/8). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 28
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "20 matches · 65%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "8 matches · 38%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "Sharjah Cricket Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-dubai-international-cricket-stadium",
+    "kind": "toss-decision",
+    "tease": "At Dubai International Cricket Stadium, the captain who won the toss and chose to bowl has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "44% when elect to bowl",
+    "hook": "Dubai International Cricket Stadium: toss winners who elected to **bowl** won 44% of those 25 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at Dubai International Cricket Stadium across 43 IPL matches (2007/08–2025): elect to field → 44% win rate (11/25); elect to bat → 39% win rate (7/18). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 43
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "25 matches · 44%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "18 matches · 39%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "Dubai International Cricket Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-narendra-modi-stadium",
+    "kind": "toss-decision",
+    "tease": "At Narendra Modi Stadium, the captain who won the toss and chose to bowl has held an edge across 8 IPL seasons — not just this year.",
+    "bigStat": "47% when elect to bowl",
+    "hook": "Narendra Modi Stadium: toss winners who elected to **bowl** won 47% of those 32 matches across 8 IPL seasons.",
+    "detail": "Toss-elect outcomes at Narendra Modi Stadium across 44 IPL matches (2007/08–2025): elect to field → 47% win rate (15/32); elect to bat → 42% win rate (5/12). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 44
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "32 matches · 47%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "12 matches · 42%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 8
+      }
+    ],
+    "tag": "Narendra Modi Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-brabourne-stadium-mumbai",
+    "kind": "toss-decision",
+    "tease": "At Brabourne Stadium, Mumbai, the captain who won the toss and chose to bowl has held an edge across 2 IPL seasons — not just this year.",
+    "bigStat": "50% when elect to bowl",
+    "hook": "Brabourne Stadium, Mumbai: toss winners who elected to **bowl** won 50% of those 14 matches across 2 IPL seasons.",
+    "detail": "Toss-elect outcomes at Brabourne Stadium, Mumbai across 17 IPL matches (2007/08–2025): elect to field → 50% win rate (7/14); elect to bat → 33% win rate (1/3). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "14 matches · 50%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "3 matches · 33%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 2
+      }
+    ],
+    "tag": "Brabourne Stadium, Mumbai · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-dr-dy-patil-sports-academy-mumbai",
+    "kind": "toss-decision",
+    "tease": "At Dr DY Patil Sports Academy, Mumbai, the captain who won the toss and chose to bat has held an edge across 1 IPL seasons — not just this year.",
+    "bigStat": "67% when elect to bat",
+    "hook": "Dr DY Patil Sports Academy, Mumbai: toss winners who elected to **bat** won 67% of those 3 matches across 1 IPL seasons.",
+    "detail": "Toss-elect outcomes at Dr DY Patil Sports Academy, Mumbai across 20 IPL matches (2007/08–2025): elect to field → 53% win rate (9/17); elect to bat → 67% win rate (2/3). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 20
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "17 matches · 53%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "3 matches · 67%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 1
+      }
+    ],
+    "tag": "Dr DY Patil Sports Academy, Mumbai · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-maharashtra-cricket-association-stadium-pune",
+    "kind": "toss-decision",
+    "tease": "At Maharashtra Cricket Association Stadium, Pune, the captain who won the toss and chose to bat has held an edge across 1 IPL seasons — not just this year.",
+    "bigStat": "100% when elect to bat",
+    "hook": "Maharashtra Cricket Association Stadium, Pune: toss winners who elected to **bat** won 100% of those 2 matches across 1 IPL seasons.",
+    "detail": "Toss-elect outcomes at Maharashtra Cricket Association Stadium, Pune across 13 IPL matches (2007/08–2025): elect to field → 27% win rate (3/11); elect to bat → 100% win rate (2/2). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 13
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "11 matches · 27%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "2 matches · 100%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 1
+      }
+    ],
+    "tag": "Maharashtra Cricket Association Stadium, Pune · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
+    "kind": "toss-decision",
+    "tease": "At BRSABV Ekana Cricket Stadium, the captain who won the toss and chose to bat has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "67% when elect to bat",
+    "hook": "BRSABV Ekana Cricket Stadium: toss winners who elected to **bat** won 67% of those 6 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at BRSABV Ekana Cricket Stadium across 21 IPL matches (2007/08–2025): elect to field → 67% win rate (10/15); elect to bat → 67% win rate (4/6). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 21
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "15 matches · 67%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "6 matches · 67%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "BRSABV Ekana Cricket Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-himachal-pradesh-cricket-association-stadium",
+    "kind": "toss-decision",
+    "tease": "At Himachal Pradesh Cricket Association Stadium, the captain who won the toss and chose to bat has held an edge across 7 IPL seasons — not just this year.",
+    "bigStat": "100% when elect to bat",
+    "hook": "Himachal Pradesh Cricket Association Stadium: toss winners who elected to **bat** won 100% of those 1 matches across 7 IPL seasons.",
+    "detail": "Toss-elect outcomes at Himachal Pradesh Cricket Association Stadium across 14 IPL matches (2007/08–2025): elect to field → 38% win rate (5/13); elect to bat → 100% win rate (1/1). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 14
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "13 matches · 38%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "1 matches · 100%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 7
+      }
+    ],
+    "tag": "Himachal Pradesh Cricket Association Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-dr-dy-patil-sports-academy",
+    "kind": "toss-decision",
+    "tease": "At Dr DY Patil Sports Academy, the captain who won the toss and chose to bowl has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "60% when elect to bowl",
+    "hook": "Dr DY Patil Sports Academy: toss winners who elected to **bowl** won 60% of those 10 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at Dr DY Patil Sports Academy across 17 IPL matches (2007/08–2025): elect to field → 60% win rate (6/10); elect to bat → 43% win rate (3/7). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 17
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "10 matches · 60%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "7 matches · 43%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "Dr DY Patil Sports Academy · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-kingsmead",
+    "kind": "toss-decision",
+    "tease": "At Kingsmead, the captain who won the toss and chose to bat has held an edge across 1 IPL seasons — not just this year.",
+    "bigStat": "60% when elect to bat",
+    "hook": "Kingsmead: toss winners who elected to **bat** won 60% of those 10 matches across 1 IPL seasons.",
+    "detail": "Toss-elect outcomes at Kingsmead across 15 IPL matches (2007/08–2025): elect to field → 60% win rate (3/5); elect to bat → 60% win rate (6/10). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 15
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "5 matches · 60%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "10 matches · 60%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 1
+      }
+    ],
+    "tag": "Kingsmead · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-supersport-park",
+    "kind": "toss-decision",
+    "tease": "At SuperSport Park, the captain who won the toss and chose to bowl has held an edge across 1 IPL seasons — not just this year.",
+    "bigStat": "83% when elect to bowl",
+    "hook": "SuperSport Park: toss winners who elected to **bowl** won 83% of those 6 matches across 1 IPL seasons.",
+    "detail": "Toss-elect outcomes at SuperSport Park across 12 IPL matches (2007/08–2025): elect to field → 83% win rate (5/6); elect to bat → 50% win rate (3/6). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 12
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "6 matches · 83%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "6 matches · 50%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 1
+      }
+    ],
+    "tag": "SuperSport Park · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-brabourne-stadium",
+    "kind": "toss-decision",
+    "tease": "At Brabourne Stadium, the captain who won the toss and chose to bat has held an edge across 3 IPL seasons — not just this year.",
+    "bigStat": "67% when elect to bat",
+    "hook": "Brabourne Stadium: toss winners who elected to **bat** won 67% of those 6 matches across 3 IPL seasons.",
+    "detail": "Toss-elect outcomes at Brabourne Stadium across 10 IPL matches (2007/08–2025): elect to field → 50% win rate (2/4); elect to bat → 67% win rate (4/6). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 10
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "4 matches · 50%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "6 matches · 67%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 3
+      }
+    ],
+    "tag": "Brabourne Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-hist-venue-toss-subrata-roy-sahara-stadium",
+    "kind": "toss-decision",
+    "tease": "At Subrata Roy Sahara Stadium, the captain who won the toss and chose to bat has held an edge across 2 IPL seasons — not just this year.",
+    "bigStat": "60% when elect to bat",
+    "hook": "Subrata Roy Sahara Stadium: toss winners who elected to **bat** won 60% of those 15 matches across 2 IPL seasons.",
+    "detail": "Toss-elect outcomes at Subrata Roy Sahara Stadium across 16 IPL matches (2007/08–2025): elect to field → 0% win rate (0/1); elect to bat → 60% win rate (9/15). Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Total IPL matches at venue (2007/08–2025)",
+        "value": 16
+      },
+      {
+        "label": "Elected to field — win rate",
+        "value": "1 matches · 0%"
+      },
+      {
+        "label": "Elected to bat — win rate",
+        "value": "15 matches · 60%"
+      },
+      {
+        "label": "Seasons covered",
+        "value": 2
+      }
+    ],
+    "tag": "Subrata Roy Sahara Stadium · Toss decision"
+  },
+  {
+    "id": "ipl-h2h-rcb-vs-srh",
+    "kind": "conditional",
+    "tease": "Royal Challengers Bangalore vs Sunrisers Hyderabad: 24 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "11–13",
+    "hook": "Royal Challengers Bangalore vs Sunrisers Hyderabad: **11–13** across 24 IPL matches spanning 13 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Royal Challengers Bangalore 11 wins, Sunrisers Hyderabad 13 wins across 24 matches. Spanning 13 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 11
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 13
+      },
+      {
+        "label": "Total meetings",
+        "value": 24
+      },
+      {
+        "label": "Seasons contested",
+        "value": 13
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-rcb",
+    "kind": "conditional",
+    "tease": "Royal Challengers Bangalore have built a 7-match edge over Delhi Capitals across 31 IPL meetings. The history shapes tonight.",
+    "bigStat": "12–19",
+    "hook": "Delhi Capitals vs Royal Challengers Bangalore: **12–19** across 31 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 12 wins, Royal Challengers Bangalore 19 wins across 31 matches. Spanning 18 IPL seasons. Royal Challengers Bangalore lead 19–12. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 12
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-mi",
+    "kind": "conditional",
+    "tease": "Mumbai Indians have built a 13-match edge over Kolkata Knight Riders across 35 IPL meetings. The history shapes tonight.",
+    "bigStat": "11–24",
+    "hook": "Kolkata Knight Riders vs Mumbai Indians: **11–24** across 35 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 11 wins, Mumbai Indians 24 wins across 35 matches. Spanning 18 IPL seasons. Mumbai Indians lead 24–11. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 11
+      },
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 24
+      },
+      {
+        "label": "Total meetings",
+        "value": 35
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-pbks-vs-rcb",
+    "kind": "conditional",
+    "tease": "Punjab Kings vs Royal Challengers Bangalore: 37 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "18–19",
+    "hook": "Punjab Kings vs Royal Challengers Bangalore: **18–19** across 37 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Punjab Kings 18 wins, Royal Challengers Bangalore 19 wins across 37 matches. Spanning 18 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 18
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Total meetings",
+        "value": 37
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-mi-vs-srh",
+    "kind": "conditional",
+    "tease": "Mumbai Indians have built a 4-match edge over Sunrisers Hyderabad across 24 IPL meetings. The history shapes tonight.",
+    "bigStat": "14–10",
+    "hook": "Mumbai Indians vs Sunrisers Hyderabad: **14–10** across 24 IPL matches spanning 13 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Mumbai Indians 14 wins, Sunrisers Hyderabad 10 wins across 24 matches. Spanning 13 IPL seasons. Mumbai Indians lead 14–10. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 10
+      },
+      {
+        "label": "Total meetings",
+        "value": 24
+      },
+      {
+        "label": "Seasons contested",
+        "value": 13
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-pbks",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders have built a 8-match edge over Punjab Kings across 34 IPL meetings. The history shapes tonight.",
+    "bigStat": "21–13",
+    "hook": "Kolkata Knight Riders vs Punjab Kings: **21–13** across 34 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 21 wins, Punjab Kings 13 wins across 34 matches. Spanning 18 IPL seasons. Kolkata Knight Riders lead 21–13. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 21
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 13
+      },
+      {
+        "label": "Total meetings",
+        "value": 34
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-mi-vs-rcb",
+    "kind": "conditional",
+    "tease": "Mumbai Indians have built a 5-match edge over Royal Challengers Bangalore across 33 IPL meetings. The history shapes tonight.",
+    "bigStat": "19–14",
+    "hook": "Mumbai Indians vs Royal Challengers Bangalore: **19–14** across 33 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Mumbai Indians 19 wins, Royal Challengers Bangalore 14 wins across 33 matches. Spanning 18 IPL seasons. Mumbai Indians lead 19–14. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Total meetings",
+        "value": 33
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-srh",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders have built a 9-match edge over Sunrisers Hyderabad across 29 IPL meetings. The history shapes tonight.",
+    "bigStat": "19–10",
+    "hook": "Kolkata Knight Riders vs Sunrisers Hyderabad: **19–10** across 29 IPL matches spanning 13 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 19 wins, Sunrisers Hyderabad 10 wins across 29 matches. Spanning 13 IPL seasons. Kolkata Knight Riders lead 19–10. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 10
+      },
+      {
+        "label": "Total meetings",
+        "value": 29
+      },
+      {
+        "label": "Seasons contested",
+        "value": 13
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-pbks",
+    "kind": "conditional",
+    "tease": "Delhi Capitals vs Punjab Kings: 33 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "16–17",
+    "hook": "Delhi Capitals vs Punjab Kings: **16–17** across 33 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 16 wins, Punjab Kings 17 wins across 33 matches. Spanning 18 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 17
+      },
+      {
+        "label": "Total meetings",
+        "value": 33
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-kkr",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders have built a 5-match edge over Delhi Capitals across 33 IPL meetings. The history shapes tonight.",
+    "bigStat": "14–19",
+    "hook": "Delhi Capitals vs Kolkata Knight Riders: **14–19** across 33 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 14 wins, Kolkata Knight Riders 19 wins across 33 matches. Spanning 18 IPL seasons. Kolkata Knight Riders lead 19–14. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Total meetings",
+        "value": 33
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-pbks-vs-srh",
+    "kind": "conditional",
+    "tease": "Sunrisers Hyderabad have built a 10-match edge over Punjab Kings across 24 IPL meetings. The history shapes tonight.",
+    "bigStat": "7–17",
+    "hook": "Punjab Kings vs Sunrisers Hyderabad: **7–17** across 24 IPL matches spanning 13 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Punjab Kings 7 wins, Sunrisers Hyderabad 17 wins across 24 matches. Spanning 13 IPL seasons. Sunrisers Hyderabad lead 17–7. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 7
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 17
+      },
+      {
+        "label": "Total meetings",
+        "value": 24
+      },
+      {
+        "label": "Seasons contested",
+        "value": 13
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-srh",
+    "kind": "conditional",
+    "tease": "Delhi Capitals vs Sunrisers Hyderabad: 24 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "11–13",
+    "hook": "Delhi Capitals vs Sunrisers Hyderabad: **11–13** across 24 IPL matches spanning 13 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 11 wins, Sunrisers Hyderabad 13 wins across 24 matches. Spanning 13 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 11
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 13
+      },
+      {
+        "label": "Total meetings",
+        "value": 24
+      },
+      {
+        "label": "Seasons contested",
+        "value": 13
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-mi-vs-pbks",
+    "kind": "conditional",
+    "tease": "Mumbai Indians vs Punjab Kings: 33 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "17–16",
+    "hook": "Mumbai Indians vs Punjab Kings: **17–16** across 33 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Mumbai Indians 17 wins, Punjab Kings 16 wins across 33 matches. Spanning 18 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 17
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Total meetings",
+        "value": 33
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-mi",
+    "kind": "conditional",
+    "tease": "Mumbai Indians have built a 5-match edge over Delhi Capitals across 37 IPL meetings. The history shapes tonight.",
+    "bigStat": "16–21",
+    "hook": "Delhi Capitals vs Mumbai Indians: **16–21** across 37 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 16 wins, Mumbai Indians 21 wins across 37 matches. Spanning 18 IPL seasons. Mumbai Indians lead 21–16. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 21
+      },
+      {
+        "label": "Total meetings",
+        "value": 37
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-rcb",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders have built a 5-match edge over Royal Challengers Bangalore across 35 IPL meetings. The history shapes tonight.",
+    "bigStat": "20–15",
+    "hook": "Kolkata Knight Riders vs Royal Challengers Bangalore: **20–15** across 35 IPL matches spanning 18 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 20 wins, Royal Challengers Bangalore 15 wins across 35 matches. Spanning 18 IPL seasons. Kolkata Knight Riders lead 20–15. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 20
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 15
+      },
+      {
+        "label": "Total meetings",
+        "value": 35
+      },
+      {
+        "label": "Seasons contested",
+        "value": 18
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-mi",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings vs Mumbai Indians: 39 IPL meetings, just 3 wins between them. The tightest rivalry the data has.",
+    "bigStat": "18–21",
+    "hook": "Chennai Super Kings vs Mumbai Indians: **18–21** across 39 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 18 wins, Mumbai Indians 21 wins across 39 matches. Spanning 16 IPL seasons. With just 3 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 18
+      },
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 21
+      },
+      {
+        "label": "Total meetings",
+        "value": 39
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-rr-vs-srh",
+    "kind": "conditional",
+    "tease": "Rajasthan Royals vs Sunrisers Hyderabad: 21 IPL meetings, just 3 wins between them. The tightest rivalry the data has.",
+    "bigStat": "9–12",
+    "hook": "Rajasthan Royals vs Sunrisers Hyderabad: **9–12** across 21 IPL matches spanning 11 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Rajasthan Royals 9 wins, Sunrisers Hyderabad 12 wins across 21 matches. Spanning 11 IPL seasons. With just 3 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 9
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 12
+      },
+      {
+        "label": "Total meetings",
+        "value": 21
+      },
+      {
+        "label": "Seasons contested",
+        "value": 11
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-kkr",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings have built a 9-match edge over Kolkata Knight Riders across 31 IPL meetings. The history shapes tonight.",
+    "bigStat": "20–11",
+    "hook": "Chennai Super Kings vs Kolkata Knight Riders: **20–11** across 31 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 20 wins, Kolkata Knight Riders 11 wins across 31 matches. Spanning 16 IPL seasons. Chennai Super Kings lead 20–11. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 20
+      },
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 11
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-rr",
+    "kind": "conditional",
+    "tease": "Delhi Capitals vs Rajasthan Royals: 29 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "14–15",
+    "hook": "Delhi Capitals vs Rajasthan Royals: **14–15** across 29 IPL matches spanning 15 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 14 wins, Rajasthan Royals 15 wins across 29 matches. Spanning 15 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 15
+      },
+      {
+        "label": "Total meetings",
+        "value": 29
+      },
+      {
+        "label": "Seasons contested",
+        "value": 15
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-rcb-vs-rr",
+    "kind": "conditional",
+    "tease": "Royal Challengers Bangalore vs Rajasthan Royals: 31 IPL meetings, just 3 wins between them. The tightest rivalry the data has.",
+    "bigStat": "17–14",
+    "hook": "Royal Challengers Bangalore vs Rajasthan Royals: **17–14** across 31 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Royal Challengers Bangalore 17 wins, Rajasthan Royals 14 wins across 31 matches. Spanning 16 IPL seasons. With just 3 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 17
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-pbks",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings vs Punjab Kings: 31 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "16–15",
+    "hook": "Chennai Super Kings vs Punjab Kings: **16–15** across 31 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 16 wins, Punjab Kings 15 wins across 31 matches. Spanning 16 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 15
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-rr",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders have built a 4-match edge over Rajasthan Royals across 28 IPL meetings. The history shapes tonight.",
+    "bigStat": "16–12",
+    "hook": "Kolkata Knight Riders vs Rajasthan Royals: **16–12** across 28 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 16 wins, Rajasthan Royals 12 wins across 28 matches. Spanning 16 IPL seasons. Kolkata Knight Riders lead 16–12. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 12
+      },
+      {
+        "label": "Total meetings",
+        "value": 28
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-rr",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings vs Rajasthan Royals: 31 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "16–15",
+    "hook": "Chennai Super Kings vs Rajasthan Royals: **16–15** across 31 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 16 wins, Rajasthan Royals 15 wins across 31 matches. Spanning 16 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 15
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-srh",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings have built a 8-match edge over Sunrisers Hyderabad across 22 IPL meetings. The history shapes tonight.",
+    "bigStat": "15–7",
+    "hook": "Chennai Super Kings vs Sunrisers Hyderabad: **15–7** across 22 IPL matches spanning 11 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 15 wins, Sunrisers Hyderabad 7 wins across 22 matches. Spanning 11 IPL seasons. Chennai Super Kings lead 15–7. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 15
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 7
+      },
+      {
+        "label": "Total meetings",
+        "value": 22
+      },
+      {
+        "label": "Seasons contested",
+        "value": 11
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-mi-vs-rr",
+    "kind": "conditional",
+    "tease": "Mumbai Indians vs Rajasthan Royals: 30 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "16–14",
+    "hook": "Mumbai Indians vs Rajasthan Royals: **16–14** across 30 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Mumbai Indians 16 wins, Rajasthan Royals 14 wins across 30 matches. Spanning 16 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 16
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 14
+      },
+      {
+        "label": "Total meetings",
+        "value": 30
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-rcb",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings have built a 8-match edge over Royal Challengers Bangalore across 34 IPL meetings. The history shapes tonight.",
+    "bigStat": "21–13",
+    "hook": "Chennai Super Kings vs Royal Challengers Bangalore: **21–13** across 34 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 21 wins, Royal Challengers Bangalore 13 wins across 34 matches. Spanning 16 IPL seasons. Chennai Super Kings lead 21–13. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 21
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 13
+      },
+      {
+        "label": "Total meetings",
+        "value": 34
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-dc",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings have built a 7-match edge over Delhi Capitals across 31 IPL meetings. The history shapes tonight.",
+    "bigStat": "19–12",
+    "hook": "Chennai Super Kings vs Delhi Capitals: **19–12** across 31 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 19 wins, Delhi Capitals 12 wins across 31 matches. Spanning 16 IPL seasons. Chennai Super Kings lead 19–12. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 19
+      },
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 12
+      },
+      {
+        "label": "Total meetings",
+        "value": 31
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-pbks-vs-rr",
+    "kind": "conditional",
+    "tease": "Rajasthan Royals have built a 5-match edge over Punjab Kings across 29 IPL meetings. The history shapes tonight.",
+    "bigStat": "12–17",
+    "hook": "Punjab Kings vs Rajasthan Royals: **12–17** across 29 IPL matches spanning 16 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Punjab Kings 12 wins, Rajasthan Royals 17 wins across 29 matches. Spanning 16 IPL seasons. Rajasthan Royals lead 17–12. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 12
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 17
+      },
+      {
+        "label": "Total meetings",
+        "value": 29
+      },
+      {
+        "label": "Seasons contested",
+        "value": 16
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-lsg",
+    "kind": "conditional",
+    "tease": "Gujarat Titans vs Lucknow Super Giants: 7 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "4–3",
+    "hook": "Gujarat Titans vs Lucknow Super Giants: **4–3** across 7 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 4 wins, Lucknow Super Giants 3 wins across 7 matches. Spanning 4 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 7
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-lsg",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings vs Lucknow Super Giants: 5 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "2–3",
+    "hook": "Chennai Super Kings vs Lucknow Super Giants: **2–3** across 5 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 2 wins, Lucknow Super Giants 3 wins across 5 matches. Spanning 4 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 5
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-gt",
+    "kind": "conditional",
+    "tease": "Delhi Capitals vs Gujarat Titans: 7 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "3–4",
+    "hook": "Delhi Capitals vs Gujarat Titans: **3–4** across 7 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 3 wins, Gujarat Titans 4 wins across 7 matches. Spanning 4 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Total meetings",
+        "value": 7
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-lsg-vs-srh",
+    "kind": "conditional",
+    "tease": "Lucknow Super Giants vs Sunrisers Hyderabad: 6 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "4–2",
+    "hook": "Lucknow Super Giants vs Sunrisers Hyderabad: **4–2** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Lucknow Super Giants 4 wins, Sunrisers Hyderabad 2 wins across 6 matches. Spanning 4 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-dc-vs-lsg",
+    "kind": "conditional",
+    "tease": "Delhi Capitals vs Lucknow Super Giants: 7 IPL meetings, just 1 win between them. The tightest rivalry the data has.",
+    "bigStat": "4–3",
+    "hook": "Delhi Capitals vs Lucknow Super Giants: **4–3** across 7 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Delhi Capitals 4 wins, Lucknow Super Giants 3 wins across 7 matches. Spanning 4 IPL seasons. With just 1 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Delhi Capitals all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 7
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-pbks",
+    "kind": "conditional",
+    "tease": "Gujarat Titans vs Punjab Kings: 6 IPL meetings, just 0 wins between them. The tightest rivalry the data has.",
+    "bigStat": "3–3",
+    "hook": "Gujarat Titans vs Punjab Kings: **3–3** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 3 wins, Punjab Kings 3 wins across 6 matches. Spanning 4 IPL seasons. With just 0 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-lsg-vs-rr",
+    "kind": "conditional",
+    "tease": "Lucknow Super Giants vs Rajasthan Royals: 6 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "2–4",
+    "hook": "Lucknow Super Giants vs Rajasthan Royals: **2–4** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Lucknow Super Giants 2 wins, Rajasthan Royals 4 wins across 6 matches. Spanning 4 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-srh",
+    "kind": "conditional",
+    "tease": "Gujarat Titans have built a 4-match edge over Sunrisers Hyderabad across 6 IPL meetings. The history shapes tonight.",
+    "bigStat": "5–1",
+    "hook": "Gujarat Titans vs Sunrisers Hyderabad: **5–1** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 5 wins, Sunrisers Hyderabad 1 wins across 6 matches. Spanning 4 IPL seasons. Gujarat Titans lead 5–1. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 5
+      },
+      {
+        "label": "Sunrisers Hyderabad all-time wins",
+        "value": 1
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-rr",
+    "kind": "conditional",
+    "tease": "Gujarat Titans have built a 4-match edge over Rajasthan Royals across 8 IPL meetings. The history shapes tonight.",
+    "bigStat": "6–2",
+    "hook": "Gujarat Titans vs Rajasthan Royals: **6–2** across 8 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 6 wins, Rajasthan Royals 2 wins across 8 matches. Spanning 4 IPL seasons. Gujarat Titans lead 6–2. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 6
+      },
+      {
+        "label": "Rajasthan Royals all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Total meetings",
+        "value": 8
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-lsg-vs-mi",
+    "kind": "conditional",
+    "tease": "Lucknow Super Giants have built a 4-match edge over Mumbai Indians across 8 IPL meetings. The history shapes tonight.",
+    "bigStat": "6–2",
+    "hook": "Lucknow Super Giants vs Mumbai Indians: **6–2** across 8 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Lucknow Super Giants 6 wins, Mumbai Indians 2 wins across 8 matches. Spanning 4 IPL seasons. Lucknow Super Giants lead 6–2. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 6
+      },
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Total meetings",
+        "value": 8
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-csk-vs-gt",
+    "kind": "conditional",
+    "tease": "Chennai Super Kings vs Gujarat Titans: 8 IPL meetings, just 0 wins between them. The tightest rivalry the data has.",
+    "bigStat": "4–4",
+    "hook": "Chennai Super Kings vs Gujarat Titans: **4–4** across 8 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Chennai Super Kings 4 wins, Gujarat Titans 4 wins across 8 matches. Spanning 4 IPL seasons. With just 0 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Chennai Super Kings all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Total meetings",
+        "value": 8
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-lsg-vs-rcb",
+    "kind": "conditional",
+    "tease": "Lucknow Super Giants vs Royal Challengers Bangalore: 6 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "2–4",
+    "hook": "Lucknow Super Giants vs Royal Challengers Bangalore: **2–4** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Lucknow Super Giants 2 wins, Royal Challengers Bangalore 4 wins across 6 matches. Spanning 4 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-lsg-vs-pbks",
+    "kind": "conditional",
+    "tease": "Lucknow Super Giants vs Punjab Kings: 6 IPL meetings, just 0 wins between them. The tightest rivalry the data has.",
+    "bigStat": "3–3",
+    "hook": "Lucknow Super Giants vs Punjab Kings: **3–3** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Lucknow Super Giants 3 wins, Punjab Kings 3 wins across 6 matches. Spanning 4 IPL seasons. With just 0 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Punjab Kings all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-rcb",
+    "kind": "conditional",
+    "tease": "Gujarat Titans vs Royal Challengers Bangalore: 6 IPL meetings, just 0 wins between them. The tightest rivalry the data has.",
+    "bigStat": "3–3",
+    "hook": "Gujarat Titans vs Royal Challengers Bangalore: **3–3** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 3 wins, Royal Challengers Bangalore 3 wins across 6 matches. Spanning 4 IPL seasons. With just 0 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Royal Challengers Bangalore all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-gt-vs-mi",
+    "kind": "conditional",
+    "tease": "Gujarat Titans vs Mumbai Indians: 8 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "5–3",
+    "hook": "Gujarat Titans vs Mumbai Indians: **5–3** across 8 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Gujarat Titans 5 wins, Mumbai Indians 3 wins across 8 matches. Spanning 4 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Gujarat Titans all-time wins",
+        "value": 5
+      },
+      {
+        "label": "Mumbai Indians all-time wins",
+        "value": 3
+      },
+      {
+        "label": "Total meetings",
+        "value": 8
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
+  },
+  {
+    "id": "ipl-h2h-kkr-vs-lsg",
+    "kind": "conditional",
+    "tease": "Kolkata Knight Riders vs Lucknow Super Giants: 6 IPL meetings, just 2 wins between them. The tightest rivalry the data has.",
+    "bigStat": "2–4",
+    "hook": "Kolkata Knight Riders vs Lucknow Super Giants: **2–4** across 6 IPL matches spanning 4 seasons (2007/08–2025).",
+    "detail": "All-time IPL head-to-head: Kolkata Knight Riders 2 wins, Lucknow Super Giants 4 wins across 6 matches. Spanning 4 IPL seasons. With just 2 matches separating them, every meeting shifts the balance. Source: Cricsheet CC BY 3.0.",
+    "numbers": [
+      {
+        "label": "Kolkata Knight Riders all-time wins",
+        "value": 2
+      },
+      {
+        "label": "Lucknow Super Giants all-time wins",
+        "value": 4
+      },
+      {
+        "label": "Total meetings",
+        "value": 6
+      },
+      {
+        "label": "Seasons contested",
+        "value": 4
+      }
+    ],
+    "tag": "H2H · IPL all-time"
   }
 ]

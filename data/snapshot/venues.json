@@ -1,5 +1,104 @@
 [
   {
+    "slug": "m-chinnaswamy-stadium-bengaluru",
+    "name": "M Chinnaswamy Stadium, Bengaluru",
+    "city": "Bengaluru",
+    "matchCount": 19
+  },
+  {
+    "slug": "kotambi-stadium-vadodara",
+    "name": "Kotambi Stadium, Vadodara",
+    "city": "Vadodara",
+    "matchCount": 17
+  },
+  {
+    "slug": "arun-jaitley-stadium-delhi",
+    "name": "Arun Jaitley Stadium, Delhi",
+    "city": "Delhi",
+    "matchCount": 16
+  },
+  {
+    "slug": "brabourne-stadium-mumbai",
+    "name": "Brabourne Stadium, Mumbai",
+    "city": "Mumbai",
+    "matchCount": 15
+  },
+  {
+    "slug": "zahur-ahmed-chowdhury-stadium",
+    "name": "Zahur Ahmed Chowdhury Stadium",
+    "city": "Chittagong",
+    "matchCount": 13
+  },
+  {
+    "slug": "shere-bangla-national-stadium",
+    "name": "Shere Bangla National Stadium",
+    "city": "Mirpur",
+    "matchCount": 13
+  },
+  {
+    "slug": "zayed-cricket-stadium-abu-dhabi",
+    "name": "Zayed Cricket Stadium, Abu Dhabi",
+    "city": "Abu Dhabi",
+    "matchCount": 12
+  },
+  {
+    "slug": "dubai-international-cricket-stadium",
+    "name": "Dubai International Cricket Stadium",
+    "city": "Dubai",
+    "matchCount": 12
+  },
+  {
+    "slug": "dr-dy-patil-sports-academy-mumbai",
+    "name": "Dr DY Patil Sports Academy, Mumbai",
+    "city": "Navi Mumbai",
+    "matchCount": 11
+  },
+  {
+    "slug": "dr-dy-patil-sports-academy-navi-mumbai",
+    "name": "Dr DY Patil Sports Academy, Navi Mumbai",
+    "city": "Navi Mumbai",
+    "matchCount": 11
+  },
+  {
+    "slug": "wankhede-stadium",
+    "name": "Wankhede Stadium",
+    "city": "Mumbai",
+    "matchCount": 10,
+    "geo": {
+      "latitude": 18.9388,
+      "longitude": 72.8259,
+      "wikidataQid": "Q1067595"
+    }
+  },
+  {
+    "slug": "eden-gardens",
+    "name": "Eden Gardens",
+    "city": "Kolkata",
+    "matchCount": 10,
+    "geo": {
+      "latitude": 22.5645,
+      "longitude": 88.3433,
+      "wikidataQid": "Q582510"
+    }
+  },
+  {
+    "slug": "himachal-pradesh-cricket-association-stadium",
+    "name": "Himachal Pradesh Cricket Association Stadium",
+    "city": "Dharamsala",
+    "matchCount": 10,
+    "geo": {
+      "latitude": 32.2393,
+      "longitude": 76.3186,
+      "wikidataQid": "Q5762830"
+    }
+  },
+  {
+    "slug": "sharjah-cricket-stadium",
+    "name": "Sharjah Cricket Stadium",
+    "city": "Sharjah",
+    "matchCount": 10
+  },
+  {
     "slug": "narendra-modi-stadium",
     "name": "Narendra Modi Stadium",
     "city": "Ahmedabad",
@@ -11,15 +110,45 @@
     }
   },
   {
-    "slug": "wankhede-stadium",
-    "name": "Wankhede Stadium",
-    "city": "Mumbai",
-    "matchCount": 7,
+    "slug": "bellerive-oval-hobart",
+    "name": "Bellerive Oval, Hobart",
+    "city": "Hobart",
+    "matchCount": 9
+  },
+  {
+    "slug": "m-chinnaswamy-stadium",
+    "name": "M.Chinnaswamy Stadium",
+    "city": "Bengaluru",
+    "matchCount": 8,
     "geo": {
-      "latitude": 18.9388,
-      "longitude": 72.8259,
-      "wikidataQid": "Q1067595"
+      "latitude": 12.9789,
+      "longitude": 77.5993,
+      "wikidataQid": "Q1135028"
     }
+  },
+  {
+    "slug": "kensington-oval-bridgetown-barbados",
+    "name": "Kensington Oval, Bridgetown, Barbados",
+    "city": "Bridgetown",
+    "matchCount": 8
+  },
+  {
+    "slug": "nassau-county-international-cricket-stadium-new-york",
+    "name": "Nassau County International Cricket Stadium, New York",
+    "city": "New York",
+    "matchCount": 8
+  },
+  {
+    "slug": "sir-vivian-richards-stadium-north-sound-antigua",
+    "name": "Sir Vivian Richards Stadium, North Sound, Antigua",
+    "city": "North Sound",
+    "matchCount": 8
+  },
+  {
+    "slug": "wankhede-stadium-mumbai",
+    "name": "Wankhede Stadium, Mumbai",
+    "city": "Mumbai",
+    "matchCount": 8
   },
   {
     "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
@@ -55,6 +184,24 @@
     }
   },
   {
+    "slug": "sydney-cricket-ground",
+    "name": "Sydney Cricket Ground",
+    "city": "Sydney",
+    "matchCount": 7
+  },
+  {
+    "slug": "eden-gardens-kolkata",
+    "name": "Eden Gardens, Kolkata",
+    "city": "Kolkata",
+    "matchCount": 7
+  },
+  {
+    "slug": "r-premadasa-stadium-colombo",
+    "name": "R Premadasa Stadium, Colombo",
+    "city": "Colombo",
+    "matchCount": 7
+  },
+  {
     "slug": "maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
     "name": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
     "city": "Chandigarh",
@@ -62,17 +209,6 @@
     "geo": {
       "latitude": 30.776,
       "longitude": 76.7012
-    }
-  },
-  {
-    "slug": "eden-gardens",
-    "name": "Eden Gardens",
-    "city": "Kolkata",
-    "matchCount": 6,
-    "geo": {
-      "latitude": 22.5645,
-      "longitude": 88.3433,
-      "wikidataQid": "Q582510"
     }
   },
   {
@@ -87,15 +223,57 @@
     }
   },
   {
-    "slug": "m-chinnaswamy-stadium",
-    "name": "M.Chinnaswamy Stadium",
-    "city": "Bengaluru",
-    "matchCount": 5,
-    "geo": {
-      "latitude": 12.9789,
-      "longitude": 77.5993,
-      "wikidataQid": "Q1135028"
-    }
+    "slug": "al-amerat-cricket-ground-oman-cricket-ministry-turf-1",
+    "name": "Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1)",
+    "city": "Al Amarat",
+    "matchCount": 6
+  },
+  {
+    "slug": "gmhba-stadium-south-geelong-victoria",
+    "name": "GMHBA Stadium, South Geelong, Victoria",
+    "city": "Geelong",
+    "matchCount": 6
+  },
+  {
+    "slug": "adelaide-oval",
+    "name": "Adelaide Oval",
+    "city": "Adelaide",
+    "matchCount": 6
+  },
+  {
+    "slug": "narendra-modi-stadium-ahmedabad",
+    "name": "Narendra Modi Stadium, Ahmedabad",
+    "city": "Ahmedabad",
+    "matchCount": 6
+  },
+  {
+    "slug": "pallekele-international-cricket-stadium",
+    "name": "Pallekele International Cricket Stadium",
+    "city": "Kandy",
+    "matchCount": 6
+  },
+  {
+    "slug": "sylhet-stadium",
+    "name": "Sylhet Stadium",
+    "matchCount": 6
+  },
+  {
+    "slug": "daren-sammy-national-cricket-stadium-gros-islet-st-lucia",
+    "name": "Daren Sammy National Cricket Stadium, Gros Islet, St Lucia",
+    "city": "Gros Islet",
+    "matchCount": 5
+  },
+  {
+    "slug": "sinhalese-sports-club-ground-colombo",
+    "name": "Sinhalese Sports Club Ground, Colombo",
+    "city": "Colombo",
+    "matchCount": 5
+  },
+  {
+    "slug": "ma-chidambaram-stadium-chepauk-chennai",
+    "name": "MA Chidambaram Stadium, Chepauk, Chennai",
+    "city": "Chennai",
+    "matchCount": 5
   },
   {
     "slug": "sawai-mansingh-stadium",
@@ -109,15 +287,40 @@
     }
   },
   {
-    "slug": "himachal-pradesh-cricket-association-stadium",
-    "name": "Himachal Pradesh Cricket Association Stadium",
-    "city": "Dharamsala",
-    "matchCount": 4,
-    "geo": {
-      "latitude": 32.2393,
-      "longitude": 76.3186,
-      "wikidataQid": "Q5762830"
-    }
+    "slug": "melbourne-cricket-ground",
+    "name": "Melbourne Cricket Ground",
+    "city": "Melbourne",
+    "matchCount": 4
+  },
+  {
+    "slug": "perth-stadium",
+    "name": "Perth Stadium",
+    "city": "Perth",
+    "matchCount": 4
+  },
+  {
+    "slug": "grand-prairie-stadium-dallas",
+    "name": "Grand Prairie Stadium, Dallas",
+    "city": "Dallas",
+    "matchCount": 4
+  },
+  {
+    "slug": "providence-stadium-guyana",
+    "name": "Providence Stadium, Guyana",
+    "city": "Providence",
+    "matchCount": 4
+  },
+  {
+    "slug": "vidarbha-cricket-association-stadium-jamtha",
+    "name": "Vidarbha Cricket Association Stadium, Jamtha",
+    "city": "Nagpur",
+    "matchCount": 4
+  },
+  {
+    "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium-luc",
+    "name": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+    "city": "Lucknow",
+    "matchCount": 4
   },
   {
     "slug": "barsapara-cricket-stadium",
@@ -131,6 +334,36 @@
     }
   },
   {
+    "slug": "brisbane-cricket-ground-woolloongabba-brisbane",
+    "name": "Brisbane Cricket Ground, Woolloongabba, Brisbane",
+    "city": "Brisbane",
+    "matchCount": 3
+  },
+  {
+    "slug": "brian-lara-stadium-tarouba-trinidad",
+    "name": "Brian Lara Stadium, Tarouba, Trinidad",
+    "city": "Tarouba",
+    "matchCount": 3
+  },
+  {
+    "slug": "arnos-vale-ground-kingstown-st-vincent",
+    "name": "Arnos Vale Ground, Kingstown, St Vincent",
+    "city": "Kingstown",
+    "matchCount": 3
+  },
+  {
+    "slug": "punjab-cricket-association-is-bindra-stadium-mohali",
+    "name": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+    "city": "Chandigarh",
+    "matchCount": 3
+  },
+  {
+    "slug": "feroz-shah-kotla",
+    "name": "Feroz Shah Kotla",
+    "city": "Delhi",
+    "matchCount": 3
+  },
+  {
     "slug": "shaheed-veer-narayan-singh-international-stadium",
     "name": "Shaheed Veer Narayan Singh International Stadium",
     "city": "Raipur",
@@ -140,5 +373,11 @@
       "longitude": 81.6296,
       "wikidataQid": "Q7461193"
     }
+  },
+  {
+    "slug": "central-broward-regional-park-stadium-turf-ground-lauderhill",
+    "name": "Central Broward Regional Park Stadium Turf Ground, Lauderhill",
+    "city": "Lauderhill",
+    "matchCount": 1
   }
 ]

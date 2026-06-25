@@ -1,0 +1,376 @@
+[
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "australia",
+    "name": "Australia",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 28,
+    "generatedAt": "2026-06-25T03:46:03.433Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "bangladesh",
+    "name": "Bangladesh",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2024",
+    "matchCount": 32,
+    "generatedAt": "2026-06-25T03:46:03.429Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "canada",
+    "name": "Canada",
+    "seasons": [
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2024",
+    "lastSeason": "2025/26",
+    "matchCount": 6,
+    "generatedAt": "2026-06-25T03:46:03.437Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "england",
+    "name": "England",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 36,
+    "generatedAt": "2026-06-25T03:46:03.434Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "seasons": [
+      "2013/14",
+      "2015/16"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2015/16",
+    "matchCount": 3,
+    "generatedAt": "2026-06-25T03:46:03.440Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "india",
+    "name": "India",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 37,
+    "generatedAt": "2026-06-25T03:46:03.434Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "ireland",
+    "name": "Ireland",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 22,
+    "generatedAt": "2026-06-25T03:46:03.431Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "italy",
+    "name": "Italy",
+    "seasons": [
+      "2025/26"
+    ],
+    "firstSeason": "2025/26",
+    "lastSeason": "2025/26",
+    "matchCount": 4,
+    "generatedAt": "2026-06-25T03:46:03.440Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "namibia",
+    "name": "Namibia",
+    "seasons": [
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2021/22",
+    "lastSeason": "2025/26",
+    "matchCount": 18,
+    "generatedAt": "2026-06-25T03:46:03.431Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "nepal",
+    "name": "Nepal",
+    "seasons": [
+      "2013/14",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 9,
+    "generatedAt": "2026-06-25T03:46:03.439Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 28,
+    "generatedAt": "2026-06-25T03:46:03.430Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 30,
+    "generatedAt": "2026-06-25T03:46:03.435Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "oman",
+    "name": "Oman",
+    "seasons": [
+      "2015/16",
+      "2021/22",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2025/26",
+    "matchCount": 13,
+    "generatedAt": "2026-06-25T03:46:03.428Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "pakistan",
+    "name": "Pakistan",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 30,
+    "generatedAt": "2026-06-25T03:46:03.435Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "seasons": [
+      "2021/22",
+      "2024"
+    ],
+    "firstSeason": "2021/22",
+    "lastSeason": "2024",
+    "matchCount": 6,
+    "generatedAt": "2026-06-25T03:46:03.427Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "scotland",
+    "name": "Scotland",
+    "seasons": [
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2025/26",
+    "matchCount": 20,
+    "generatedAt": "2026-06-25T03:46:03.429Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "south-africa",
+    "name": "South Africa",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 33,
+    "generatedAt": "2026-06-25T03:46:03.432Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 34,
+    "generatedAt": "2026-06-25T03:46:03.432Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "uganda",
+    "name": "Uganda",
+    "seasons": [
+      "2024"
+    ],
+    "firstSeason": "2024",
+    "lastSeason": "2024",
+    "matchCount": 3,
+    "generatedAt": "2026-06-25T03:46:03.439Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "seasons": [
+      "2013/14",
+      "2022/23",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 9,
+    "generatedAt": "2026-06-25T03:46:03.436Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "united-states-of-america",
+    "name": "United States of America",
+    "seasons": [
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2024",
+    "lastSeason": "2025/26",
+    "matchCount": 10,
+    "generatedAt": "2026-06-25T03:46:03.438Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "west-indies",
+    "name": "West Indies",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2021/22",
+      "2022/23",
+      "2024",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 31,
+    "generatedAt": "2026-06-25T03:46:03.433Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "t20wc",
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
+    "seasons": [
+      "2013/14",
+      "2015/16",
+      "2022/23",
+      "2025/26"
+    ],
+    "firstSeason": "2013/14",
+    "lastSeason": "2025/26",
+    "matchCount": 18,
+    "generatedAt": "2026-06-25T03:46:03.436Z"
+  }
+]
