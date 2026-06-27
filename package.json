@@ -1,7 +1,7 @@
 {
   "name": "cricketstudio-mcp",
-  "version": "1.4.1",
-  "description": "CricketStudio MCP server — 43 tools covering IPL 2026, IPL historical (18 seasons), MLC, WPL, and ICC T20 WC. Citation-grade atomic claims with provenance. Includes L3 knowledge-graph layer.",
+  "version": "1.5.0",
+  "description": "CricketStudio MCP server — 39 tools covering IPL 2026, IPL historical (18 seasons), MLC (men's), T20 WC (men's), and WPL (women's). Citation-grade atomic claims with provenance. Men's and women's cricket kept separate.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
