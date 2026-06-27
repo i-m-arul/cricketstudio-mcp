@@ -1424,7 +1424,7 @@ function handleWomenCricketLeaders(args: { aspect: string; limit?: number }) {
 // ─── Server wiring ────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '1.4.0' },
+  { name: 'cricketstudio', version: '1.5.0' },
   { capabilities: { tools: {} } },
 );
 
