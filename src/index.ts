@@ -103,6 +103,8 @@ let _wplLeaderboards: Record<string, MlcLeaderboard> | null = null;
 let _t20wcLeague: MlcLeague | null = null;
 let _t20wcTeams: MlcTeam[] | null = null;
 let _t20wcLeaderboards: Record<string, MlcLeaderboard> | null = null;
+let _wplPlayers: Record<string, MlcPlayer> | null = null;
+let _t20wcPlayers: Record<string, MlcPlayer> | null = null;
 let _rawMatches: RawMatch[] | null = null;
 let _rawStandings: RawStandingsRow[] | null = null;
 let _teamIdToCode: Map<number, string> | null = null;
@@ -126,6 +128,8 @@ function wplLeaderboards() { if (!_wplLeaderboards) _wplLeaderboards = readSnaps
 function t20wcLeague() { if (!_t20wcLeague) _t20wcLeague = readSnapshotJson<MlcLeague>('t20wc-league.json') ?? { seasons: [], teams: [], venues: [], playerCount: 0, totalMatches: 0, leaderboardAspects: [] }; return _t20wcLeague; }
 function t20wcTeams() { if (!_t20wcTeams) _t20wcTeams = readSnapshotJson<MlcTeam[]>('t20wc-teams.json') ?? []; return _t20wcTeams; }
 function t20wcLeaderboards() { if (!_t20wcLeaderboards) _t20wcLeaderboards = readSnapshotJson<Record<string, MlcLeaderboard>>('t20wc-leaderboards.json') ?? {}; return _t20wcLeaderboards; }
+function wplPlayers() { if (!_wplPlayers) _wplPlayers = readSnapshotJson<Record<string, MlcPlayer>>('wpl-players.json') ?? {}; return _wplPlayers; }
+function t20wcPlayers() { if (!_t20wcPlayers) _t20wcPlayers = readSnapshotJson<Record<string, MlcPlayer>>('t20wc-players.json') ?? {}; return _t20wcPlayers; }
 function iplHistorical(): IplHistoricalRecord | null {
   if (_iplHistorical !== undefined) return _iplHistorical;
   _iplHistorical = readSnapshotJson<IplHistoricalRecord>('ipl-historical.json');
@@ -150,8 +154,10 @@ const mlcMatchUrl = (id: string) => `${MLC_HUB}/matches/${id}`;
 const mlcMatchClaimUrl = (id: string, kind: string) => `${MLC_HUB}/matches/${id}/c/${kind}`;
 const mlcLeaderboardUrl = (aspect: string) => `${MLC_HUB}/leaderboards/${aspect}`;
 const wplTeamUrl = (slug: string) => `${WPL_HUB}/teams/${slug}`;
+const wplPlayerUrl = (slug: string) => `${WPL_HUB}/players/${slug}`;
 const wplLeaderboardUrl = (aspect: string) => `${WPL_HUB}/leaderboards/${aspect}`;
 const t20wcTeamUrl = (slug: string) => `${T20WC_HUB}/teams/${slug}`;
+const t20wcPlayerUrl = (slug: string) => `${T20WC_HUB}/players/${slug}`;
 const t20wcLeaderboardUrl = (aspect: string) => `${T20WC_HUB}/leaderboards/${aspect}`;
 
 function dataAsOf(): string {
@@ -167,7 +173,7 @@ function notFound(message: string, canonicalUrl?: string) {
   return ok({ error: 'not_found', message, hint: 'Use search_players / list_trends / list_fixtures to discover valid keys.' }, canonicalUrl);
 }
 
-// ─── Tool catalog (43 tools) ──────────────────────────────────────────
+// ─── Tool catalog (47 tools) ──────────────────────────────────────────
 
 const TOOLS = [
   // ── GROUP 1: IPL 2026 Core ──────────────────────────────────────────
@@ -355,6 +361,16 @@ const TOOLS = [
     inputSchema: { type: 'object', properties: {}, additionalProperties: false },
   },
   {
+    name: 'search_wpl_players',
+    description: "Find WPL player slugs by substring match against full name or slug. Women's Premier League only (133 players across 2022/23–2025/26). Example: 'smriti mandhana' → 'smriti-mandhana'. Use before get_wpl_player_profile. NOT for IPL/MLC/T20WC players.",
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Substring to match (case-insensitive)' }, limit: { type: 'number', description: 'Max results (default 10, max 50)' } }, required: ['query'], additionalProperties: false },
+  },
+  {
+    name: 'get_wpl_player_profile',
+    description: "A WPL player's career batting + bowling aggregates across all seasons, with phase splits (powerplay / middle / death). Women's Premier League only. Kebab-case slug e.g. 'smriti-mandhana'. Use search_wpl_players first if you don't have the slug. Do NOT use for men's cricket.",
+    inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: "Kebab-case WPL player slug e.g. smriti-mandhana" } }, required: ['playerSlug'], additionalProperties: false },
+  },
+  {
     name: 'get_wpl_leaderboard',
     description: "WPL (Women's Premier League) leaderboard for one aspect across all seasons or a filtered season. Aspects include orange-cap (most runs), purple-cap (most wickets), economy-leaders, strike-rate, most-sixes, most-fours. Call get_wpl_dataset_summary for the full aspect list. Sample-size floors enforced (≥30 balls faced, ≥15 balls bowled).",
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect slug e.g. orange-cap' }, season: { type: 'string', description: 'Optional season filter e.g. 2024/25' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
@@ -370,6 +386,16 @@ const TOOLS = [
     name: 'get_t20wc_dataset_summary',
     description: 'First call for ICC T20 World Cup coverage. Returns editions covered (6 editions, 2013/14–2025/26), match count (230), team count, player count (687), leaderboard aspects, and Cricsheet CC BY 3.0 attribution. Use before other get_t20wc_* tools. Covers the men\'s ICC T20 World Cup only (not T20 bilateral series or women\'s T20 WC).',
     inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+  },
+  {
+    name: 'search_t20wc_players',
+    description: "Find ICC Men's T20 World Cup player slugs by substring match. Multi-nation tournament: 693 players across 6 editions (2013/14–2025/26). Example: 'virat kohli' → 'v-kohli'. Use before get_t20wc_player_profile. NOT for WPL (women's) players.",
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Substring to match (case-insensitive)' }, limit: { type: 'number', description: 'Max results (default 10, max 50)' } }, required: ['query'], additionalProperties: false },
+  },
+  {
+    name: 'get_t20wc_player_profile',
+    description: "A player's ICC Men's T20 World Cup career profile: batting + bowling aggregates, per-edition breakdown, phase splits. Kebab-case slug e.g. 'v-kohli'. Use search_t20wc_players first if you don't have the slug. Men's tournament only — do NOT mix with WPL.",
+    inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: "Kebab-case T20 WC player slug e.g. v-kohli" } }, required: ['playerSlug'], additionalProperties: false },
   },
   {
     name: 'get_t20wc_leaderboard',
@@ -442,10 +468,14 @@ const validators = {
   get_graph_path: z.object({ fromSlug: z.string(), toSlug: z.string(), maxDepth: z.number().optional() }).strict(),
   // WPL
   get_wpl_dataset_summary: z.object({}).strict(),
+  search_wpl_players: z.object({ query: z.string(), limit: z.number().optional() }).strict(),
+  get_wpl_player_profile: z.object({ playerSlug: z.string() }).strict(),
   get_wpl_leaderboard: z.object({ aspect: z.string(), season: z.string().optional(), limit: z.number().optional() }).strict(),
   get_wpl_team_profile: z.object({ teamSlug: z.string() }).strict(),
   // T20 WC
   get_t20wc_dataset_summary: z.object({}).strict(),
+  search_t20wc_players: z.object({ query: z.string(), limit: z.number().optional() }).strict(),
+  get_t20wc_player_profile: z.object({ playerSlug: z.string() }).strict(),
   get_t20wc_leaderboard: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
   get_t20wc_team_stats: z.object({ teamSlug: z.string() }).strict(),
   // Cross-league
@@ -1421,6 +1451,38 @@ function handleWomenCricketLeaders(args: { aspect: string; limit?: number }) {
   return ok({ aspect: args.aspect, title: entry.title, gender: 'female', competition: "WPL (Women's Premier League)", floorNote: entry.floorNote ?? null, count: rows.length, rows, attribution: 'Cricsheet CC BY 3.0', }, wplLeaderboardUrl(args.aspect));
 }
 
+function handleSearchWplPlayers(args: { query: string; limit?: number }) {
+  const q = args.query.toLowerCase().trim();
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const results = Object.values(wplPlayers())
+    .filter((p) => p.slug.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+    .slice(0, limit)
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, matches: (p.batting as any)?.matches ?? 0, runs: (p.batting as any)?.runs ?? 0, wickets: (p.bowling as any)?.wickets ?? 0, canonicalUrl: wplPlayerUrl(p.slug) }));
+  return ok({ query: args.query, count: results.length, players: results });
+}
+
+function handleWplPlayerProfile(args: { playerSlug: string }) {
+  const p = wplPlayers()[args.playerSlug];
+  if (!p) return notFound(`No WPL player with slug "${args.playerSlug}". Use search_wpl_players to discover slugs.`, wplPlayerUrl(args.playerSlug));
+  return ok({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, batting: p.batting, bowling: p.bowling, bySeason: (p as any).bySeason ?? null, identity: (p as any).identity ?? null, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, wplPlayerUrl(p.slug));
+}
+
+function handleSearchT20wcPlayers(args: { query: string; limit?: number }) {
+  const q = args.query.toLowerCase().trim();
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const results = Object.values(t20wcPlayers())
+    .filter((p) => p.slug.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+    .slice(0, limit)
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, matches: (p.batting as any)?.matches ?? 0, runs: (p.batting as any)?.runs ?? 0, wickets: (p.bowling as any)?.wickets ?? 0, canonicalUrl: t20wcPlayerUrl(p.slug) }));
+  return ok({ query: args.query, count: results.length, players: results });
+}
+
+function handleT20wcPlayerProfile(args: { playerSlug: string }) {
+  const p = t20wcPlayers()[args.playerSlug];
+  if (!p) return notFound(`No T20 WC player with slug "${args.playerSlug}". Use search_t20wc_players to discover slugs.`, t20wcPlayerUrl(args.playerSlug));
+  return ok({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, batting: p.batting, bowling: p.bowling, bySeason: (p as any).bySeason ?? null, identity: (p as any).identity ?? null, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, t20wcPlayerUrl(p.slug));
+}
+
 // ─── Server wiring ────────────────────────────────────────────────────
 
 const server = new Server(
@@ -1433,7 +1495,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({ tools: TOOLS }))
 server.setRequestHandler(CallToolRequestSchema, async (req) => {
   const { name, arguments: rawArgs } = req.params;
   const v = (validators as Record<string, z.ZodTypeAny>)[name];
-  if (!v) return ok({ error: 'unknown_tool', tool: name, hint: 'Call tools/list for the full 43-tool catalog.' });
+  if (!v) return ok({ error: 'unknown_tool', tool: name, hint: 'Call tools/list for the full 47-tool catalog.' });
   const parsed = v.safeParse(rawArgs ?? {});
   if (!parsed.success) return ok({ error: 'invalid_arguments', tool: name, issues: (parsed as z.SafeParseError<unknown>).error.issues });
   const args = parsed.data as any;
@@ -1477,10 +1539,14 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'get_wpl_dataset_summary':  return handleWplDatasetSummary();
       case 'get_wpl_leaderboard':      return handleWplLeaderboard(args);
       case 'get_wpl_team_profile':     return handleWplTeamProfile(args);
+      case 'search_wpl_players':       return handleSearchWplPlayers(args);
+      case 'get_wpl_player_profile':   return handleWplPlayerProfile(args);
       // T20 WC
       case 'get_t20wc_dataset_summary': return handleT20wcDatasetSummary();
       case 'get_t20wc_leaderboard':    return handleT20wcLeaderboard(args);
       case 'get_t20wc_team_stats':     return handleT20wcTeamStats(args);
+      case 'search_t20wc_players':     return handleSearchT20wcPlayers(args);
+      case 'get_t20wc_player_profile': return handleT20wcPlayerProfile(args);
       // Cross-league
       case 'get_cross_league_leaders': return handleCrossLeagueLeaders(args);
       case 'get_player_all_leagues':   return handlePlayerAllLeagues(args);
