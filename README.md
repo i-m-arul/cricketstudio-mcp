@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Citation infrastructure for cricket — 43 MCP tools (incl. a knowledge-graph layer), zero network calls, 1,635 matches, 385,486 deliveries.**
+**Citation infrastructure for cricket — 57 MCP tools (incl. a knowledge-graph layer), zero network calls, 2,654 matches, 623,535 deliveries.**
 
 ---
 
@@ -12,7 +12,7 @@
 
 CricketStudio MCP is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives any MCP-compatible AI client — Claude Desktop, Cursor, ChatGPT Connectors, and others — structured, citable access to cricket data. Every response carries a `canonicalUrl` back to `players.cricketstudio.ai`, an explicit date window, a sample-size count, and a provenance trail to the underlying ball-by-ball corpus. The data is fully bundled in `data/snapshot/` — tool answers are computed locally with no data-fetch calls, no API keys, and no rate limits. (The package sends one anonymous startup ping for usage counts; disable it with `CRICKETSTUDIO_NO_TELEMETRY=1`.)
 
-The corpus covers **IPL 2026** (complete season, RCB champions), **18 seasons of IPL history** (2007/08–2025), **Major League Cricket 2023–2026**, **WPL 2022/23–2025/26** (Women's Premier League), and **ICC T20 World Cup** (6 editions, 2013/14–2025/26) — all from Cricsheet CC BY 3.0. Batting claims require a minimum of 30 balls faced; bowling claims require 15 deliveries. Claims that do not clear those floors are not surfaced.
+The corpus covers **IPL 2026** (complete season, RCB champions), **18 seasons of IPL history** (2007/08–2025), **Major League Cricket 2023–2026**, **WPL 2022/23–2025/26** (Women's Premier League), **ICC T20 World Cup** (6 editions, 2013/14–2025/26), **BBL** (Big Bash League, 14+ seasons 2011/12–2025/26), and **PSL** (Pakistan Super League, 11 seasons 2016–2026) — all from Cricsheet CC BY 3.0. Batting claims require a minimum of 30 balls faced; bowling claims require 15 deliveries. Claims that do not clear those floors are not surfaced.
 
 ---
 
@@ -48,7 +48,7 @@ Any MCP client that supports the stdio transport can use this command directly. 
 
 ## Tools
 
-All 43 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
+All 57 tools work fully against the bundled snapshot. Each response includes `canonicalUrl`, `dataAsOf`, and `sampleSize`.
 
 ### IPL 2026 (20 tools)
 
@@ -88,28 +88,52 @@ All 43 tools work fully against the bundled snapshot. Each response includes `ca
 | `list_mlc_matches` | All MLC matches with status and results | `/leagues/mlc/matches` |
 | `list_mlc_leaderboards` | Season or all-time leaderboard for a given MLC aspect | `/leagues/mlc/leaderboards/{aspect}` |
 
-### WPL — Women's Premier League (3 tools)
+### WPL — Women's Premier League (5 tools)
 
 | Tool | What it returns | Maps to URL |
 |---|---|---|
 | `get_wpl_dataset_summary` | WPL corpus overview: seasons, matches, players, deliveries (2022/23–2025/26) | `/leagues/wpl` |
+| `search_wpl_players` | Player discovery within the WPL corpus | `/leagues/wpl/players` |
+| `get_wpl_player_profile` | WPL career and season stats for a player | `/leagues/wpl/players/{slug}` |
 | `get_wpl_leaderboard` | Season or all-time leaderboard for any WPL aspect (runs, wickets, economy, …) | `/leagues/wpl/leaderboards/{aspect}` |
 | `get_wpl_team_profile` | Franchise profile, season record, and squad stats | `/leagues/wpl/teams/{slug}` |
 
-### ICC T20 World Cup (3 tools)
+### ICC T20 World Cup (5 tools)
 
 | Tool | What it returns | Maps to URL |
 |---|---|---|
 | `get_t20wc_dataset_summary` | T20 WC corpus overview: editions, matches, players, deliveries (2013/14–2025/26) | `/leagues/t20wc` |
+| `search_t20wc_players` | Player discovery within the T20 WC corpus | `/leagues/t20wc/players` |
+| `get_t20wc_player_profile` | T20 WC career stats for a player across all editions | `/leagues/t20wc/players/{slug}` |
 | `get_t20wc_leaderboard` | All-edition leaderboard for any T20 WC aspect | `/leagues/t20wc/leaderboards/{aspect}` |
 | `get_t20wc_team_stats` | National team career record across all T20 WC editions | `/leagues/t20wc/teams/{slug}` |
+
+### BBL — Big Bash League (5 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_bbl_dataset_summary` | BBL corpus overview: seasons, matches, players, deliveries (2011/12–2025/26) | `/leagues/bbl` |
+| `search_bbl_players` | Player discovery within the BBL corpus | `/leagues/bbl/players` |
+| `get_bbl_player_profile` | BBL career and season stats for a player | `/leagues/bbl/players/{slug}` |
+| `get_bbl_leaderboard` | Season or all-time leaderboard for any BBL aspect (runs, wickets, economy, sixes, …) | `/leagues/bbl/leaderboards/{aspect}` |
+| `get_bbl_team_profile` | Franchise profile, season history, and career stats | `/leagues/bbl/teams/{slug}` |
+
+### PSL — Pakistan Super League (5 tools)
+
+| Tool | What it returns | Maps to URL |
+|---|---|---|
+| `get_psl_dataset_summary` | PSL corpus overview: seasons, matches, players, deliveries (2016–2026) | `/leagues/psl` |
+| `search_psl_players` | Player discovery within the PSL corpus | `/leagues/psl/players` |
+| `get_psl_player_profile` | PSL career and season stats for a player | `/leagues/psl/players/{slug}` |
+| `get_psl_leaderboard` | Season or all-time leaderboard for any PSL aspect (runs, wickets, economy, sixes, …) | `/leagues/psl/leaderboards/{aspect}` |
+| `get_psl_team_profile` | Franchise profile, season history, and career stats | `/leagues/psl/teams/{slug}` |
 
 ### Cross-league (3 tools)
 
 | Tool | What it returns | Maps to URL |
 |---|---|---|
-| `get_cross_league_leaders` | Top performers on a metric (runs, wickets, economy, sixes, fours) across MLC + WPL + T20 WC | n/a |
-| `get_player_all_leagues` | A player's stats across every league in the corpus (IPL, MLC, WPL, T20 WC) | `/players/{slug}` |
+| `get_cross_league_leaders` | Top performers on a metric (runs, wickets, economy, sixes, fours) across MLC, T20 WC, BBL, and PSL | n/a |
+| `get_player_all_leagues` | A player's stats across every league in the corpus (IPL, MLC, WPL, T20 WC, BBL, PSL) | `/players/{slug}` |
 | `get_women_cricket_leaders` | WPL leaderboard with gender context — top women's T20 performers | `/leagues/wpl/leaderboards/{aspect}` |
 
 ### IPL Career / Historical (1 tool)
@@ -153,6 +177,11 @@ Once connected in Claude Desktop, you can ask questions like:
 - "Which team has won the most T20 World Cups?"
 - "Who scores most sixes across WPL and T20 WC combined?"
 - "Show me Smriti Mandhana's stats across all leagues"
+- "Who leads the all-time BBL runs leaderboard?"
+- "Which BBL franchise has won the most titles?"
+- "Who are the top wicket-takers in PSL history?"
+- "Show me Babar Azam's PSL career stats"
+- "Compare David Warner's stats across IPL, BBL, and PSL"
 
 ---
 
@@ -165,8 +194,10 @@ Once connected in Claude Desktop, you can ask questions like:
 | Cricsheet | MLC 2023–2026, 75 matches | CC BY 3.0 |
 | Cricsheet | WPL 2022/23–2025/26, 88 matches, 133 players | CC BY 3.0 |
 | Cricsheet | ICC T20 World Cup, 6 editions, 230 matches, 687 players | CC BY 3.0 |
+| Cricsheet | BBL 2011/12–2025/26, 662 matches, 529 players | CC BY 3.0 |
+| Cricsheet | PSL 2016–2026, 357 matches, 458 players | CC BY 3.0 |
 
-**Total corpus:** 1,635 matches · 385,486 ball-by-ball deliveries.
+**Total corpus:** 2,654 matches · 623,535 ball-by-ball deliveries.
 
 **Sample-size floors (publicly disclosed):**
 - Batting claims: ≥30 balls faced
@@ -220,7 +251,7 @@ npm run smoke
 
 ## Building something?
 
-Register at **[cricketstudio.ai/developers](https://cricketstudio.ai/developers)** to get early access to the hosted HTTP transport (`mcp.cricketstudio.ai`), live ball-by-ball endpoints, API-key tiers, and the full 43-tool catalog with live data rather than snapshots.
+Register at **[cricketstudio.ai/developers](https://cricketstudio.ai/developers)** to get early access to the hosted HTTP transport (`mcp.cricketstudio.ai`), live ball-by-ball endpoints, API-key tiers, and the full 57-tool catalog with live data rather than snapshots.
 
 ---
 
