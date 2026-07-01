@@ -1,0 +1,309 @@
+{
+  "v": 1,
+  "code": "bbl",
+  "displayName": "Big Bash League",
+  "format": "T20",
+  "seasons": [
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "teams": [
+    "adelaide-strikers",
+    "brisbane-heat",
+    "hobart-hurricanes",
+    "melbourne-renegades",
+    "melbourne-stars",
+    "perth-scorchers",
+    "sydney-sixers",
+    "sydney-thunder"
+  ],
+  "venues": [
+    "adelaide-oval",
+    "aurora-stadium",
+    "aurora-stadium-launceston",
+    "bellerive-oval",
+    "bellerive-oval-hobart",
+    "brisbane-cricket-ground",
+    "brisbane-cricket-ground-woolloongabba",
+    "brisbane-cricket-ground-woolloongabba-brisbane",
+    "carrara-oval",
+    "cazalys-stadium-cairns",
+    "docklands-stadium",
+    "docklands-stadium-melbourne",
+    "geelong-cricket-ground",
+    "gmhba-stadium-south-geelong-victoria",
+    "international-sports-stadium",
+    "international-sports-stadium-coffs-harbour",
+    "junction-oval-melbourne",
+    "lavington-sports-oval-albury",
+    "manuka-oval",
+    "manuka-oval-canberra",
+    "melbourne-cricket-ground",
+    "north-sydney-oval-sydney",
+    "perth-stadium",
+    "simonds-stadium-south-geelong-victoria",
+    "stadium-australia",
+    "sydney-cricket-ground",
+    "sydney-showground-stadium",
+    "ted-summerton-reserve",
+    "traeger-park",
+    "university-of-tasmania-stadium-launceston",
+    "waca-ground",
+    "western-australia-cricket-association-ground"
+  ],
+  "playerCount": 532,
+  "totalMatches": 662,
+  "seasonBreakdown": [
+    {
+      "season": "2011/12",
+      "matches": 27,
+      "teams": 8,
+      "venues": 8,
+      "playersUsed": 125
+    },
+    {
+      "season": "2012/13",
+      "matches": 28,
+      "teams": 8,
+      "venues": 7,
+      "playersUsed": 134
+    },
+    {
+      "season": "2013/14",
+      "matches": 34,
+      "teams": 8,
+      "venues": 8,
+      "playersUsed": 144
+    },
+    {
+      "season": "2014/15",
+      "matches": 34,
+      "teams": 8,
+      "venues": 10,
+      "playersUsed": 136
+    },
+    {
+      "season": "2015/16",
+      "matches": 32,
+      "teams": 8,
+      "venues": 8,
+      "playersUsed": 129
+    },
+    {
+      "season": "2016/17",
+      "matches": 35,
+      "teams": 8,
+      "venues": 8,
+      "playersUsed": 140
+    },
+    {
+      "season": "2017/18",
+      "matches": 43,
+      "teams": 8,
+      "venues": 13,
+      "playersUsed": 139
+    },
+    {
+      "season": "2018/19",
+      "matches": 59,
+      "teams": 8,
+      "venues": 14,
+      "playersUsed": 149
+    },
+    {
+      "season": "2019/20",
+      "matches": 61,
+      "teams": 8,
+      "venues": 15,
+      "playersUsed": 141
+    },
+    {
+      "season": "2020/21",
+      "matches": 61,
+      "teams": 8,
+      "venues": 10,
+      "playersUsed": 148
+    },
+    {
+      "season": "2021/22",
+      "matches": 60,
+      "teams": 8,
+      "venues": 14,
+      "playersUsed": 177
+    },
+    {
+      "season": "2022/23",
+      "matches": 61,
+      "teams": 8,
+      "venues": 17,
+      "playersUsed": 148
+    },
+    {
+      "season": "2023/24",
+      "matches": 41,
+      "teams": 8,
+      "venues": 14,
+      "playersUsed": 136
+    },
+    {
+      "season": "2024/25",
+      "matches": 42,
+      "teams": 8,
+      "venues": 10,
+      "playersUsed": 154
+    },
+    {
+      "season": "2025/26",
+      "matches": 44,
+      "teams": 8,
+      "venues": 11,
+      "playersUsed": 140
+    }
+  ],
+  "crossTeamMoves": 207,
+  "generatedAt": "2026-06-30T22:25:30.046Z",
+  "ballsCaptured": 153250,
+  "leaderboardAspects": [
+    {
+      "slug": "orange-cap",
+      "title": "BBL Orange Cap — Most Runs"
+    },
+    {
+      "slug": "purple-cap",
+      "title": "BBL Purple Cap — Most Wickets"
+    },
+    {
+      "slug": "strike-rate",
+      "title": "BBL — Best Batting Strike Rate"
+    },
+    {
+      "slug": "economy-leaders",
+      "title": "BBL — Best Bowling Economy"
+    },
+    {
+      "slug": "most-sixes",
+      "title": "BBL — Most Sixes"
+    },
+    {
+      "slug": "most-fours",
+      "title": "BBL — Most Fours"
+    },
+    {
+      "slug": "batting-average",
+      "title": "BBL — Best Batting Average"
+    },
+    {
+      "slug": "bowling-average",
+      "title": "BBL — Best Bowling Average"
+    },
+    {
+      "slug": "bowling-strike-rate",
+      "title": "BBL — Best Bowling Strike Rate"
+    },
+    {
+      "slug": "most-fifties",
+      "title": "BBL — Most Fifties"
+    },
+    {
+      "slug": "most-dot-balls",
+      "title": "BBL — Most Dot Balls Bowled"
+    },
+    {
+      "slug": "powerplay-strike-rate",
+      "title": "BBL — Powerplay Batting Strike Rate (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-economy",
+      "title": "BBL — Powerplay Bowling Economy (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-sixes",
+      "title": "BBL — Most Powerplay Sixes (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-wickets",
+      "title": "BBL — Most Powerplay Wickets (Overs 1–6)"
+    },
+    {
+      "slug": "death-strike-rate",
+      "title": "BBL — Death Overs Batting Strike Rate (Overs 17–20)"
+    },
+    {
+      "slug": "death-economy",
+      "title": "BBL — Death Overs Bowling Economy (Overs 17–20)"
+    },
+    {
+      "slug": "death-sixes",
+      "title": "BBL — Most Death Overs Sixes (Overs 17–20)"
+    },
+    {
+      "slug": "death-wickets",
+      "title": "BBL — Most Death Overs Wickets (Overs 17–20)"
+    },
+    {
+      "slug": "dot-ball-pct",
+      "title": "BBL — Dot Ball Percentage"
+    },
+    {
+      "slug": "middle-runs",
+      "title": "BBL — Middle Overs Runs (Overs 7–15)"
+    },
+    {
+      "slug": "middle-economy",
+      "title": "BBL — Middle Overs Bowling Economy (Overs 7–15)"
+    },
+    {
+      "slug": "middle-sixes",
+      "title": "BBL — Most Middle Overs Sixes (Overs 7–15)"
+    },
+    {
+      "slug": "middle-wickets",
+      "title": "BBL — Most Middle Overs Wickets (Overs 7–15)"
+    },
+    {
+      "slug": "powerplay-runs",
+      "title": "BBL — Most Powerplay Runs (Overs 1–6)"
+    },
+    {
+      "slug": "death-runs",
+      "title": "BBL — Most Death Overs Runs (Overs 17–20)"
+    },
+    {
+      "slug": "powerplay-fours",
+      "title": "BBL — Most Powerplay Fours (Overs 1–6)"
+    },
+    {
+      "slug": "death-fours",
+      "title": "BBL — Most Death Overs Fours (Overs 17–20)"
+    },
+    {
+      "slug": "most-hundreds",
+      "title": "BBL — Most Centuries"
+    },
+    {
+      "slug": "most-not-outs",
+      "title": "BBL — Most Not Outs"
+    },
+    {
+      "slug": "most-matches",
+      "title": "BBL — Most Matches Played"
+    },
+    {
+      "slug": "most-innings",
+      "title": "BBL — Most Innings Played"
+    }
+  ]
+}

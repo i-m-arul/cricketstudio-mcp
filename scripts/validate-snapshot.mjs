@@ -53,12 +53,37 @@ const ALLOWED_FILES = new Set([
   'ipl-historical.json',
   'graph.json',
   'research.json',
+  // MLC (2023–2026)
   'mlc.json',
   'mlc-players.json',
   'mlc-matches.json',
   'mlc-leaderboards.json',
   'mlc-league.json',
   'mlc-teams.json',
+  // WPL (2022/23–2025/26)
+  'wpl.json',
+  'wpl-players.json',
+  'wpl-leaderboards.json',
+  'wpl-league.json',
+  'wpl-teams.json',
+  // ICC Men's T20 World Cup
+  't20wc.json',
+  't20wc-players.json',
+  't20wc-leaderboards.json',
+  't20wc-league.json',
+  't20wc-teams.json',
+  // BBL (2011/12–2025/26)
+  'bbl.json',
+  'bbl-players.json',
+  'bbl-leaderboards.json',
+  'bbl-league.json',
+  'bbl-teams.json',
+  // PSL (2016–2026)
+  'psl.json',
+  'psl-players.json',
+  'psl-leaderboards.json',
+  'psl-league.json',
+  'psl-teams.json',
 ]);
 
 // ── 2. SCHEMA ALLOWLIST ──────────────────────────────────────────────────────
@@ -83,6 +108,30 @@ const TOP_LEVEL_KEYS = {
     'generatedAt', 'ballsCaptured', 'leaderboardAspects',
   ]),
   'mlc-teams.json': null,
+  'wpl-league.json': new Set([
+    'v', 'code', 'displayName', 'format', 'seasons', 'teams', 'venues',
+    'playerCount', 'totalMatches', 'seasonBreakdown', 'crossTeamMoves',
+    'generatedAt', 'ballsCaptured', 'leaderboardAspects',
+  ]),
+  'wpl-teams.json': null,
+  't20wc-league.json': new Set([
+    'v', 'code', 'displayName', 'format', 'seasons', 'teams', 'venues',
+    'playerCount', 'totalMatches', 'seasonBreakdown', 'crossTeamMoves',
+    'generatedAt', 'ballsCaptured', 'leaderboardAspects',
+  ]),
+  't20wc-teams.json': null,
+  'bbl-league.json': new Set([
+    'v', 'code', 'displayName', 'format', 'seasons', 'teams', 'venues',
+    'playerCount', 'totalMatches', 'seasonBreakdown', 'crossTeamMoves',
+    'generatedAt', 'ballsCaptured', 'leaderboardAspects',
+  ]),
+  'bbl-teams.json': null,
+  'psl-league.json': new Set([
+    'v', 'code', 'displayName', 'format', 'seasons', 'teams', 'venues',
+    'playerCount', 'totalMatches', 'seasonBreakdown', 'crossTeamMoves',
+    'generatedAt', 'ballsCaptured', 'leaderboardAspects',
+  ]),
+  'psl-teams.json': null,
 };
 
 // Allowed keys inside array elements for each file
@@ -111,6 +160,18 @@ const ELEMENT_KEYS = {
   'mlc-teams.json': new Set([
     'slug', 'name', 'shortName', 'homeCity', 'canonicalUrl',
     'v', 'leagueCode', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
+  ]),
+  'wpl-teams.json': new Set([
+    'v', 'leagueCode', 'slug', 'name', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
+  ]),
+  't20wc-teams.json': new Set([
+    'v', 'leagueCode', 'slug', 'name', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
+  ]),
+  'bbl-teams.json': new Set([
+    'v', 'leagueCode', 'slug', 'name', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
+  ]),
+  'psl-teams.json': new Set([
+    'v', 'leagueCode', 'slug', 'name', 'seasons', 'firstSeason', 'lastSeason', 'matchCount', 'generatedAt',
   ]),
 };
 

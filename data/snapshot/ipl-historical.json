@@ -252076,6 +252076,128 @@
         }
       ]
     },
+    "2026": {
+      "matchCount": 74,
+      "teams": [
+        {
+          "slug": "csk",
+          "name": "Chennai Super Kings",
+          "short": "CSK"
+        },
+        {
+          "slug": "dc",
+          "name": "Delhi Capitals",
+          "short": "DC"
+        },
+        {
+          "slug": "gt",
+          "name": "Gujarat Titans",
+          "short": "GT"
+        },
+        {
+          "slug": "kkr",
+          "name": "Kolkata Knight Riders",
+          "short": "KKR"
+        },
+        {
+          "slug": "lsg",
+          "name": "Lucknow Super Giants",
+          "short": "LSG"
+        },
+        {
+          "slug": "mi",
+          "name": "Mumbai Indians",
+          "short": "MI"
+        },
+        {
+          "slug": "pbks",
+          "name": "Punjab Kings",
+          "short": "PBKS"
+        },
+        {
+          "slug": "rr",
+          "name": "Rajasthan Royals",
+          "short": "RR"
+        },
+        {
+          "slug": "rcb",
+          "name": "Royal Challengers Bengaluru",
+          "short": "RCB"
+        },
+        {
+          "slug": "srh",
+          "name": "Sunrisers Hyderabad",
+          "short": "SRH"
+        }
+      ],
+      "venues": [
+        {
+          "slug": "arun-jaitley-stadium",
+          "name": "Arun Jaitley Stadium",
+          "city": "Delhi"
+        },
+        {
+          "slug": "barsapara-cricket-stadium",
+          "name": "Barsapara Cricket Stadium",
+          "city": "Guwahati"
+        },
+        {
+          "slug": "bharat-ratna-shri-atal-bihari-vajpayee-ekana-cricket-stadium",
+          "name": "BRSABV Ekana Cricket Stadium",
+          "city": "Lucknow"
+        },
+        {
+          "slug": "eden-gardens",
+          "name": "Eden Gardens",
+          "city": "Kolkata"
+        },
+        {
+          "slug": "himachal-pradesh-cricket-association-stadium",
+          "name": "Himachal Pradesh Cricket Association Stadium",
+          "city": "Dharamsala"
+        },
+        {
+          "slug": "m-chinnaswamy-stadium",
+          "name": "M Chinnaswamy Stadium",
+          "city": "Bengaluru"
+        },
+        {
+          "slug": "ma-chidambaram-stadium",
+          "name": "MA Chidambaram Stadium",
+          "city": "Chennai"
+        },
+        {
+          "slug": "maharaja-yadavindra-singh-international-cricket-stadium-mullanpu",
+          "name": "Maharaja Yadavindra Singh International Cricket Stadium",
+          "city": "Mullanpur"
+        },
+        {
+          "slug": "narendra-modi-stadium",
+          "name": "Narendra Modi Stadium",
+          "city": "Ahmedabad"
+        },
+        {
+          "slug": "rajiv-gandhi-international-stadium",
+          "name": "Rajiv Gandhi International Stadium",
+          "city": "Hyderabad"
+        },
+        {
+          "slug": "sawai-mansingh-stadium",
+          "name": "Sawai Mansingh Stadium",
+          "city": "Jaipur"
+        },
+        {
+          "slug": "shaheed-veer-narayan-singh-international-stadium-raipur",
+          "name": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+          "city": "Raipur"
+        },
+        {
+          "slug": "wankhede-stadium",
+          "name": "Wankhede Stadium",
+          "city": "Mumbai"
+        }
+      ]
+    },
     "2020/21": {
       "matchCount": 60,
       "teams": [

@@ -4038,6 +4038,19 @@
         "context": "Aggregated across IPL 2026 captured fixtures. Cohort = bowlers with ≥15 legal deliveries in overs 16-20.",
         "pillar": "P3",
         "provenance": "live"
+      },
+      {
+        "id": "pressure-inverse-chase",
+        "metric": "Pressure-inverse chase economy · IPL 2026",
+        "value": "7.91 RPO @ req≥11",
+        "period": "IPL 2026 to date",
+        "comparator": "#3 of 24 qualifying bowlers by pressure delta",
+        "sampleSize": "206 chase deliveries · 50 @ req<8 · 110 @ req≥11",
+        "computedAt": "2026-06-30T00:31:27.820Z",
+        "headline": "Eshan Malinga's IPL 2026 chase economy falls under pressure — 7.9 RPO when 11+ required versus 11.6 when under 8.",
+        "context": "CricketStudio aggregation of IPL 2026 ball-by-ball over 73 run-chases. Economy = runs charged to the bowler (excl. byes/leg-byes) per legal delivery, bucketed by the required rate faced before each delivery. Monotone falling gradient across low/mid/high pressure; floors ≥18 balls per bucket, ≥90 chase balls.",
+        "pillar": "P3",
+        "provenance": "live"
       }
     ],
     "updatedAt": "2026-05-27T15:00:16.520Z",
@@ -5427,19 +5440,6 @@
         "provenance": "live"
       },
       {
-        "id": "pressure-inverse-chase",
-        "metric": "Pressure-inverse chase economy · IPL 2026",
-        "value": "6.30 RPO @ req≥11",
-        "period": "IPL 2026 to date",
-        "comparator": "#6 of 21 qualifying bowlers by pressure delta",
-        "sampleSize": "157 chase deliveries · 75 @ req<8 · 20 @ req≥11",
-        "computedAt": "2026-05-25T19:28:09.750Z",
-        "headline": "Jasprit Bumrah's IPL 2026 chase economy falls under pressure — 6.3 RPO when 11+ required versus 6.9 when under 8.",
-        "context": "CricketStudio aggregation of IPL 2026 ball-by-ball over 65 run-chases. Economy = runs charged to the bowler (excl. byes/leg-byes) per legal delivery, bucketed by the required rate faced before each delivery. Monotone falling gradient across low/mid/high pressure; floors ≥18 balls per bucket, ≥90 chase balls.",
-        "pillar": "P3",
-        "provenance": "live"
-      },
-      {
         "id": "phase-bowling-death",
         "metric": "Death-overs economy, IPL 2026",
         "value": "7.69 RPO",
@@ -5449,6 +5449,19 @@
         "computedAt": "2026-06-01T22:40:46.880Z",
         "headline": "Jasprit Bumrah concedes 7.69 runs per over in IPL 2026 death overs (78-ball sample, #6 of 66 qualifying bowlers).",
         "context": "Aggregated across IPL 2026 captured fixtures. Cohort = bowlers with ≥15 legal deliveries in overs 16-20.",
+        "pillar": "P3",
+        "provenance": "live"
+      },
+      {
+        "id": "pressure-inverse-chase",
+        "metric": "Pressure-inverse chase economy · IPL 2026",
+        "value": "6.30 RPO @ req≥11",
+        "period": "IPL 2026 to date",
+        "comparator": "#6 of 24 qualifying bowlers by pressure delta",
+        "sampleSize": "157 chase deliveries · 75 @ req<8 · 20 @ req≥11",
+        "computedAt": "2026-06-30T00:31:27.820Z",
+        "headline": "Jasprit Bumrah's IPL 2026 chase economy falls under pressure — 6.3 RPO when 11+ required versus 6.9 when under 8.",
+        "context": "CricketStudio aggregation of IPL 2026 ball-by-ball over 73 run-chases. Economy = runs charged to the bowler (excl. byes/leg-byes) per legal delivery, bucketed by the required rate faced before each delivery. Monotone falling gradient across low/mid/high pressure; floors ≥18 balls per bucket, ≥90 chase balls.",
         "pillar": "P3",
         "provenance": "live"
       }
@@ -6184,6 +6197,19 @@
         "computedAt": "2026-06-01T22:40:46.880Z",
         "headline": "Kagiso Rabada concedes 9.17 runs per over in IPL 2026 death overs (72-ball sample, #17 of 66 qualifying bowlers).",
         "context": "Aggregated across IPL 2026 captured fixtures. Cohort = bowlers with ≥15 legal deliveries in overs 16-20.",
+        "pillar": "P3",
+        "provenance": "live"
+      },
+      {
+        "id": "pressure-inverse-chase",
+        "metric": "Pressure-inverse chase economy · IPL 2026",
+        "value": "7.04 RPO @ req≥11",
+        "period": "IPL 2026 to date",
+        "comparator": "#2 of 24 qualifying bowlers by pressure delta",
+        "sampleSize": "148 chase deliveries · 42 @ req<8 · 23 @ req≥11",
+        "computedAt": "2026-06-30T00:31:27.818Z",
+        "headline": "Kagiso Rabada's IPL 2026 chase economy falls under pressure — 7.0 RPO when 11+ required versus 11.6 when under 8.",
+        "context": "CricketStudio aggregation of IPL 2026 ball-by-ball over 73 run-chases. Economy = runs charged to the bowler (excl. byes/leg-byes) per legal delivery, bucketed by the required rate faced before each delivery. Monotone falling gradient across low/mid/high pressure; floors ≥18 balls per bucket, ≥90 chase balls.",
         "pillar": "P3",
         "provenance": "live"
       }

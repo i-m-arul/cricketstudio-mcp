@@ -1,0 +1,170 @@
+[
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "hyderabad-kingsmen",
+    "name": "Hyderabad Kingsmen",
+    "seasons": [
+      "2026"
+    ],
+    "firstSeason": "2026",
+    "lastSeason": "2026",
+    "matchCount": 13,
+    "generatedAt": "2026-06-30T22:25:39.699Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "islamabad-united",
+    "name": "Islamabad United",
+    "seasons": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2026",
+    "matchCount": 123,
+    "generatedAt": "2026-06-30T22:25:39.692Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "karachi-kings",
+    "name": "Karachi Kings",
+    "seasons": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2026",
+    "matchCount": 114,
+    "generatedAt": "2026-06-30T22:25:39.698Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "lahore-qalandars",
+    "name": "Lahore Qalandars",
+    "seasons": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2026",
+    "matchCount": 117,
+    "generatedAt": "2026-06-30T22:25:39.695Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "multan-sultans",
+    "name": "Multan Sultans",
+    "seasons": [
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2017/18",
+    "lastSeason": "2026",
+    "matchCount": 99,
+    "generatedAt": "2026-06-30T22:25:39.699Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "peshawar-zalmi",
+    "name": "Peshawar Zalmi",
+    "seasons": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2026",
+    "matchCount": 124,
+    "generatedAt": "2026-06-30T22:25:39.694Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "quetta-gladiators",
+    "name": "Quetta Gladiators",
+    "seasons": [
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2025",
+      "2026"
+    ],
+    "firstSeason": "2015/16",
+    "lastSeason": "2026",
+    "matchCount": 114,
+    "generatedAt": "2026-06-30T22:25:39.696Z"
+  },
+  {
+    "v": 1,
+    "leagueCode": "psl",
+    "slug": "rawalpindiz",
+    "name": "Rawalpindiz",
+    "seasons": [
+      "2026"
+    ],
+    "firstSeason": "2026",
+    "lastSeason": "2026",
+    "matchCount": 10,
+    "generatedAt": "2026-06-30T22:25:39.700Z"
+  }
+]

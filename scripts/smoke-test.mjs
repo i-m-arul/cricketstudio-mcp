@@ -65,6 +65,34 @@ const CALLS = [
   ['get_related_entities', { slug: 'rcb', predicate: 'plays_for', direction: 'in', limit: 5 }],
   ['get_player_connections', { playerSlug: 'virat-kohli', limit: 5 }],
   ['get_graph_path', { fromSlug: 'virat-kohli', toSlug: 'rcb', maxDepth: 2 }],
+  // WPL — Women's Premier League
+  ['get_wpl_dataset_summary', {}],
+  ['search_wpl_players', { query: 'mandhana', limit: 3 }],
+  ['get_wpl_player_profile', { playerSlug: 's-mandhana' }],
+  ['get_wpl_leaderboard', { aspect: 'orange-cap', limit: 5 }],
+  ['get_wpl_team_profile', { teamSlug: 'mumbai-indians' }],
+  // ICC Men's T20 World Cup
+  ['get_t20wc_dataset_summary', {}],
+  ['search_t20wc_players', { query: 'dhoni', limit: 3 }],
+  ['get_t20wc_player_profile', { playerSlug: 'ms-dhoni' }],
+  ['get_t20wc_leaderboard', { aspect: 'most-runs', limit: 5 }],
+  ['get_t20wc_team_stats', { teamSlug: 'india' }],
+  // Cross-league + women's routing
+  ['get_cross_league_leaders', { metric: 'sixes', limit: 5 }],
+  ['get_player_all_leagues', { playerSlug: 'a-zampa' }],
+  ['get_women_cricket_leaders', { aspect: 'orange-cap', limit: 5 }],
+  // BBL — Big Bash League
+  ['get_bbl_dataset_summary', {}],
+  ['search_bbl_players', { query: 'warner', limit: 3 }],
+  ['get_bbl_player_profile', { playerSlug: 'da-warner' }],
+  ['get_bbl_leaderboard', { aspect: 'orange-cap', limit: 5 }],
+  ['get_bbl_team_profile', { teamSlug: 'perth-scorchers' }],
+  // PSL — Pakistan Super League
+  ['get_psl_dataset_summary', {}],
+  ['search_psl_players', { query: 'babar', limit: 3 }],
+  ['get_psl_player_profile', { playerSlug: 'babar-azam' }],
+  ['get_psl_leaderboard', { aspect: 'orange-cap', limit: 5 }],
+  ['get_psl_team_profile', { teamSlug: 'lahore-qalandars' }],
 ];
 
 function send(child, obj) {

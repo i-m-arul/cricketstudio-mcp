@@ -40,6 +40,8 @@ const MLC_HUB = `${SITE}/leagues/mlc`;
 const IPL_HUB = `${SITE}/leagues/ipl`;
 const WPL_HUB = `${SITE}/leagues/wpl`;
 const T20WC_HUB = `${SITE}/leagues/t20wc`;
+const BBL_HUB = `${SITE}/leagues/bbl`;
+const PSL_HUB = `${SITE}/leagues/psl`;
 
 // ─── Snapshot loader helpers (direct reads for files not in snapshot.ts) ─
 
@@ -105,6 +107,14 @@ let _t20wcTeams: MlcTeam[] | null = null;
 let _t20wcLeaderboards: Record<string, MlcLeaderboard> | null = null;
 let _wplPlayers: Record<string, MlcPlayer> | null = null;
 let _t20wcPlayers: Record<string, MlcPlayer> | null = null;
+let _bblLeague: MlcLeague | null = null;
+let _bblTeams: MlcTeam[] | null = null;
+let _bblLeaderboards: Record<string, MlcLeaderboard> | null = null;
+let _pslLeague: MlcLeague | null = null;
+let _pslTeams: MlcTeam[] | null = null;
+let _pslLeaderboards: Record<string, MlcLeaderboard> | null = null;
+let _bblPlayers: Record<string, MlcPlayer> | null = null;
+let _pslPlayers: Record<string, MlcPlayer> | null = null;
 let _rawMatches: RawMatch[] | null = null;
 let _rawStandings: RawStandingsRow[] | null = null;
 let _teamIdToCode: Map<number, string> | null = null;
@@ -130,6 +140,14 @@ function t20wcTeams() { if (!_t20wcTeams) _t20wcTeams = readSnapshotJson<MlcTeam
 function t20wcLeaderboards() { if (!_t20wcLeaderboards) _t20wcLeaderboards = readSnapshotJson<Record<string, MlcLeaderboard>>('t20wc-leaderboards.json') ?? {}; return _t20wcLeaderboards; }
 function wplPlayers() { if (!_wplPlayers) _wplPlayers = readSnapshotJson<Record<string, MlcPlayer>>('wpl-players.json') ?? {}; return _wplPlayers; }
 function t20wcPlayers() { if (!_t20wcPlayers) _t20wcPlayers = readSnapshotJson<Record<string, MlcPlayer>>('t20wc-players.json') ?? {}; return _t20wcPlayers; }
+function bblLeague() { if (!_bblLeague) _bblLeague = readSnapshotJson<MlcLeague>('bbl-league.json') ?? { seasons: [], teams: [], venues: [], playerCount: 0, totalMatches: 0, leaderboardAspects: [] }; return _bblLeague; }
+function bblTeams() { if (!_bblTeams) _bblTeams = readSnapshotJson<MlcTeam[]>('bbl-teams.json') ?? []; return _bblTeams; }
+function bblLeaderboards() { if (!_bblLeaderboards) _bblLeaderboards = readSnapshotJson<Record<string, MlcLeaderboard>>('bbl-leaderboards.json') ?? {}; return _bblLeaderboards; }
+function pslLeague() { if (!_pslLeague) _pslLeague = readSnapshotJson<MlcLeague>('psl-league.json') ?? { seasons: [], teams: [], venues: [], playerCount: 0, totalMatches: 0, leaderboardAspects: [] }; return _pslLeague; }
+function pslTeams() { if (!_pslTeams) _pslTeams = readSnapshotJson<MlcTeam[]>('psl-teams.json') ?? []; return _pslTeams; }
+function pslLeaderboards() { if (!_pslLeaderboards) _pslLeaderboards = readSnapshotJson<Record<string, MlcLeaderboard>>('psl-leaderboards.json') ?? {}; return _pslLeaderboards; }
+function bblPlayers() { if (!_bblPlayers) _bblPlayers = readSnapshotJson<Record<string, MlcPlayer>>('bbl-players.json') ?? {}; return _bblPlayers; }
+function pslPlayers() { if (!_pslPlayers) _pslPlayers = readSnapshotJson<Record<string, MlcPlayer>>('psl-players.json') ?? {}; return _pslPlayers; }
 function iplHistorical(): IplHistoricalRecord | null {
   if (_iplHistorical !== undefined) return _iplHistorical;
   _iplHistorical = readSnapshotJson<IplHistoricalRecord>('ipl-historical.json');
@@ -159,6 +177,12 @@ const wplLeaderboardUrl = (aspect: string) => `${WPL_HUB}/leaderboards/${aspect}
 const t20wcTeamUrl = (slug: string) => `${T20WC_HUB}/teams/${slug}`;
 const t20wcPlayerUrl = (slug: string) => `${T20WC_HUB}/players/${slug}`;
 const t20wcLeaderboardUrl = (aspect: string) => `${T20WC_HUB}/leaderboards/${aspect}`;
+const bblTeamUrl = (slug: string) => `${BBL_HUB}/teams/${slug}`;
+const bblPlayerUrl = (slug: string) => `${BBL_HUB}/players/${slug}`;
+const bblLeaderboardUrl = (aspect: string) => `${BBL_HUB}/leaderboards/${aspect}`;
+const pslTeamUrl = (slug: string) => `${PSL_HUB}/teams/${slug}`;
+const pslPlayerUrl = (slug: string) => `${PSL_HUB}/players/${slug}`;
+const pslLeaderboardUrl = (aspect: string) => `${PSL_HUB}/leaderboards/${aspect}`;
 
 function dataAsOf(): string {
   try { return statSync(resolve(SNAPSHOT_DIR, 'metadata.json')).mtime.toISOString(); } catch { return new Date().toISOString(); }
@@ -411,18 +435,72 @@ const TOOLS = [
   // ── GROUP 8: Cross-league tools ─────────────────────────────────────
   {
     name: 'get_cross_league_leaders',
-    description: 'Top performers by one metric across all 5 CricketStudio leagues (IPL 2026, IPL historical, MLC, WPL, T20 WC). Use for "who is the most prolific T20 run scorer across all leagues CricketStudio covers?", "cross-league economy leaders". Returns ranked rows with league context per player. Supported metrics: runs, wickets, sixes, fours, economy. Gracefully omits leagues where snapshot data is unavailable.',
+    description: 'Top performers by one metric across all 7 CricketStudio leagues (IPL 2026, IPL historical, MLC, WPL, T20 WC, BBL, PSL). Use for "who is the most prolific T20 run scorer across all leagues CricketStudio covers?", "cross-league economy leaders". Returns ranked rows with league context per player. Supported metrics: runs, wickets, sixes, fours, economy. Gracefully omits leagues where snapshot data is unavailable.',
     inputSchema: { type: 'object', properties: { metric: { type: 'string', enum: ['runs', 'wickets', 'sixes', 'fours', 'economy'], description: 'Metric to rank by' }, limit: { type: 'number', description: 'Default 20, max 50' } }, required: ['metric'], additionalProperties: false },
   },
   {
     name: 'get_player_all_leagues',
-    description: "A player's statistics across every CricketStudio league they appear in — IPL 2026, IPL historical, MLC, WPL, T20 WC — in one call. Use for players who appear in multiple leagues (e.g. internationals in MLC + T20 WC, dual-format players). Returns a per-league stats block with canonicalUrl for each. Gracefully omits leagues the player doesn't appear in.",
+    description: "A player's statistics across every CricketStudio league they appear in — IPL 2026, IPL historical, MLC, WPL, T20 WC, BBL, PSL — in one call. Use for players who appear in multiple leagues (e.g. internationals in BBL + IPL, PSL + T20WC). Returns a per-league stats block with canonicalUrl for each. Gracefully omits leagues the player doesn't appear in.",
     inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: 'kebab-case slug used across CricketStudio (e.g. virat-kohli). Try search_players first.' } }, required: ['playerSlug'], additionalProperties: false },
   },
   {
     name: 'get_women_cricket_leaders',
     description: "WPL (Women's Premier League) leaderboard — explicitly scoped to women's cricket. Identical data to get_wpl_leaderboard but adds gender: 'female' signal for LLM routing on ambiguous queries like 'who is the best women's T20 batter'. Aspects: orange-cap, purple-cap, economy-leaders, strike-rate, most-sixes. Sample-size floors enforced.",
     inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect slug e.g. orange-cap' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
+  },
+
+  // ── GROUP 9: Big Bash League (BBL) ─────────────────────────────────────
+  {
+    name: 'get_bbl_dataset_summary',
+    description: 'First call for BBL (KFC Big Bash League) coverage. Returns seasons covered (2011/12–2025/26), match count (662), team count, player count (529), leaderboard aspects, and Cricsheet CC BY 3.0 attribution. Use before other get_bbl_* tools. Covers the men\'s Big Bash League only (not WBBL women\'s competition).',
+    inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+  },
+  {
+    name: 'search_bbl_players',
+    description: "Find BBL player slugs by substring match against full name or slug. Big Bash League only (529 players across 2011/12–2025/26, 15 seasons). Example: 'david warner' → 'david-warner'. Use before get_bbl_player_profile. NOT for PSL/IPL/MLC players.",
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Substring to match (case-insensitive)' }, limit: { type: 'number', description: 'Max results (default 10, max 50)' } }, required: ['query'], additionalProperties: false },
+  },
+  {
+    name: 'get_bbl_player_profile',
+    description: "A BBL player's career batting + bowling aggregates across all seasons, with phase splits (powerplay / middle / death). Big Bash League only. Kebab-case slug e.g. 'david-warner'. Use search_bbl_players first if you don't have the slug. Men's BBL only — do NOT use for WBBL.",
+    inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: 'Kebab-case BBL player slug e.g. david-warner' } }, required: ['playerSlug'], additionalProperties: false },
+  },
+  {
+    name: 'get_bbl_leaderboard',
+    description: 'BBL (Big Bash League) leaderboard for one aspect across all seasons or a filtered season. Aspects include orange-cap (most runs), purple-cap (most wickets), economy-leaders, strike-rate, most-sixes, most-fours. Call get_bbl_dataset_summary for the full aspect list. Sample-size floors enforced (≥30 balls faced, ≥15 balls bowled). Returns canonical URL at /leagues/bbl/leaderboards/{aspect}.',
+    inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect slug e.g. orange-cap' }, season: { type: 'string', description: 'Optional season filter e.g. 2024/25' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
+  },
+  {
+    name: 'get_bbl_team_profile',
+    description: 'One of the 8 BBL franchises. Returns franchise name, seasons played, match count, and canonical URL. Team slugs: sydney-sixers, melbourne-stars, brisbane-heat, perth-scorchers, sydney-thunder, adelaide-strikers, hobart-hurricanes, melbourne-renegades. Does NOT return IPL/PSL team data.',
+    inputSchema: { type: 'object', properties: { teamSlug: { type: 'string', description: 'BBL franchise slug e.g. sydney-sixers, perth-scorchers' } }, required: ['teamSlug'], additionalProperties: false },
+  },
+
+  // ── GROUP 10: Pakistan Super League (PSL) ──────────────────────────
+  {
+    name: 'get_psl_dataset_summary',
+    description: 'First call for PSL (HBL Pakistan Super League) coverage. Returns seasons covered (2015/16–2025/26), match count (357), team count, player count (458), leaderboard aspects, and Cricsheet CC BY 3.0 attribution. Use before other get_psl_* tools. Covers the men\'s Pakistan Super League only.',
+    inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+  },
+  {
+    name: 'search_psl_players',
+    description: "Find PSL player slugs by substring match against full name or slug. Pakistan Super League only (458 players across 2015/16–2025/26, 10 seasons). Example: 'babar azam' → 'babar-azam'. Use before get_psl_player_profile. NOT for BBL/IPL/MLC players.",
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Substring to match (case-insensitive)' }, limit: { type: 'number', description: 'Max results (default 10, max 50)' } }, required: ['query'], additionalProperties: false },
+  },
+  {
+    name: 'get_psl_player_profile',
+    description: "A PSL player's career batting + bowling aggregates across all seasons, with phase splits (powerplay / middle / death). Pakistan Super League only. Kebab-case slug e.g. 'babar-azam'. Use search_psl_players first if you don't have the slug.",
+    inputSchema: { type: 'object', properties: { playerSlug: { type: 'string', description: 'Kebab-case PSL player slug e.g. babar-azam' } }, required: ['playerSlug'], additionalProperties: false },
+  },
+  {
+    name: 'get_psl_leaderboard',
+    description: 'PSL (Pakistan Super League) leaderboard for one aspect across all seasons or a filtered season. Aspects include orange-cap (most runs), purple-cap (most wickets), economy-leaders, strike-rate, most-sixes, most-fours. Call get_psl_dataset_summary for the full aspect list. Sample-size floors enforced (≥30 balls faced, ≥15 balls bowled). Returns canonical URL at /leagues/psl/leaderboards/{aspect}.',
+    inputSchema: { type: 'object', properties: { aspect: { type: 'string', description: 'Leaderboard aspect slug e.g. orange-cap' }, season: { type: 'string', description: 'Optional season filter e.g. 2024/25' }, limit: { type: 'number', description: 'Default 20, max 100' } }, required: ['aspect'], additionalProperties: false },
+  },
+  {
+    name: 'get_psl_team_profile',
+    description: 'One of the PSL franchises. Returns franchise name, seasons played, match count, and canonical URL. Team slugs include: karachi-kings, lahore-qalandars, islamabad-united, peshawar-zalmi, quetta-gladiators, multan-sultans. Does NOT return BBL/IPL team data.',
+    inputSchema: { type: 'object', properties: { teamSlug: { type: 'string', description: 'PSL franchise slug e.g. karachi-kings, lahore-qalandars' } }, required: ['teamSlug'], additionalProperties: false },
   },
 ] as const;
 
@@ -482,6 +560,18 @@ const validators = {
   get_cross_league_leaders: z.object({ metric: z.enum(['runs', 'wickets', 'sixes', 'fours', 'economy']), limit: z.number().optional() }).strict(),
   get_player_all_leagues: z.object({ playerSlug: z.string() }).strict(),
   get_women_cricket_leaders: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
+  // BBL
+  get_bbl_dataset_summary: z.object({}).strict(),
+  search_bbl_players: z.object({ query: z.string(), limit: z.number().optional() }).strict(),
+  get_bbl_player_profile: z.object({ playerSlug: z.string() }).strict(),
+  get_bbl_leaderboard: z.object({ aspect: z.string(), season: z.string().optional(), limit: z.number().optional() }).strict(),
+  get_bbl_team_profile: z.object({ teamSlug: z.string() }).strict(),
+  // PSL
+  get_psl_dataset_summary: z.object({}).strict(),
+  search_psl_players: z.object({ query: z.string(), limit: z.number().optional() }).strict(),
+  get_psl_player_profile: z.object({ playerSlug: z.string() }).strict(),
+  get_psl_leaderboard: z.object({ aspect: z.string(), season: z.string().optional(), limit: z.number().optional() }).strict(),
+  get_psl_team_profile: z.object({ teamSlug: z.string() }).strict(),
 } as const;
 
 // ─── Tool handlers ────────────────────────────────────────────────────
@@ -489,7 +579,7 @@ const validators = {
 function handleDatasetSummary() {
   const md = metadata();
   return ok({
-    overview: 'CricketStudio publishes citation-grade cricket data — atomic claims with provenance, sample-size floors, and stable canonical URLs. Covers IPL 2026 (complete — RCB champions, 74 matches), IPL historical (18 seasons, 2007/08–2025), Major League Cricket (2023–2026), WPL (Women\'s Premier League, 2022/23–2025/26), and ICC T20 World Cup (6 editions, 2013/14–2025/26). Free to read. Free to cite.',
+    overview: 'CricketStudio publishes citation-grade cricket data — atomic claims with provenance, sample-size floors, and stable canonical URLs. Covers IPL 2026 (complete — RCB champions, 74 matches), IPL historical (18 seasons, 2007/08–2025), Major League Cricket (2023–2026), WPL (Women\'s Premier League, 2022/23–2025/26), ICC T20 World Cup (6 editions, 2013/14–2025/26), BBL (Big Bash League, 15 seasons, 2011/12–2025/26), and PSL (Pakistan Super League, 10 seasons, 2015/16–2025/26). Free to read. Free to cite.',
     coverage: {
       ipl2026: { season: 'IPL 2026', ...md.counts },
       iplHistorical: { seasons: 18, description: '2007/08–2025, Cricsheet corpus, 1,169 matches' },
@@ -520,6 +610,8 @@ function handleDatasetSummary() {
       mlc: 'Major League Cricket at /leagues/mlc — 2023–2026, Cricsheet CC BY 3.0. Use get_mlc_dataset_summary to start.',
       wpl: 'Women\'s Premier League at /leagues/wpl — 2022/23–2025/26, Cricsheet CC BY 3.0. Use get_wpl_dataset_summary to start.',
       t20wc: 'ICC T20 World Cup at /leagues/t20wc — 6 editions (2013/14–2025/26), Cricsheet CC BY 3.0. Use get_t20wc_dataset_summary to start.',
+      bbl: 'Big Bash League at /leagues/bbl — 15 seasons (2011/12–2025/26), 662 matches, Cricsheet CC BY 3.0. Use get_bbl_dataset_summary to start.',
+      psl: 'Pakistan Super League at /leagues/psl — 10 seasons (2015/16–2025/26), 357 matches, Cricsheet CC BY 3.0. Use get_psl_dataset_summary to start.',
     },
     fiveNonNegotiables: [
       'Sample-size floors enforced (≥30 batting balls, ≥15 bowling deliveries, ≥3 venue fixtures, ≥5 H2H deliveries)',
@@ -1378,6 +1470,8 @@ function handleCrossLeagueLeaders(args: { metric: string; limit?: number }) {
     { label: 'MLC', lb: mlcLeaderboards() },
     { label: 'WPL', lb: wplLeaderboards() },
     { label: 'T20 WC', lb: t20wcLeaderboards() },
+    { label: 'BBL', lb: bblLeaderboards() },
+    { label: 'PSL', lb: pslLeaderboards() },
   ];
   for (const { label, lb } of sources) {
     const entry = lb[aspect];
@@ -1397,7 +1491,7 @@ function handleCrossLeagueLeaders(args: { metric: string; limit?: number }) {
     .slice(0, limit)
     .map((r, i) => ({ rank: i + 1, ...r, canonicalUrl: `${SITE}/players/${r.slug}` }));
 
-  return ok({ metric: args.metric, aspect, leaguesCovered: sources.map((s) => s.label), count: ranked.length, rows: ranked, note: 'Cross-league rank. Same player may appear multiple times across leagues.', attribution: 'Cricsheet CC BY 3.0 for MLC/WPL/T20WC; CricketStudio licensed feed for IPL 2026.' }, `${SITE}/leagues`);
+  return ok({ metric: args.metric, aspect, leaguesCovered: sources.map((s) => s.label), count: ranked.length, rows: ranked, note: 'Cross-league rank. Same player may appear multiple times across leagues.', attribution: 'Cricsheet CC BY 3.0 for MLC/WPL/T20WC/BBL/PSL; CricketStudio licensed feed for IPL 2026.' }, `${SITE}/leagues`);
 }
 
 function handlePlayerAllLeagues(args: { playerSlug: string }) {
@@ -1429,6 +1523,20 @@ function handlePlayerAllLeagues(args: { playerSlug: string }) {
   const t20wcEntry = Object.values(t20wcLb).flatMap((lb) => lb.rows).find((r) => r.slug === slug);
   if (t20wcEntry) {
     leaguesList.push({ league: 'T20 WC', fullName: t20wcEntry.fullName, canonicalUrl: `${T20WC_HUB}/players/${slug}` });
+  }
+
+  // BBL
+  const bblLb = bblLeaderboards();
+  const bblEntry = Object.values(bblLb).flatMap((lb) => lb.rows).find((r) => r.slug === slug);
+  if (bblEntry) {
+    leaguesList.push({ league: 'BBL', fullName: bblEntry.fullName, canonicalUrl: `${BBL_HUB}/players/${slug}` });
+  }
+
+  // PSL
+  const pslLb = pslLeaderboards();
+  const pslEntry = Object.values(pslLb).flatMap((lb) => lb.rows).find((r) => r.slug === slug);
+  if (pslEntry) {
+    leaguesList.push({ league: 'PSL', fullName: pslEntry.fullName, canonicalUrl: `${PSL_HUB}/players/${slug}` });
   }
 
   if (leaguesList.length === 0) {
@@ -1483,10 +1591,125 @@ function handleT20wcPlayerProfile(args: { playerSlug: string }) {
   return ok({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, batting: p.batting, bowling: p.bowling, bySeason: (p as any).bySeason ?? null, identity: (p as any).identity ?? null, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, t20wcPlayerUrl(p.slug));
 }
 
+function handleBblDatasetSummary() {
+  const league = bblLeague();
+  if (!league || league.totalMatches === 0) {
+    return ok({ note: 'BBL snapshot not yet bundled in this release. Full coverage available at the canonical URL.', canonicalSurface: BBL_HUB }, BBL_HUB);
+  }
+  return ok({
+    league: 'BBL (KFC Big Bash League)',
+    seasons: league.seasons,
+    totalMatches: league.totalMatches,
+    teams: league.teams.length,
+    players: league.playerCount,
+    leaderboardAspects: league.leaderboardAspects.map((a) => a.slug),
+    attribution: 'Cricsheet CC BY 3.0 — https://cricsheet.org',
+    note: 'Covers men\'s Big Bash League only. Not WBBL (Women\'s Big Bash League).',
+    canonicalSurface: BBL_HUB,
+  }, BBL_HUB);
+}
+
+function handleBblLeaderboard(args: { aspect: string; season?: string; limit?: number }) {
+  const limit = Math.max(1, Math.min(100, args.limit ?? 20));
+  const lb = bblLeaderboards();
+  const entry = lb[args.aspect];
+  if (!entry) {
+    const available = Object.keys(lb);
+    if (available.length === 0) return ok({ note: 'BBL leaderboard snapshot not yet bundled in this release.', canonicalSurface: bblLeaderboardUrl(args.aspect) }, bblLeaderboardUrl(args.aspect));
+    return ok({ error: 'unknown_aspect', aspect: args.aspect, available }, bblLeaderboardUrl(args.aspect));
+  }
+  const rows = entry.rows.slice(0, limit);
+  return ok({ aspect: args.aspect, title: entry.title, season: args.season ?? 'all-time', floorNote: entry.floorNote ?? null, count: rows.length, rows, attribution: 'Cricsheet CC BY 3.0', }, bblLeaderboardUrl(args.aspect));
+}
+
+function handleBblTeamProfile(args: { teamSlug: string }) {
+  const slug = args.teamSlug.toLowerCase();
+  const t = bblTeams().find((x) => x.slug === slug || x.name.toLowerCase().replace(/\s+/g, '-') === slug);
+  if (!t) {
+    const available = bblTeams().map((x) => x.slug);
+    if (available.length === 0) return ok({ note: 'BBL team snapshot not yet bundled in this release.', canonicalSurface: bblTeamUrl(slug) }, bblTeamUrl(slug));
+    return notFound(`No BBL franchise "${args.teamSlug}". Available: ${available.join(', ')}`, bblTeamUrl(slug));
+  }
+  return ok({ slug: t.slug, name: t.name, seasons: t.seasons, firstSeason: t.firstSeason, lastSeason: t.lastSeason, matchCount: t.matchCount, attribution: 'Cricsheet CC BY 3.0', }, bblTeamUrl(t.slug));
+}
+
+function handleSearchBblPlayers(args: { query: string; limit?: number }) {
+  const q = args.query.toLowerCase().trim();
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const results = Object.values(bblPlayers())
+    .filter((p) => p.slug.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+    .slice(0, limit)
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, matches: (p.batting as any)?.matches ?? 0, runs: (p.batting as any)?.runs ?? 0, wickets: (p.bowling as any)?.wickets ?? 0, canonicalUrl: bblPlayerUrl(p.slug) }));
+  return ok({ query: args.query, count: results.length, players: results });
+}
+
+function handleBblPlayerProfile(args: { playerSlug: string }) {
+  const p = bblPlayers()[args.playerSlug];
+  if (!p) return notFound(`No BBL player with slug "${args.playerSlug}". Use search_bbl_players to discover slugs.`, bblPlayerUrl(args.playerSlug));
+  return ok({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, batting: p.batting, bowling: p.bowling, bySeason: (p as any).bySeason ?? null, identity: (p as any).identity ?? null, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, bblPlayerUrl(p.slug));
+}
+
+function handlePslDatasetSummary() {
+  const league = pslLeague();
+  if (!league || league.totalMatches === 0) {
+    return ok({ note: 'PSL snapshot not yet bundled in this release. Full coverage available at the canonical URL.', canonicalSurface: PSL_HUB }, PSL_HUB);
+  }
+  return ok({
+    league: 'PSL (HBL Pakistan Super League)',
+    seasons: league.seasons,
+    totalMatches: league.totalMatches,
+    teams: league.teams.length,
+    players: league.playerCount,
+    leaderboardAspects: league.leaderboardAspects.map((a) => a.slug),
+    attribution: 'Cricsheet CC BY 3.0 — https://cricsheet.org',
+    canonicalSurface: PSL_HUB,
+  }, PSL_HUB);
+}
+
+function handlePslLeaderboard(args: { aspect: string; season?: string; limit?: number }) {
+  const limit = Math.max(1, Math.min(100, args.limit ?? 20));
+  const lb = pslLeaderboards();
+  const entry = lb[args.aspect];
+  if (!entry) {
+    const available = Object.keys(lb);
+    if (available.length === 0) return ok({ note: 'PSL leaderboard snapshot not yet bundled in this release.', canonicalSurface: pslLeaderboardUrl(args.aspect) }, pslLeaderboardUrl(args.aspect));
+    return ok({ error: 'unknown_aspect', aspect: args.aspect, available }, pslLeaderboardUrl(args.aspect));
+  }
+  const rows = entry.rows.slice(0, limit);
+  return ok({ aspect: args.aspect, title: entry.title, season: args.season ?? 'all-time', floorNote: entry.floorNote ?? null, count: rows.length, rows, attribution: 'Cricsheet CC BY 3.0', }, pslLeaderboardUrl(args.aspect));
+}
+
+function handlePslTeamProfile(args: { teamSlug: string }) {
+  const slug = args.teamSlug.toLowerCase();
+  const t = pslTeams().find((x) => x.slug === slug || x.name.toLowerCase().replace(/\s+/g, '-') === slug);
+  if (!t) {
+    const available = pslTeams().map((x) => x.slug);
+    if (available.length === 0) return ok({ note: 'PSL team snapshot not yet bundled in this release.', canonicalSurface: pslTeamUrl(slug) }, pslTeamUrl(slug));
+    return notFound(`No PSL franchise "${args.teamSlug}". Available: ${available.join(', ')}`, pslTeamUrl(slug));
+  }
+  return ok({ slug: t.slug, name: t.name, seasons: t.seasons, firstSeason: t.firstSeason, lastSeason: t.lastSeason, matchCount: t.matchCount, attribution: 'Cricsheet CC BY 3.0', }, pslTeamUrl(t.slug));
+}
+
+function handleSearchPslPlayers(args: { query: string; limit?: number }) {
+  const q = args.query.toLowerCase().trim();
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const results = Object.values(pslPlayers())
+    .filter((p) => p.slug.toLowerCase().includes(q) || p.fullName.toLowerCase().includes(q))
+    .slice(0, limit)
+    .map((p) => ({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, matches: (p.batting as any)?.matches ?? 0, runs: (p.batting as any)?.runs ?? 0, wickets: (p.bowling as any)?.wickets ?? 0, canonicalUrl: pslPlayerUrl(p.slug) }));
+  return ok({ query: args.query, count: results.length, players: results });
+}
+
+function handlePslPlayerProfile(args: { playerSlug: string }) {
+  const p = pslPlayers()[args.playerSlug];
+  if (!p) return notFound(`No PSL player with slug "${args.playerSlug}". Use search_psl_players to discover slugs.`, pslPlayerUrl(args.playerSlug));
+  return ok({ slug: p.slug, fullName: p.fullName, teamSlugs: p.teamSlugs, batting: p.batting, bowling: p.bowling, bySeason: (p as any).bySeason ?? null, identity: (p as any).identity ?? null, provenance: { source: 'Cricsheet', license: 'CC BY 3.0' } }, pslPlayerUrl(p.slug));
+}
+
 // ─── Server wiring ────────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '1.5.0' },
+  { name: 'cricketstudio', version: '1.6.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -1551,7 +1774,19 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'get_cross_league_leaders': return handleCrossLeagueLeaders(args);
       case 'get_player_all_leagues':   return handlePlayerAllLeagues(args);
       case 'get_women_cricket_leaders': return handleWomenCricketLeaders(args);
-      default:                         return ok({ error: 'unknown_tool', tool: name });
+      // BBL
+      case 'get_bbl_dataset_summary':  return handleBblDatasetSummary();
+      case 'get_bbl_leaderboard':      return handleBblLeaderboard(args);
+      case 'get_bbl_team_profile':     return handleBblTeamProfile(args);
+      case 'search_bbl_players':       return handleSearchBblPlayers(args);
+      case 'get_bbl_player_profile':   return handleBblPlayerProfile(args);
+      // PSL
+      case 'get_psl_dataset_summary':  return handlePslDatasetSummary();
+      case 'get_psl_leaderboard':      return handlePslLeaderboard(args);
+      case 'get_psl_team_profile':     return handlePslTeamProfile(args);
+      case 'search_psl_players':       return handleSearchPslPlayers(args);
+      case 'get_psl_player_profile':   return handlePslPlayerProfile(args);
+      default:                         return ok({ error: 'unknown_tool', tool: name, hint: 'Call tools/list for the full 57-tool catalog.' });
     }
   } catch (err) {
     return ok({ error: 'tool_error', tool: name, message: err instanceof Error ? err.message : String(err) });

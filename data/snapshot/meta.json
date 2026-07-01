@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-06-25T16:33:48.163Z",
+  "builtAt": "2026-07-01T04:15:10.554Z",
   "version": "2.3",
   "mode": "local",
   "corpus": {
-    "matches": 1635,
-    "deliveries": 385486,
+    "matches": 2654,
+    "deliveries": 622535,
     "players": 256
   },
   "counts": {
@@ -24,6 +24,14 @@
     "t20wc": {
       "players": 687,
       "matches": 230
+    },
+    "bbl": {
+      "players": 529,
+      "matches": 662
+    },
+    "psl": {
+      "players": 458,
+      "matches": 357
     },
     "iplHistorical": {
       "players": 767,

@@ -1,0 +1,263 @@
+{
+  "v": 1,
+  "code": "psl",
+  "displayName": "Pakistan Super League",
+  "format": "T20",
+  "seasons": [
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2025",
+    "2026"
+  ],
+  "teams": [
+    "hyderabad-kingsmen",
+    "islamabad-united",
+    "karachi-kings",
+    "lahore-qalandars",
+    "multan-sultans",
+    "peshawar-zalmi",
+    "quetta-gladiators",
+    "rawalpindiz"
+  ],
+  "venues": [
+    "dubai-international-cricket-stadium",
+    "gaddafi-stadium",
+    "gaddafi-stadium-lahore",
+    "multan-cricket-stadium",
+    "national-stadium",
+    "national-stadium-karachi",
+    "rawalpindi-cricket-stadium",
+    "sharjah-cricket-stadium",
+    "sheikh-zayed-stadium",
+    "sheikh-zayed-stadium-abu-dhabi"
+  ],
+  "playerCount": 460,
+  "totalMatches": 357,
+  "seasonBreakdown": [
+    {
+      "season": "2015/16",
+      "matches": 23,
+      "teams": 5,
+      "venues": 2,
+      "playersUsed": 90
+    },
+    {
+      "season": "2016/17",
+      "matches": 24,
+      "teams": 5,
+      "venues": 3,
+      "playersUsed": 88
+    },
+    {
+      "season": "2017/18",
+      "matches": 33,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 111
+    },
+    {
+      "season": "2018/19",
+      "matches": 34,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 121
+    },
+    {
+      "season": "2019/20",
+      "matches": 28,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 108
+    },
+    {
+      "season": "2020/21",
+      "matches": 18,
+      "teams": 6,
+      "venues": 2,
+      "playersUsed": 100
+    },
+    {
+      "season": "2021",
+      "matches": 20,
+      "teams": 6,
+      "venues": 1,
+      "playersUsed": 103
+    },
+    {
+      "season": "2021/22",
+      "matches": 34,
+      "teams": 6,
+      "venues": 2,
+      "playersUsed": 128
+    },
+    {
+      "season": "2022/23",
+      "matches": 34,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 119
+    },
+    {
+      "season": "2023/24",
+      "matches": 32,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 110
+    },
+    {
+      "season": "2025",
+      "matches": 34,
+      "teams": 6,
+      "venues": 4,
+      "playersUsed": 127
+    },
+    {
+      "season": "2026",
+      "matches": 43,
+      "teams": 8,
+      "venues": 2,
+      "playersUsed": 142
+    }
+  ],
+  "crossTeamMoves": 191,
+  "generatedAt": "2026-06-30T22:25:39.708Z",
+  "ballsCaptured": 83799,
+  "leaderboardAspects": [
+    {
+      "slug": "orange-cap",
+      "title": "PSL Orange Cap — Most Runs"
+    },
+    {
+      "slug": "purple-cap",
+      "title": "PSL Purple Cap — Most Wickets"
+    },
+    {
+      "slug": "strike-rate",
+      "title": "PSL — Best Batting Strike Rate"
+    },
+    {
+      "slug": "economy-leaders",
+      "title": "PSL — Best Bowling Economy"
+    },
+    {
+      "slug": "most-sixes",
+      "title": "PSL — Most Sixes"
+    },
+    {
+      "slug": "most-fours",
+      "title": "PSL — Most Fours"
+    },
+    {
+      "slug": "batting-average",
+      "title": "PSL — Best Batting Average"
+    },
+    {
+      "slug": "bowling-average",
+      "title": "PSL — Best Bowling Average"
+    },
+    {
+      "slug": "bowling-strike-rate",
+      "title": "PSL — Best Bowling Strike Rate"
+    },
+    {
+      "slug": "most-fifties",
+      "title": "PSL — Most Fifties"
+    },
+    {
+      "slug": "most-dot-balls",
+      "title": "PSL — Most Dot Balls Bowled"
+    },
+    {
+      "slug": "powerplay-strike-rate",
+      "title": "PSL — Powerplay Batting Strike Rate (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-economy",
+      "title": "PSL — Powerplay Bowling Economy (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-sixes",
+      "title": "PSL — Most Powerplay Sixes (Overs 1–6)"
+    },
+    {
+      "slug": "powerplay-wickets",
+      "title": "PSL — Most Powerplay Wickets (Overs 1–6)"
+    },
+    {
+      "slug": "death-strike-rate",
+      "title": "PSL — Death Overs Batting Strike Rate (Overs 17–20)"
+    },
+    {
+      "slug": "death-economy",
+      "title": "PSL — Death Overs Bowling Economy (Overs 17–20)"
+    },
+    {
+      "slug": "death-sixes",
+      "title": "PSL — Most Death Overs Sixes (Overs 17–20)"
+    },
+    {
+      "slug": "death-wickets",
+      "title": "PSL — Most Death Overs Wickets (Overs 17–20)"
+    },
+    {
+      "slug": "dot-ball-pct",
+      "title": "PSL — Dot Ball Percentage"
+    },
+    {
+      "slug": "middle-runs",
+      "title": "PSL — Middle Overs Runs (Overs 7–15)"
+    },
+    {
+      "slug": "middle-economy",
+      "title": "PSL — Middle Overs Bowling Economy (Overs 7–15)"
+    },
+    {
+      "slug": "middle-sixes",
+      "title": "PSL — Most Middle Overs Sixes (Overs 7–15)"
+    },
+    {
+      "slug": "middle-wickets",
+      "title": "PSL — Most Middle Overs Wickets (Overs 7–15)"
+    },
+    {
+      "slug": "powerplay-runs",
+      "title": "PSL — Most Powerplay Runs (Overs 1–6)"
+    },
+    {
+      "slug": "death-runs",
+      "title": "PSL — Most Death Overs Runs (Overs 17–20)"
+    },
+    {
+      "slug": "powerplay-fours",
+      "title": "PSL — Most Powerplay Fours (Overs 1–6)"
+    },
+    {
+      "slug": "death-fours",
+      "title": "PSL — Most Death Overs Fours (Overs 17–20)"
+    },
+    {
+      "slug": "most-hundreds",
+      "title": "PSL — Most Centuries"
+    },
+    {
+      "slug": "most-not-outs",
+      "title": "PSL — Most Not Outs"
+    },
+    {
+      "slug": "most-matches",
+      "title": "PSL — Most Matches Played"
+    },
+    {
+      "slug": "most-innings",
+      "title": "PSL — Most Innings Played"
+    }
+  ]
+}
