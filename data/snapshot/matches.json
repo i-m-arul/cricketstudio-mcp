@@ -12,8 +12,6 @@
     "homeScore": "203/4 (15.4)",
     "awayScore": "201/9 (20.0)",
     "venue": "M.Chinnaswamy Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -29,8 +27,6 @@
     "homeScore": "224/4 (19.1)",
     "awayScore": "220/4 (20.0)",
     "venue": "Wankhede Stadium",
-    "winnerId": 6,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -46,8 +42,6 @@
     "homeScore": "128/2 (12.1)",
     "awayScore": "127/10 (19.4)",
     "venue": "Barsapara Cricket Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -63,8 +57,6 @@
     "homeScore": "165/7 (19.1)",
     "awayScore": "162/6 (20.0)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 4,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -80,8 +72,6 @@
     "homeScore": "141/10 (18.4)",
     "awayScore": "145/4 (17.1)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -97,8 +87,6 @@
     "homeScore": "161/10 (16.0)",
     "awayScore": "226/8 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 9,
-    "tossWinnerId": 5,
     "elected": "bowling"
   },
   {
@@ -114,8 +102,6 @@
     "homeScore": "209/5 (20.0)",
     "awayScore": "210/5 (18.4)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 4,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -131,8 +117,6 @@
     "homeScore": "164/4 (18.1)",
     "awayScore": "162/6 (20.0)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -148,8 +132,6 @@
     "homeScore": "204/8 (20.0)",
     "awayScore": "210/6 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 7,
     "elected": "batting"
   },
   {
@@ -165,8 +147,6 @@
     "homeScore": "156/9 (20.0)",
     "awayScore": "160/5 (19.5)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 1979,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -182,8 +162,6 @@
     "homeScore": "250/3 (20.0)",
     "awayScore": "207/10 (19.4)",
     "venue": "M.Chinnaswamy Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 2,
     "elected": "bowling"
   },
   {
@@ -199,8 +177,6 @@
     "homeScore": "150/3 (11.0)",
     "awayScore": "123/9 (11.0)",
     "venue": "Barsapara Cricket Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -216,8 +192,6 @@
     "homeScore": "209/8 (20.0)",
     "awayScore": "210/4 (20.0)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -233,8 +207,6 @@
     "homeScore": "181/4 (20.0)",
     "awayScore": "182/7 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 1979,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -250,8 +222,6 @@
     "homeScore": "202/4 (18.0)",
     "awayScore": "201/8 (20.0)",
     "venue": "Barsapara Cricket Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -267,8 +237,6 @@
     "homeScore": "223/4 (18.5)",
     "awayScore": "219/6 (20.0)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 4,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -284,8 +252,6 @@
     "homeScore": "212/1 (20.0)",
     "awayScore": "189/10 (20.0)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -301,8 +267,6 @@
     "homeScore": "164/8 (20.0)",
     "awayScore": "165/3 (18.4)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -318,8 +282,6 @@
     "homeScore": "222/5 (20.0)",
     "awayScore": "240/4 (20.0)",
     "venue": "Wankhede Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -335,8 +297,6 @@
     "homeScore": "216/6 (20.0)",
     "awayScore": "159/10 (19.0)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -352,8 +312,6 @@
     "homeScore": "192/5 (20.0)",
     "awayScore": "160/7 (20.0)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 5,
     "elected": "bowling"
   },
   {
@@ -369,8 +327,6 @@
     "homeScore": "149/5 (15.1)",
     "awayScore": "146/10 (20.0)",
     "venue": "M.Chinnaswamy Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -386,8 +342,6 @@
     "homeScore": "195/6 (20.0)",
     "awayScore": "198/3 (16.3)",
     "venue": "Wankhede Stadium",
-    "winnerId": 4,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -403,8 +357,6 @@
     "homeScore": "181/5 (19.4)",
     "awayScore": "180/10 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 5,
     "elected": "batting"
   },
   {
@@ -420,8 +372,6 @@
     "homeScore": "175/8 (20.0)",
     "awayScore": "179/4 (19.5)",
     "venue": "M.Chinnaswamy Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -437,8 +387,6 @@
     "homeScore": "194/9 (20.0)",
     "awayScore": "184/8 (20.0)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 2,
     "elected": "bowling"
   },
   {
@@ -454,8 +402,6 @@
     "homeScore": "161/6 (19.4)",
     "awayScore": "155/9 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 5,
-    "tossWinnerId": 7,
     "elected": "batting"
   },
   {
@@ -471,8 +417,6 @@
     "homeScore": "254/7 (20.0)",
     "awayScore": "200/5 (20.0)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 4,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -488,8 +432,6 @@
     "homeScore": "100/10 (15.5)",
     "awayScore": "199/5 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 6,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -505,8 +447,6 @@
     "homeScore": "242/2 (20.0)",
     "awayScore": "195/9 (20.0)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -522,8 +462,6 @@
     "homeScore": "119/10 (18.0)",
     "awayScore": "159/6 (20.0)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -539,8 +477,6 @@
     "homeScore": "104/10 (19.0)",
     "awayScore": "207/6 (20.0)",
     "venue": "Wankhede Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -556,8 +492,6 @@
     "homeScore": "206/5 (18.5)",
     "awayScore": "205/3 (20.0)",
     "venue": "M.Chinnaswamy Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -573,8 +507,6 @@
     "homeScore": "264/2 (20.0)",
     "awayScore": "265/4 (18.5)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 4,
-    "tossWinnerId": 3,
     "elected": "batting"
   },
   {
@@ -590,8 +522,6 @@
     "homeScore": "228/6 (20.0)",
     "awayScore": "229/5 (18.3)",
     "venue": "Sawai Mansingh Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 9,
     "elected": "bowling"
   },
   {
@@ -607,8 +537,6 @@
     "homeScore": "162/2 (16.4)",
     "awayScore": "158/7 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -624,8 +552,6 @@
     "homeScore": "155/8 (20.0)",
     "awayScore": "155/7 (20.0)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 5,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -641,8 +567,6 @@
     "homeScore": "75/10 (16.3)",
     "awayScore": "77/1 (6.3)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -658,8 +582,6 @@
     "homeScore": "222/4 (20.0)",
     "awayScore": "228/4 (19.2)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 7,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -675,8 +597,6 @@
     "homeScore": "243/5 (20.0)",
     "awayScore": "249/4 (18.4)",
     "venue": "Wankhede Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 6,
     "elected": "batting"
   },
   {
@@ -692,8 +612,6 @@
     "homeScore": "158/6 (15.5)",
     "awayScore": "155/10 (19.2)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -709,8 +627,6 @@
     "homeScore": "225/6 (20.0)",
     "awayScore": "226/3 (19.1)",
     "venue": "Sawai Mansingh Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 7,
     "elected": "batting"
   },
   {
@@ -726,8 +642,6 @@
     "homeScore": "160/2 (18.1)",
     "awayScore": "159/7 (20.0)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 6,
     "elected": "batting"
   },
   {
@@ -743,8 +657,6 @@
     "homeScore": "165/10 (19.0)",
     "awayScore": "169/3 (18.2)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 5,
-    "tossWinnerId": 9,
     "elected": "batting"
   },
   {
@@ -760,8 +672,6 @@
     "homeScore": "167/6 (19.5)",
     "awayScore": "163/9 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -777,8 +687,6 @@
     "homeScore": "229/4 (18.4)",
     "awayScore": "228/5 (20.0)",
     "venue": "Wankhede Stadium",
-    "winnerId": 6,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -794,8 +702,6 @@
     "homeScore": "155/7 (20.0)",
     "awayScore": "159/2 (17.3)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 3,
     "elected": "batting"
   },
   {
@@ -811,8 +717,6 @@
     "homeScore": "235/4 (20.0)",
     "awayScore": "202/7 (20.0)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -828,8 +732,6 @@
     "homeScore": "209/3 (19.0)",
     "awayScore": "203/6 (19.0)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 1979,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -845,8 +747,6 @@
     "homeScore": "142/8 (20.0)",
     "awayScore": "147/2 (14.2)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 5,
-    "tossWinnerId": 5,
     "elected": "bowling"
   },
   {
@@ -862,8 +762,6 @@
     "homeScore": "152/10 (16.3)",
     "awayScore": "229/4 (20.0)",
     "venue": "Sawai Mansingh Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -879,8 +777,6 @@
     "homeScore": "208/5 (19.2)",
     "awayScore": "203/8 (20.0)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 2,
-    "tossWinnerId": 2,
     "elected": "bowling"
   },
   {
@@ -896,8 +792,6 @@
     "homeScore": "167/8 (20.0)",
     "awayScore": "166/7 (20.0)",
     "venue": "Shaheed Veer Narayan Singh International Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -913,8 +807,6 @@
     "homeScore": "210/5 (20.0)",
     "awayScore": "216/7 (19.0)",
     "venue": "Himachal Pradesh Cricket Association Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -930,8 +822,6 @@
     "homeScore": "168/5 (20.0)",
     "awayScore": "86/10 (14.5)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 9,
     "elected": "bowling"
   },
   {
@@ -947,8 +837,6 @@
     "homeScore": "194/4 (19.1)",
     "awayScore": "192/4 (20.0)",
     "venue": "Shaheed Veer Narayan Singh International Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   },
   {
@@ -964,8 +852,6 @@
     "homeScore": "200/8 (20.0)",
     "awayScore": "205/4 (19.5)",
     "venue": "Himachal Pradesh Cricket Association Stadium",
-    "winnerId": 6,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -981,8 +867,6 @@
     "homeScore": "188/3 (16.4)",
     "awayScore": "187/5 (20.0)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 1979,
-    "tossWinnerId": 1979,
     "elected": "bowling"
   },
   {
@@ -998,8 +882,6 @@
     "homeScore": "247/2 (20.0)",
     "awayScore": "218/4 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 5,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -1015,8 +897,6 @@
     "homeScore": "199/8 (20.0)",
     "awayScore": "222/4 (20.0)",
     "venue": "Himachal Pradesh Cricket Association Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -1032,8 +912,6 @@
     "homeScore": "197/5 (19.2)",
     "awayScore": "193/8 (20.0)",
     "venue": "Arun Jaitley Stadium",
-    "winnerId": 3,
-    "tossWinnerId": 3,
     "elected": "bowling"
   },
   {
@@ -1049,8 +927,6 @@
     "homeScore": "180/7 (20.0)",
     "awayScore": "181/5 (19.0)",
     "venue": "MA Chidambaram Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 2,
     "elected": "batting"
   },
   {
@@ -1066,8 +942,6 @@
     "homeScore": "225/3 (19.1)",
     "awayScore": "220/5 (20.0)",
     "venue": "Sawai Mansingh Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 7,
     "elected": "bowling"
   },
   {
@@ -1083,8 +957,6 @@
     "homeScore": "148/6 (18.5)",
     "awayScore": "147/8 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 5,
-    "tossWinnerId": 5,
     "elected": "bowling"
   },
   {
@@ -1100,8 +972,6 @@
     "homeScore": "229/4 (20.0)",
     "awayScore": "140/10 (13.4)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 1976,
-    "tossWinnerId": 2,
     "elected": "bowling"
   },
   {
@@ -1117,8 +987,6 @@
     "homeScore": "255/4 (20.0)",
     "awayScore": "200/4 (20.0)",
     "venue": "Rajiv Gandhi International Stadium",
-    "winnerId": 9,
-    "tossWinnerId": 9,
     "elected": "batting"
   },
   {
@@ -1134,8 +1002,6 @@
     "homeScore": "196/6 (20.0)",
     "awayScore": "200/3 (18.0)",
     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
-    "winnerId": 4,
-    "tossWinnerId": 4,
     "elected": "bowling"
   },
   {
@@ -1151,8 +1017,6 @@
     "homeScore": "175/9 (20.0)",
     "awayScore": "205/8 (20.0)",
     "venue": "Wankhede Stadium",
-    "winnerId": 7,
-    "tossWinnerId": 6,
     "elected": "bowling"
   },
   {
@@ -1168,8 +1032,6 @@
     "homeScore": "163/10 (18.4)",
     "awayScore": "203/5 (20.0)",
     "venue": "Eden Gardens",
-    "winnerId": 3,
-    "tossWinnerId": 5,
     "elected": "bowling"
   },
   {
@@ -1185,8 +1047,6 @@
     "homeScore": "254/5 (20.0)",
     "awayScore": "162/10 (19.3)",
     "venue": "Himachal Pradesh Cricket Association Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 1976,
     "elected": "bowling"
   },
   {
@@ -1202,8 +1062,6 @@
     "homeScore": "196/10 (19.2)",
     "awayScore": "243/8 (20.0)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 7,
-    "tossWinnerId": 9,
     "elected": "bowling"
   },
   {
@@ -1219,8 +1077,6 @@
     "homeScore": "214/6 (20.0)",
     "awayScore": "219/3 (18.4)",
     "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur",
-    "winnerId": 1976,
-    "tossWinnerId": 7,
     "elected": "batting"
   },
   {
@@ -1236,8 +1092,6 @@
     "homeScore": "161/5 (18.0)",
     "awayScore": "155/8 (20.0)",
     "venue": "Narendra Modi Stadium",
-    "winnerId": 8,
-    "tossWinnerId": 8,
     "elected": "bowling"
   }
 ]

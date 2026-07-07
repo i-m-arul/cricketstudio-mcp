@@ -1,6 +1,5 @@
 [
   {
-    "teamId": 8,
     "teamName": "Royal Challengers Bengaluru",
     "teamCode": "RCB",
     "played": 14,
@@ -15,7 +14,6 @@
     "oversBowled": 268.8
   },
   {
-    "teamId": 9,
     "teamName": "Sunrisers Hyderabad",
     "teamCode": "SRH",
     "played": 14,
@@ -30,7 +28,6 @@
     "oversBowled": 267.7
   },
   {
-    "teamId": 1976,
     "teamName": "Gujarat Titans",
     "teamCode": "GT",
     "played": 14,
@@ -45,7 +42,6 @@
     "oversBowled": 262.3
   },
   {
-    "teamId": 7,
     "teamName": "Rajasthan Royals",
     "teamCode": "RR",
     "played": 14,
@@ -60,7 +56,6 @@
     "oversBowled": 265.3
   },
   {
-    "teamId": 4,
     "teamName": "Punjab Kings",
     "teamCode": "PBKS",
     "played": 13,
@@ -75,7 +70,6 @@
     "oversBowled": 258
   },
   {
-    "teamId": 3,
     "teamName": "Delhi Capitals",
     "teamCode": "DC",
     "played": 14,
@@ -90,7 +84,6 @@
     "oversBowled": 254.5
   },
   {
-    "teamId": 5,
     "teamName": "Kolkata Knight Riders",
     "teamCode": "KKR",
     "played": 13,
@@ -105,7 +98,6 @@
     "oversBowled": 257.5
   },
   {
-    "teamId": 2,
     "teamName": "Chennai Super Kings",
     "teamCode": "CSK",
     "played": 14,
@@ -120,7 +112,6 @@
     "oversBowled": 262.2
   },
   {
-    "teamId": 1979,
     "teamName": "Lucknow Super Giants",
     "teamCode": "LSG",
     "played": 14,
@@ -135,7 +126,6 @@
     "oversBowled": 265.3
   },
   {
-    "teamId": 6,
     "teamName": "Mumbai Indians",
     "teamCode": "MI",
     "played": 14,
