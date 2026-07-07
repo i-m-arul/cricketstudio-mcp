@@ -139,13 +139,13 @@ const ELEMENT_KEYS = {
   'venues.json': new Set(['slug', 'name', 'city', 'country', 'lat', 'lng', 'matchCount', 'canonicalUrl', 'geo']),
   'teams.json': new Set(['code', 'name', 'slug', 'wikidataId', 'wikidataQid', 'canonicalUrl']),
   'standings.json': new Set([
-    'teamCode', 'teamName', 'teamId', 'slug', 'played', 'won', 'lost', 'noResult',
+    'teamCode', 'teamName', 'slug', 'played', 'won', 'lost', 'noResult',
     'points', 'nrr', 'runsFor', 'runsAgainst', 'oversFaced', 'oversBowled', 'canonicalUrl',
   ]),
   'matches.json': new Set([
     'id', 'home', 'homeName', 'away', 'awayName', 'date', 'startingAt', 'venue', 'status',
     'result', 'toss', 'homeScore', 'awayScore', 'playerOfMatch', 'canonicalUrl',
-    'winnerId', 'tossWinnerId', 'elected',
+    'elected',
   ]),
   'trends.json': new Set([
     'id', 'category', 'headline', 'summary', 'dataPoints', 'sampleSize',
@@ -193,6 +193,16 @@ const BANNED = [
   { re: /"idSystems"/i,       why: 'internal id-system map' },
   { re: /"espncricinfoId"/i,  why: 'bare external id — use espncricinfoUrl (full URL)' },
   { re: /cs_(player|franchise|match|venue|team|season|league)_/i, why: 'internal cs_* canonical id' },
+  // upstream numeric entity ids (Sportmonks team/match/toss numeric keys)
+  { re: /"teamId"\s*:/i,       why: 'upstream numeric team id (teamId) — must be stripped from standings' },
+  { re: /"winnerId"\s*:/i,     why: 'upstream numeric winner id (winnerId) — must be stripped from matches' },
+  { re: /"tossWinnerId"\s*:/i, why: 'upstream numeric toss-winner id (tossWinnerId) — must be stripped from matches' },
+  // upstream fixture numeric references in claim strings
+  { re: /\(fixture \d+\)/i,   why: 'upstream fixture numeric id in claim string — scrubFixtureIds() must strip these' },
+  { re: / for fixture \d+/i,  why: 'upstream fixture numeric id in claim string — scrubFixtureIds() must strip these' },
+  // internal path references in public strings
+  { re: /lib\/setu\//i,        why: 'internal algorithm path (lib/setu/) in public string' },
+  { re: /lib\/agents\//i,      why: 'internal algorithm path (lib/agents/) in public string' },
   // Source-code leak guards — catches accidental .ts / .js copies
   { re: /import\s+\{[^}]+\}\s+from\s+['"]/, why: 'ES import statement — looks like source code' },
   { re: /export\s+(const|function|class|default)\s/i, why: 'ES export statement — looks like source code' },
