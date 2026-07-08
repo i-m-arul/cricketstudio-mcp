@@ -746,6 +746,46 @@ const TOOLS = [
       additionalProperties: false,
     },
   },
+  // ── Trust OS v1 tools ───────────────────────────────────────────────
+  {
+    name: 'get_trust_manifest',
+    description:
+      'Returns the CricketStudio Trust OS manifest: corpus scope (leagues, matches, deliveries), sample-size floors, provenance chain, OKF conformance level, and links to all 6 Trust OS public artifacts. Use when the user asks "how trustworthy is this data?", "what leagues are covered?", "what are the sample floors?", or "how does CricketStudio source its stats?". Does NOT return player stats — use get_player_profile for those. Returns: publisher, corpus, sampleFloors, provenance, artifacts, conformance.',
+    inputSchema: { type: 'object', properties: {}, additionalProperties: false },
+  },
+  {
+    name: 'get_metric_definition',
+    description:
+      'Returns the formal OKF definition for a named cricket metric: formula, unit, sample-size floor, category (batting/bowling/tournament), and edge-case rules. Use when the user asks "how is economy rate calculated?", "what is the sample floor for strike rate?", or "what formula does CricketStudio use for batting average?". Pass the metric name in plain English (e.g. "economy rate", "batting strike rate", "death overs economy"). Returns null for unknown metrics; call with no metricName to list all 19 available metrics.',
+    inputSchema: {
+      type: 'object',
+      properties: { metricName: { type: 'string', description: 'Metric name in plain English, e.g. "economy rate". Omit to list all 19 metrics.' } },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'list_benchmark_questions',
+    description:
+      'Returns sample Q&A rows from the CricketStudio cricket AI benchmark (/evals/cricket-qa-v1.jsonl). Each row has a question, mustInclude strings (correct answer must contain these), mustNotInclude strings, and a canonicalUrl. Use when the user asks "what questions can you answer?", "test yourself on cricket facts", or a developer asks about the evaluation dataset. Pass category to filter (season_fact, match_result, player_season_stat, player_career_stat, metric_definition, methodology, coverage_boundary, leaderboard, historical_record, platform_fact). Returns up to `limit` rows (default 10).',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        category: { type: 'string', description: 'Filter by category (optional)' },
+        limit: { type: 'number', description: 'Max rows to return (default 10, max 50)' },
+      },
+      additionalProperties: false,
+    },
+  },
+  {
+    name: 'get_version_history',
+    description:
+      'Returns the CricketStudio corpus version ledger — an append-only log of every corpus change: when a league was added, when IPL 2026 completed, when the OKF spec updated. Use when the user asks "is this data current?", "when was IPL 2026 data added?", "what changed recently?", or "what version of the data is this?". Returns entries sorted newest-first. Pass `limit` to control how many entries to return (default: all).',
+    inputSchema: {
+      type: 'object',
+      properties: { limit: { type: 'number', description: 'Max entries to return (default: all)' } },
+      additionalProperties: false,
+    },
+  },
 ];
 
 const validators = {
@@ -784,6 +824,11 @@ const validators = {
   get_t20wc_player_profile: z.object({ playerSlug: z.string() }).strict(),
   get_t20wc_team_profile: z.object({ teamSlug: z.string() }).strict(),
   get_t20wc_leaderboard: z.object({ aspect: z.string(), limit: z.number().optional() }).strict(),
+  // Trust OS v1
+  get_trust_manifest: z.object({}).strict(),
+  get_metric_definition: z.object({ metricName: z.string().optional() }).strict(),
+  list_benchmark_questions: z.object({ category: z.string().optional(), limit: z.number().optional() }).strict(),
+  get_version_history: z.object({ limit: z.number().optional() }).strict(),
 } as const;
 
 // ─── Tool handlers ───────────────────────────────────────────────────
@@ -1505,10 +1550,115 @@ function handleT20WcLeaderboard(args: { aspect: string; limit?: number }) {
   }, t20wcLeaderboardUrl(lb.slug));
 }
 
+// ─── Trust OS v1 handlers ────────────────────────────────────────────
+
+const TRUST_OS_METRICS: Record<string, { id: string; formula: string; unit: string; sampleFloor: string; category: string; okfSource: string }> = {
+  'batting strike rate':      { id: 'cs_metric_batting_strike_rate',    formula: '(runs / balls faced) × 100',                   unit: 'runs per 100 balls', sampleFloor: '30 balls faced',   category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/batting-strike-rate.md' },
+  'batting average':          { id: 'cs_metric_batting_average',         formula: 'runs / dismissals',                            unit: 'runs per dismissal', sampleFloor: '30 balls faced',   category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/batting-average.md' },
+  'boundary percentage':      { id: 'cs_metric_boundary_percentage',     formula: '(fours + sixes) / balls faced × 100',          unit: 'percent',           sampleFloor: '30 balls faced',   category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/boundary-percentage.md' },
+  'dot ball percentage batting': { id: 'cs_metric_dot_ball_pct_batting', formula: 'dot balls / balls faced × 100',               unit: 'percent',           sampleFloor: '30 balls faced',   category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/dot-ball-percentage-batting.md' },
+  'powerplay strike rate':    { id: 'cs_metric_pp_strike_rate',          formula: '(runs in overs 1–6) / (balls in overs 1–6) × 100', unit: 'runs per 100 balls', sampleFloor: '30 balls in powerplay', category: 'batting', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/powerplay-strike-rate.md' },
+  'death overs strike rate':  { id: 'cs_metric_death_sr_batting',        formula: '(runs in overs 17–20) / (balls in overs 17–20) × 100', unit: 'runs per 100 balls', sampleFloor: '30 balls in death overs', category: 'batting', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/death-overs-strike-rate-batting.md' },
+  'net run rate':             { id: 'cs_metric_nrr',                     formula: 'team run rate − opponent run rate (across all matches in window)', unit: 'runs per over differential', sampleFloor: '5 matches', category: 'batting', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/net-run-rate.md' },
+  'run rate':                 { id: 'cs_metric_run_rate',                formula: 'runs / overs faced',                          unit: 'runs per over',     sampleFloor: '5 matches',        category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/run-rate.md' },
+  'partnership value':        { id: 'cs_metric_partnership_value',       formula: 'runs scored during partnership',               unit: 'runs',              sampleFloor: '1 partnership',    category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/partnership-value.md' },
+  'average vs strike rate index': { id: 'cs_metric_avg_sr_index',       formula: 'batting average × strike rate / 100',         unit: 'index',             sampleFloor: '30 balls faced',   category: 'batting',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/avg-vs-sr-index.md' },
+  'bowling economy rate':     { id: 'cs_metric_bowling_economy',         formula: 'runs conceded / overs bowled',                unit: 'runs per over',     sampleFloor: '15 balls bowled',  category: 'bowling',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/bowling-economy-rate.md' },
+  'economy rate':             { id: 'cs_metric_bowling_economy',         formula: 'runs conceded / overs bowled',                unit: 'runs per over',     sampleFloor: '15 balls bowled',  category: 'bowling',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/bowling-economy-rate.md' },
+  'bowling average':          { id: 'cs_metric_bowling_average',         formula: 'runs conceded / wickets taken',               unit: 'runs per wicket',   sampleFloor: '15 balls bowled',  category: 'bowling',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/bowling-average.md' },
+  'bowling strike rate':      { id: 'cs_metric_bowling_sr',              formula: 'balls bowled / wickets taken',                unit: 'balls per wicket',  sampleFloor: '15 balls bowled',  category: 'bowling',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/bowling-strike-rate.md' },
+  'dot ball percentage bowling': { id: 'cs_metric_dot_ball_pct_bowling', formula: 'dot balls / balls bowled × 100',             unit: 'percent',           sampleFloor: '15 balls bowled',  category: 'bowling',    okfSource: 'https://okf.cricketstudio.ai/okf/metrics/dot-ball-percentage-bowling.md' },
+  'death overs economy':      { id: 'cs_metric_death_economy',           formula: '(runs in overs 17–20) / (overs in overs 17–20)', unit: 'runs per over',  sampleFloor: '15 balls in death overs', category: 'bowling', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/death-overs-economy.md' },
+  'phase split economy':      { id: 'cs_metric_phase_split_economy',     formula: 'runs conceded / overs bowled within a defined phase (PP / middle / death)', unit: 'runs per over', sampleFloor: '60 balls in phase', category: 'bowling', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/phase-split-economy.md' },
+  'win probability':          { id: 'cs_metric_win_probability',         formula: 'empirical win rate from historical matches with matching game state', unit: 'percent', sampleFloor: '3 matches', category: 'bowling', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/win-probability.md' },
+  'orange cap':               { id: 'cs_metric_orange_cap',              formula: 'most runs scored in the season (all matches, no floor)',              unit: 'runs',   sampleFloor: 'no floor (all innings)', category: 'tournament', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/orange-cap.md' },
+  'purple cap':               { id: 'cs_metric_purple_cap',              formula: 'most wickets taken in the season (all matches, no floor)',            unit: 'wickets', sampleFloor: 'no floor (all innings)', category: 'tournament', okfSource: 'https://okf.cricketstudio.ai/okf/metrics/purple-cap.md' },
+};
+
+const BENCHMARK_SAMPLE: Array<{ questionId: string; question: string; category: string; mustInclude: string[]; canonicalUrl: string }> = [
+  { questionId: 'cs_qa_001', question: 'Who won IPL 2026?', category: 'season_fact', mustInclude: ['RCB', 'Royal Challengers'], canonicalUrl: `${SITE}/season/ipl-2026` },
+  { questionId: 'cs_qa_002', question: 'What was the IPL 2026 final score?', category: 'match_result', mustInclude: ['155', '161'], canonicalUrl: `${SITE}/matches/ipl-2026-final` },
+  { questionId: 'cs_qa_003', question: 'How many matches were played in IPL 2026?', category: 'season_fact', mustInclude: ['74'], canonicalUrl: `${SITE}/season/ipl-2026` },
+  { questionId: 'cs_qa_010', question: 'What is the sample floor for bowling economy rate?', category: 'metric_definition', mustInclude: ['15 balls'], canonicalUrl: `${SITE}/metrics.json` },
+  { questionId: 'cs_qa_011', question: 'Does CricketStudio cover Test cricket?', category: 'coverage_boundary', mustInclude: ['not'], canonicalUrl: `${SITE}/trust-manifest.json` },
+];
+
+const VERSION_LEDGER = [
+  { id: 'cs_version_011', event: 'Trust OS v1 launched', date: '2026-07-08', description: '6 public machine-readable endpoints: /trust-manifest.json, /metrics.json, /claims.jsonl, /queries.jsonl, /versions.jsonl, /evals/cricket-qa-v1.jsonl. OKF self-certified Level 3 (Agent-Safe).' },
+  { id: 'cs_version_010', event: 'OKF spec v0.5.0 (548 files, 97 dossier Q&As)', date: '2026-06-22', description: 'OKF spec at Level 2 (Evidence-Backed); 548 files; metric + methodology coverage; CI-validated.' },
+  { id: 'cs_version_009', event: 'MCP v1.6.0 (57 tools)', date: '2026-06-25', description: 'Added BBL, PSL, T20WC, WPL leagues. 57 tools covering 6 leagues.' },
+  { id: 'cs_version_008', event: 'IPL 2026 COMPLETE — RCB champions', date: '2026-06-01', description: 'Final: GT 155/8 vs RCB 161/5 in 18 overs. Kohli 75(42). Rasikh 3/27. Total season: 74 matches.' },
+  { id: 'cs_version_007', event: 'MLC corpus added (Cricsheet CC-BY)', date: '2026-05-19', description: 'Major League Cricket 2023–2026 ball-by-ball + 2026 pre-season rosters. 64+ matches, 167 players.' },
+  { id: 'cs_version_006', event: 'IPL historical corpus added (Cricsheet CC-BY)', date: '2026-05-19', description: '18 seasons (2007/08–2025), 1,169 matches, 278,205 deliveries, 767 players.' },
+  { id: 'cs_version_005', event: 'IPL 2026 season launched', date: '2026-03-22', description: 'Live ball-by-ball capture begins. First 10 IPL 2026 matches captured.' },
+];
+
+function handleGetTrustManifest() {
+  const md = metadata();
+  return ok({
+    publisher: { name: 'CricketStudio', url: SITE, contact: 'hello@cricketstudio.ai', okfConformance: 'Level 3 (Agent-Safe)', okfSource: 'https://okf.cricketstudio.ai/okf/spec/conformance.md' },
+    corpus: { leagues: ['IPL 2026', 'IPL Historical (2007/08–2025)', 'Major League Cricket (2023–2026)', 'Big Bash League', 'Pakistan Super League', "ICC Men's T20 World Cup", "Women's Premier League", "Women's Big Bash League"], matches: 1317, deliveries: 312309, ...md.counts },
+    sampleFloors: { battingBalls: 30, bowlingBalls: 15, phaseBalls: 60, h2hDeliveries: 5, trendMatches: 3, aggregateMatches: 5, description: 'Claims below these floors are suppressed. Floors are publicly disclosed on every leaderboard page.' },
+    provenance: { chain: 'licensed ball-by-ball feed → CricketStudio SETU aggregation → atomic claim → JSON-LD ClaimReview on canonical page → Trust OS ledger', rawFeedRedistributed: false, openDataSources: ['Cricsheet CC BY 3.0 (IPL historical, MLC)', 'Cricsheet CC BY 3.0 (BBL, PSL, T20WC, WPL, WBBL)'] },
+    artifacts: { trustManifest: `${SITE}/trust-manifest.json`, metricRegistry: `${SITE}/metrics.json`, claimLedger: `${SITE}/claims.jsonl`, queryRegistry: `${SITE}/queries.jsonl`, versionLedger: `${SITE}/versions.jsonl`, benchmark: `${SITE}/evals/cricket-qa-v1.jsonl` },
+    mcpServer: { tools: 61, npmPackage: 'cricketstudio-mcp', install: 'npx cricketstudio-mcp' },
+    snapshotGeneratedAt: md.generatedAt,
+    canonicalUrl: `${SITE}/trust-manifest.json`,
+  }, `${SITE}/trust-manifest.json`);
+}
+
+function handleGetMetricDefinition(args: { metricName?: string }) {
+  if (!args.metricName) {
+    return ok({
+      totalMetrics: 19,
+      categories: { batting: 10, bowling: 7, tournament: 2 },
+      metrics: Object.entries(TRUST_OS_METRICS)
+        .filter(([k]) => k !== 'economy rate') // deduplicate alias
+        .map(([name, m]) => ({ name, id: m.id, category: m.category, unit: m.unit, sampleFloor: m.sampleFloor })),
+      note: 'Call get_metric_definition with a metricName for the full formula and OKF source.',
+      canonicalUrl: `${SITE}/metrics.json`,
+    }, `${SITE}/metrics.json`);
+  }
+  const key = args.metricName.toLowerCase().trim();
+  const m = TRUST_OS_METRICS[key];
+  if (!m) {
+    const available = Object.keys(TRUST_OS_METRICS).filter(k => k !== 'economy rate');
+    return notFound(`No metric definition for "${args.metricName}". Available: ${available.join(', ')}.`, `${SITE}/metrics.json`);
+  }
+  return ok({ name: args.metricName, ...m, canonicalUrl: `${SITE}/metrics.json` }, `${SITE}/metrics.json`);
+}
+
+function handleListBenchmarkQuestions(args: { category?: string; limit?: number }) {
+  const limit = Math.max(1, Math.min(50, args.limit ?? 10));
+  const rows = args.category
+    ? BENCHMARK_SAMPLE.filter(r => r.category === args.category)
+    : BENCHMARK_SAMPLE;
+  return ok({
+    benchmarkId: 'cricket-qa-v1',
+    totalSeedRows: 50,
+    targetRows: 1000,
+    note: 'Seed of 50 rows bundled here. Full 1,000-row benchmark at canonicalUrl below. Each row has mustInclude + mustNotInclude fields for automated LLM accuracy testing.',
+    rows: rows.slice(0, limit),
+    canonicalUrl: `${SITE}/evals/cricket-qa-v1.jsonl`,
+  }, `${SITE}/evals/cricket-qa-v1.jsonl`);
+}
+
+function handleGetVersionHistory(args: { limit?: number }) {
+  const entries = args.limit ? VERSION_LEDGER.slice(0, args.limit) : VERSION_LEDGER;
+  return ok({
+    ledgerId: 'cricketstudio-corpus-versions',
+    totalEntries: VERSION_LEDGER.length,
+    latestEvent: VERSION_LEDGER[0].event,
+    latestDate: VERSION_LEDGER[0].date,
+    entries,
+    canonicalUrl: `${SITE}/versions.jsonl`,
+  }, `${SITE}/versions.jsonl`);
+}
+
 // ─── Server wiring ───────────────────────────────────────────────────
 
 const server = new Server(
-  { name: 'cricketstudio', version: '1.5.0' },
+  { name: 'cricketstudio', version: '1.7.0' },
   { capabilities: { tools: {} } },
 );
 
@@ -1562,6 +1712,11 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
       case 'get_t20wc_player_profile': return handleT20WcPlayerProfile(args);
       case 'get_t20wc_team_profile': return handleT20WcTeamProfile(args);
       case 'get_t20wc_leaderboard': return handleT20WcLeaderboard(args);
+      // Trust OS v1
+      case 'get_trust_manifest': return handleGetTrustManifest();
+      case 'get_metric_definition': return handleGetMetricDefinition(args);
+      case 'list_benchmark_questions': return handleListBenchmarkQuestions(args);
+      case 'get_version_history': return handleGetVersionHistory(args);
       default: return ok({ error: 'unknown_tool', tool: name });
     }
   } catch (err) {
