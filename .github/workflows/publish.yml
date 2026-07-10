@@ -1,14 +1,10 @@
 name: Publish to npm
 
-# Runs on every push to main. Publishes only if package.json version
-# is higher than what is already on the npm registry — so README-only
-# commits and other non-version bumps are safe no-ops.
-#
+# Manual-only. Run from Actions → "Publish to npm" → Run workflow.
 # Required repo secret: NPM_TOKEN (Automation token from npmjs.com)
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   publish:
