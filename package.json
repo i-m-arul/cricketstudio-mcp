@@ -1,7 +1,7 @@
 {
   "name": "cricketstudio-mcp",
-  "version": "1.7.0",
-  "description": "CricketStudio MCP server — 61 tools covering IPL 2026, IPL historical (18 seasons), MLC, BBL, PSL (men's), T20 WC (men's), and WPL (women's). Trust OS v1: get_trust_manifest, get_metric_definition, list_benchmark_questions, get_version_history. Citation-grade atomic claims with provenance.",
+  "version": "1.7.1",
+  "description": "CricketStudio MCP server — 60 tools across 7 leagues: IPL 2026, IPL historical (18 seasons), MLC, BBL, PSL, T20 WC, WPL. 2,654 matches · 623,535 deliveries. LLM accuracy: 0% → 85% on compound cricket questions. Citation-grade claims with provenance to ball-by-ball data.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {

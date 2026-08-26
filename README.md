@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Citation infrastructure for cricket — 57 MCP tools (incl. a knowledge-graph layer), zero network calls, 2,654 matches, 623,535 deliveries.**
+**Citation infrastructure for cricket — 60 MCP tools across 7 leagues, zero network calls, 2,654 matches, 623,535 deliveries. LLM accuracy: 0% → 85% on compound cricket questions ([benchmark](https://okf.cricketstudio.ai/evals/leaderboard)).**
 
 ---
 
